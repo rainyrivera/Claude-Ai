@@ -8,8 +8,8 @@ def lp(x,a):  # one-pole lowpass, a in (0,1)
     return y
 def whoosh(d):
     n=int(d*SR); x=rng.standard_normal(n); tt=np.linspace(0,1,n)
-    a=0.02+0.25*np.sin(np.pi*tt)**2
-    y=lp(x,a); y-=lp(y,0.004); env=np.sin(np.pi*tt)**1.5
+    a=0.008+0.05*np.sin(np.pi*tt)**2
+    y=lp(lp(x,a),a); y-=lp(y,0.003); env=np.sin(np.pi*tt)**2.5
     return y*env/np.max(np.abs(y)+1e-9)
 def tone(f,d,dec,h=0):
     n=int(d*SR); tt=np.arange(n)/SR; s=np.sin(2*np.pi*f*tt)+h*np.sin(4*np.pi*f*tt)
@@ -20,7 +20,7 @@ def thump():
     s=np.sin(2*np.pi*np.cumsum(f)/SR)*np.exp(-tt*7)
     nz=lp(rng.standard_normal(n),.2)*np.exp(-tt*40)*.5
     return s+nz
-for t,d,g in [(0,1.3,.32),(2.55,1.0,.26),(5.05,.9,.28),(14.55,.9,.26),(15.55,1.6,.22)]: add(t,whoosh(d),g)
+for t,d,g in [(0,1.3,.07),(2.55,1.0,.06),(5.05,.9,.06),(14.55,.9,.06),(15.55,1.6,.05)]: add(t,whoosh(d),g)
 for i in range(4): add(5.15+i*.12,tone(660+i*110,.25,18),.12)
 add(6.5,click(),.35)
 for i in range(4): add(6.92+i*.06,tone(1320,.12,30),.08)
