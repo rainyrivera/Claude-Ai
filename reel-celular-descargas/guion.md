@@ -1,30 +1,44 @@
-# Guion limpio para la voz — ¿Por qué no aguantas 5 minutos sin el celular?
+# Guion limpio para la voz — v2 (persuasivo) — ¿Por qué no aguantas 5 minutos sin el celular?
 
-Duración objetivo: ~90 s (≈250 palabras, ritmo ágil de TikTok).
+Duración objetivo: ~90–95 s (≈280 palabras, ritmo ágil de TikTok).
 
-¿No aguantas ni cinco minutos sin agarrar el celular… aunque no tengas nada que ver?
+Casi la mitad de las personas de este experimento se dio una descarga eléctrica a propósito… con tal de no hacer algo que tú evitas todos los días.
 
-Y no, no es solo falta de voluntad. Hay un experimento con descargas eléctricas que lo explica.
+Y no es lo que piensas. Quédate, porque cuando lo sepas… vas a mirar tu celular diferente.
 
-Te pasa en la fila, en el baño, antes de dormir. Cualquier momento en que te quedas a solas con tu cabeza.
+Piensa en la última fila que hiciste. ¿Cuántos segundos pasaron antes de que tu mano buscara el celular?
 
-Pero fíjate en un detalle: casi nunca lo agarras porque necesites algo. Lo agarras para no quedarte sin nada que hacer.
+Y casi nunca era para algo importante. Era para no quedarte… a solas contigo.
 
-Timothy Wilson, psicólogo de la Universidad de Virginia, estudió justo eso. En once estudios, la mayoría de las personas dijo que quedarse solas pensando, entre seis y quince minutos, les costaba y no lo disfrutaban.
+Timothy Wilson, psicólogo de la Universidad de Virginia, lo estudió en once experimentos. A la mayoría le costaba quedarse solo pensando, aunque fueran seis minutos.
 
-Y aquí viene el experimento. En dos mil catorce, a unos voluntarios les dieron una pequeña descarga eléctrica. Muchos dijeron que hasta pagarían por no volver a sentirla.
+Pero lo fuerte vino después.
 
-Después los dejaron solos quince minutos. Sin celular. Sin nada. Solo un botón… que les daba esa misma descarga.
+En dos mil catorce, primero les dieron una pequeña descarga eléctrica. Tan molesta, que muchos dijeron que pagarían por no volver a sentirla.
 
-¿Y qué pasó? De los que habían dicho que pagarían por evitarla… doce de dieciocho hombres lo presionaron. Y seis de veinticuatro mujeres, también.
+Luego los dejaron solos quince minutos. Sin celular. Sin nada.
 
-No es que estés roto. Es que pensar sin un plan cuesta. Y el celular es la salida más fácil.
+Solo ellos… sus pensamientos… y un botón que les daba esa misma descarga.
 
-¿Se puede entrenar? Prueba esto. Uno: empieza con dos minutos sin pantalla. Dos: elige antes en qué pensar, un plan o un recuerdo bonito. Tres: deja el celular lejos de tu mano.
+¿Y qué crees que pasó?
+
+De los que habían dicho que pagarían por evitarla… doce de dieciocho hombres lo presionaron. Y seis de veinticuatro mujeres… también.
+
+¿Por qué? Una explicación es que pensar sin un plan cuesta mucho más de lo que creemos.
+
+Y ahí entra tu celular. Es un botón que siempre tienes a mano. Solo que este no duele… por eso ni lo notas.
+
+La buena noticia: esto se entrena.
+
+Uno: empieza con dos minutos sin pantalla.
+
+Dos: elige antes en qué pensar. Un plan o un recuerdo bonito.
+
+Tres: deja el celular donde tu mano no llegue sin pensarlo.
 
 Aburrirte no es perder el tiempo. Es tu cabeza pidiendo espacio.
 
-¿Y tú? ¿Aguantarías los quince minutos… o presionarías el botón?
+Ahora dime la verdad: ¿tú aguantarías los quince minutos… o presionarías el botón?
 
 ## Fuentes
 - Wilson, T. D. et al. (2014). *Just think: The challenges of the disengaged mind.* Science 345(6192), 75–77. Estudio 10: 12/18 hombres y 6/24 mujeres (solo quienes dijeron que pagarían por evitar la descarga) se la aplicaron al menos una vez en 15 min.
