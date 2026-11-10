@@ -1,6 +1,6 @@
 # Guion v3 (≈40 s) — El botón
 
-≈125 palabras.
+≈134 palabras (~40–45 s).
 
 Te encierran quince minutos en un cuarto. Sin celular. Sin nada.
 
