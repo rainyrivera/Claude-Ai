@@ -1,34 +1,32 @@
-# Guion v3 (≈40 s) — El botón
+# Guion v4 (≈40 s) — gancho: ¿Por qué pasa esto?
 
-≈134 palabras (~40–45 s).
+135 palabras (~40 s).
 
-Te encierran quince minutos en un cuarto. Sin celular. Sin nada.
+¿Por qué pasa esto?
 
-Lo único que hay… es un botón que te da toques eléctricos.
+Estás en una fila… y en diez segundos tu mano ya sacó el celular.
 
-¿Lo presionarías?
+Casi nunca es porque te llegó algo. Es que el silencio te incomoda.
 
-Seguro dijiste que no. Pero espera.
+Y no eres el único.
 
-Esto pasó de verdad. Universidad de Virginia.
+En la Universidad de Virginia dejaron a personas solas quince minutos. Sin celular.
 
-Antes, les dieron un toque de prueba. Tan molesto, que muchos dijeron que pagarían por no sentirlo otra vez.
+Solo con un botón… que daba toques eléctricos.
 
-Pasaron los quince minutos…
+Antes lo probaron, y muchos dijeron que pagarían por no sentirlo otra vez.
+
+¿Y qué pasó?
 
 Doce de dieciocho hombres lo presionaron. Y seis de veinticuatro mujeres… también.
 
-La fila del banco. El semáforo en rojo. El baño.
-
-Tú también tienes un botón.
-
-Solo que el tuyo no da toques… da notificaciones.
-
 Quizás no es el celular. Es que estar a solas con tu cabeza… cuesta más de lo que crees.
+
+Y tu celular es el botón más fácil. Solo que no da toques… da notificaciones.
 
 En tu próxima fila, aguanta dos minutos. Solo dos.
 
-Y dime la verdad… ¿tú habrías presionado el botón?
+Y dime… ¿tú habrías presionado el botón?
 
 ## Fuentes
 - Wilson, T. D. et al. (2014). *Just think: The challenges of the disengaged mind.* Science 345(6192), 75–77. Estudio 10: 12/18 hombres y 6/24 mujeres (solo quienes dijeron que pagarían por evitar la descarga) se la aplicaron al menos una vez en 15 min.
