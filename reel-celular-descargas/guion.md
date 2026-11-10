@@ -1,44 +1,34 @@
-# Guion limpio para la voz — v2 (persuasivo) — ¿Por qué no aguantas 5 minutos sin el celular?
+# Guion v3 (≈40 s) — El botón
 
-Duración objetivo: ~90–95 s (≈280 palabras, ritmo ágil de TikTok).
+≈125 palabras.
 
-Casi la mitad de las personas de este experimento se dio una descarga eléctrica a propósito… con tal de no hacer algo que tú evitas todos los días.
+Te encierran quince minutos en un cuarto. Sin celular. Sin nada.
 
-Y no es lo que piensas. Quédate, porque cuando lo sepas… vas a mirar tu celular diferente.
+Lo único que hay… es un botón que te da toques eléctricos.
 
-Piensa en la última fila que hiciste. ¿Cuántos segundos pasaron antes de que tu mano buscara el celular?
+¿Lo presionarías?
 
-Y casi nunca era para algo importante. Era para no quedarte… a solas contigo.
+Seguro dijiste que no. Pero espera.
 
-Timothy Wilson, psicólogo de la Universidad de Virginia, lo estudió en once experimentos. A la mayoría le costaba quedarse solo pensando, aunque fueran seis minutos.
+Esto pasó de verdad. Universidad de Virginia.
 
-Pero lo fuerte vino después.
+Antes, les dieron un toque de prueba. Tan molesto, que muchos dijeron que pagarían por no sentirlo otra vez.
 
-En dos mil catorce, primero les dieron una pequeña descarga eléctrica. Tan molesta, que muchos dijeron que pagarían por no volver a sentirla.
+Pasaron los quince minutos…
 
-Luego los dejaron solos quince minutos. Sin celular. Sin nada.
+Doce de dieciocho hombres lo presionaron. Y seis de veinticuatro mujeres… también.
 
-Solo ellos… sus pensamientos… y un botón que les daba esa misma descarga.
+La fila del banco. El semáforo en rojo. El baño.
 
-¿Y qué crees que pasó?
+Tú también tienes un botón.
 
-De los que habían dicho que pagarían por evitarla… doce de dieciocho hombres lo presionaron. Y seis de veinticuatro mujeres… también.
+Solo que el tuyo no da toques… da notificaciones.
 
-¿Por qué? Una explicación es que pensar sin un plan cuesta mucho más de lo que creemos.
+Quizás no es el celular. Es que estar a solas con tu cabeza… cuesta más de lo que crees.
 
-Y ahí entra tu celular. Es un botón que siempre tienes a mano. Solo que este no duele… por eso ni lo notas.
+En tu próxima fila, aguanta dos minutos. Solo dos.
 
-La buena noticia: esto se entrena.
-
-Uno: empieza con dos minutos sin pantalla.
-
-Dos: elige antes en qué pensar. Un plan o un recuerdo bonito.
-
-Tres: deja el celular donde tu mano no llegue sin pensarlo.
-
-Aburrirte no es perder el tiempo. Es tu cabeza pidiendo espacio.
-
-Ahora dime la verdad: ¿tú aguantarías los quince minutos… o presionarías el botón?
+Y dime la verdad… ¿tú habrías presionado el botón?
 
 ## Fuentes
 - Wilson, T. D. et al. (2014). *Just think: The challenges of the disengaged mind.* Science 345(6192), 75–77. Estudio 10: 12/18 hombres y 6/24 mujeres (solo quienes dijeron que pagarían por evitar la descarga) se la aplicaron al menos una vez en 15 min.

@@ -1,11 +1,10 @@
-# Reglas para todos los guiones
+# Reglas para todos los guiones (actualizadas)
 
-1. Gancho en los primeros 3 s: dato concreto y sorprendente + misterio sin resolver ("algo que tú evitas todos los días").
-2. Promesa explícita de recompensa ("quédate, porque cuando lo sepas…").
-3. Identificación en segunda persona con una escena cotidiana.
-4. Re-gancho cada 10–15 s ("Pero lo fuerte vino después", "¿Y qué crees que pasó?").
-5. Experimento contado paso a paso, con tensión y pausas.
-6. Giro que conecta el experimento con la vida del espectador.
-7. Solución en 3 pasos cortos.
-8. Frase final para guardar/compartir + pregunta que divide para comentarios.
-9. Exactitud: solo datos verificados; las interpretaciones se dicen como "una explicación es…".
+- Duración: ~40 s (≈120–130 palabras).
+- Segundo 0: meter al espectador DENTRO de la situación ("Te encierran…") + pregunta directa.
+- Lenguaje de la calle, frases cortas, cero tono académico (fuente en 3–4 palabras).
+- Escenas cotidianas concretas (la fila del banco, el semáforo, el baño).
+- Una frase-giro memorable que conecte el dato con su vida.
+- Un solo consejo, simple.
+- Cierre que vuelve al gancho con una pregunta para comentarios.
+- Exactitud: solo datos verificados; interpretaciones con "quizás".
