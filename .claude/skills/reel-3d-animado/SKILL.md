@@ -5,8 +5,8 @@ description: Crear reels/TikToks verticales 9:16 animados en 3D con personajes e
 
 # Reel 3D animado — estilo aprobado por el usuario
 
-Proyecto de referencia (plantilla viva): `reel-eyaculacion-precoz/src3d/` → video `reel-eyaculacion-precoz/reel_eyaculacion_precoz_3d_9x16.mp4`.
-Para un video nuevo: copiar `src3d/` a `<tema>/src3d/`, reemplazar `voz.mp3`, `align.py` (frases), escenas en `main.js` y eventos en `audio.py`. Mejorar sobre esa base cuando el usuario lo pida; nunca volver al estilo 2D plano (lo rechazó por "básico").
+Plantilla: `plantilla-reel-3d/` (ver su README). Video de referencia: `reel-eyaculacion-precoz/reel_eyaculacion_precoz_3d_9x16.mp4`.
+Para un video nuevo: copiar `plantilla-reel-3d/` a `<tema>/src3d/` y seguir su README.
 
 ## 1. Guion (antes del video)
 - ~40 s hablados (≈120–135 palabras). La voz ElevenLabs "Relaxed" del usuario va más lenta (137 palabras → 55 s): avisar.
