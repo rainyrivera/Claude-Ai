@@ -9,7 +9,7 @@ Plantilla: `plantilla-reel-3d/` (ver su README). Video de referencia: `reel-eyac
 Para un video nuevo: copiar `plantilla-reel-3d/` a `<tema>/src3d/` y seguir su README.
 
 ## 1. Guion (antes del video)
-- ~40 s hablados (≈120–135 palabras). La voz ElevenLabs "Relaxed" del usuario va más lenta (137 palabras → 55 s): avisar.
+- ~40 s hablados: ≈100–115 palabras con la voz ElevenLabs "Relaxed" del usuario (~2,5 palabras/s); ≈120–135 con voces más rápidas. La voz ElevenLabs "Relaxed" del usuario va más lenta (137 palabras → 55 s): avisar.
 - Segundo 0: gancho fuerte (pregunta directa del espectador o situación en la que se mete) + giro inmediato ("Espera… quizás ni la tienes").
 - Bucle abierto (PENDIENTE) que se resuelve a mitad del video.
 - Escenas cotidianas, segunda persona, frases cortas, cero tono académico.
