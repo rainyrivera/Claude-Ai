@@ -180,6 +180,7 @@ const lp = (c, o = {}) => new THREE.MeshStandardMaterial({ color: c, roughness: 
 const add = (o, p = scene) => { p.add(o); return o; };
 function at(o, x, y, z) { o.position.set(x, y, z); return o; }
 function M(geo, m, cast = true) { const o = new THREE.Mesh(geo, m); o.castShadow = cast; o.receiveShadow = true; return o; }
+const OVL = [];
 function arcLabel(text, { color = '#ffcc33', size = 74, arc = .25 } = {}) {
   const c = document.createElement('canvas'), x = c.getContext('2d'); x.font = `italic 900 ${size}px M`;
   const w = x.measureText(text).width, cw = Math.ceil(w + size * 1.4), ch = Math.ceil(size * 2.6); c.width = cw; c.height = ch;
@@ -187,7 +188,7 @@ function arcLabel(text, { color = '#ffcc33', size = 74, arc = .25 } = {}) {
   const R = w / Math.max(.01, arc) / 2; let ang = -arc; const step = 2 * arc / Math.max(1, w);
   for (const chr of text) { const cwid = x.measureText(chr).width; ang += cwid / 2 * step; x.save(); x.translate(cw / 2 + Math.sin(ang) * R, ch * .62 + R - Math.cos(ang) * R); x.rotate(ang); x.lineWidth = size * .2; x.strokeStyle = '#3a2405'; x.strokeText(chr, 0, 0); x.fillStyle = color; x.fillText(chr, 0, 0); x.restore(); ang += cwid / 2 * step; }
   const tx = new THREE.CanvasTexture(c); tx.colorSpace = THREE.SRGBColorSpace;
-  const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: tx, transparent: true, depthTest: false })); sp.renderOrder = 10; sp.scale.set(cw / 430, ch / 430, 1); sp.userData.base = sp.scale.clone(); return sp;
+  const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: tx, transparent: true, depthTest: false })); sp.userData.text = text; sp.userData.color = color; sp.renderOrder = 10; sp.scale.set(cw / 430, ch / 430, 1); sp.userData.base = sp.scale.clone(); return sp;
 }
 
 // ---------- mundo ----------
@@ -242,10 +243,10 @@ const bats = []; for (let i = 0; i < 3; i++) { const b = new THREE.Group(); b.ad
 const fuseG = new THREE.Group(); fuseG.position.set(2.65, 1.55, -1.95); house.add(fuseG); fuseG.add(rbox(.5, .7, .14, .03, lp(0x9aa2b0)));
 const fuses = []; for (let i = 0; i < 4; i++) { const f = M(new THREE.BoxGeometry(.07, .18, .06), lp(0xffcc33)); f.position.set(-.15 + i * .1, 0, .09); fuseG.add(f); fuses.push(f); }
 // medidor y poste
-const meterG = new THREE.Group(); meterG.position.set(3.2, 1.45, 1.2); meterG.rotation.y = Math.PI / 2; house.add(meterG); meterG.add(rbox(.5, .7, .16, .05, lp(0xb8c0cc)));
+const meterG = new THREE.Group(); meterG.position.set(2.85, 1.45, 2.2); meterG.rotation.y = 0; house.add(meterG); meterG.add(rbox(.5, .7, .16, .05, lp(0xb8c0cc)));
 const mTex = canvasTex(220, 110); const mScr = M(new THREE.PlaneGeometry(.36, .18), new THREE.MeshBasicMaterial({ map: mTex.tx }), false); mScr.position.set(0, .1, .085); meterG.add(mScr);
 const pole = new THREE.Group(); pole.add(at(M(new THREE.CylinderGeometry(.13, .17, 6, 8), lp(0x7a4f2c)), 0, 3, 0), at(M(new THREE.BoxGeometry(1.4, .12, .12), lp(0x7a4f2c)), 0, 5.6, 0)); pole.position.set(7.2, 0, 1.2); scene.add(pole);
-const wire = add(M(new THREE.TubeGeometry(new THREE.CatmullRomCurve3([V(3.28, 2.0, 1.2), V(5.2, 3.6, 1.2), V(7.2, 5.62, 1.2)]), 20, .025, 6), lp(0x222222), false));
+const wire = add(M(new THREE.TubeGeometry(new THREE.CatmullRomCurve3([V(2.85, 1.85, 2.25), V(2.95, 2.9, 2.3), V(5.2, 4.2, 1.8), V(7.2, 5.62, 1.2)]), 20, .025, 6), lp(0x222222), false));
 // tierra física
 const rod = add(M(new THREE.CylinderGeometry(.04, .04, 2.6, 6), lp(0xd18a4a, { metalness: .5, roughness: .4 }))); rod.position.set(3.6, -1.0, 10.08);
 const gWire = add(M(new THREE.TubeGeometry(new THREE.CatmullRomCurve3([V(3.18, 1.0, 1.6), V(3.4, .2, 4), V(3.6, .2, 9.5), V(3.6, .25, 10.08)]), 30, .025, 6), lp(0x35b84a), false));
@@ -262,15 +263,15 @@ const heatW = []; for (let i = 0; i < 6; i++) { const pts = []; for (let k = 0; 
 function arrowMesh(col = 0xffffff) { const a = new THREE.Group(); a.add(at(M(new THREE.CylinderGeometry(.05, .05, .4, 6), new THREE.MeshBasicMaterial({ color: col }), false), 0, -.15, 0), at(M(new THREE.ConeGeometry(.12, .22, 6), new THREE.MeshBasicMaterial({ color: col }), false), 0, .15, 0)); return a; }
 const airA = []; for (let i = 0; i < 8; i++) { const a = arrowMesh(); a.rotation.z = -Math.PI / 2; scene.add(a); airA.push(a); }
 // termómetro y medidor de producción (sprites)
-function gaugeSprite() { const t = canvasTex(420, 120); const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: t.tx, transparent: true, depthTest: false })); sp.renderOrder = 9; sp.scale.set(1.75, .5, 1); sp.userData.base = sp.scale.clone(); sp.userData.draw = (v, col) => { const x = t.x; x.clearRect(0, 0, 420, 120); x.fillStyle = 'rgba(20,24,40,.85)'; rrp(x, 0, 4, 4, 412, 112, 28); x.fill(); x.font = '900 34px M'; x.fillStyle = '#fff'; x.textBaseline = 'middle'; x.fillText('PRODUCCIÓN', 24, 38); x.fillStyle = 'rgba(255,255,255,.15)'; rrp(x, 0, 24, 70, 372, 26, 13); x.fill(); x.fillStyle = col; rrp(x, 0, 24, 70, Math.max(26, 372 * v), 26, 13); x.fill(); t.tx.needsUpdate = true; }; return sp; }
-const gauge = gaugeSprite(); scene.add(gauge);
+function gaugeSprite() { const t = canvasTex(420, 120); GAUGE_CV = t.c; const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: t.tx, transparent: true, depthTest: false })); sp.renderOrder = 9; sp.scale.set(1.75, .5, 1); sp.userData.base = sp.scale.clone(); sp.userData.draw = (v, col) => { const x = t.x; x.clearRect(0, 0, 420, 120); x.fillStyle = 'rgba(20,24,40,.85)'; rrp(x, 0, 4, 4, 412, 112, 28); x.fill(); x.font = '900 34px M'; x.fillStyle = '#fff'; x.textBaseline = 'middle'; x.fillText('PRODUCCIÓN', 24, 38); x.fillStyle = 'rgba(255,255,255,.15)'; rrp(x, 0, 24, 70, 372, 26, 13); x.fill(); x.fillStyle = col; rrp(x, 0, 24, 70, Math.max(26, 372 * v), 26, 13); x.fill(); t.tx.needsUpdate = true; }; return sp; }
+let GAUGE_CV; const gauge = gaugeSprite(); scene.add(gauge);
 const thermo = new THREE.Group(); { thermo.add(at(M(new THREE.CylinderGeometry(.08, .08, 1.2, 10), new THREE.MeshStandardMaterial({ color: 0xffffff, transparent: true, opacity: .5 }), false), 0, .6, 0)); const bulb = M(new THREE.SphereGeometry(.16, 12, 10), new THREE.MeshBasicMaterial({ color: 0xff3b3b }), false); thermo.add(bulb); const lvl = M(new THREE.CylinderGeometry(.05, .05, 1, 8), new THREE.MeshBasicMaterial({ color: 0xff3b3b }), false); thermo.add(lvl); thermo.userData.lvl = lvl; } scene.add(thermo);
 // globo terráqueo con latitud
 const globe = new THREE.Group(); { globe.add(M(new THREE.IcosahedronGeometry(.9, 2), lp(0x3d8de0), false)); for (let i = 0; i < 6; i++) { const l = M(new THREE.IcosahedronGeometry(.3 + rnd() * .2, 0), lp(0x5bbf4a), false); const a = rnd() * 6.28, b = (rnd() - .5) * 2.2; l.position.set(Math.cos(a) * Math.cos(b) * .8, Math.sin(b) * .8, Math.sin(a) * Math.cos(b) * .8); l.scale.set(1, .5, 1); globe.add(l); } const eq = M(new THREE.TorusGeometry(.93, .02, 6, 48), new THREE.MeshBasicMaterial({ color: 0xffffff }), false); eq.rotation.x = Math.PI / 2; globe.add(eq); const la = M(new THREE.TorusGeometry(.93 * Math.cos(.35), .025, 6, 48), new THREE.MeshBasicMaterial({ color: 0xffcc33 }), false); la.rotation.x = Math.PI / 2; la.position.y = .93 * Math.sin(.35); globe.add(la); } scene.add(globe);
 const angArc = add(M(new THREE.TorusGeometry(1.1, .03, 6, 32, TH), new THREE.MeshBasicMaterial({ color: 0xffcc33 }), false));
 // recibo de luz
-const rcTex = canvasTex(360, 480); const receipt = new THREE.Sprite(new THREE.SpriteMaterial({ map: rcTex.tx, transparent: true, depthTest: false })); receipt.renderOrder = 11; receipt.scale.set(1.5, 2.0, 1); receipt.userData.base = receipt.scale.clone(); scene.add(receipt);
-function drawReceipt(amount, stamp) { const x = rcTex.x; x.clearRect(0, 0, 360, 480); x.fillStyle = '#fbfbf6'; rrp(x, 0, 6, 6, 348, 468, 16); x.fill(); x.fillStyle = '#1b2440'; x.font = '900 34px M'; x.textAlign = 'center'; x.fillText('RECIBO DE LUZ', 180, 60); x.fillStyle = '#c8ccd6'; for (let i = 0; i < 5; i++) x.fillRect(40, 100 + i * 34, 200 + (i % 2) * 60, 12); x.fillStyle = '#1b2440'; x.font = '700 28px J'; x.fillText('TOTAL', 180, 310); x.font = '900 76px M'; x.fillStyle = stamp ? '#1aa86a' : '#d94a4a'; x.fillText('$' + Math.round(amount).toLocaleString('en-US'), 180, 385); if (stamp) { x.save(); x.translate(180, 440); x.rotate(-.12); x.strokeStyle = '#1aa86a'; x.lineWidth = 6; rrp(x, 0, -130, -30, 260, 56, 10); x.stroke(); x.font = '900 36px M'; x.fillStyle = '#1aa86a'; x.fillText('CASI EN CERO', 0, 12); x.restore(); } rcTex.tx.needsUpdate = true; }
+const rcTex = canvasTex(360, 480); const RC_CV = rcTex.c; const receipt = new THREE.Sprite(new THREE.SpriteMaterial({ map: rcTex.tx, transparent: true, depthTest: false })); receipt.renderOrder = 11; receipt.scale.set(1.5, 2.0, 1); receipt.userData.base = receipt.scale.clone(); scene.add(receipt);
+function drawReceipt(amount, stamp) { const x = rcTex.x; x.clearRect(0, 0, 360, 480); x.fillStyle = '#fbfbf6'; rrp(x, 0, 6, 6, 348, 468, 16); x.fill(); x.fillStyle = '#1b2440'; x.font = '900 34px M'; x.textAlign = 'center'; x.fillText('RECIBO DE LUZ', 180, 60); x.fillStyle = '#c8ccd6'; for (let i = 0; i < 5; i++) x.fillRect(40, 100 + i * 34, 200 + (i % 2) * 60, 12); x.fillStyle = '#1b2440'; x.font = '700 28px J'; x.fillText('TOTAL', 180, 310); x.font = '900 76px M'; x.fillStyle = stamp ? '#1aa86a' : '#d94a4a'; x.fillText('$' + Math.round(amount).toLocaleString('en-US'), 180, 385); if (stamp) { x.save(); x.translate(180, 440); x.rotate(-.12); x.strokeStyle = '#1aa86a'; x.lineWidth = 6; rrp(x, 0, -120, -28, 240, 52, 10); x.stroke(); x.font = '900 30px M'; x.fillStyle = '#1aa86a'; x.fillText('CASI EN CERO', 0, 12); x.restore(); } rcTex.tx.needsUpdate = true; }
 // flujo de energía (partículas)
 function Flow(points, color, n = 26) { const curve = new THREE.CatmullRomCurve3(points); const im = new THREE.InstancedMesh(new THREE.SphereGeometry(.06, 8, 6), new THREE.MeshBasicMaterial({ color }), n); im.frustumCulled = false; scene.add(im); const tube = M(new THREE.TubeGeometry(curve, 60, .022, 6), lp(0x222222), false); scene.add(tube); const o = new THREE.Object3D();
   return { curve, im, tube, upd(t, on, { speed = .35, ac = false, rev = false, block = 1 } = {}) { tube.visible = on > 0; for (let i = 0; i < n; i++) { let u = ((t * speed + i / n) % 1); if (rev) u = 1 - u; const vis = on > 0 && u < block; const p = curve.getPointAt(Math.min(.999, u)); if (ac) { const tg = curve.getTangentAt(Math.min(.999, u)); const side = new THREE.Vector3(0, 1, 0).cross(tg).normalize(); if (side.lengthSq() < .1) side.set(1, 0, 0); p.addScaledVector(side, Math.sin(u * 60 - t * 8) * .07); p.y += Math.cos(u * 60 - t * 8) * .05; } o.position.copy(p); o.scale.setScalar(vis ? on : .0001); o.updateMatrix(); im.setMatrixAt(i, o.matrix); } im.instanceMatrix.needsUpdate = true; } }; }
@@ -281,7 +282,7 @@ const fDirect = Flow([roofOut, V(1.5, 2.55, 1.0), V(1.45, 2.5, -1.6), V(.95, 2.1
 const fPanel = Flow([roofOut, V(1.5, 2.55, 1.0), V(1.45, 2.5, -1.6), V(1.15, 2.42, -1.85), V(1.15, 2.0, -1.85), V(1.55, 1.85, -1.85)], 0xffd23a);
 const fHouse = Flow([V(1.4, 1.55, -1.8), V(.95, 1.5, -1.6), V(.86, .6, -1.1), V(.74, .38, -.6)], 0x5ad1ff, 18);
 const fBat = Flow([V(1.75, 1.08, -1.8), V(1.75, .9, -1.6), V(1.9, 1.2, -1.45)], 0x35d39a, 12);
-const fGrid = Flow([V(2.1, 1.55, -1.8), V(2.95, 1.5, -1.2), V(3.25, 1.45, 1.2), V(5.2, 3.6, 1.2), V(7.2, 5.62, 1.2)], 0x5ad1ff, 30);
+const fGrid = Flow([V(2.1, 1.55, -1.8), V(2.6, 1.5, -1.0), V(2.8, 1.45, 2.1), V(2.95, 2.9, 2.3), V(5.2, 4.2, 1.8), V(7.2, 5.62, 1.2)], 0x5ad1ff, 30);
 // cables explicativos directa / alterna
 const fDC = Flow([V(-2.2, 4.6, 4.2), V(0, 4.6, 4.2), V(2.2, 4.6, 4.2)], 0xffd23a, 20), fAC = Flow([V(-2.2, 3.2, 4.2), V(0, 3.2, 4.2), V(2.2, 3.2, 4.2)], 0x5ad1ff, 20);
 fDC.tube.material = fAC.tube.material = lp(0x444a58);
@@ -312,7 +313,7 @@ const SHOTS = [
   [K.mueves - .1, 52.83, [0, 7.8, 8.5], [.5, 7.4, 7.8], [0, 3.4, 1.0], [0, 3.4, 1.0]],
   [52.83, 57.95, [9.2, 4.8, 4.8], [8.2, 4.7, 4.0], [0, 4.2, .6], [0, 4.2, .6]],
   [57.95, 61.33, [6.5, 5.2, 13.5], [5.2, 4.6, 11.2], [1, 1.8, 0], [1.2, 1.6, 0]],
-  [61.33, 63.36, [6.2, 1.9, 3.5], [5.2, 1.7, 2.6], [3.2, 1.45, 1.2], [3.2, 1.45, 1.2]],
+  [61.33, 63.36, [3.6, 1.9, 5.4], [3.2, 1.7, 4.3], [2.85, 1.5, 2.2], [2.85, 1.5, 2.2]],
   [63.36, 66.81, [9.5, 3.9, 9.5], [8.3, 3.6, 7.8], [4.8, 3.0, 1.2], [5.2, 3.2, 1.2]],
   [66.81, K.tierra - .25, [2.5, 2.5, 2.1], [2.55, 2.3, 1.4], [2.65, 1.55, -1.95], [2.65, 1.55, -1.95]],
   [K.tierra - .25, 69.51, [5.6, .5, 14], [4.7, .2, 12.8], [3.6, -.6, 10], [3.6, -.7, 10]],
@@ -340,7 +341,7 @@ function animWorld(t) {
   const x = tvTex.x; if (on) { const h = (t * 40) % 360; const gr = x.createLinearGradient(0, 0, 256, 150); gr.addColorStop(0, `hsl(${h},80%,60%)`); gr.addColorStop(1, `hsl(${(h + 120) % 360},80%,55%)`); x.fillStyle = gr; x.fillRect(0, 0, 256, 150); x.fillStyle = 'rgba(255,255,255,.85)'; x.beginPath(); x.arc(128 + Math.sin(t * 2) * 60, 75, 22, 0, 6.29); x.fill(); } else { x.fillStyle = '#0c0e14'; x.fillRect(0, 0, 256, 150); } tvTex.tx.needsUpdate = true;
   // inversor pantalla
   const ix = invTex.x; ix.fillStyle = '#0d1a14'; ix.fillRect(0, 0, 200, 120); if (t > K.inversor) { ix.strokeStyle = '#35d39a'; ix.lineWidth = 6; ix.beginPath(); for (let i = 0; i <= 200; i += 4) ix.lineTo(i, 60 + Math.sin(i / 14 - t * 6) * 30); ix.stroke(); } invTex.tx.needsUpdate = true;
-  invG.scale.setScalar(Math.max(.001, eback(P(t, K.inversor - .3, .4))));
+  invG.scale.setScalar(Math.max(.001, eback(P(t, 12.9, .4))));
   bats.forEach((b, i) => { b.scale.setScalar(Math.max(.001, eback(P(t, K.baterias - .3 + i * .12, .4)))); const fill = t < 21.4 ? .15 : t < 23.1 ? lerp(.15, 1, P(t, 21.4, 1.6)) : t < 24.81 ? lerp(1, .55, P(t, 23.2, 1.5)) : t < K.sobrecarguen ? lerp(.55, 1, P(t, 25.2, 3)) : 1; b.userData.lv.scale.y = Math.max(.05, fill); b.userData.lv.position.y = -.4 + .4 * fill; b.userData.lv.material.color.set(fill > .95 ? 0x35d39a : fill > .4 ? 0xf6c445 : 0xff4d61); });
   ctrlG.scale.setScalar(Math.max(.001, eback(P(t, K.controlador - .3, .4)))); ctrlLed.material.color.set(Math.floor(t * 4) % 2 ? 0x35d39a : 0x0b3a26);
   fuses.forEach((f, i) => { f.scale.y = Math.max(.001, eback(P(t, K.fusibles + i * .12, .3))); });
@@ -358,15 +359,15 @@ function animWorld(t) {
   thermo.visible = t > K.calor - .4 && t < K.separas + 1.2; thermo.position.set(-4.0, 3.4, 2.4); const tl = lerp(.2, 1, P(t, K.calor - .3, 1.5)) * (1 - .6 * P(t, K.aire, 1.2)); thermo.userData.lvl.scale.y = tl; thermo.userData.lvl.position.y = tl / 2;
   // producción
   const prodShown = (t > K.mediodia - .2 && t < 41.85) || (t > K.vecino && t < 52.83);
-  gauge.visible = prodShown; if (prodShown) { let v = .92; v -= .38 * P(t, K.menos - .3, .6) * (1 - P(t, K.aire, 1)); if (t > K.vecino) v = .92 - .6 * P(t, K.produccion - .2, .5) * (1 - P(t, K.mueves + .6, .8)); gauge.userData.draw(v, v > .7 ? '#35d39a' : v > .45 ? '#f6c445' : '#ff4d61'); gauge.position.copy(t > K.vecino && t < 52.83 && t < K.mueves - .1 ? V(-1.4, 5.9, 2.2) : t > K.mueves - .1 ? V(0, 5.8, 1.8) : V(3.1, 5.6, 2.2)); }
+  gauge.userData.show = prodShown; gauge.visible = false; if (prodShown) { let v = .92; v -= .38 * P(t, K.menos - .3, .6) * (1 - P(t, K.aire, 1)); if (t > K.vecino) v = .92 - .6 * P(t, K.produccion - .2, .5) * (1 - P(t, K.mueves + .6, .8)); gauge.userData.draw(v, v > .7 ? '#35d39a' : v > .45 ? '#f6c445' : '#ff4d61'); gauge.position.copy(t > K.vecino && t < 52.83 && t < K.mueves - .1 ? V(-1.4, 5.9, 2.2) : t > K.mueves - .1 ? V(0, 5.8, 1.8) : V(3.1, 5.6, 2.2)); }
   // globo y ángulo
   globe.visible = t > K.angulo - .3 && t < 57.95; globe.position.set(0, 7.4, -2.6); globe.rotation.y = t * .6; globe.scale.setScalar(Math.max(.001, eback(P(t, K.angulo - .3, .5))));
   angArc.visible = globe.visible; angArc.position.set(3.55, 2.62, 2.3); angArc.rotation.set(0, Math.PI / 2, 0); angArc.scale.setScalar(Math.max(.001, eout(P(t, K.angulo, .6))));
   // tierra física
   rod.position.y = lerp(1.6, -1.0, eout(P(t, K.tierra, .9))); rod.visible = t > K.tierra - .3; gWire.visible = t > K.tierra + .6;
   // recibo
-  receipt.visible = (t > K.descuenta - .2 && t < 66.75) || t > K.recibo2 - .2;
-  if (receipt.visible) { const fin = t > 70; const amt = fin ? lerp(1850, 45, eout(P(t, K.cero - .1, .8))) : lerp(1850, 980, eout(P(t, K.descuenta, 1))); drawReceipt(amt, fin && t > K.cero + .4); const dir = new THREE.Vector3(); cam.getWorldDirection(dir); const right = dir.clone().cross(cam.up).normalize(); receipt.position.copy(cam.position).addScaledVector(dir, 4).addScaledVector(right, .55).add(V(0, -.55, 0)); const k = eback(P(t, fin ? K.recibo2 - .2 : K.descuenta - .2, .4)); receipt.scale.copy(receipt.userData.base).multiplyScalar(Math.max(.001, k)); }
+  receipt.userData.show = (t > K.descuenta - .2 && t < 66.75) || t > K.recibo2 - .2; receipt.visible = false;
+  if (receipt.userData.show) { const fin = t > 70; const amt = fin ? lerp(1850, 45, eout(P(t, K.cero - .1, .8))) : lerp(1850, 980, eout(P(t, K.descuenta, 1))); drawReceipt(amt, fin && t > K.cero + .4); const dir = new THREE.Vector3(); cam.getWorldDirection(dir); const right = dir.clone().cross(cam.up).normalize(); receipt.position.copy(cam.position).addScaledVector(dir, 4).addScaledVector(right, .55).add(V(0, -.55, 0)); const k = eback(P(t, fin ? K.recibo2 - .2 : K.descuenta - .2, .4)); receipt.userData.k = Math.max(.001, k); }
   // dueño de casa
   const fail = P(t, K.nada, .2), happy = t > K.prende && (on || t > 69);
   const remote = t > K.conectas && t < K.prende + .5;
@@ -383,12 +384,29 @@ function animWorld(t) {
   fGrid.upd(t, t > K.red - .3 && t < 66.81 ? 1 : 0, { speed: .35, ac: true });
   const dcOn = t > K.directa - .3 && t < 12.82 ? 1 : 0; fDC.upd(t, dcOn, { speed: .35 }); fAC.upd(t, t > K.alterna - .3 && t < 12.82 ? 1 : 0, { speed: .35, ac: true });
   // etiquetas amarillas
-  const L = (s, at, end, pos) => { s.visible = t >= at && t < end; if (s.visible) { popSprite(s, t, at); s.position.copy(pos); } };
+  OVL.length = 0; const L = (s, at, end, pos, color) => { s.visible = false; if (t >= at && t < end) OVL.push({ text: s.userData.text, at, end, pos: pos.clone(), color: color || s.userData.color }); };
   L(lblDC, K.directa - .2, 12.82, V(0, 5.25, 4.2)); L(lblAC, K.alterna - .2, 12.82, V(0, 3.8, 4.2));
   L(LBL.inv, K.inversor, 16.89, V(1.75, 2.35, -1.55)); L(LBL.bat, K.baterias, 24.81, V(1.9, 1.6, -1.0)); L(LBL.ctrl, K.controlador, 29.62, V(1.25, 2.75, -1.5));
   L(LBL.calor, K.calor, 38.26, V(0, 6.0, 1.4)); L(LBL.diodo, K.diodos, K.mueves - .1, H2W(V(-2.45, .9, .62))); L(LBL.ang, K.angulo, 57.95, V(3.2, 5.6, 2.2));
-  L(LBL.med, K.medidor, 63.36, V(3.3, 2.15, 1.25)); L(LBL.fus, K.fusibles, K.tierra - .25, V(2.65, 2.1, -1.7)); L(LBL.tierra, K.tierra, 69.51, V(3.6, .75, 10.1));
-  L(full, 25.8, 29.62, V(1.9, 1.35, -1.0));
+  L(LBL.med, K.medidor, 63.36, V(2.85, 2.25, 2.25)); L(LBL.fus, K.fusibles, K.tierra - .25, V(2.65, 2.1, -1.7)); L(LBL.tierra, K.tierra, 69.51, V(3.6, .75, 10.1));
+  L(full, 25.8, 29.62, V(1.9, 1.35, -1.0), '#35d39a');
+}
+// ---------- etiquetas amarillas 2D ancladas a 3D ----------
+function drawArcText(text, cx, cy, size, color, k) {
+  g.save(); g.font = `italic 900 ${size}px M`; g.letterSpacing = '1px';
+  const chs = [...text], ws = chs.map(ch => g.measureText(ch).width + 1), w = ws.reduce((a, b) => a + b, 0), arc = .2, R = w / (2 * arc);
+  g.translate(cx, cy); g.scale(k, k); g.lineJoin = 'round'; let acc = 0;
+  for (let i = 0; i < ws.length; i++) { const a = (acc + ws[i] / 2 - w / 2) / R; acc += ws[i]; g.save(); g.translate(Math.sin(a) * R, R - Math.cos(a) * R); g.rotate(a); g.textAlign = 'center'; g.textBaseline = 'middle'; g.lineWidth = size * .22; g.strokeStyle = '#3a2405'; g.strokeText(chs[i], 0, 0); g.fillStyle = color; g.fillText(chs[i], 0, 0); g.restore(); }
+  g.restore();
+}
+function overlayLabels(t) {
+  for (const o of OVL) {
+    const v = o.pos.clone().project(cam); if (v.z > 1) continue;
+    let size = 86; g.font = `italic 900 ${size}px M`; let w = g.measureText(o.text).width + o.text.length; if (w > 860) { size = Math.floor(size * 860 / w); w = 860; }
+    let x = (v.x * .5 + .5) * W, y = (-v.y * .5 + .5) * H; x = clamp(x, w / 2 + 70, W - w / 2 - 70); y = clamp(y, 330, 1640); if (Math.abs(y - 1020) < 90) y = y < 1020 ? 930 : 1110;
+    const k = Math.max(.001, eback(P(t, o.at, .3))) * (1 - P(t, o.end - .15, .15));
+    drawArcText(o.text, x, y, size, o.color, k);
+  }
 }
 // ---------- subtítulos de una palabra (estilo referencia) ----------
 const KEYW = new Set(['directa', 'alterna', 'inversor', 'baterías', 'controlador', 'carga', 'calor', 'diodos', 'derivación', 'ángulo', 'latitud', 'medidor', 'bidireccional', 'fusibles', 'tierra', 'física', 'felicidades', 'cero']);
@@ -405,6 +423,9 @@ function renderAt(t) {
   camAt(t); animWorld(t);
   composer.render(); g.drawImage(glc, 0, 0);
   const vg = g.createRadialGradient(540, 960, 650, 540, 960, 1300); vg.addColorStop(0, 'rgba(0,0,0,0)'); vg.addColorStop(1, 'rgba(0,0,0,.28)'); g.fillStyle = vg; g.fillRect(0, 0, W, H);
+  overlayLabels(t);
+  if (gauge.userData.show) { g.save(); g.globalAlpha = 1; g.drawImage(GAUGE_CV, 540 - 260, 1500, 520, 149); g.restore(); }
+  if (receipt.userData.show) { const k = receipt.userData.k || 1; g.save(); g.translate(770, 1400); g.scale(k * 1.22, k * 1.22); g.shadowColor = 'rgba(0,0,0,.35)'; g.shadowBlur = 24; g.drawImage(RC_CV, -180, -240, 360, 480); g.restore(); }
   caption(t);
   const fo = P(t, END - .4, .4); if (fo > 0) { g.fillStyle = `rgba(0,0,0,${fo})`; g.fillRect(0, 0, W, H); }
 }
