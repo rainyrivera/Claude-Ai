@@ -18,6 +18,7 @@ Para un video nuevo: copiar `plantilla-reel-3d/` a `<tema>/src3d/` y seguir su R
 - Guardar guion + fuentes en `<tema>/guion.md`. Si el usuario dice que es "básico/genérico", proponer uno totalmente distinto, no retocar.
 
 ## 2. Estilo visual (lo que el usuario aprobó)
+- **Regla del usuario:** mismos personajes, animaciones, textos y audio, pero los ESCENARIOS y situaciones se crean nuevos para cada video según su guion/voz. No reutilizar los escenarios de videos anteriores salvo que lo pida.
 - 1080×1920, 30 fps, MP4 H.264 + AAC, sin marcas de agua.
 - **3D (three.js 0.169)**: personajes procedurales estilo arcilla (`makeChar`) con cara expresiva: emociones `neutral | worried | sad | happy | surprised | determined`, parpadeo, mirada, respiración. Variantes: bata (`coat`), lentes, portapapeles, pelo largo, modo rayos X (`xray`, órganos que brillan).
 - Un escenario por bloque (dormitorio nocturno con lámpara cálida y ventana con luna, laboratorio con multitud instanciada, consulta con pizarra, escenarios "vacíos" con disco de luz de color, etc.) y movimiento de cámara continuo (grúa, órbita, push-in). Corte = destello oscuro 0,2 s + whoosh.
