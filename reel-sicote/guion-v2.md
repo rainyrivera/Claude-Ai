@@ -28,5 +28,5 @@ Ahora dime… ¿cuál de tus zapatos es el culpable?
 - Ara K. et al. (2006). Foot odor due to microbial metabolism and its control. Can J Microbiol 52(4):357–364 — *Staphylococcus epidermidis* convierte la leucina del sudor en ácido isovalérico. https://pubmed.ncbi.nlm.nih.gov/16699586/
 - Knols B.G.J. (1996). On human odour, malaria mosquitoes, and Limburger cheese. The Lancet 348:1322; Knols & De Jong (1996), Parasitology Today 12:159–161 (Ig Nobel 2006).
 - Plantas de los pies (y palmas): zonas con mayor densidad de glándulas sudoríparas. El número exacto por pie varía entre fuentes, por eso el guion no da cifra.
-- Hongos (pie de atleta) pueden contribuir al olor y la picazón: Cleveland Clinic.
+- Hongos (pie de atleta) como posible causa de olor con picazón: conocimiento médico general, no verificado con fuente en esta sesión.
 - Consejos (secar entre los dedos, alternar zapatos, medias que absorban, cambiarlas a diario): Cleveland Clinic, UPMC.
