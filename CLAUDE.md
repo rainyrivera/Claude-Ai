@@ -15,11 +15,9 @@ Rellena o corrige los campos marcados con `[POR CONFIRMAR]`. Las skills de `.cla
 - Cliente ideal: [POR CONFIRMAR]
 - Competidores conocidos (páginas de Facebook/Instagram): [POR CONFIRMAR]
 
-## Números de Meta Ads (30 ago – 11 nov 2026, nivel anuncio)
-- Gasto 283,83 USD · 10 compras · valor 170 USD · ROAS 0,60 (solo primer pago) · CPA 28,38 USD
-- CTR de enlace 4,24 % · clic → visita 70,4 % · visita → compra 1,20 %
-- "Pagos iniciados" sin datos → revisar el evento del píxel
-- Nomenclatura actual: `VD - n` (video), `IMG - n` (imagen)
+## Números de Meta Ads
+- No se guardan aquí: este repositorio es público. Pásale el CSV del Administrador de Anuncios a `vigilante-rentabilidad` en cada revisión.
+- Nomenclatura actual de anuncios: `VD - n` (video), `IMG - n` (imagen)
 
 ## Umbrales (calcular al confirmar los datos de arriba)
 - CPA de equilibrio: [POR CONFIRMAR]
