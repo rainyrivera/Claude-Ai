@@ -6,7 +6,7 @@ Rellena o corrige los campos marcados con `[POR CONFIRMAR]`. Las skills de `.cla
 - Qué vendo: comunidad en Skool "Workshop Vende Online + IA" (https://www.skool.com/rainyrivera/about). Enseña a investigar ofertas en otros mercados (Brasil, España), crear un producto digital/ebook con IA, páginas de venta y anuncios en Meta Ads. Incluye 4 clases en vivo al mes y 3 bonos.
 - Tipo: digital
 - Modelo de cobro: suscripción mensual en Skool
-- Precio: 27 USD/mes desde nov 2026 (antes 17 USD/mes). Plan: volver a 17 en Black Friday (27 nov 2026). Ver aviso legal sobre precios de referencia antes de anunciarlo como descuento.
+- Precio: 27 USD/mes desde nov 2026 (antes 17 USD/mes). Plan Black Friday: aviso desde el 13 nov; 17 USD/mes del 20 al 30 nov 2026; vuelve a 27 USD/mes el 1 dic. No anunciar "antes 27, ahora 17".
 - Costes por venta / comisiones de la plataforma: [POR CONFIRMAR]
 - Permanencia media de un miembro (meses): [POR CONFIRMAR con el panel de Skool; las reseñas visibles sugieren 1–2 meses]
 
