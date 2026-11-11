@@ -1,16 +1,14 @@
-# Guion (≈40–45 s) — ¿Por qué te da sicote?
+# Guion (≈40 s con la voz Relaxed) — ¿Por qué te da sicote?
 
-145 palabras.
+116 palabras.
 
 ¿Por qué te da sicote?
 
 Spoiler: no son tus pies… es lo que se come tu sudor.
 
-Las plantas de tus pies son de las zonas con más glándulas de sudor de todo tu cuerpo.
+Tus pies están llenos de glándulas de sudor. Y los encierras todo el día en zapatos: un buffet para bacterias.
 
-Y tú las encierras todo el día en zapatos. Calor, humedad, oscuridad… un buffet para bacterias.
-
-Científicos en Japón descubrieron que una bacteria de tu piel convierte ese sudor en ácido isovalérico: el olor a sicote.
+Una bacteria de tu piel convierte ese sudor en ácido isovalérico: el olor a sicote.
 
 ¿Y lo más loco?
 
@@ -18,13 +16,9 @@ Huele tan parecido a un queso, que un científico usó queso Limburger… para a
 
 No es que seas sucio. Es que tus pies son un buffet.
 
-Uno: sécate bien entre los dedos.
+Sécate entre los dedos. No repitas zapatos. Y cambia las medias cada día.
 
-Dos: no repitas zapatos; déjalos secar.
-
-Tres: medias que absorban el sudor, y cámbialas cada día.
-
-Y si no se va, ve al médico.
+Si no se va, ve al médico.
 
 Ahora dime la verdad… ¿tú, o alguien de tu casa?
 
