@@ -14,6 +14,7 @@ Sin esto no se puede hablar de rentabilidad. Pide:
 - CPA de equilibrio = precio − coste variable. ROAS de equilibrio = precio ÷ (precio − coste variable).
 - CPA objetivo (por defecto 80 % del de equilibrio).
 - Para leads/mensajes: tasa de cierre, y CPA objetivo por lead = margen × tasa de cierre.
+- Para **suscripciones** (Skool, membresías, apps): el "valor de conversión" que reporta Meta suele ser **solo el primer pago**. Pregunta los meses medios de permanencia y las comisiones de la plataforma. CPA de equilibrio conservador = cuota neta × 2–3 meses (o la permanencia real si la conocen). Pásalo al script con `--cpa-equilibrio`. Explica que el ROAS de Meta subestimará la rentabilidad real.
 
 Si el usuario no los da, haz el análisis con el **mejor caso** (coste variable = 0) y **dilo explícitamente**.
 

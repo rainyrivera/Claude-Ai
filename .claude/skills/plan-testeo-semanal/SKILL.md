@@ -17,6 +17,7 @@ Pide o calcula:
 - **ROAS de equilibrio** = precio ÷ margen de contribución.
 - **CPA objetivo**: por defecto, el 70–80 % del CPA de equilibrio, o el que diga el usuario.
 - Para **leads/mensajes/citas** (negocio local o servicios): CPA objetivo por lead = margen × tasa de cierre (ej. margen 200 × 20 % de cierre = 40 por lead).
+- Para **suscripciones** (comunidades tipo Skool, membresías, software): CPA de equilibrio conservador = cuota neta (después de comisiones) × 2–3 meses, o × meses reales de permanencia si se conocen. Ten en cuenta que el dinero se recupera mes a mes: comprueba que el usuario puede financiar ese desfase.
 - **Presupuesto semanal** disponible.
 
 Si el CPA de equilibrio es muy bajo (producto barato), dilo claramente: será difícil ser rentable solo con la primera venta, y conviene subir el ticket medio (packs, order bump, upsell) o contar con la recompra (LTV).
