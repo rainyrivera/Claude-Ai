@@ -244,7 +244,7 @@ const tubeM = new THREE.MeshStandardMaterial({ color: 0xc8506a, emissive: 0x5a14
 const gutTube = mesh(new THREE.CylinderGeometry(2.6, 2.6, 60, 48, 1, true), tubeM, false); gutTube.rotation.x = Math.PI / 2; gutTube.position.z = -22; gut.add(gutTube);
 for (let i = 0; i < 26; i++) { const r = mesh(new THREE.TorusGeometry(2.55, .22, 10, 48), new THREE.MeshStandardMaterial({ color: 0xd8607a, roughness: .7 }), false); r.position.z = 6 - i * 2.2; gut.add(r); }
 const gutLight = new THREE.PointLight(0xffc0d0, 14, 12, 1.4); gut.add(gutLight);
-const bubbles = []; for (let i = 0; i < 26; i++) { const b = sph(.18 + rnd() * .35, new THREE.MeshStandardMaterial({ color: 0xffffff, transparent: true, opacity: .28, roughness: .05, metalness: .1 }), 16); b.userData.p = V((rnd() - .5) * 3.2, (rnd() - .5) * 3.2, -2 - rnd() * 14); b.userData.s = rnd() * 6; gut.add(b); bubbles.push(b); }
+const bubbles = []; for (let i = 0; i < 26; i++) { const b = sph(.18 + rnd() * .35, new THREE.MeshStandardMaterial({ color: 0xffffff, transparent: true, opacity: .18, roughness: .05, metalness: .1 }), 16); b.userData.p = V((rnd() - .5) * 3.2, (rnd() - .5) * 3.2, -2 - rnd() * 14); b.userData.s = rnd() * 6; gut.add(b); bubbles.push(b); }
 const sulf = sph(.32, glow(0xffd23a, 2.4), 18); gut.add(sulf);
 const lblNo = label('CASI TODO: NO HUELE', '#ffffff', { size: 52 }); gut.add(lblNo);
 const lblS = label('AZUFRE', '#ffd23a', { size: 56 }); gut.add(lblS);
@@ -316,7 +316,7 @@ function animOffice(t, part) {
     seats.forEach(([c, x, z, ry], i) => {
       const turn = P(t, .7 + i * .12, .25);
       if (flee <= 0) { c.root.position.set(x, 0, z + .62); c.root.rotation.y = ry; pose(c, { ...TYPE(t + i, 1 - turn), headRy: (i ? 1 : -1) * -.7 * turn, emo: turn > .5 ? 'disgust' : 'neutral', look: [(i ? -1 : 1) * turn, 0], blinkOff: i }, t); }
-      else { const k = eio(flee); c.root.position.set(x + (i ? 1 : -1) * k * 3.2, 0, z + .62 + k * 1.2); c.root.rotation.y = (i ? 1 : -1) * Math.PI / 2; pose(c, { ...runPose(c, t + i, clamp(flee * 3)), emo: 'disgust' }, t); }
+      else { const k = eio(flee); c.root.position.set(x + (i ? 1 : -1) * k * 7, 0, z + .62 + k * 2.2); c.root.rotation.y = (i ? 1 : -1) * Math.PI / 2; pose(c, { ...runPose(c, t + i, clamp(flee * 3)), emo: 'disgust' }, t); }
     });
     cloudO.position.set(.55, .9, -.55); cloudAnim(cloudO, t, .45, .62, [.05, .1, -.05]); if (t > tLuis2 - .3) cloudO.scale.multiplyScalar(Math.max(.001, 1 - P(t, tLuis2 - .3, .4)));
     if (t > tSale - .1) { cloudO2.position.set(-.5, .95, -.6); cloudAnim(cloudO2, t, tSale + .1, .8, [-.05, .1, -.04]); if (t > tLuis2 - .3) cloudO2.scale.multiplyScalar(Math.max(.001, 1 - P(t, tLuis2 - .3, .4))); }
@@ -361,7 +361,7 @@ function animLab(t) {
 }
 function animGut(t) {
   const z = -(t - 21.2) * 1.15; gutLight.position.set(0, .5, z - 1);
-  bubbles.forEach((b, i) => { const p = b.userData.p; b.position.set(p.x + Math.sin(t + b.userData.s) * .15, p.y + Math.cos(t * .8 + b.userData.s) * .15, p.z + z * .2); b.visible = t < tPes + .6; });
+  bubbles.forEach((b, i) => { const p = b.userData.p; b.position.set(p.x + Math.sin(t + b.userData.s) * .15, p.y + Math.cos(t * .8 + b.userData.s) * .15, p.z + z - 1.5); b.visible = t < tPes + .6; });
   sulf.position.set(.45, -.1, z - 3.2); sulf.scale.setScalar((.8 + .15 * Math.sin(t * 6)) * eback(P(t, tCasi + .6, .4)) + .001); sulf.visible = t > tCasi + .5;
   popSprite(lblNo, t, tCasi + .1); lblNo.position.set(-.3, 1.35, z - 3.4); lblNo.material.opacity *= 1 - P(t, tPes - .2, .3);
   popSprite(lblS, t, tAzu - .1); lblS.position.set(.45, .55, z - 3.2);
@@ -376,7 +376,7 @@ function animKitchen(t) {
   luisK.root.position.set(-.3, 0, -1.2); luisK.root.rotation.y = .15;
   const write = Math.sin(t * 16) * .06 * (t < tPum ? 1 : 0), shock = P(t, tPum, .2), push = P(t, tBaj - .1, .4);
   pose(luisK, { armR: [-1.0, -.25, -1.3], armL: t > tBaj ? [-1.4 * (1 - P(t, tBaj + .6, .4)), .5, -.2] : [-.9 + write, .3, -1.6], headRx: t < tPum ? .25 : -.05, headRy: t > tPum ? -.5 * (1 - push) : 0, emo: t < tPum ? 'neutral' : t < tBaj ? 'surprised' : 'happy', look: [t > tPum && t < tBaj ? -.8 : 0, t < tPum ? -.6 : 0] }, t);
-  days.forEach((l, i) => { popSprite(l, t, tAno + .2 + i * .35); l.position.set(-.15, 2.65 - i * .27, -1.6); l.material.opacity *= 1 - P(t, tPum - .1, .2); });
+  days.forEach((l, i) => { popSprite(l, t, tAno + .2 + i * .35); l.position.set(.7, 2.75 - i * .38, -1.6); l.material.opacity *= 1 - P(t, tPum - .1, .2); });
   egg.position.set(-.9, 1.2 + (t > tPum ? Math.abs(Math.sin(t * 7)) * .06 : 0), -2.35); egg.rotation.z = t > tPum ? Math.sin(t * 20) * .15 * (1 - push) : 0;
   eggGlow.visible = t > tPum && t < tBaj + .3; eggGlow.scale.setScalar(1 + .2 * Math.sin(t * 10));
   popSprite(stamp, t, tPum + .05); stamp.position.set(-1.25, 1.62, -2.0); stamp.scale.multiplyScalar(.75); stamp.material.rotation = -.12; stamp.material.opacity *= 1 - P(t, tBaj - .2, .2);
