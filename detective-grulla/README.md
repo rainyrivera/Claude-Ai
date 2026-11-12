@@ -8,7 +8,7 @@ generar la voz están en `capitulo1.txt` … `capitulo4.txt`. Los números van e
 | 1 | 567 | ≈ 3:25–3:50 | ¿Por dónde empezarías? / ¿Qué no recuerda Julián? |
 | 2 | 562 | ≈ 3:25–3:50 | ¿Le creerías a Salcedo? / ¿Quién es el asesino? |
 | 3 | 584 | ≈ 3:30–3:55 | ¿Denunciarías a tu mejor amigo? / ¿Escucharías la grabación? |
-| 4 | ~600 | ≈ 3:40–4:05 | ¿Entregarías a tu hijo o lo protegerías? |
+| 4 | 571 | ≈ 3:30–3:50 | ¿Entregarías a tu hijo o lo protegerías? |
 
 \* Calculada con el ritmo real de la voz «David» en los videos anteriores (2,47–2,75 palabras por segundo).
 
