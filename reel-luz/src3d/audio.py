@@ -1,6 +1,6 @@
 # Cama musical sintetizada + efectos sincronizados con timing.json. Salida: music.wav, sfx.wav (48 kHz estéreo)
 import json, re, numpy as np, wave
-SR=48000; DUR=105.2; N=int(SR*DUR); rng=np.random.default_rng(3)
+SR=48000; DUR=107.8; N=int(SR*DUR); rng=np.random.default_rng(3)
 TIM=json.load(open('timing.json')); WORDS=TIM['words']
 norm=lambda s: re.sub(r'[¿?¡!.,:…]','',s.lower())
 def T(w,n=1):
@@ -86,6 +86,7 @@ add(clickb()*1.5,T('corta',2),.7); add(chime(880),T('corta',2)+.2,.35)
 add(pop_(600),T('hoyo'),.35); add(rise(1.6,800,200),T('física'),.25); add(chime(660),T('seguro'),.3)
 add(chime(1046),T('felicidades'),.45); add(chime(1318),T('felicidades')+.25,.35); add(clickb(),T('felicidades')+.1,.4)
 add(pop_(650),T('cuántas'),.35)
+add(whoosh(.5),103.8,.4); add(chime(1046),104.25,.45); add(chime(1318),104.5,.4); add(pop_(900),104.6,.4)
 def save(name,x):
     x=x/ max(1e-9,np.abs(x).max())*0.89
     w=wave.open(name,'wb'); w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR); w.writeframes((x*32767).astype('<i2').tobytes()); w.close()

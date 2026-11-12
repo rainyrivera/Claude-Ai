@@ -5,7 +5,9 @@ import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 
-const W = 1080, H = 1920, END = 105.2;
+const W = 1080, H = 1920, END = 107.8;
+const BRAND = 'Así Funciona Rai';
+const MASCOT = new Image(); MASCOT.src = 'mascota.png'; await new Promise(r => { MASCOT.onload = r; MASCOT.onerror = r; });
 const TIM = await (await fetch('timing.json')).json();
 const WORDS = TIM.words, PH = TIM.phrases;
 await Promise.all(['500 20px M', '800 20px M', '900 20px M', '500 20px J', '700 20px J'].map(f => document.fonts.load(f)));
@@ -381,14 +383,34 @@ function caption(t) {
   const k = eback(P(t, w.s - .03, .14)); g.save(); g.translate(540, 1020); g.scale(lerp(.85, 1, k), lerp(.85, 1, k));
   g.font = '900 74px M'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.lineJoin = 'round'; g.lineWidth = 14; g.strokeStyle = 'rgba(20,18,30,.9)'; g.shadowColor = 'rgba(0,0,0,.45)'; g.shadowBlur = 16; g.shadowOffsetY = 4; g.strokeText(word, 0, 0); g.shadowBlur = 0; g.shadowOffsetY = 0; g.fillStyle = key ? '#ffcc33' : '#ffffff'; g.fillText(word, 0, 0); g.restore();
 }
+// ---------- marca de agua y cierre SÍGUEME ----------
+function watermark(t) {
+  g.save(); g.globalAlpha = .62 * (1 - P(t, 104.1, .3)); g.font = '800 38px M'; const w = g.measureText(BRAND).width;
+  const x = W - 46 - w - 70, y = 128; g.fillStyle = 'rgba(10,14,28,.45)'; rrp(g, 0, x - 14, y - 32, w + 98, 64, 32); g.fill();
+  g.save(); g.beginPath(); g.arc(x + 22, y, 24, 0, 6.29); g.clip(); g.drawImage(MASCOT, x - 2, y - 24, 48, 48); g.restore();
+  g.fillStyle = '#ffffff'; g.textBaseline = 'middle'; g.fillText(BRAND, x + 56, y + 2); g.restore();
+}
+function followCTA(t) {
+  const st = 104.1; if (t < st) return; const a = P(t, st, .3);
+  g.save(); g.fillStyle = `rgba(6,10,24,${.72 * a})`; g.fillRect(0, 0, W, H);
+  const k = eback(P(t, st + .05, .45)); g.translate(540, 820); g.scale(k, k);
+  g.save(); g.beginPath(); g.arc(0, 0, 190, 0, 6.29); g.fillStyle = '#ffcc33'; g.fill(); g.beginPath(); g.arc(0, 0, 176, 0, 6.29); g.clip(); g.drawImage(MASCOT, -176, -176, 352, 352); g.restore();
+  g.textAlign = 'center'; g.textBaseline = 'middle'; g.lineJoin = 'round';
+  g.font = 'italic 900 128px M'; g.lineWidth = 22; g.strokeStyle = '#3a2405'; g.strokeText('¡SÍGUEME!', 0, 330); g.fillStyle = '#ffcc33'; g.fillText('¡SÍGUEME!', 0, 330);
+  g.font = '800 58px M'; g.fillStyle = '#ffffff'; g.fillText(BRAND, 0, 450);
+  const pb = .5 + .5 * Math.sin((t - st) * 6), bw = 420; g.fillStyle = '#3d7bff'; rrp(g, 0, -bw / 2, 520, bw, 104, 52); g.fill(); g.lineWidth = 6; g.strokeStyle = `rgba(255,255,255,${.4 + .4 * pb})`; g.stroke();
+  g.font = '900 52px M'; g.fillStyle = '#ffffff'; g.fillText('+ SEGUIR', 0, 574);
+  g.font = '700 38px M'; g.fillStyle = 'rgba(255,255,255,.85)'; g.fillText('Más videos de cómo funcionan las cosas', 0, 700);
+  g.restore();
+}
 // ---------- render ----------
 function renderAt(t) {
   seed = 7 + Math.floor(t * 30) * 13;
   camAt(t); animWorld(t);
   composer.render(); g.drawImage(glc, 0, 0);
   const vg = g.createRadialGradient(540, 960, 650, 540, 960, 1300); vg.addColorStop(0, 'rgba(0,0,0,0)'); vg.addColorStop(1, 'rgba(0,0,0,.28)'); g.fillStyle = vg; g.fillRect(0, 0, W, H);
-  overlayLabels(t); caption(t);
-  const fo = P(t, END - .4, .4); if (fo > 0) { g.fillStyle = `rgba(0,0,0,${fo})`; g.fillRect(0, 0, W, H); }
+  overlayLabels(t); if (t < 104.1) caption(t); watermark(t); followCTA(t);
+  const fo = P(t, END - .3, .3); if (fo > 0) { g.fillStyle = `rgba(0,0,0,${fo})`; g.fillRect(0, 0, W, H); }
 }
 window.renderAt = renderAt; window.END = END;
 window.frameJPG = (t, q = .92) => { renderAt(t); return out.toDataURL('image/jpeg', q).split(',')[1]; };
