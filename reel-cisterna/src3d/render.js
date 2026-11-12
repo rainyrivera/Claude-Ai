@@ -15,7 +15,7 @@ const srv = http.createServer((q, r) => { const f = path.join(root, decodeURICom
     const END = await pg.evaluate('window.END'), N = Math.round(END * 30);
     const ff = spawn('ffmpeg', ['-y', '-v', 'error', '-f', 'image2pipe', '-framerate', '30', '-c:v', 'mjpeg', '-i', '-', '-c:v', 'libx264', '-preset', 'medium', '-crf', '17', '-pix_fmt', 'yuv420p', a], { stdio: ['pipe', 'inherit', 'inherit'] });
     const t0 = Date.now();
-    for (let f = 0; f < N; f++) { const j = await pg.evaluate(t => window.frameJPG(t, .95), f / 30); if (!ff.stdin.write(Buffer.from(j, 'base64'))) await new Promise(r => ff.stdin.once('drain', r)); if (f % 150 === 0) console.log('frame', f, '/', N, ((Date.now() - t0) / 1000).toFixed(0) + 's'); }
+    for (let f = +(process.env.START || 0); f < N; f++) { const j = await pg.evaluate(t => window.frameJPG(t, .95), f / 30); if (!ff.stdin.write(Buffer.from(j, 'base64'))) await new Promise(r => ff.stdin.once('drain', r)); if (f % 150 === 0) console.log('frame', f, '/', N, ((Date.now() - t0) / 1000).toFixed(0) + 's'); }
     ff.stdin.end(); await new Promise(r => ff.on('close', r));
   }
   await br.close(); srv.close();
