@@ -274,7 +274,7 @@ const rcTex = canvasTex(360, 480); const RC_CV = rcTex.c; const receipt = new TH
 function drawReceipt(amount, stamp) { const x = rcTex.x; x.clearRect(0, 0, 360, 480); x.fillStyle = '#fbfbf6'; rrp(x, 0, 6, 6, 348, 468, 16); x.fill(); x.fillStyle = '#1b2440'; x.font = '900 34px M'; x.textAlign = 'center'; x.fillText('RECIBO DE LUZ', 180, 60); x.fillStyle = '#c8ccd6'; for (let i = 0; i < 5; i++) x.fillRect(40, 100 + i * 34, 200 + (i % 2) * 60, 12); x.fillStyle = '#1b2440'; x.font = '700 28px J'; x.fillText('TOTAL', 180, 310); x.font = '900 76px M'; x.fillStyle = stamp ? '#1aa86a' : '#d94a4a'; x.fillText('$' + Math.round(amount).toLocaleString('en-US'), 180, 385); if (stamp) { x.save(); x.translate(180, 440); x.rotate(-.12); x.strokeStyle = '#1aa86a'; x.lineWidth = 6; rrp(x, 0, -120, -28, 240, 52, 10); x.stroke(); x.font = '900 30px M'; x.fillStyle = '#1aa86a'; x.fillText('CASI EN CERO', 0, 12); x.restore(); } rcTex.tx.needsUpdate = true; }
 // flujo de energía (partículas)
 function Flow(points, color, n = 26) { const curve = new THREE.CatmullRomCurve3(points); const im = new THREE.InstancedMesh(new THREE.SphereGeometry(.06, 8, 6), new THREE.MeshBasicMaterial({ color }), n); im.frustumCulled = false; scene.add(im); const tube = M(new THREE.TubeGeometry(curve, 60, .022, 6), lp(0x222222), false); scene.add(tube); const o = new THREE.Object3D();
-  return { curve, im, tube, upd(t, on, { speed = .35, ac = false, rev = false, block = 1 } = {}) { tube.visible = on > 0; for (let i = 0; i < n; i++) { let u = ((t * speed + i / n) % 1); if (rev) u = 1 - u; const vis = on > 0 && u < block; const p = curve.getPointAt(Math.min(.999, u)); if (ac) { const tg = curve.getTangentAt(Math.min(.999, u)); const side = new THREE.Vector3(0, 1, 0).cross(tg).normalize(); if (side.lengthSq() < .1) side.set(1, 0, 0); p.addScaledVector(side, Math.sin(u * 60 - t * 8) * .07); p.y += Math.cos(u * 60 - t * 8) * .05; } o.position.copy(p); o.scale.setScalar(vis ? on : .0001); o.updateMatrix(); im.setMatrixAt(i, o.matrix); } im.instanceMatrix.needsUpdate = true; } }; }
+  return { curve, im, tube, upd(t, on, { speed = .35, ac = false, rev = false, block = 1, amp = 1 } = {}) { tube.visible = on > 0; for (let i = 0; i < n; i++) { let u = ((t * speed + i / n) % 1); if (rev) u = 1 - u; const vis = on > 0 && u < block; const p = curve.getPointAt(Math.min(.999, u)); if (ac) { const tg = curve.getTangentAt(Math.min(.999, u)); const side = new THREE.Vector3(0, 1, 0).cross(tg).normalize(); if (side.lengthSq() < .1) side.set(1, 0, 0); p.addScaledVector(side, Math.sin(u * 60 - t * 8) * .07 * amp); p.y += Math.cos(u * 60 - t * 8) * .05 * amp; } o.position.copy(p); o.scale.setScalar(vis ? on : .0001); o.updateMatrix(); im.setMatrixAt(i, o.matrix); } im.instanceMatrix.needsUpdate = true; } }; }
 const H2W = (v) => { const p = v.clone(); roofF.localToWorld(p); return p; };
 house.updateMatrixWorld(true);
 const roofOut = H2W(V(1.45, .2, .62));
@@ -284,7 +284,7 @@ const fHouse = Flow([V(1.4, 1.55, -1.8), V(.95, 1.5, -1.6), V(.86, .6, -1.1), V(
 const fBat = Flow([V(1.75, 1.08, -1.8), V(1.75, .9, -1.6), V(1.9, 1.2, -1.45)], 0x35d39a, 12);
 const fGrid = Flow([V(2.1, 1.55, -1.8), V(2.6, 1.5, -1.0), V(2.8, 1.45, 2.1), V(2.95, 2.9, 2.3), V(5.2, 4.2, 1.8), V(7.2, 5.62, 1.2)], 0x5ad1ff, 30);
 // cables explicativos directa / alterna
-const fDC = Flow([V(-2.2, 4.6, 4.2), V(0, 4.6, 4.2), V(2.2, 4.6, 4.2)], 0xffd23a, 20), fAC = Flow([V(-2.2, 3.2, 4.2), V(0, 3.2, 4.2), V(2.2, 3.2, 4.2)], 0x5ad1ff, 20);
+const fDC = Flow([V(-2.2, 4.6, 4.2), V(0, 4.6, 4.2), V(2.2, 4.6, 4.2)], 0xffd23a, 20), fAC = Flow(Array.from({ length: 41 }, (_, i) => V(-2.4 + i * .12, 3.15 + Math.sin(i * .62) * .28, 4.2)), 0x5ad1ff, 34);
 fDC.tube.material = fAC.tube.material = lp(0x444a58);
 const lblDC = arcLabel('DIRECTA'), lblAC = arcLabel('ALTERNA'); scene.add(lblDC, lblAC);
 const LBL = { inv: arcLabel('INVERSOR'), bat: arcLabel('BATERÍAS'), ctrl: arcLabel('CONTROLADOR DE CARGA', { size: 52 }), diodo: arcLabel('DIODOS DE DERIVACIÓN', { size: 52 }), ang: arcLabel('ÁNGULO = LATITUD', { size: 84 }), med: arcLabel('MEDIDOR BIDIRECCIONAL', { size: 50 }), fus: arcLabel('FUSIBLES'), tierra: arcLabel('TIERRA FÍSICA'), calor: arcLabel('CALOR', { color: '#ff7a3a' }) };
@@ -382,7 +382,7 @@ function animWorld(t) {
   fHouse.upd(t, on && t > K.inversor + .5 ? 1 : 0, { speed: .5, ac: true });
   fBat.upd(t, t > K.baterias + .3 ? 1 : 0, { speed: .45, rev: !day, block: t > K.sobrecarguen && t < 29.62 ? .55 : 1 });
   fGrid.upd(t, t > K.red - .3 && t < 66.81 ? 1 : 0, { speed: .35, ac: true });
-  const dcOn = t > K.directa - .3 && t < 12.82 ? 1 : 0; fDC.upd(t, dcOn, { speed: .35 }); fAC.upd(t, t > K.alterna - .3 && t < 12.82 ? 1 : 0, { speed: .35, ac: true });
+  const dcOn = t > K.directa - .3 && t < 12.82 ? 1 : 0; fDC.upd(t, dcOn, { speed: .35 }); fAC.upd(t, t > K.alterna - .3 && t < 12.82 ? 1 : 0, { speed: .22 });
   // etiquetas amarillas
   OVL.length = 0; const L = (s, at, end, pos, color) => { s.visible = false; if (t >= at && t < end) OVL.push({ text: s.userData.text, at, end, pos: pos.clone(), color: color || s.userData.color }); };
   L(lblDC, K.directa - .2, 12.82, V(0, 5.25, 4.2)); L(lblAC, K.alterna - .2, 12.82, V(0, 3.8, 4.2));
@@ -403,7 +403,7 @@ function overlayLabels(t) {
   for (const o of OVL) {
     const v = o.pos.clone().project(cam); if (v.z > 1) continue;
     let size = 86; g.font = `italic 900 ${size}px M`; let w = g.measureText(o.text).width + o.text.length; if (w > 860) { size = Math.floor(size * 860 / w); w = 860; }
-    let x = (v.x * .5 + .5) * W, y = (-v.y * .5 + .5) * H; x = clamp(x, w / 2 + 70, W - w / 2 - 70); y = clamp(y, 330, 1640); if (Math.abs(y - 1020) < 90) y = y < 1020 ? 930 : 1110;
+    let x = (v.x * .5 + .5) * W, y = (-v.y * .5 + .5) * H; x = clamp(x, w / 2 + 70, W - w / 2 - 70); y = clamp(y, 330, 1640); if (Math.abs(y - 1020) < 170) y = y < 1020 ? 850 : 1190;
     const k = Math.max(.001, eback(P(t, o.at, .3))) * (1 - P(t, o.end - .15, .15));
     drawArcText(o.text, x, y, size, o.color, k);
   }
