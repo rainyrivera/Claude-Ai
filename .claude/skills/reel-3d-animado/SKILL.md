@@ -5,8 +5,17 @@ description: Crear reels/TikToks verticales 9:16 animados en 3D con personajes e
 
 # Reel 3D animado — estilo aprobado por el usuario
 
+## 0. FORMATO ACTUAL DE LA CUENTA "Así Funciona Rai" (usar por defecto)
+- Desde el video del pozo/cisterna/regleta, el usuario trabaja el **Estilo B "construcción en corte"** (ver `estilo-construccion.md`).
+- **Plantilla: `plantilla-construccion/`** (base: `reel-luz/`). Copiarla a `reel-<tema>/src3d/` y seguir su README.
+- Guiones de **~1:45** (≈280–300 palabras con la voz "Relaxed"), segunda persona, "pero…" cada 5–8 s, final "Y felicidades…" + pregunta.
+- **Marca obligatoria en TODOS los videos:** marca de agua "Así Funciona Rai" + mascota arriba a la derecha durante todo el video, y cierre de 3,7 s.
+- **Siempre se entregan 2 archivos:** `_9x16.mp4` con **¡SÍGUEME!** (Instagram/Facebook/TikTok) y `_youtube_9x16.mp4` con **¡SUSCRÍBETE!** (YouTube). `build.sh` hace los dos.
+- Con cada video, entregar la descripción para Instagram/Facebook/TikTok y para YouTube (título + descripción + etiquetas), y guardarla en `reel-<tema>/descripcion.md`.
+- Mascota y perfiles: `marca/`.
+
+## Estilo anterior (A, personajes de arcilla con titulares): solo si el usuario lo pide
 Plantilla: `plantilla-reel-3d/` (ver su README). Video de referencia: `reel-eyaculacion-precoz/reel_eyaculacion_precoz_3d_9x16.mp4`.
-Para un video nuevo: copiar `plantilla-reel-3d/` a `<tema>/src3d/` y seguir su README.
 
 ## 1. Guion (antes del video)
 - ~40 s hablados: ≈100–115 palabras con la voz ElevenLabs "Relaxed" del usuario (~2,5 palabras/s); ≈120–135 con voces más rápidas. La voz ElevenLabs "Relaxed" del usuario va más lenta (137 palabras → 55 s): avisar.
@@ -19,7 +28,7 @@ Para un video nuevo: copiar `plantilla-reel-3d/` a `<tema>/src3d/` y seguir su R
 
 ## 2. Estilo visual (lo que el usuario aprobó)
 - **Regla del usuario:** mismos personajes, animaciones, textos y audio, pero los ESCENARIOS y situaciones se crean nuevos para cada video según su guion/voz. No reutilizar los escenarios de videos anteriores salvo que lo pida.
-- 1080×1920, 30 fps, MP4 H.264 + AAC, sin marcas de agua.
+- 1080×1920, 30 fps, MP4 H.264 + AAC. Marca de agua de la cuenta obligatoria (ver sección 0); ninguna otra.
 - **3D (three.js 0.169)**: personajes procedurales estilo arcilla (`makeChar`) con cara expresiva: emociones `neutral | worried | sad | happy | surprised | determined`, parpadeo, mirada, respiración. Variantes: bata (`coat`), lentes, portapapeles, pelo largo, modo rayos X (`xray`, órganos que brillan).
 - Un escenario por bloque (dormitorio nocturno con lámpara cálida y ventana con luna, laboratorio con multitud instanciada, consulta con pizarra, escenarios "vacíos" con disco de luz de color, etc.) y movimiento de cámara continuo (grúa, órbita, push-in). Corte = destello oscuro 0,2 s + whoosh.
 - Props expresivos: cronómetro 3D con textura dinámica, celular con pantalla, batería que se descarga, nube con relámpagos, anillo que acelera, pausa 3D, etiquetas sprite tipo píldora.

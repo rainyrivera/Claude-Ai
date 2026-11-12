@@ -11,4 +11,5 @@ Análisis del video de referencia (103,6 s, 716×1274, 30 fps):
 ## Marca de la cuenta (obligatorio en todos los videos)
 - Marca de agua todo el video: píldora semitransparente arriba a la derecha (y≈128) con la mascota (`marca/perfil_mascota_azul.png`) y el texto **"Así Funciona Rai"**.
 - Cierre de ~2,5 s después de la última palabra: fondo oscurecido, mascota en círculo amarillo, "¡SÍGUEME!" (amarillo con contorno), "Así Funciona Rai", botón "+ SEGUIR" y "Más videos de cómo funcionan las cosas". Alargar END y el audio (whole_dur/atrim) para que quepa.
-- Implementación de referencia: funciones `watermark()` y `followCTA()` en `reel-luz/src3d/main.js`.
+- Versión YouTube: mismo video con cierre **¡SUSCRÍBETE!** y botón rojo "SUSCRIBIRSE" (`?cta=yt` / `CTA=yt`).
+- Implementación: funciones `watermark()` y `followCTA()` en `plantilla-construccion/main.js`; `build.sh` genera las dos versiones.

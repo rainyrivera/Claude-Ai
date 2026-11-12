@@ -7,7 +7,7 @@ const srv = http.createServer((q, r) => { const f = path.join(root, decodeURICom
 (async () => {
   const br = await chromium.launch({ args: ['--enable-unsafe-swiftshader', '--use-angle=swiftshader', '--ignore-gpu-blocklist'] }); const pg = await br.newPage({ viewport: { width: 1080, height: 1920 } });
   pg.on('console', m => console.log('PAGE:', m.text())); pg.on('pageerror', e => console.log('ERR:', e.message));
-  await pg.goto('http://localhost:8767/index.html'); await pg.waitForFunction('window.READY === true', null, { timeout: 180000 });
+  await pg.goto('http://localhost:8767/index.html' + (process.env.CTA ? '?cta=' + process.env.CTA : '')); await pg.waitForFunction('window.READY === true', null, { timeout: 180000 });
   if (mode === 'preview') {
     fs.mkdirSync(b, { recursive: true });
     for (const t of a.split(',').map(Number)) { const j = await pg.evaluate(t => window.frameJPG(t, .9), t); fs.writeFileSync(path.join(b, `p_${t.toFixed(2)}.jpg`), Buffer.from(j, 'base64')); }

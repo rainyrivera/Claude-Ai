@@ -7,6 +7,9 @@ import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 
 const W = 1080, H = 1920, END = 107.8;
 const BRAND = 'Así Funciona Rai';
+// Cierre: ?cta=yt → versión YouTube (¡SUSCRÍBETE!); por defecto Instagram/Facebook/TikTok (¡SÍGUEME!)
+const YT = new URLSearchParams(location.search).get('cta') === 'yt';
+const CTA = YT ? { big: '¡SUSCRÍBETE!', btn: 'SUSCRIBIRSE', col: '#ff2d3d', bw: 560 } : { big: '¡SÍGUEME!', btn: '+ SEGUIR', col: '#3d7bff', bw: 420 };
 const MASCOT = new Image(); MASCOT.src = 'mascota.png'; await new Promise(r => { MASCOT.onload = r; MASCOT.onerror = r; });
 const TIM = await (await fetch('timing.json')).json();
 const WORDS = TIM.words, PH = TIM.phrases;
@@ -396,10 +399,11 @@ function followCTA(t) {
   const k = eback(P(t, st + .05, .45)); g.translate(540, 820); g.scale(k, k);
   g.save(); g.beginPath(); g.arc(0, 0, 190, 0, 6.29); g.fillStyle = '#ffcc33'; g.fill(); g.beginPath(); g.arc(0, 0, 176, 0, 6.29); g.clip(); g.drawImage(MASCOT, -176, -176, 352, 352); g.restore();
   g.textAlign = 'center'; g.textBaseline = 'middle'; g.lineJoin = 'round';
-  g.font = 'italic 900 128px M'; g.lineWidth = 22; g.strokeStyle = '#3a2405'; g.strokeText('¡SÍGUEME!', 0, 330); g.fillStyle = '#ffcc33'; g.fillText('¡SÍGUEME!', 0, 330);
+  let fs = 128; g.font = `italic 900 ${fs}px M`; const mw = g.measureText(CTA.big).width; if (mw > 940) { fs = Math.floor(fs * 940 / mw); g.font = `italic 900 ${fs}px M`; }
+  g.lineWidth = 22 * fs / 128; g.strokeStyle = '#3a2405'; g.strokeText(CTA.big, 0, 330); g.fillStyle = '#ffcc33'; g.fillText(CTA.big, 0, 330);
   g.font = '800 58px M'; g.fillStyle = '#ffffff'; g.fillText(BRAND, 0, 450);
-  const pb = .5 + .5 * Math.sin((t - st) * 6), bw = 420; g.fillStyle = '#3d7bff'; rrp(g, 0, -bw / 2, 520, bw, 104, 52); g.fill(); g.lineWidth = 6; g.strokeStyle = `rgba(255,255,255,${.4 + .4 * pb})`; g.stroke();
-  g.font = '900 52px M'; g.fillStyle = '#ffffff'; g.fillText('+ SEGUIR', 0, 574);
+  const pb = .5 + .5 * Math.sin((t - st) * 6), bw = CTA.bw; g.fillStyle = CTA.col; rrp(g, 0, -bw / 2, 520, bw, 104, 52); g.fill(); g.lineWidth = 6; g.strokeStyle = `rgba(255,255,255,${.4 + .4 * pb})`; g.stroke();
+  g.font = '900 52px M'; g.fillStyle = '#ffffff'; g.fillText(CTA.btn, 0, 574);
   g.font = '700 38px M'; g.fillStyle = 'rgba(255,255,255,.85)'; g.fillText('Más videos de cómo funcionan las cosas', 0, 700);
   g.restore();
 }
