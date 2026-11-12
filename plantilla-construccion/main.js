@@ -7,7 +7,7 @@ import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
 
 const W = 1080, H = 1920, END = 107.8;   // END = última palabra + 3,7 s (cierre)
 const CTA_ST = END - 3.7;               // inicio del cierre SÍGUEME/SUSCRÍBETE
-const BRAND = 'Así Funciona Rai';
+const BRAND = 'Así funciona con Rai';
 // Cierre: ?cta=yt → versión YouTube (¡SUSCRÍBETE!); por defecto Instagram/Facebook/TikTok (¡SÍGUEME!)
 const YT = new URLSearchParams(location.search).get('cta') === 'yt';
 const CTA = YT ? { big: '¡SUSCRÍBETE!', btn: 'SUSCRIBIRSE', col: '#ff2d3d', bw: 560 } : { big: '¡SÍGUEME!', btn: '+ SEGUIR', col: '#3d7bff', bw: 420 };

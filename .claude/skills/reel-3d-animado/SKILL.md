@@ -5,11 +5,11 @@ description: Crear reels/TikToks verticales 9:16 animados en 3D con personajes e
 
 # Reel 3D animado — estilo aprobado por el usuario
 
-## 0. FORMATO ACTUAL DE LA CUENTA "Así Funciona Rai" (usar por defecto)
+## 0. FORMATO ACTUAL DE LA CUENTA "Así funciona con Rai" (usar por defecto)
 - Desde el video del pozo/cisterna/regleta, el usuario trabaja el **Estilo B "construcción en corte"** (ver `estilo-construccion.md`).
 - **Plantilla: `plantilla-construccion/`** (base: `reel-luz/`). Copiarla a `reel-<tema>/src3d/` y seguir su README.
 - Guiones de **~1:45** (≈280–300 palabras con la voz "Relaxed"), segunda persona, "pero…" cada 5–8 s, final "Y felicidades…" + pregunta.
-- **Marca obligatoria en TODOS los videos:** marca de agua "Así Funciona Rai" + mascota arriba a la derecha durante todo el video, y cierre de 3,7 s.
+- **Marca obligatoria en TODOS los videos:** marca de agua "Así funciona con Rai" + mascota arriba a la derecha durante todo el video, y cierre de 3,7 s.
 - **Siempre se entregan 2 archivos:** `_9x16.mp4` con **¡SÍGUEME!** (Instagram/Facebook/TikTok) y `_youtube_9x16.mp4` con **¡SUSCRÍBETE!** (YouTube). `build.sh` hace los dos.
 - Con cada video, entregar la descripción para Instagram/Facebook/TikTok y para YouTube (título + descripción + etiquetas), y guardarla en `reel-<tema>/descripcion.md`.
 - Mascota y perfiles: `marca/`.

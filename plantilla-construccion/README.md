@@ -1,9 +1,9 @@
-# Plantilla "Así Funciona Rai" — Estilo B (construcción en corte), 9:16
+# Plantilla "Así funciona con Rai" — Estilo B (construcción en corte), 9:16
 
 Base: video de la regleta/luz (`reel-luz/`). Es el formato actual de la cuenta.
 
 ## Lo que ya trae (no quitar)
-- Marca de agua **"Así Funciona Rai"** con la mascota, arriba a la derecha, todo el video (`watermark()`).
+- Marca de agua **"Así funciona con Rai"** con la mascota, arriba a la derecha, todo el video (`watermark()`).
 - Cierre de 3,7 s: **¡SÍGUEME!** + botón "+ SEGUIR" (Instagram/Facebook/TikTok) o **¡SUSCRÍBETE!** + "SUSCRIBIRSE" (YouTube) (`followCTA()`, `?cta=yt`).
 - Subtítulos de una palabra (palabras clave en amarillo), etiquetas amarillas curvas en 3D, cámara con movimientos suaves, SFX sincronizados, música a −38 dB, mezcla −14 LUFS.
 
