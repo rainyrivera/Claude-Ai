@@ -244,7 +244,7 @@ const seal = new THREE.Group(); { seal.add(at(M(new THREE.BoxGeometry(1.9, .14, 
 const sealSect = SECT(1.9, .5, 0xa8acb6, .08);
 const dirtyDrops = []; for (let i = 0; i < 10; i++) { const d = add(M(new THREE.SphereGeometry(.05, 6, 4), new THREE.MeshBasicMaterial({ color: 0x8a6a3a }), false)); dirtyDrops.push(d); }
 // frasco de análisis
-const jar = new THREE.Group(); { jar.add(M(new THREE.CylinderGeometry(.12, .12, .4, 14), new THREE.MeshStandardMaterial({ color: 0xe8f6ff, transparent: true, opacity: .45, roughness: .05 }), false)); jar.add(at(M(new THREE.CylinderGeometry(.1, .1, .3, 14), new THREE.MeshStandardMaterial({ color: 0x5ac0ff, transparent: true, opacity: .8 }), false), 0, -.04, 0)); jar.add(at(M(new THREE.CylinderGeometry(.13, .13, .07, 14), lp(0xffffff)), 0, .22, 0)); } scene.add(jar);
+const jar = new THREE.Group(); { jar.add(M(new THREE.CylinderGeometry(.16, .16, .5, 16), new THREE.MeshStandardMaterial({ color: 0xe8f6ff, transparent: true, opacity: .7, roughness: .05 }), false)); jar.add(at(M(new THREE.CylinderGeometry(.14, .14, .36, 16), new THREE.MeshStandardMaterial({ color: 0x2f9be8, emissive: 0x0f4f8a, emissiveIntensity: .4 }), false), 0, -.05, 0)); jar.add(at(M(new THREE.CylinderGeometry(.17, .17, .08, 16), lp(0xffffff)), 0, .28, 0)); const tag = M(new THREE.BoxGeometry(.2, .12, .01), lp(0xffffff), false); tag.position.set(0, 0, .16); jar.add(tag); } scene.add(jar);
 // personaje: dueño con pala / vaso
 const owner = makeChar({ shirt: 0xff8a3d, pants: 0x2b3350 }); scene.add(owner.root);
 const shovel = new THREE.Group(); { shovel.add(at(M(new THREE.CylinderGeometry(.03, .03, 1.2, 6), lp(0x8a5a3a)), 0, -.5, 0)); shovel.add(at(rbox(.26, .32, .03, .02, lp(0x9aa2b0, { metalness: .5 })), 0, -1.2, 0)); } owner.hand[1].add(shovel);
@@ -288,9 +288,9 @@ const SHOTS = [
   [K.filtro - .15, 44.2, [3.5, 1.5, 6.7], [3.2, 1.35, 6.1], [1.9, .6, 3.2], [1.9, .6, 3.2]],
   [44.2, 47.8, [3.6, 1.6, 6.8], [3.3, 1.45, 6.2], [2.0, .8, 3.0], [2.0, .8, 3.0]],
   [47.8, 55.3, [2.0, -2.0, 15.5], [2.0, -2.3, 14.6], [2.0, -3.4, FZ], [2.0, -3.6, FZ]],
-  [55.3, 61.8, [4.2, -1.2, 20], [4.4, -1.4, 19.2], [4.2, -2.4, FZ], [4.4, -2.6, FZ]],
+  [55.3, 61.8, [4.75, -1.2, 23.6], [4.75, -1.4, 23.0], [4.75, -2.4, FZ], [4.75, -2.6, FZ]],
   [61.8, 65.8, [1.8, 1.9, 8.2], [1.4, 1.6, 7.4], [0, .1, 3.6], [0, .1, 3.6]],
-  [65.8, 68.7, [3.2, 1.5, 6.2], [3.0, 1.4, 5.7], [2.0, 1.0, 3.2], [2.0, 1.0, 3.2]],
+  [65.8, 68.7, [3.9, 1.7, 6.4], [3.7, 1.55, 5.9], [2.7, 1.0, 3.3], [2.7, 1.0, 3.3]],
   [68.7, 77, [8, 6, 13.5], [-5, 6.8, 12.5], [-1.5, .6, 1.5], [-1.5, .6, 1.5]],
 ];
 function camAt(t) { const s = SHOTS.find(s => t >= s[0] && t < s[1]) || SHOTS[SHOTS.length - 1]; const k = eio(clamp((t - s[0]) / (s[1] - s[0]))); cam.position.copy(V(...s[2]).lerp(V(...s[3]), k)); cam.fov = 50; cam.updateProjectionMatrix(); cam.lookAt(V(...s[4]).lerp(V(...s[5]), k)); }
@@ -337,7 +337,7 @@ function animWorld(t) {
   const sOn = t > K.concreto - .4; seal.visible = sOn; seal.scale.set(1, Math.max(.001, eout(P(t, K.concreto - .4, .7))), 1); sealSect.visible = sOn; sectY(sealSect, .25 * eout(P(t, K.concreto - .4, .7)), -.5); sealSect.scale.x = 1;
   dirtyDrops.forEach((dd, i) => { const ph = (t * 1.2 + i / dirtyDrops.length) % 1; dd.visible = t > 62.3 && t < 65.8; const x = (i % 2 ? 1 : -1) * (.2 + (i % 5) * .15); dd.position.set(x * (1 + (ph > .6 ? (ph - .6) * 4 : 0)), 1.6 - Math.min(ph, .6) * 2.4 + (ph > .6 ? Math.sin((ph - .6) * 7.8) * .3 : 0), FZ - .3 + (i % 3) * .1); });
   // frasco de análisis
-  jar.visible = t > K.analizar - .3 && t < 68.7; jar.position.set(2.0, 1.05 + Math.sin(t * 2) * .03, 3.25); jar.rotation.z = Math.sin(t * 3) * .1; jar.scale.setScalar(Math.max(.001, eback(P(t, K.analizar - .3, .4))));
+  jar.visible = t > K.analizar - .3 && t < 68.7; jar.position.set(2.95, 1.25 + Math.sin(t * 2) * .03, 3.55); jar.rotation.z = Math.sin(t * 3) * .1; jar.scale.setScalar(Math.max(.001, eback(P(t, K.analizar - .3, .4))));
   // electricidad de la bomba
   const bOn = t > K.luz - .3; bolts.visible = bOn; for (let i = 0; i < 16; i++) { const u = (t * .6 + i / 16) % 1; tmp.position.copy(cableCurve.getPointAt(u)); tmp.scale.setScalar(bOn ? 1.2 : .001); tmp.updateMatrix(); bolts.setMatrixAt(i, tmp.matrix); } bolts.instanceMatrix.needsUpdate = true;
   // personaje
@@ -354,7 +354,7 @@ function animWorld(t) {
   L(LBL.tubo, K.revest, 13.9, V(0, .9, FZ)); L(LBL.seca, K.seca - .1, 17.7, V(0, -5.0, FZ), '#e8c08a'); L(LBL.manto, K.freatico - .3, 26.3, V(0, -5.0, FZ), '#7fd6ff');
   L(LBL.bomba, K.bomba1, 35.9, V(0, -2.2, FZ)); L(LBL.rejilla, K.rejilla - .2, K.filtro - .15, V(0, -5.6, FZ)); L(LBL.filtro, K.filtro, 44.2, V(1.65, 1.15, 3.25));
   L(LBL.fosa, K.septica, 55.3, V(septic.position.x, -1.0, FZ)); L(LBL.m15, K.quince - .2, 61.8, V((x1 + x2) / 2, -.2, FZ)); L(LBL.sello, K.concreto, 65.8, V(0, 1.0, FZ - .3));
-  L(LBL.anal, K.analizar, 68.7, V(2.0, 1.6, 3.25)); L(LBL.luz, K.luz - .1, 77, V(-2.5, 1.8, 2));
+  L(LBL.anal, K.analizar, 68.7, V(2.6, 1.9, 3.4)); L(LBL.luz, K.luz - .1, 77, V(-2.5, 1.8, 2));
 }
 // ---------- subtítulos de una palabra ----------
 const KEYW = new Set(['revestimiento', 'freático', 'manto', 'bomba', 'sumergible', 'grava', 'rejilla', 'filtro', 'séptica', 'fosa', 'quince', 'concreto', 'analizar', 'felicidades', 'gratis', 'casi', 'turbia', 'enfermar']);
