@@ -9,7 +9,7 @@ Aquí ves por dentro cómo funciona: la laminita de metal que se calienta y se d
 👉 ¿Cuántas cosas tienes conectadas en tu regleta ahora mismo? Te leo en los comentarios 👇
 📌 Guárdalo y compártelo con quien conecta todo en el mismo enchufe.
 
-Sígueme en @Así Funciona Rai para ver cómo funcionan las cosas 🏠🔧
+Sígueme 👉 Así Funciona Rai, para ver cómo funcionan las cosas 🏠🔧
 
 #asifunciona #electricidad #regleta #seguridadenelhogar #pastilla #breaker #cortocircuito #tipsdecasa #comofunciona #aprendeentiktok #reels
 
