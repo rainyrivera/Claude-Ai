@@ -6,8 +6,8 @@ Los textos para la voz están en `capitulo1.txt` … `capitulo4.txt`.
 | Capítulo | Palabras | Duración estimada* |
 |---|---|---|
 | 1 | 372 | ≈ 2:25–2:35 |
-| 2 | 366 | ≈ 2:20–2:30 |
-| 3 | 361 | ≈ 2:20–2:30 |
+| 2 | 397 | ≈ 2:35–2:45 |
+| 3 | 380 | ≈ 2:25–2:40 |
 | 4 | 404 | ≈ 2:35–2:50 |
 
 \* Calculada con el ritmo real de la voz «Will» en «La grulla de papel» (2,40–2,59 palabras por segundo).
