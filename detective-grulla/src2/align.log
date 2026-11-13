@@ -1,0 +1,107 @@
+106 segs
+  0.03-  0.90 (0.87 pred 0.49) Dos muertos,
+  1.50-  2.37 (0.87 pred 0.49) dos grullas
+  2.78-  5.74 (2.96 pred 2.35) de papel y un mensaje para el detective:
+  6.38-  7.50 (1.12 pred 1.37) «¿Todavía no te acuerdas?».
+  8.16-  9.79 (1.63 pred 1.68) Alguien está jugando con él.
+ 10.41- 11.48 (1.07 pred 0.98) La grulla de papel.
+ 12.15- 12.99 (0.84 pred 0.75) Capítulo dos.
+ 13.72- 16.75 (3.03 pred 2.71) Julián vuelve a leer el mensaje una y otra vez.
+ 17.27- 18.43 (1.16 pred 1.24) La letra es ordenada,
+ 18.75- 19.64 (0.89 pred 0.75) casi perfecta.
+ 20.25- 22.04 (1.79 pred 1.99) Quien la escribió no tenía prisa.
+ 22.60- 23.72 (1.12 pred 1.11) Y no tenía miedo.
+ 24.42- 25.25 (0.83 pred 1.06) En la comisaría,
+ 25.53- 27.96 (2.43 pred 2.22) Rivas mira la grulla y se pone pálido.
+ 28.62- 29.91 (1.29 pred 1.24) «Esto es personal, Julián.
+ 30.38- 31.37 (0.99 pred 1.37) Alguien de tu pasado».
+ 32.12- 34.59 (2.47 pred 2.17) Juntos revisan los casos antiguos de Julián.
+ 35.08- 36.08 (1.00 pred 1.24) Y aparece un nombre:
+ 36.63- 37.80 (1.17 pred 0.88) Ernesto Salcedo.
+ 38.49- 40.87 (2.38 pred 2.40) Julián lo metió en la cárcel hace doce años.
+ 41.37- 43.09 (1.72 pred 1.73) Salió en libertad hace dos meses.
+ 43.50- 46.04 (2.54 pred 2.75) Y el día de su condena le gritó frente a todos:
+ 46.55- 48.57 (2.02 pred 1.95) «Te voy a quitar lo que más quieres».
+ 49.22- 50.26 (1.04 pred 1.11) Lo citan a declarar.
+ 50.95- 52.27 (1.32 pred 1.20) Salcedo entra tranquilo,
+ 52.65- 53.25 (0.60 pred 0.67) se sienta y
+ 53.43- 53.98 (0.55 pred 0.44) sonríe.
+ 54.59- 55.53 (0.94 pred 0.80) «¿Grullas de papel?
+ 55.93- 56.50 (0.57 pred 0.44) Inspector,
+ 56.72- 57.86 (1.14 pred 1.24) yo apenas sé escribir».
+ 58.50- 61.02 (2.52 pred 2.79) Tiene una coartada para la noche de Clara Montes:
+ 61.35- 62.09 (0.74 pred 0.98) estaba en un bar,
+ 62.33- 63.67 (1.34 pred 1.29) y diez personas lo vieron.
+ 64.22- 66.95 (2.73 pred 2.84) Pero para la noche de Ignacio Bravo no tiene nada.
+ 67.41- 68.95 (1.54 pred 1.91) Dice que estaba solo en su casa,
+ 69.13- 69.65 (0.52 pred 0.44) durmiendo.
+ 70.29- 71.42 (1.13 pred 1.42) Ahora te pregunto a ti.
+ 71.94- 73.15 (1.21 pred 1.37) ¿Le creerías a Salcedo?
+ 73.53- 75.91 (2.38 pred 2.44) ¿Lo dejarías ir o lo seguirías vigilando?
+ 76.34- 77.53 (1.19 pred 1.37) Déjalo en los comentarios.
+ 78.24- 79.65 (1.41 pred 1.37) Julián decide dejarlo ir,
+ 80.02- 82.66 (2.64 pred 2.84) pero manda a un agente a seguirlo día y noche.
+ 83.19- 83.94 (0.75 pred 0.62) Mientras tanto,
+ 84.17- 85.68 (1.51 pred 1.55) el forense trae otro dato:
+ 86.20- 90.41 (4.21 pred 4.03) el sedante que mató a las dos víctimas desapareció del Hospital San Rafael.
+ 90.96- 92.39 (1.43 pred 1.37) Faltan seis frascos. Alguien
+ 92.88- 95.58 (2.70 pred 2.71) con acceso a la farmacia del hospital se los llevó.
+ 96.27- 97.63 (1.36 pred 1.29) Esa noche, en la cena,
+ 98.00- 99.89 (1.89 pred 1.73) Julián lo comenta casi sin pensar.
+100.51-102.88 (2.37 pred 2.22) «En tu hospital faltan seis frascos de sedante».
+103.52-107.30 (3.78 pred 3.72) Mateo hace prácticas en el Hospital San Rafael tres veces por semana.
+107.81-110.40 (2.59 pred 2.53) Levanta la vista del plato y responde con calma:
+110.99-112.53 (1.54 pred 1.73) «Eso pasa todo el tiempo, papá.
+112.97-113.82 (0.85 pred 0.80) Se pierden cosas.
+114.15-115.68 (1.53 pred 1.55) Nadie lleva bien el inventario».
+116.40-117.22 (0.82 pred 0.75) Julián asiente.
+117.71-118.30 (0.59 pred 0.75) Tiene sentido.
+118.84-120.24 (1.40 pred 1.37) Mateo recoge los platos,
+120.53-122.53 (2.00 pred 2.44) le pone una mano en el hombro y le dice:
+123.08-124.02 (0.94 pred 1.02) «Deberías descansar.
+124.43-125.11 (0.68 pred 0.80) Te ves cansado».
+125.74-127.24 (1.50 pred 1.24) Pero Julián no descansa.
+127.73-129.27 (1.54 pred 1.47) Va a casa de Clara Montes.
+129.69-130.79 (1.10 pred 1.46) Era enfermera jubilada.
+131.09-131.73 (0.64 pred 0.75) Vivía sola.
+132.25-135.25 (3.00 pred 3.24) En su mesa de noche hay una Biblia y una foto de ella,
+135.45-136.00 (0.55 pred 0.49) más joven,
+136.21-137.42 (1.21 pred 1.47) en la puerta de un juzgado.
+137.95-140.44 (2.49 pred 2.22) Detrás de la foto, escrito a mano, dice:
+140.99-141.99 (1.00 pred 0.80) «Por fin terminó».
+142.71-144.39 (1.68 pred 1.60) Julián busca la fecha del juicio.
+144.87-146.02 (1.15 pred 0.98) Fue hace seis años.
+146.45-150.06 (3.61 pred 3.72) Pero el expediente fue archivado y nadie recuerda de qué se trataba.
+150.62-151.36 (0.74 pred 0.49) Seis años.
+152.00-153.49 (1.49 pred 0.98) Otra vez seis años.
+154.18-155.79 (1.61 pred 1.82) Julián regresa a la comisaría.
+156.27-160.53 (4.26 pred 4.66) El agente que sigue a Salcedo le informa que no salió de su casa en toda la noche.
+161.01-162.88 (1.87 pred 1.69) Si hay un nuevo crimen, no fue él.
+163.46-165.27 (1.81 pred 2.13) Y a las cinco y media de la mañana,
+165.51-166.57 (1.06 pred 0.98) hay un nuevo crimen.
+167.09-167.99 (0.90 pred 0.62) Andrés Lagos,
+168.18-169.83 (1.65 pred 1.99) un abogado conocido en la ciudad,
+170.09-171.79 (1.70 pred 1.68) aparece muerto en su despacho.
+172.03-173.42 (1.39 pred 1.37) Sentado en su escritorio.
+173.96-174.79 (0.83 pred 0.62) Sin heridas.
+175.26-176.96 (1.70 pred 1.95) Con una grulla de papel en la mano.
+177.61-178.49 (0.88 pred 0.80) El número tres.
+178.92-180.05 (1.13 pred 1.16) Y dentro de la grulla,
+180.25-181.38 (1.13 pred 0.93) un nuevo mensaje.
+181.86-183.31 (1.45 pred 1.16) Esta vez es más largo:
+183.92-185.31 (1.39 pred 0.93) «Seis años, inspector.
+185.87-187.22 (1.35 pred 1.20) Ella sigue esperando.
+187.70-189.39 (1.69 pred 1.29) Y tú dejaste de buscar».
+190.13-191.61 (1.48 pred 1.24) Julián tiene que sentarse.
+192.21-193.98 (1.77 pred 1.55) Hace seis años murió Elena.
+194.49-196.51 (2.02 pred 2.26) Y él dejó de buscar a quien la mató.
+197.07-199.19 (2.12 pred 2.17) El asesino no está matando al azar.
+199.61-201.03 (1.42 pred 1.64) Está siguiendo una lista.
+201.47-204.36 (2.89 pred 3.02) Y esa lista empieza la noche en que murió su esposa.
+204.98-206.62 (1.64 pred 2.04) ¿Quién crees tú que es el asesino?
+207.18-207.87 (0.69 pred 0.44) ¿Salcedo,
+208.11-209.25 (1.14 pred 1.51) alguien de la policía…
+209.66-211.76 (2.10 pred 2.26) o alguien que todavía no conocemos?
+212.21-213.36 (1.15 pred 1.37) Déjalo en los comentarios.
+213.77-215.27 (1.50 pred 1.68) Continúa en el capítulo tres.
+215.57-216.54 (0.97 pred 1.06) Sígueme para verlo.
