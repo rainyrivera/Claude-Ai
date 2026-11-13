@@ -6,7 +6,7 @@ Los textos para la voz están en `capitulo1.txt` … `capitulo4.txt`.
 | Capítulo | Palabras | Duración estimada* |
 |---|---|---|
 | 1 | 563 | ≈ 3:40–3:55 |
-| 2 | 575 | ≈ 3:40–4:00 |
+| 2 | 577 | ≈ 3:40–4:00 |
 | 3 | 551 | ≈ 3:35–3:50 |
 | 4 | 576 | ≈ 3:40–4:00 |
 
