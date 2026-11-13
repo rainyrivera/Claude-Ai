@@ -1,0 +1,581 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+html,body{margin:0;padding:0;width:1080px;height:1920px;overflow:hidden;background:#cfeedd;}
+#root{position:relative;width:1080px;height:1920px;overflow:hidden;font-family:Inter,sans-serif;}
+#scene,#ovs{position:absolute;left:0;top:0;width:1080px;height:1920px;}
+#ov{position:absolute;left:0;top:0;width:1080px;height:1920px;}
+.band{position:absolute;left:0;right:0;top:240px;height:190px;background:linear-gradient(180deg,rgba(40,95,70,0) 0%,rgba(40,95,70,.30) 18%,rgba(40,95,70,.30) 82%,rgba(40,95,70,0) 100%);}
+.cap{position:absolute;left:60px;right:60px;top:240px;height:190px;display:flex;flex-wrap:wrap;align-content:center;justify-content:center;gap:4px 18px;font-weight:800;font-size:68px;line-height:84px;letter-spacing:-0.5px;}
+.w{color:rgba(255,255,255,.42);text-shadow:0 3px 0 rgba(0,0,0,.10);padding:0 8px;border-radius:14px;}
+.w.on{color:#fff;text-shadow:0 4px 0 rgba(0,0,0,.22);}
+.w.cur{color:#fff;background:#7c5cff;box-shadow:0 6px 0 #4b33c4;text-shadow:none;}
+.pill{position:absolute;transform-origin:center;white-space:nowrap;font-weight:900;font-size:46px;letter-spacing:.5px;color:#fff;padding:12px 30px;border-radius:999px;box-shadow:0 7px 0 rgba(0,0,0,.25);}
+.red{background:#ff3b4a;box-shadow:0 7px 0 #b51d2a;}
+.blue{background:#3d6bff;box-shadow:0 7px 0 #2241b5;}
+.green{background:#22c55e;box-shadow:0 7px 0 #138a3e;}
+.violet{background:#7c5cff;box-shadow:0 7px 0 #4b33c4;}
+.gray{background:#7d8a84;box-shadow:0 7px 0 #56615c;}
+.dark{background:#17171c;box-shadow:0 7px 0 #000;}
+.badge{position:absolute;font-weight:900;font-size:56px;color:#fff;padding:12px 38px;border-radius:999px;border:5px solid #fff;letter-spacing:1px;}
+.card{position:absolute;width:190px;height:190px;border-radius:40px;background:#fff;box-shadow:0 10px 0 rgba(0,0,0,.15);display:flex;align-items:center;justify-content:center;font-size:110px;font-family:'Noto Color Emoji';}
+.card .ck{position:absolute;right:-14px;top:-14px;width:64px;height:64px;border-radius:50%;background:#22c55e;color:#fff;font:900 44px Inter;display:flex;align-items:center;justify-content:center;border:5px solid #fff;}
+.cal{position:absolute;width:260px;height:290px;border-radius:30px;background:#fff;box-shadow:0 12px 0 rgba(0,0,0,.18);overflow:hidden;text-align:center;}
+.cal .h{background:#ff3b4a;color:#fff;font-weight:900;font-size:32px;padding:18px 0 14px;}
+.cal .n{font-weight:900;font-size:140px;line-height:150px;color:#17171c;}
+.cal .d{font-weight:800;font-size:30px;color:#555;margin-top:-10px;}
+</style></head>
+<body><div id="root">
+<svg id="scene" viewBox="0 0 1080 1920"></svg>
+<svg id="ovs" viewBox="0 0 1080 1920"></svg>
+<div id="ov"></div>
+</div>
+<script>
+const W = __WORDS__;
+const S=i=>W[i].s, E=i=>W[i].e;
+const DUR=54.5;
+// ---------- math helpers ----------
+const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
+const lerp=(a,b,k)=>a+(b-a)*k;
+const ease=k=>{k=clamp(k,0,1);return k<.5?4*k*k*k:1-Math.pow(-2*k+2,3)/2;};
+const ramp=(t,t0,d)=>ease((t-t0)/d);
+const backOut=k=>{k=clamp(k,0,1);const c1=1.9,c3=c1+1;return 1+c3*Math.pow(k-1,3)+c1*Math.pow(k-1,2);};
+const V=(x,y)=>({x,y});
+const add=(a,b)=>V(a.x+b.x,a.y+b.y), sub=(a,b)=>V(a.x-b.x,a.y-b.y), mul=(a,k)=>V(a.x*k,a.y*k);
+const len=a=>Math.hypot(a.x,a.y), unit=a=>mul(a,1/len(a));
+const ang=a=>Math.atan2(a.y,a.x)*180/Math.PI;
+const fromAng=(deg)=>V(Math.cos(deg*Math.PI/180),Math.sin(deg*Math.PI/180));
+const lerpV=(a,b,k)=>V(lerp(a.x,b.x,k),lerp(a.y,b.y,k));
+const f1=n=>n.toFixed(1);
+function smoothPath(pts,closed=true){ // catmull-rom -> bezier
+  const n=pts.length;let d=`M${f1(pts[0].x)},${f1(pts[0].y)}`;
+  for(let i=0;i<(closed?n:n-1);i++){
+    const p0=pts[(i-1+n)%n],p1=pts[i],p2=pts[(i+1)%n],p3=pts[(i+2)%n];
+    const c1=add(p1,mul(sub(p2,p0),1/6)),c2=sub(p2,mul(sub(p3,p1),1/6));
+    d+=`C${f1(c1.x)},${f1(c1.y)} ${f1(c2.x)},${f1(c2.y)} ${f1(p2.x)},${f1(p2.y)}`;
+  }
+  return d+(closed?'Z':'');
+}
+// ---------- palette ----------
+const SKIN='url(#skin)', SKIN2='url(#skin2)', RIM='#3b3b46', OUT='#7c5cff', OUT2='#5f43e0';
+function limb(a,b,w1,w2,fill,stroke=RIM){
+  const u=unit(sub(b,a)),n=V(-u.y,u.x);
+  const p=[add(a,mul(n,w1/2)),add(b,mul(n,w2/2)),sub(b,mul(n,w2/2)),sub(a,mul(n,w1/2))];
+  const pts=p.map(v=>f1(v.x)+','+f1(v.y)).join(' ');
+  return `<g><circle cx="${f1(a.x)}" cy="${f1(a.y)}" r="${w1/2}" fill="${fill}" stroke="${stroke}" stroke-width="3"/><circle cx="${f1(b.x)}" cy="${f1(b.y)}" r="${w2/2}" fill="${fill}" stroke="${stroke}" stroke-width="3"/><polygon points="${pts}" fill="${fill}"/><line x1="${f1(p[0].x)}" y1="${f1(p[0].y)}" x2="${f1(p[1].x)}" y2="${f1(p[1].y)}" stroke="${stroke}" stroke-width="3"/><line x1="${f1(p[2].x)}" y1="${f1(p[2].y)}" x2="${f1(p[3].x)}" y2="${f1(p[3].y)}" stroke="${stroke}" stroke-width="3"/></g>`;
+}
+function ell(c,rx,ry,rot,fill,extra=''){return `<ellipse cx="${f1(c.x)}" cy="${f1(c.y)}" rx="${rx}" ry="${ry}" transform="rotate(${f1(rot)} ${f1(c.x)} ${f1(c.y)})" fill="${fill}" ${extra}/>`;}
+function gloss(c,rx,ry,rot,op=.22){return ell(c,rx,ry,rot,'url(#gloss)',`opacity="${op}"`);}
+
+// ---------- muscle highlight ----------
+let hlId=0;
+function muscle(c,rx,ry,rot,k,t,color='red'){
+  if(k<=0.01) return '';
+  const col=color==='red'?['#ff2a2a','#ff8a7a','#ff5050']:color==='green'?['#1fd16a','#9df5c0','#36e07f']:['#8a9690','#c7d0cc','#9aa6a0'];
+  const pulse=color==='gray'?1:(0.85+0.15*Math.sin(t*9));
+  const id='hc'+(hlId++);
+  let s=`<g opacity="${f1(k)}"><defs><clipPath id="${id}"><ellipse cx="${f1(c.x)}" cy="${f1(c.y)}" rx="${rx}" ry="${ry}" transform="rotate(${f1(rot)} ${f1(c.x)} ${f1(c.y)})"/></clipPath></defs>`;
+  s+=ell(c,rx*1.45,ry*1.6,rot,col[0],`opacity="${f1(.28*pulse)}" filter="url(#blur)"`);
+  s+=ell(c,rx,ry,rot,col[0],`opacity="${f1(.9*pulse)}"`);
+  // stripes along major axis
+  const u=fromAng(rot),n=V(-u.y,u.x);let st='';
+  for(let i=-6;i<=6;i++){const o=add(c,mul(n,i*ry/4.2));st+=`<line x1="${f1(o.x-u.x*rx*1.2)}" y1="${f1(o.y-u.y*rx*1.2)}" x2="${f1(o.x+u.x*rx*1.2)}" y2="${f1(o.y+u.y*rx*1.2)}" stroke="${col[1]}" stroke-width="4" opacity=".75"/>`;}
+  s+=`<g clip-path="url(#${id})">${st}</g>`;
+  s+=ell(add(c,mul(n,-ry*.35)),rx*.6,ry*.25,rot,'#fff','opacity=".25"');
+  return s+'</g>';
+}
+function sparks(c,r,t,k,color='#ff3030'){
+  if(k<=0.01)return '';let s='';
+  for(let i=0;i<6;i++){
+    const a=i*60+15*Math.sin(t*3+i);const ph=(t*2.2+i*.37)%1;
+    const d=r*(1.0+ph*0.35);const p=add(c,mul(fromAng(a),d));const q=fromAng(a+90);const u=fromAng(a);
+    const pts=[p,add(add(p,mul(u,14)),mul(q,10)),add(add(p,mul(u,26)),mul(q,-10)),add(p,mul(u,40))];
+    s+=`<polyline points="${pts.map(v=>f1(v.x)+','+f1(v.y)).join(' ')}" fill="none" stroke="${color}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity="${f1(k*(1-ph*.7))}"/>`;
+  }
+  return s;
+}
+function arrow(a,b,color,k,w=16){
+  if(k<=0.01)return '';const u=unit(sub(b,a)),n=V(-u.y,u.x);const e=lerpV(a,b,clamp(k*1.3,0,1));
+  const h1=add(sub(e,mul(u,34)),mul(n,26)),h2=sub(sub(e,mul(u,34)),mul(n,26));
+  return `<g opacity="${f1(clamp(k*3,0,1))}"><line x1="${f1(a.x)}" y1="${f1(a.y)}" x2="${f1(e.x-u.x*20)}" y2="${f1(e.y-u.y*20)}" stroke="${color}" stroke-width="${w}" stroke-linecap="round"/><path d="M${f1(e.x)},${f1(e.y)}L${f1(h1.x)},${f1(h1.y)}L${f1(h2.x)},${f1(h2.y)}Z" fill="${color}" stroke="${color}" stroke-width="8" stroke-linejoin="round"/></g>`;
+}
+function xMark(c,k,s=48){if(k<=.01)return '';const sc=backOut(k);return `<g transform="translate(${f1(c.x)} ${f1(c.y)}) scale(${f1(sc)})"><circle r="${s}" fill="#ff3b4a" stroke="#fff" stroke-width="7"/><path d="M${-s*.4},${-s*.4}L${s*.4},${s*.4}M${s*.4},${-s*.4}L${-s*.4},${s*.4}" stroke="#fff" stroke-width="12" stroke-linecap="round"/></g>`;}
+function check(c,k,s=48){if(k<=.01)return '';const sc=backOut(k);return `<g transform="translate(${f1(c.x)} ${f1(c.y)}) scale(${f1(sc)})"><circle r="${s}" fill="#22c55e" stroke="#fff" stroke-width="7"/><path d="M${-s*.45},0L${-s*.1},${s*.35}L${s*.48},${-s*.35}" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/></g>`;}
+
+// ---------- eyes ----------
+function eye(c,mode,rot,sz=1,t=0){
+  const blink=(t%3.7)<0.12?0.15:1;
+  let s=`<g transform="translate(${f1(c.x)} ${f1(c.y)}) rotate(${f1(rot)}) scale(${sz})">`;
+  if(mode==='strain') s+=`<path d="M-14,-12L10,0L-14,12" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>`;
+  else if(mode==='happy') s+=`<path d="M-14,6Q0,-14 14,6" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>`;
+  else if(mode==='surprised') s+=`<ellipse rx="17" ry="${22*blink}" fill="#fff"/><circle cx="2" cy="-2" r="${8*blink}" fill="#111"/>`;
+  else if(mode==='bored') s+=`<ellipse rx="13" ry="10" cy="4" fill="#fff"/><circle cx="4" cy="6" r="6" fill="#111"/><line x1="-17" y1="-2" x2="17" y2="-2" stroke="#141418" stroke-width="9"/>`;
+  else s+=`<ellipse rx="13" ry="${18*blink}" fill="#fff"/><circle cx="4" cy="-4" r="${7*blink}" fill="#111"/>`;
+  return s+'</g>';
+}
+
+// ---------- SIDE (lying glute bridge) rig ----------
+const FLOOR=1262;
+function ik(P,A,L1,L2){
+  let d=sub(A,P);let dl=Math.min(len(d),L1+L2-1);const u=unit(d);
+  const a=(L1*L1-L2*L2+dl*dl)/(2*dl),h=Math.sqrt(Math.max(0,L1*L1-a*a));
+  const mid=add(P,mul(u,a));let n=V(u.y,-u.x);if(n.y>0)n=mul(n,-1);
+  return add(mid,mul(n,h));
+}
+function side(st,t){
+  // st: lift, arch, shake, ext(single leg), eyes, hl{glute,ham,core,back}, hlColor
+  st.arch=st.arch||0;st.lift=st.lift||0;
+  const L1=255,L2=255;
+  const S0=V(330,1196),H=V(222,1200),A=V(845,1200);
+  const P0=V(565,1212),P1=V(615,1062);
+  let P=lerpV(P0,P1,st.lift);P=add(P,V(st.arch*4,-st.arch*48));
+  const sh=st.shake||0;P=add(P,V(0,sh*(Math.sin(t*71)*3+Math.sin(t*53)*2)));
+  const S=S0;
+  const u=unit(sub(P,S)),n=V(u.y,-u.x),L=len(sub(P,S));
+  // knees
+  const Kf=ik(add(P,V(-10,-4)),add(A,V(-22,-6)),L1,L2);
+  let K=ik(P,A,L1,L2);let Afoot=A;
+  const e=st.ext||0;
+  if(e>0){
+    const a1=ang(sub(K,P)),a2=ang(sub(A,K));const target=ang(u)-6;
+    const na1=lerp(a1,target,e),na2=lerp(a2,target,e);
+    K=add(P,mul(fromAng(na1),L1));Afoot=add(K,mul(fromAng(na2),L2));
+  }
+  let g='';
+  // mat
+  g+=`<rect x="70" y="${FLOOR-6}" width="960" height="34" rx="17" fill="#9fd3b6"/><rect x="70" y="${FLOOR-6}" width="960" height="10" rx="5" fill="#b9e3cb"/>`;
+  // shadow
+  g+=ell(V(560,FLOOR+40),430,26,0,'#000','opacity=".10" filter="url(#blur)"');
+  // far leg (darker)
+  const Pf=add(P,V(-10,-4)),Af=add(A,V(-22,-6));
+  g+=limb(Pf,Kf,100,72,SKIN2,'#25252c')+limb(Kf,Af,70,46,SKIN2,'#25252c');
+  g+=ell(add(Af,V(30,42)),60,23,0,SKIN2,'stroke="#25252c" stroke-width="3"');
+  // hair (ponytail on floor)
+  g+=`<path d="M175,1215 Q120,1205 70,1240 Q120,1262 185,1250 Z" fill="#141418" stroke="#2c2c34" stroke-width="3"/>`;
+  // neck
+  g+=limb(H,S,52,58,SKIN);
+  // torso profile
+  const prof=(s0,s1,steps=9)=>{
+    const fr=[[0,52],[.15,74],[.28,80],[.42,60],[.6,50],[.8,56],[1,60],[1.1,40]];
+    const bk=[[0,56],[.2,58],[.45,50],[.7,46],[.88,56],[1,64],[1.1,44]];
+    const it=(arr,s)=>{for(let i=0;i<arr.length-1;i++){if(s<=arr[i+1][0]){const k=(s-arr[i][0])/(arr[i+1][0]-arr[i][0]);return lerp(arr[i][1],arr[i+1][1],k);}}return arr[arr.length-1][1];};
+    const F=[],B=[];
+    for(let i=0;i<=steps;i++){const s=lerp(s0,s1,i/steps);const bow=st.arch*30*Math.sin(Math.PI*clamp(s,0,1));
+      const c=add(add(S,mul(u,s*L)),mul(n,bow));F.push(add(c,mul(n,it(fr,s))));B.push(sub(c,mul(n,it(bk,s))));}
+    return smoothPath(F.concat(B.reverse()));
+  };
+  g+=`<path d="${prof(-0.08,1.1,12)}" fill="${SKIN}" stroke="${RIM}" stroke-width="3"/>`;
+  g+=`<path d="${prof(0.1,0.38,6)}" fill="${OUT}" stroke="${OUT2}" stroke-width="3"/>`; // sports bra
+  // glute + shorts
+  const gc=add(add(P,mul(u,8)),mul(n,-26));
+  g+=`<path d="${prof(0.8,1.1,6)}" fill="${OUT}" stroke="${OUT2}" stroke-width="3"/>`;
+  g+=ell(gc,82,66,ang(u),OUT,`stroke="${OUT2}" stroke-width="3"`);
+  g+=gloss(add(gc,mul(n,22)),46,16,ang(u),.25);
+  g+=gloss(add(add(S,mul(u,L*.3)),mul(n,55)),70,14,ang(u),.22);
+  // near thigh / shin / foot
+  g+=limb(P,K,106,74,SKIN)+limb(P,lerpV(P,K,.32),110,100,OUT,OUT2);
+  g+=limb(K,Afoot,72,46,SKIN);
+  const vt=unit(sub(K,P));g+=gloss(add(lerpV(P,K,.6),mul(V(vt.y,-vt.x),24)),70,12,ang(vt),.2);
+  if(e<0.5) g+=ell(add(Afoot,V(32,42)),62,24,0,SKIN,`stroke="${RIM}" stroke-width="3"`);
+  else {const vs=unit(sub(Afoot,K));g+=ell(add(Afoot,mul(vs,26)),24,58,ang(vs)-90+90,SKIN,`stroke="${RIM}" stroke-width="3"`);}
+  // head
+  g+=`<circle cx="${H.x}" cy="${H.y}" r="66" fill="${SKIN}" stroke="${RIM}" stroke-width="3"/>`;
+  g+=`<path d="M${H.x-64},${H.y+14} A66,66 0 0 1 ${H.x+22},${H.y-62} Q${H.x-20},${H.y-30} ${H.x-30},${H.y+40} Z" fill="#141418" opacity=".95"/>`; // hairline (back of head)
+  g+=gloss(V(H.x+10,H.y-40),28,10,-20,.3);
+  g+=eye(V(H.x+30,H.y-30),st.eyes||'normal',-60,1.1,t);
+  // near arm on floor
+  const Sh=add(S,V(18,16)),El=V(470,1232),Hd=V(612,1238);
+  g+=limb(Sh,El,54,44,SKIN)+limb(El,Hd,44,36,SKIN)+`<circle cx="${Hd.x}" cy="${Hd.y}" r="25" fill="${SKIN}" stroke="${RIM}" stroke-width="3"/>`;
+  // highlights
+  const hl=st.hl||{},col=st.hlColor||{};
+  g+=muscle(gc,86,64,ang(u),hl.glute||0,t,col.glute||'red');
+  const hc=add(lerpV(P,K,.55),mul(V(-vt.y,vt.x),36));
+  g+=muscle(hc,108,30,ang(vt),hl.ham||0,t,col.ham||'red');
+  const cc=add(add(S,mul(u,L*.68)),mul(n,38));
+  g+=muscle(cc,82,26,ang(u),hl.core||0,t,col.core||'red');
+  const lb=add(add(S,mul(u,L*.8)),mul(n,-36));
+  g+=muscle(lb,70,24,ang(u),hl.back||0,t,col.back||'red');
+  if(st.spark) g+=sparks(st.spark.at==='ham'?hc:gc,90,t,st.spark.k);
+  return {svg:g,pts:{P,S,K,A,gc,hc,cc,lb,u,n,L,head:H}};
+}
+
+// ---------- STANDING (front/back) ----------
+const ARMS={
+  down:{e:[V(372,950),V(708,950)],h:[V(366,1150),V(714,1150)]},
+  hips:{e:[V(292,900),V(788,900)],h:[V(418,1045),V(662,1045)]},
+  up:{e:[V(270,640),V(810,640)],h:[V(330,450),V(750,450)]},
+  wave:{e:[V(292,900),V(820,640)],h:[V(418,1045),V(800,440)]},
+};
+function stand(st,t){
+  const back=st.view==='back';
+  const br=Math.sin(t*2.4)*4; // breathing
+  const a0=ARMS[st.arms0||'hips'],a1=ARMS[st.arms1||st.arms0||'hips'],ak=st.armK||0;
+  const Eh=[lerpV(a0.e[0],a1.e[0],ak),lerpV(a0.e[1],a1.e[1],ak)],Hh=[lerpV(a0.h[0],a1.h[0],ak),lerpV(a0.h[1],a1.h[1],ak)];
+  if(st.wave){const wk=st.armK==null?1:st.armK;Hh[1]=add(Hh[1],V(Math.sin(t*9)*40*wk,0));}
+  const shL=V(405,735+br*.3),shR=V(675,735+br*.3);
+  let g='';
+  g+=`<rect x="0" y="1745" width="1080" height="400" fill="#bfe5cf"/>`;
+  g+=ell(V(540,1752),250,30,0,'#000','opacity=".13" filter="url(#blur)"');
+  // ponytail behind (front view)
+  if(!back) g+=`<path d="M606,520 Q712,580 672,790 Q650,830 628,800 Q660,670 590,590Z" fill="#141418" stroke="#2c2c34" stroke-width="3"/>`;
+  // legs
+  const hipL=V(478,1105),hipR=V(602,1105),kL=V(486,1405),kR=V(594,1405),anL=V(490,1690),anR=V(590,1690);
+  g+=limb(hipL,kL,138,84,SKIN)+limb(hipR,kR,138,84,SKIN)+limb(kL,anL,84,50,SKIN)+limb(kR,anR,84,50,SKIN)+ell(V(478,1500),40,95,3,SKIN)+ell(V(602,1500),40,95,-3,SKIN);
+  g+=ell(V(back?490:478,1718),52,26,0,SKIN,`stroke="${RIM}" stroke-width="3"`)+ell(V(back?590:602,1718),52,26,0,SKIN,`stroke="${RIM}" stroke-width="3"`);
+  g+=gloss(V(462,1260),14,70,0,.2)+gloss(V(578,1260),14,70,0,.2);
+  // torso
+  const tor=[V(420,722),V(540,712),V(660,722),V(684,760),V(662,850),V(622,950),V(676,1060),V(690,1140),V(540,1170),V(390,1140),V(404,1060),V(458,950),V(418,850),V(396,760)];
+  g+=`<path d="${smoothPath(tor)}" fill="${SKIN}" stroke="${RIM}" stroke-width="3"/>`;
+  // neck
+  g+=limb(V(540,650),V(540,735),70,84,SKIN);
+  // bra
+  if(back) g+=`<path d="M418,800 Q540,830 662,800 L654,868 Q540,890 426,868Z" fill="${OUT}" stroke="${OUT2}" stroke-width="3"/><path d="M455,742L470,805M625,742L610,805" stroke="${OUT}" stroke-width="16" stroke-linecap="round"/>`;
+  else g+=`<path d="M418,790 Q470,760 540,800 Q610,760 662,790 L652,880 Q540,900 428,880Z" fill="${OUT}" stroke="${OUT2}" stroke-width="3"/><path d="M455,742L478,790M625,742L602,790" stroke="${OUT}" stroke-width="16" stroke-linecap="round"/>`;
+  // shorts
+  g+=`<path d="M398,1040 Q540,1060 682,1040 L700,1210 Q620,1228 548,1205 L540,1180 L532,1205 Q460,1228 380,1210Z" fill="${OUT}" stroke="${OUT2}" stroke-width="3"/>`;
+  if(back){g+=ell(V(486,1120),74,78,0,OUT,`stroke="${OUT2}" stroke-width="3"`)+ell(V(594,1120),74,78,0,OUT,`stroke="${OUT2}" stroke-width="3"`);
+    g+=gloss(V(470,1090),30,14,-20,.3)+gloss(V(578,1090),30,14,-20,.3);}
+  else { // abs hint
+    g+=`<path d="M540,905 L540,1020" stroke="#2c2c34" stroke-width="4" opacity=".8"/>`;
+  }
+  g+=`<text x="540" y="${back?1175:1150}" text-anchor="middle" font-family="Inter" font-weight="900" font-size="34" fill="#fff" letter-spacing="3" opacity=".95">ROUS FIT</text>`;
+  g+=gloss(V(470,860),40,12,-15,.18);
+  if(st.organs) g+=organs(st.organs,t);
+  // arms
+  for(let i=0;i<2;i++){const sh=i?shR:shL;g+=limb(sh,Eh[i],70,54,SKIN)+limb(Eh[i],Hh[i],54,42,SKIN)+`<circle cx="${f1(Hh[i].x)}" cy="${f1(Hh[i].y)}" r="30" fill="${SKIN}" stroke="${RIM}" stroke-width="3"/>`;
+    }
+  // head
+  g+=`<circle cx="540" cy="570" r="94" fill="${SKIN}" stroke="${RIM}" stroke-width="3"/>`;
+  if(back){g+=`<circle cx="540" cy="566" r="92" fill="#141418"/><path d="M518,600 Q540,740 530,800 Q545,820 560,800 Q552,720 562,600Z" fill="#141418" stroke="#2c2c34" stroke-width="3"/>`+gloss(V(512,522),34,12,-25,.3);}
+  else{g+=`<path d="M448,560 Q462,474 540,470 Q620,474 632,560 Q594,512 540,510 Q486,512 448,560Z" fill="#141418"/>`+gloss(V(505,495),26,9,-20,.3);
+    const em=st.eyes||'normal';g+=eye(V(506,580),em,0,1.15,t)+eye(V(574,580),em,0,1.15,t);
+    if(em==='happy'||em==='normal')g+=`<path d="M520,624 Q540,640 560,624" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".9"/>`;
+    if(em==='surprised')g+=`<ellipse cx="540" cy="630" rx="10" ry="13" fill="#fff" opacity=".9"/>`;}
+  // highlights
+  const hl=st.hl||{},col=st.hlColor||{};
+  if(hl.glute){g+=muscle(V(486,1120),70,76,0,hl.glute,t,col.glute||'red')+muscle(V(594,1120),70,76,0,hl.glute,t,col.glute||'red');}
+  g+=muscle(V(540,975),95,42,0,hl.back||0,t,col.back||'red');
+  g+=muscle(V(540,960),70,90,0,hl.core||0,t,col.core||'red');
+  if(st.spark) g+=sparks(st.spark.at==='back'?V(540,975):V(540,1120),st.spark.at==='back'?110:150,t,st.spark.k);
+  return {svg:g};
+}
+
+// ---------- defs ----------
+const DEFS=`<defs>
+<linearGradient id="skin" gradientUnits="userSpaceOnUse" x1="200" y1="400" x2="900" y2="1500"><stop offset="0" stop-color="#34343c"/><stop offset=".55" stop-color="#16161a"/><stop offset="1" stop-color="#0a0a0c"/></linearGradient>
+<linearGradient id="skin2" gradientUnits="userSpaceOnUse" x1="200" y1="400" x2="900" y2="1500"><stop offset="0" stop-color="#1c1c21"/><stop offset="1" stop-color="#060607"/></linearGradient>
+<radialGradient id="gloss"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+<radialGradient id="bg" cx=".5" cy=".42" r=".75"><stop offset="0" stop-color="#e3f6ea"/><stop offset="1" stop-color="#bfe6cf"/></radialGradient>
+<filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="18"/></filter>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+</defs>`;
+
+// ---------- extra: organs ----------
+function organs(o,t){
+  const bpm=o.bpm||70;const beat=Math.pow(Math.max(0,Math.sin(t*Math.PI*bpm/60)),8);
+  const br=0.5+0.5*Math.sin(t*(o.fast?7:3));
+  let s=`<g opacity="${f1(o.k)}">`;
+  s+=ell(V(540,830),190,150,0,'#ff6b8a',`opacity=".25" filter="url(#blur)"`);
+  const lung=(x,flip)=>`<path transform="translate(${x} 830) scale(${flip*(1+br*.06)} ${1+br*.06})" d="M-10,-95 C-70,-95 -95,-20 -95,40 C-95,95 -50,110 -10,85 Z" fill="#ff8fa3" stroke="#fff" stroke-width="5" opacity=".92"/>`;
+  s+=lung(522,1)+lung(558,-1);
+  const hs=1+beat*.22;
+  s+=`<g transform="translate(560 850) scale(${f1(hs*1.15)})"><path d="M0,30 C-60,-10 -45,-60 -15,-55 C-5,-53 0,-45 0,-38 C0,-45 5,-53 15,-55 C45,-60 60,-10 0,30Z" fill="#ff2a3d" stroke="#fff" stroke-width="5"/><ellipse cx="-18" cy="-38" rx="10" ry="6" fill="#fff" opacity=".6"/></g>`;
+  return s+'</g>';
+}
+// ---------- WALK (side profile, facing right) ----------
+// speed keyframes: [time, s] where s 0=slow 1=fast
+let SPEEDK=[];let PH=[];const PHDT=1/240;
+function speedAt(t){let i=0;for(let k=0;k<SPEEDK.length;k++)if(t>=SPEEDK[k][0])i=k;if(i===0)return SPEEDK[0][1];return lerp(SPEEDK[i-1][1],SPEEDK[i][1],ease((t-SPEEDK[i][0])/0.6));}
+function buildPhase(){PH=[0];let p=0;for(let i=1;i*PHDT<DUR+1;i++){const t=i*PHDT;const s=speedAt(t);p+=2*Math.PI*lerp(0.62,1.08,s)*PHDT;PH.push(p);}}
+const phaseAt=t=>PH[Math.min(PH.length-1,Math.max(0,Math.round(t/PHDT)))];
+function walk(st,t){
+  const s=st.speed!=null?st.speed:speedAt(t);const ph=phaseAt(t);
+  const A=lerp(17,29,s),C=lerp(16,40,s),EL=lerp(22,88,s),lean=lerp(2,8,s),B=lerp(45,62,s);
+  const L1=292,L2=284,FOOT=26;
+  const amp=(L1+L2)*(1-Math.cos(A*Math.PI/180))/2;
+  const hip=V(520,1700-FOOT-(L1+L2)+amp*(1-Math.cos(2*ph)));
+  const R=(p)=>{const a=lean*Math.PI/180;return add(hip,V(p.x*Math.cos(a)-p.y*Math.sin(a),p.x*Math.sin(a)+p.y*Math.cos(a)));};
+  const D=deg=>V(Math.sin(deg*Math.PI/180),Math.cos(deg*Math.PI/180));
+  const leg=(phi)=>{const th=A*Math.sin(phi);const kf=B*Math.pow(Math.max(0,Math.cos(phi)),1.4)+6;const K=add(hip,mul(D(th),L1));const sa=th-kf;const An=add(K,mul(D(sa),L2));
+    const toe=add(An,mul(V(Math.cos(sa*Math.PI/180),-Math.sin(sa*Math.PI/180)),88));return {K,An,toe,sa};};
+  const arm=(phi,far)=>{const sh=R(V(far?-8:4,-372));const a=-C*Math.sin(phi)+lean;const E=add(sh,mul(D(a),198));const Hd=add(E,mul(D(a+EL),176));return {sh,E,Hd};};
+  const nl=leg(ph),fl=leg(ph+Math.PI),na=arm(ph+Math.PI,false),fa=arm(ph,true);
+  let g='';
+  // ground + scrolling details
+  const off=-(ph*95)%1080;
+  g+=`<rect x="-600" y="1700" width="2400" height="500" fill="#b5dfc6"/><rect x="-600" y="1700" width="2400" height="10" fill="#a2d4b6"/>`;
+  for(let i=-3;i<8;i++){const x=((off*0.45+i*420)%2940+2940)%2940-900;g+=`<circle cx="${f1(x)}" cy="1660" r="70" fill="#a9dcbf" opacity=".7"/><circle cx="${f1(x+70)}" cy="1640" r="90" fill="#a9dcbf" opacity=".7"/>`;}
+  for(let i=-4;i<10;i++){const x=((off+i*240)%3360+3360)%3360-1000;g+=`<rect x="${f1(x)}" y="1760" width="110" height="14" rx="7" fill="#9fd1b4"/>`;}
+  g+=ell(V(560,1704),230,22,0,'#000','opacity=".12" filter="url(#blur)"');
+  // far limbs
+  g+=limb(fa.sh,fa.E,62,48,SKIN2,'#25252c')+limb(fa.E,fa.Hd,48,38,SKIN2,'#25252c')+`<circle cx="${f1(fa.Hd.x)}" cy="${f1(fa.Hd.y)}" r="27" fill="${SKIN2}"/>`;
+  g+=limb(hip,fl.K,124,82,SKIN2,'#25252c')+limb(fl.K,fl.An,82,50,SKIN2,'#25252c')+limb(fl.An,fl.toe,46,30,SKIN2,'#25252c');
+  // ponytail (behind head)
+  const head=R(V(36,-506));const sway=Math.sin(ph*2)*10*(0.5+s);
+  g+=`<path d="M${f1(head.x-60)},${f1(head.y-50)} Q${f1(head.x-170)},${f1(head.y-10+sway)} ${f1(head.x-150+sway)},${f1(head.y+150)} Q${f1(head.x-120)},${f1(head.y+60)} ${f1(head.x-70)},${f1(head.y+10)}Z" fill="#141418" stroke="#2c2c34" stroke-width="3"/>`;
+  // neck + torso
+  g+=limb(R(V(14,-400)),R(V(30,-470)),66,64,SKIN);
+  const tor=[V(30,-418),V(48,-372),V(92,-305),V(60,-245),V(44,-150),V(56,-62),V(62,12),V(40,52),V(-30,66),V(-78,40),V(-86,-20),V(-52,-120),V(-62,-240),V(-58,-340),V(-26,-418)].map(R);
+  const tp=smoothPath(tor);
+  g+=`<defs><clipPath id="tclip"><path d="${tp}"/></clipPath></defs><path d="${tp}" fill="${SKIN}" stroke="${RIM}" stroke-width="3"/>`;
+  const band=(y0,y1,col)=>{const p=[V(-200,y0),V(200,y0),V(200,y1),V(-200,y1)].map(R);return `<polygon clip-path="url(#tclip)" points="${p.map(v=>f1(v.x)+','+f1(v.y)).join(' ')}" fill="${col}"/>`;};
+  g+=band(-340,-238,OUT)+band(-30,120,OUT);
+  const strap=[R(V(-20,-410)),R(V(10,-340))];g+=`<line x1="${f1(strap[0].x)}" y1="${f1(strap[0].y)}" x2="${f1(strap[1].x)}" y2="${f1(strap[1].y)}" stroke="${OUT}" stroke-width="14" stroke-linecap="round"/>`;
+  g+=gloss(R(V(-20,-290)),16,60,lean,.18);
+  // near leg
+  g+=limb(hip,nl.K,128,84,SKIN)+limb(hip,lerpV(hip,nl.K,.3),132,122,OUT,OUT2)+limb(nl.K,nl.An,84,50,SKIN)+limb(nl.An,nl.toe,48,30,SKIN);
+  const vt=unit(sub(nl.K,hip));g+=gloss(add(lerpV(hip,nl.K,.6),mul(V(vt.y,-vt.x),-26)),12,70,ang(vt)-90,.22);
+  // head
+  g+=`<circle cx="${f1(head.x)}" cy="${f1(head.y)}" r="92" fill="${SKIN}" stroke="${RIM}" stroke-width="3"/>`;
+  g+=`<path d="M${f1(head.x-92)},${f1(head.y+10)} A92,92 0 0 1 ${f1(head.x+40)},${f1(head.y-83)} Q${f1(head.x-10)},${f1(head.y-50)} ${f1(head.x-30)},${f1(head.y+40)}Z" fill="#141418"/>`;
+  g+=gloss(V(head.x-10,head.y-62),30,10,-15,.3);
+  g+=eye(V(head.x+48,head.y-12),st.eyes||'normal',0,1.15,t);
+  if((st.eyes||'normal')!=='strain') g+=`<path d="M${f1(head.x+56)},${f1(head.y+38)} Q${f1(head.x+70)},${f1(head.y+46)} ${f1(head.x+82)},${f1(head.y+34)}" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".9"/>`;
+  else g+=`<ellipse cx="${f1(head.x+70)}" cy="${f1(head.y+42)}" rx="9" ry="${f1(8+4*Math.abs(Math.sin(t*8)))}" fill="#fff" opacity=".9"/>`;
+  if(st.sweat){for(let i=0;i<2;i++){const ph2=((t*1.3+i*.5)%1);g+=`<path transform="translate(${f1(head.x-20+i*70)} ${f1(head.y-110+ph2*120)})" d="M0,-16 Q11,0 0,10 Q-11,0 0,-16Z" fill="#6cc6ff" opacity="${f1(1-ph2)}"/>`;}}
+  // near arm
+  g+=limb(na.sh,na.E,66,50,SKIN)+limb(na.E,na.Hd,50,40,SKIN)+`<circle cx="${f1(na.Hd.x)}" cy="${f1(na.Hd.y)}" r="29" fill="${SKIN}" stroke="${RIM}" stroke-width="3"/>`;
+  // highlights
+  const hl=st.hl||{};
+  const qc=add(lerpV(hip,nl.K,.55),mul(V(vt.y,-vt.x),-28));
+  g+=muscle(qc,100,34,ang(vt),hl.thigh||0,t,'red');
+  const fq=add(lerpV(hip,fl.K,.55),V(0,0));g+=muscle(fq,96,30,ang(sub(fl.K,hip)),(hl.thigh||0)*.7,t,'red');
+  g+=muscle(R(V(-48,10)),58,74,lean,hl.glute||0,t,'red');
+  if(st.spark) g+=sparks(qc,95,t,st.spark);
+  return {svg:g,head};
+}
+
+// ---------- SIT-RISE side rig (facing right) ----------
+const FL=1700, AL1=198, AL2=176;
+const POSES={
+  STAND:{hip:V(520,1098),lean:2,nA:V(548,1674),fA:V(500,1674),Ls:1,nArm:{a:6,f:12},fArm:{a:-6,f:4}},
+  READY:{hip:V(520,1098),lean:4,nA:V(505,1674),fA:V(548,1674),Ls:1,nArm:{a:82,f:90},fArm:{a:76,f:86}},
+  SQUAT:{hip:V(420,1420),lean:36,nA:V(520,1674),fA:V(495,1674),Ls:1,nArm:{a:88,f:96},fArm:{a:82,f:92}},
+  SIT:{hip:V(440,1636),lean:12,nA:V(650,1662),fA:V(620,1652),Ls:0.62,nArm:{a:62,f:78},fArm:{a:56,f:72}},
+  HAND:{hip:V(440,1636),lean:-28,nA:V(650,1662),fA:V(620,1652),Ls:0.62,nHand:V(190,1690),fArm:{a:40,f:62}},
+  KNEE:{hip:V(470,1430),lean:68,nA:V(330,1674),fA:V(620,1674),Ls:1,nHand:V(790,1690),fArm:{a:20,f:40}},
+};
+function ik2(P,A,L1,L2,sign){let d=sub(A,P);const dl=Math.min(len(d),L1+L2-0.5);const u=unit(d);const a=(L1*L1-L2*L2+dl*dl)/(2*dl),h=Math.sqrt(Math.max(0,L1*L1-a*a));const n=mul(V(u.y,-u.x),sign);return add(add(P,mul(u,a)),mul(n,h));}
+const Rot=(hip,lean,p)=>{const a=lean*Math.PI/180;return add(hip,V(p.x*Math.cos(a)-p.y*Math.sin(a),p.x*Math.sin(a)+p.y*Math.cos(a)));};
+const angOf=v=>Math.atan2(v.x,v.y)*180/Math.PI; // from vertical-down, + forward
+const Dv=deg=>V(Math.sin(deg*Math.PI/180),Math.cos(deg*Math.PI/180));
+function armAng(p,which){
+  const far=which==='f';const sh=Rot(p.hip,p.lean,V(far?-8:4,-372));
+  const tgt=far?p.fHand:p.nHand;
+  if(tgt){const E=ik2(sh,tgt,AL1,AL2,-1);return {a:angOf(sub(E,sh)),f:angOf(sub(tgt,E))};}
+  const r=far?p.fArm:p.nArm;return {a:r.a+p.lean*0.0,f:r.f};
+}
+function poseLerp(p,q,k){
+  const r={hip:lerpV(p.hip,q.hip,k),lean:lerp(p.lean,q.lean,k),nA:lerpV(p.nA,q.nA,k),fA:lerpV(p.fA,q.fA,k),Ls:lerp(p.Ls,q.Ls,k)};
+  const an=[armAng(p,'n'),armAng(q,'n')],af=[armAng(p,'f'),armAng(q,'f')];
+  r.nArm={a:lerp(an[0].a,an[1].a,k),f:lerp(an[0].f,an[1].f,k)};r.fArm={a:lerp(af[0].a,af[1].a,k),f:lerp(af[0].f,af[1].f,k)};
+  return r;
+}
+function poseAt(keys,t){
+  let cur=poseLerp(POSES[keys[0][1]],POSES[keys[0][1]],0);
+  for(const [tk,name,dur] of keys){if(t<tk)break;cur=poseLerp(cur,POSES[name],ease((t-tk)/(dur||0.8)));}
+  return cur;
+}
+function sitRig(p,st,t){
+  const L1=292*p.Ls,L2=284*p.Ls;let hip=p.hip;let lean=p.lean;
+  if(st.wobble){lean+=Math.sin(t*9)*9*st.wobble;hip=add(hip,V(Math.sin(t*9+1)*14*st.wobble,0));}
+  const R=q=>Rot(hip,lean,q);
+  const nK=ik2(hip,p.nA,L1,L2,1),fK=ik2(hip,p.fA,L1,L2,1);
+  const toe=(A,K)=>{const s=unit(sub(A,K));const fv=V(1,0);const flat=A.y>1600&&p.Ls>0.9;return add(A,flat?V(86,10):mul(V(s.y*-1>0?1:1,0),80));};
+  const arm=(far)=>{const sh=R(V(far?-8:4,-372));let r=far?p.fArm:p.nArm;let a=r.a,f=r.f;
+    if(st.wobble){a+=Math.sin(t*11+(far?2:0))*40*st.wobble+50*st.wobble;f=a+30;}
+    const E=add(sh,mul(Dv(a),AL1));const Hd=add(E,mul(Dv(f),AL2));return {sh,E,Hd};};
+  const na=arm(false),fa=arm(true);
+  let g='';
+  g+=`<rect x="-800" y="${FL}" width="2800" height="600" fill="#b5dfc6"/><rect x="-800" y="${FL}" width="2800" height="10" fill="#a2d4b6"/>`;
+  g+=`<rect x="130" y="${FL-8}" width="820" height="26" rx="13" fill="#9b87ff" opacity=".55"/>`;
+  g+=ell(V(520,FL+6),300,22,0,'#000','opacity=".12" filter="url(#blur)"');
+  // far limbs
+  g+=limb(fa.sh,fa.E,62,48,SKIN2,'#25252c')+limb(fa.E,fa.Hd,48,38,SKIN2,'#25252c')+`<circle cx="${f1(fa.Hd.x)}" cy="${f1(fa.Hd.y)}" r="27" fill="${SKIN2}"/>`;
+  const legW=p.Ls<0.9?[118,80,80,50]:[124,82,82,50];
+  g+=limb(hip,fK,legW[0],legW[1],SKIN2,'#25252c')+limb(fK,p.fA,legW[2],legW[3],SKIN2,'#25252c')+limb(p.fA,add(p.fA,V(78,10)),46,30,SKIN2,'#25252c');
+  const head=R(V(36,-506));
+  g+=`<path d="M${f1(head.x-60)},${f1(head.y-50)} Q${f1(head.x-170)},${f1(head.y-10)} ${f1(head.x-150)},${f1(head.y+150)} Q${f1(head.x-120)},${f1(head.y+60)} ${f1(head.x-70)},${f1(head.y+10)}Z" fill="#141418" stroke="#2c2c34" stroke-width="3"/>`;
+  g+=limb(R(V(14,-400)),R(V(30,-470)),66,64,SKIN);
+  const tor=[V(30,-418),V(48,-372),V(92,-305),V(60,-245),V(44,-150),V(56,-62),V(62,12),V(40,52),V(-30,66),V(-78,40),V(-86,-20),V(-52,-120),V(-62,-240),V(-58,-340),V(-26,-418)].map(R);
+  const tp=smoothPath(tor);
+  g+=`<defs><clipPath id="tclip"><path d="${tp}"/></clipPath></defs><path d="${tp}" fill="${SKIN}" stroke="${RIM}" stroke-width="3"/>`;
+  const band=(y0,y1,col)=>{const q=[V(-200,y0),V(200,y0),V(200,y1),V(-200,y1)].map(R);return `<polygon clip-path="url(#tclip)" points="${q.map(v=>f1(v.x)+','+f1(v.y)).join(' ')}" fill="${col}"/>`;};
+  g+=band(-340,-238,OUT)+band(-30,120,OUT);
+  const strap=[R(V(-20,-410)),R(V(10,-340))];g+=`<line x1="${f1(strap[0].x)}" y1="${f1(strap[0].y)}" x2="${f1(strap[1].x)}" y2="${f1(strap[1].y)}" stroke="${OUT}" stroke-width="14" stroke-linecap="round"/>`;
+  // near leg
+  g+=limb(hip,nK,legW[0]+4,legW[1]+2,SKIN)+limb(hip,lerpV(hip,nK,.3),legW[0]+8,legW[0]-2,OUT,OUT2)+limb(nK,p.nA,legW[2]+2,legW[3],SKIN)+limb(p.nA,add(p.nA,V(80,10)),48,30,SKIN);
+  const vt=unit(sub(nK,hip));g+=gloss(add(lerpV(hip,nK,.6),mul(V(vt.y,-vt.x),-26)),12,60,ang(vt)-90,.22);
+  // head
+  g+=`<circle cx="${f1(head.x)}" cy="${f1(head.y)}" r="92" fill="${SKIN}" stroke="${RIM}" stroke-width="3"/>`;
+  g+=`<path d="M${f1(head.x-92)},${f1(head.y+10)} A92,92 0 0 1 ${f1(head.x+40)},${f1(head.y-83)} Q${f1(head.x-10)},${f1(head.y-50)} ${f1(head.x-30)},${f1(head.y+40)}Z" fill="#141418"/>`;
+  g+=gloss(V(head.x-10,head.y-62),30,10,-15,.3);
+  const em=st.eyes||'normal';g+=eye(V(head.x+48,head.y-12),em,0,1.15,t);
+  if(em==='strain'||em==='surprised') g+=`<ellipse cx="${f1(head.x+70)}" cy="${f1(head.y+42)}" rx="9" ry="${f1(9+3*Math.abs(Math.sin(t*8)))}" fill="#fff" opacity=".9"/>`;
+  else g+=`<path d="M${f1(head.x+56)},${f1(head.y+38)} Q${f1(head.x+70)},${f1(head.y+46)} ${f1(head.x+82)},${f1(head.y+34)}" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".9"/>`;
+  // near arm
+  g+=limb(na.sh,na.E,66,50,SKIN)+limb(na.E,na.Hd,50,40,SKIN)+`<circle cx="${f1(na.Hd.x)}" cy="${f1(na.Hd.y)}" r="29" fill="${SKIN}" stroke="${RIM}" stroke-width="3"/>`;
+  // support highlights
+  const hl=st.hl||{};
+  if(hl.hand) g+=muscle(na.Hd,46,46,0,hl.hand,t,'red');
+  if(hl.knee) g+=muscle(nK,52,52,0,hl.knee,t,'red');
+  if(hl.arm) g+=muscle(lerpV(na.E,na.Hd,.5),100,30,ang(sub(na.Hd,na.E)),hl.arm,t,'red');
+  if(hl.feet) g+=muscle(lerpV(p.nA,p.fA,.5),80,34,0,hl.feet,t,'green');
+  return {svg:g,pts:{hand:na.Hd,knee:nK,elbow:na.E,forearm:lerpV(na.E,na.Hd,.5),head,hip,feet:lerpV(p.nA,p.fA,.5)}};
+}
+
+// ---------- timeline (Sitting-rising test) ----------
+const T={hands:S(13),thisW:S(14),health:S(22),called:S(26),srt:S(29),cross:S(31),sit:S(34),then:S(39),stand:S(40),you:S(43),ten:S(46),five1:S(48),sit2:S(50),five2:S(52),stand2:S(54),every:S(56),hand:S(61),knee:S(63),arm:S(66),lose1:S(69),loseB:S(73),half:S(76),study:S(79),two:S(85),aged:S(88),people:S(92),lowest:S(95),much:S(98),die:S(102),six:S(106),eight:S(112),that:S(115),causes:S(120),it:S(122),strength:S(125),balance:S(126),flex:S(128),working:S(129),good:S(131),youcan:S(134),tryW:S(139),comment:S(144),follow:S(148),rous:S(149)};
+const KEYS=[[0,'READY',0.01],[0.75,'SQUAT',0.5],[1.25,'SIT',0.55],[2.2,'SQUAT',0.55],[2.75,'READY',0.55],[3.6,'STAND',0.6],
+ [T.cross-0.1,'READY',0.5],[T.sit,'SQUAT',0.45],[T.sit+0.45,'SIT',0.5],[T.then+0.05,'SQUAT',0.5],[T.then+0.55,'READY',0.5],
+ [T.five1+0.05,'SQUAT',0.3],[T.five1+0.35,'SIT',0.35],[T.five2+0.05,'SQUAT',0.35],[T.five2+0.4,'READY',0.35],
+ [T.every-0.2,'SQUAT',0.3],[T.every+0.1,'SIT',0.35],[T.hand-0.25,'HAND',0.4],[T.knee-0.3,'KNEE',0.6],[T.lose1,'SQUAT',0.6],[T.lose1+0.6,'STAND',0.6],
+ [T.tryW,'READY',0.3],[T.tryW+0.35,'SQUAT',0.4],[T.tryW+0.75,'SIT',0.4],[T.comment-0.15,'SQUAT',0.4],[T.comment+0.25,'READY',0.4]];
+const SHOTS=[[0,'hook'],[T.thisW,'health'],[T.called,'demo'],[T.you,'score'],[T.every,'deduct'],[T.study,'study'],[T.that,'cause'],[T.it,'three'],[T.tryW,'try'],[S(147),'follow']];
+function shotAt(t){let i=0;for(let k=0;k<SHOTS.length;k++)if(t>=SHOTS[k][0])i=k;return {i,name:SHOTS[i][1],t0:SHOTS[i][0],t1:i+1<SHOTS.length?SHOTS[i+1][0]:DUR};}
+const vis=(t,a,b=1e9,fade=.18)=>{if(t<a||t>b+fade)return 0;return Math.min(clamp((t-a)/fade,0,1),clamp((b+fade-t)/fade,0,1));};
+const popk=(t,a)=>backOut((t-a)/.3);
+const HANDLE='@rousfit';
+function scoreAt(t){let s=10;if(t>=T.hand)s=9;if(t>=T.knee)s=8;if(t>=T.arm)s=7;if(t>=T.half)s=6.5;return s;}
+function frame(t){
+  hlId=0;
+  const sh=shotAt(t);let st={},view='side',cam={z:1.0,cx:560,cy:1000};
+  let world='';let ov=[];let ovs='';let score=null;
+  const pills=[];const cards=[];
+  const pill=(txt,cls,x,y,a,b)=>{const v=vis(t,a,b);if(v>0)pills.push({txt,cls,x,y,k:popk(t,a),o:v});};
+  const card=(emo,x,y,a,b,ck=true)=>{const v=vis(t,a,b);if(v>0)cards.push({emo,x,y,k:popk(t,a),o:v,ck});};
+  const minus=(txt,pt,a,col='#ff3b4a')=>{if(t<a||t>a+1.6)return;const k=clamp((t-a)/1.6,0,1);const o=k<.75?1:1-(k-.75)/.25;
+    world+=`<text x="${f1(pt.x+40)}" y="${f1(pt.y-60-k*120)}" text-anchor="middle" font-family="Inter" font-weight="900" font-size="${f1(90*backOut(k*4))}" fill="${col}" stroke="#fff" stroke-width="10" paint-order="stroke fill" opacity="${f1(o)}">${txt}</text>`;};
+  const sideKeys=['hook','demo','score','deduct','try'];
+  let pose=null,rig=null;
+  switch(sh.name){
+    case 'hook':{
+      const lt=t;st={eyes:t>0.75&&t<3.2?'strain':'happy'};
+      cam={z:lerp(1.18,1.0,ramp(t,0,1.2)),cx:560,cy:lerp(900,1000,ramp(t,0,1.2))};
+      pill('CAN YOU DO THIS? 👀','dark',540,520,0.05,T.thisW-0.1);
+      card('✋',800,600,0.35,T.thisW-0.1,'x');
+      pill('NO HANDS','red',895,830,0.5,T.thisW-0.1);
+      break;}
+    case 'health':{
+      view='stand';st={view:'front',arms0:'hips',eyes:t<S(17)?'surprised':'normal'};cam={z:lerp(1.12,1.0,ramp(t,sh.t0,1.5)),cx:540,cy:1060};
+      card('❤️',800,520,S(17),sh.t1,false);
+      pill('HEALTH TEST','red',540,1560,T.health,sh.t1);
+      pill('HOW DO YOU SCORE? 👀','dark',540,1690,S(23),sh.t1);
+      if(t<S(17)){const bob=Math.sin(t*5)*10;ovs+=`<g transform="translate(860 ${f1(720+bob)}) scale(${f1(popk(t,sh.t0+.1))}) rotate(10)"><text text-anchor="middle" font-family="Inter" font-weight="900" font-size="200" fill="#ffd23f" stroke="#7a5a00" stroke-width="12" paint-order="stroke fill">?</text></g>`;}
+      break;}
+    case 'demo':{
+      st={eyes:t>=T.sit&&t<T.then+1?'strain':'normal',hl:{feet:t>=T.cross&&t<T.sit?ramp(t,T.cross,.3):0}};
+      cam={z:1.0,cx:560,cy:1000};
+      if(t>=T.cross&&t<T.sit) cam={z:lerp(1.0,1.5,ramp(t,T.cross,.5)),cx:540,cy:lerp(1000,1480,ramp(t,T.cross,.5))};
+      pill('SITTING-RISING TEST','violet',540,520,T.srt,T.cross-0.1);
+      pill('CROSS YOUR FEET','green',540,520,T.cross,T.sit-0.1);
+      pill('SIT DOWN ↓','blue',540,520,T.sit,T.then-0.1);
+      pill('STAND UP ↑','blue',540,520,T.then,sh.t1);
+      card('✋',800,600,T.srt,sh.t1,'x');
+      break;}
+    case 'score':{
+      st={eyes:t>=T.five1&&t<T.stand2+.6?'strain':'happy'};score={v:10,k:popk(t,T.ten-0.1),show:t>=T.ten-0.1};
+      pill('5 TO SIT ↓','violet',540,520,T.five1,T.five2-0.1);
+      pill('5 TO STAND ↑','violet',540,520,T.five2,sh.t1);
+      break;}
+    case 'deduct':{
+      const wob=t>=T.loseB-0.3&&t<T.half+0.6?Math.min(ramp(t,T.loseB-0.3,.3),1-ramp(t,T.half+0.2,.4)):0;
+      st={eyes:wob>0?'surprised':(t<T.lose1+1?'strain':'normal'),wobble:wob,hl:{hand:vis(t,T.hand,T.knee-0.05),knee:vis(t,T.knee,T.arm-0.05),arm:vis(t,T.arm,T.lose1+0.3)}};
+      score={v:scoreAt(t),k:1,show:true,flash:[T.hand,T.knee,T.arm,T.half].some(x=>t>=x&&t<x+0.35)};
+      cam={z:1.12,cx:600,cy:1180};
+      if(t>=T.lose1) cam={z:lerp(1.12,1.0,ramp(t,T.lose1,.8)),cx:lerp(600,560,ramp(t,T.lose1,.8)),cy:lerp(1180,1000,ramp(t,T.lose1,.8))};
+      pill('HAND = −1','red',540,520,T.hand,T.knee-0.1);
+      pill('KNEE = −1','red',540,520,T.knee,T.arm-0.1);
+      pill('ARM = −1','red',540,520,T.arm,T.lose1-0.1);
+      pill('−1 PER SUPPORT','dark',540,520,T.lose1,T.loseB-0.1);
+      pill('LOST BALANCE?','red',540,520,T.loseB,T.half-0.1);
+      pill('−0.5','red',540,520,T.half,sh.t1);
+      break;}
+    case 'study':{
+      view='stand';st={view:'front',arms0:'hips',eyes:t>=T.lowest?'surprised':'normal'};cam={z:0.45,cx:540,cy:260};
+      const k=popk(t,sh.t0+.05),o=vis(t,sh.t0+.05);
+      const l1=vis(t,T.two),l2=vis(t,T.aged);
+      const hLow=300*ease((t-T.lowest)/0.9),hHigh=70*ease((t-T.eight)/0.7);
+      ov.push(`<div style="position:absolute;left:90px;top:470px;width:900px;height:650px;border-radius:40px;background:#fff;box-shadow:0 10px 0 rgba(0,0,0,.15);opacity:${o};transform:scale(${f1(k)});font-family:Inter">
+        <div style="position:absolute;left:40px;top:34px;font:900 44px Inter;color:#17171c">📚 THE STUDY</div>
+        <div style="position:absolute;left:40px;top:104px;font:800 36px Inter;color:#3d6bff;opacity:${l1}">2,000+ ADULTS</div>
+        <div style="position:absolute;left:40px;top:150px;font:800 36px Inter;color:#7c5cff;opacity:${l2}">AGES 51–80 · ~6 YEARS</div>
+        <div style="position:absolute;left:0;right:0;top:220px;text-align:center;font:900 30px Inter;color:#6b7772;opacity:${vis(t,T.die)}">RISK OF DYING DURING THE STUDY</div>
+        <div style="position:absolute;left:170px;bottom:110px;width:220px;height:${f1(hLow)}px;border-radius:22px 22px 8px 8px;background:#ff3b4a"></div>
+        <div style="position:absolute;left:510px;bottom:110px;width:220px;height:${f1(Math.max(0,hHigh))}px;border-radius:22px 22px 8px 8px;background:#22c55e"></div>
+        <div style="position:absolute;left:110px;width:340px;bottom:40px;text-align:center;font:900 32px Inter;color:#ff3b4a;opacity:${vis(t,T.lowest)}">SCORE 0–3</div>
+        <div style="position:absolute;left:450px;width:340px;bottom:40px;text-align:center;font:900 32px Inter;color:#16a34a;opacity:${vis(t,T.eight)}">SCORE 8–10</div></div>`);
+      pill('MUCH HIGHER RISK','red',470,1855,T.much,T.eight-0.1);
+      pill('8+ = LOWER RISK','green',470,1855,T.eight,sh.t1);
+      break;}
+    case 'cause':{
+      view='stand';st={view:'front',arms0:'hips',eyes:'normal'};cam={z:1.0,cx:540,cy:1060};
+      card('⚠️',800,520,sh.t0+0.05,sh.t1,false);
+      pill('LINKED ≠ CAUSED','dark',540,1560,S(116),sh.t1);
+      break;}
+    case 'three':{
+      view='stand';const good=t>=T.youcan;
+      st={view:'front',arms0:'hips',arms1:'up',armK:ramp(t,T.youcan,.5),eyes:good?'happy':'normal'};cam={z:0.98,cx:540,cy:1060};
+      card('💪',90,520,T.strength,sh.t1,good?true:false);card('⚖️',445,520,T.balance,sh.t1,good?true:false);card('🧘‍♀️',800,520,T.flex,sh.t1,good?true:false);
+      pill('STRENGTH','blue',540,1560,T.strength,T.balance-0.1);
+      pill('BALANCE','blue',540,1560,T.balance,T.flex-0.1);
+      pill('FLEXIBILITY','blue',540,1560,T.flex,T.working-0.1);
+      pill('WORKING TOGETHER','violet',540,1560,T.working,T.good-0.1);
+      pill('GOOD NEWS 🎉','green',540,1560,T.good,T.youcan-0.1);
+      pill('YOU CAN TRAIN ALL 3 ✓','green',540,1560,T.youcan,sh.t1);
+      if(good){let c='';for(let i=0;i<30;i++){const ph=(t-T.youcan)*0.9+((i*0.618)%1);const x=(i*137)%1080;const y=-50+((ph*900)%1900);const cols=['#7c5cff','#ff3b4a','#22c55e','#ffd23f','#3d6bff'];c+=`<rect x="${x}" y="${f1(y)}" width="18" height="28" rx="4" fill="${cols[i%5]}" transform="rotate(${f1(ph*360+i*20)} ${x} ${f1(y)})"/>`;}ovs+=c;}
+      break;}
+    case 'try':{
+      st={eyes:'strain'};if(t>=T.comment+0.6)st.eyes='happy';cam={z:0.85,cx:560,cy:1000};
+      pill('TRY IT NOW ⏱️','red',540,520,sh.t0,sh.t1);
+      if(t>=T.comment-0.1){const k=popk(t,T.comment-0.1),o=vis(t,T.comment-0.1);const txt='My score: __ /10';const n=Math.floor(clamp((t-T.comment)/0.9,0,1)*txt.length);const cur=(t*2%1)<.5?'|':'';
+        ov.push(`<div style="position:absolute;left:110px;top:1725px;width:860px;padding:28px 34px;border-radius:36px;background:#fff;box-shadow:0 10px 0 rgba(0,0,0,.15);opacity:${o};transform:scale(${f1(k)});display:flex;align-items:center;gap:22px;font:800 42px Inter;color:#17171c"><span style="font-family:'Noto Color Emoji';font-size:56px">💬</span><span>${txt.slice(0,n)}${cur}</span><span style="margin-left:auto;padding:12px 24px;border-radius:20px;background:#7c5cff;color:#fff;font:900 30px Inter">POST</span></div>`);}
+      break;}
+    case 'follow':{
+      view='stand';st={view:'front',arms0:'hips',arms1:'wave',armK:ramp(t,sh.t0,.4),wave:true,eyes:'happy'};cam={z:0.98,cx:540,cy:1060};
+      const k=popk(t,sh.t0+0.05),o=vis(t,sh.t0+0.05);const tap=T.rous+0.1;const followed=t>=tap+0.15;const press=t>=tap&&t<tap+0.15?0.9:1;
+      ov.push(`<div style="position:absolute;left:190px;top:1420px;width:700px;height:170px;border-radius:40px;background:#fff;box-shadow:0 10px 0 rgba(0,0,0,.15);opacity:${o};transform:scale(${f1(k)});display:flex;align-items:center;gap:26px;padding:0 30px;box-sizing:border-box">
+        <div style="width:110px;height:110px;border-radius:50%;background:#cfeedd;border:5px solid #7c5cff;display:flex;align-items:center;justify-content:center;font:900 40px Inter;color:#17171c">RF</div>
+        <div style="flex:1"><div style="font:900 40px Inter;color:#17171c">Rous Fit</div><div style="font:700 30px Inter;color:#6b7772">${HANDLE}</div></div>
+        <div style="padding:20px 30px;border-radius:24px;background:${followed?'#22c55e':'#7c5cff'};color:#fff;font:900 34px Inter;transform:scale(${press})">${followed?'✓ FOLLOWING':'+ FOLLOW'}</div></div>`);
+      if(t>=tap-0.5&&t<tap+0.8){const hk=clamp((t-(tap-0.5))/0.5,0,1);ov.push(`<div style="position:absolute;left:${f1(lerp(900,770,ease(hk)))}px;top:${f1(lerp(1640,1530,ease(hk)))}px;font-size:90px;font-family:'Noto Color Emoji';opacity:${f1(vis(t,tap-0.5,tap+0.6))}">👆</div>`);}
+      card('💬',800,520,S(150),DUR,false);
+      break;}
+  }
+  const pk=clamp((t-sh.t0)/0.22,0,1);const punch=sh.i>0?1+0.07*(1-ease(pk)):1;
+  const z=cam.z*punch;
+  let body;
+  if(view==='side'){pose=poseAt(KEYS,t);rig=sitRig(pose,st,t);body=rig.svg;
+    if(sh.name==='deduct'){minus('−1',rig.pts.hand,T.hand);minus('−1',rig.pts.knee,T.knee);minus('−1',rig.pts.forearm,T.arm);
+      if(st.wobble){for(let i=0;i<2;i++)world+=`<text x="${f1(rig.pts.head.x+(i?110:-120))}" y="${f1(rig.pts.head.y-90+Math.sin(t*12+i)*8)}" text-anchor="middle" font-family="Inter" font-weight="900" font-size="90" fill="#ffd23f" stroke="#7a5a00" stroke-width="8" paint-order="stroke fill" opacity="${f1(st.wobble)}">!</text>`;}}
+  } else body=stand(st,t).svg;
+  const tr=`translate(540 1100) scale(${f1(z*100)/100}) translate(${f1(-cam.cx)} ${f1(-cam.cy)})`;
+  document.getElementById('scene').innerHTML=DEFS+`<rect width="1080" height="1920" fill="url(#bg)"/>`+`<g transform="${tr}">${body}${world}</g>`;
+  let tsvg='';
+  tsvg+=`<text x="1040" y="1870" text-anchor="end" font-family="Inter" font-weight="800" font-size="36" fill="#fff" stroke="#3a6b52" stroke-width="5" paint-order="stroke fill" opacity=".75">${HANDLE}</text>`;
+  tsvg+=`<rect x="0" y="1908" width="1080" height="12" fill="#000" opacity=".08"/><rect x="0" y="1908" width="${f1(1080*t/DUR)}" height="12" fill="#7c5cff"/>`;
+  document.getElementById('ovs').innerHTML=DEFS+tsvg+ovs;
+  let h='<div class="band"></div>';
+  if(score&&score.show){const v=score.v;const col=v>=8?'#22c55e':v>=6?'#ffb020':'#ff3b4a';const fl=score.flash?1.12:1;
+    h+=`<div style="position:absolute;right:50px;top:600px;width:270px;padding:18px 0 22px;border-radius:36px;background:#fff;box-shadow:0 10px 0 rgba(0,0,0,.15);text-align:center;transform:scale(${f1(score.k*fl)});font-family:Inter"><div style="font:900 30px Inter;color:#6b7772;letter-spacing:2px">SCORE</div><div style="font:900 120px Inter;line-height:120px;color:${col}">${v%1?v.toFixed(1):v}<span style="font-size:44px;color:#9aa6a0">/10</span></div></div>`;}
+  for(const p of pills) h+=`<div class="pill ${p.cls}" style="left:${p.x}px;top:${p.y}px;opacity:${f1(p.o)};transform:translate(-50%,-50%) scale(${f1(p.k)})">${p.txt}</div>`;
+  for(const c of cards) h+=`<div class="card" style="left:${c.x}px;top:${c.y}px;opacity:${f1(c.o)};transform:scale(${f1(c.k)})">${c.emo}${c.ck==='x'?'<div class="ck" style="background:#ff3b4a">✗</div>':c.ck?'<div class="ck">✓</div>':''}</div>`;
+  h+=ov.join('');
+  h+=captions(t);
+  document.getElementById('ov').innerHTML=h;
+}
+
+// ---------- captions ----------
+const GROUPS=(()=>{const g=[];let cur=[];W.forEach((w,i)=>{cur.push(i);const end=/[.?:,…!]$/.test(w.w)||/\.\.\.$/.test(w.w);if(end||cur.length>=4){g.push(cur);cur=[];}});if(cur.length)g.push(cur);return g;})();
+function captions(t){
+  let gi=-1;for(let k=0;k<GROUPS.length;k++){if(t>=S(GROUPS[k][0])-0.05)gi=k;}
+  if(gi<0)return '';const g=GROUPS[gi];const last=g[g.length-1];
+  const next=gi+1<GROUPS.length?S(GROUPS[gi+1][0])-0.05:DUR;
+  if(t>Math.min(next,E(last)+0.9))return '';
+  const k=popk(t,S(g[0])-0.05);
+  let s=`<div class="cap" style="transform:scale(${f1(0.9+0.1*clamp(k,0,1.1))})">`;
+  for(const i of g){let cls='w';if(t>=S(i))cls+=' on';if(t>=S(i)&&t<E(i)+0.05)cls+=' cur';s+=`<span class="${cls}">${W[i].w.replace('...','…')}</span>`;}
+  return s+'</div>';
+}
+window.frame=frame;window.DUR=DUR;
+</script></body></html>
