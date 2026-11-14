@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Reel azúcar 3D</title>
+<style>
+@font-face{font-family:Fredoka;font-weight:600;src:url(node_modules/@fontsource/fredoka/files/fredoka-latin-600-normal.woff2) format('woff2');}
+@font-face{font-family:Fredoka;font-weight:700;src:url(node_modules/@fontsource/fredoka/files/fredoka-latin-700-normal.woff2) format('woff2');}
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;font-family:Fredoka,sans-serif;}
+#bg{position:absolute;inset:0;}
+#stage{position:absolute;inset:0;}
+#stage canvas{display:block;}
+.t{position:absolute;left:0;right:0;text-align:center;opacity:0;will-change:transform,opacity;}
+.pill{display:inline-block;background:#fff;color:#1d3557;border-radius:44px;padding:18px 44px;font-weight:700;font-size:58px;box-shadow:0 10px 0 rgba(29,53,87,.18);}
+.huge{font-weight:700;font-size:190px;color:#fff;line-height:1;-webkit-text-stroke:10px #1d3557;paint-order:stroke fill;text-shadow:0 12px 0 rgba(29,53,87,.25);}
+.mid{font-weight:700;font-size:80px;color:#fff;line-height:1.05;-webkit-text-stroke:8px #1d3557;paint-order:stroke fill;text-shadow:0 8px 0 rgba(29,53,87,.25);padding:0 50px;}
+.red{color:#ff4d6d;}
+.green{color:#2ec4b6;}
+.small{font-weight:600;font-size:36px;color:#1d3557;opacity:.8;}
+#bar{position:absolute;left:90px;right:90px;top:560px;height:90px;opacity:0;}
+#track{position:absolute;inset:0;background:#fff;border-radius:45px;box-shadow:inset 0 0 0 6px #1d3557;overflow:hidden;}
+#fill{position:absolute;left:0;top:0;bottom:0;width:0;border-radius:45px;}
+#mark{position:absolute;top:-30px;bottom:-30px;width:10px;background:#1d3557;border-radius:5px;}
+#marklab{position:absolute;top:-95px;transform:translateX(-50%);font-weight:700;font-size:52px;color:#1d3557;white-space:nowrap;}
+#barval{position:absolute;top:110px;left:0;right:0;text-align:center;font-weight:700;font-size:64px;color:#1d3557;}
+#stamp{position:absolute;left:0;right:0;top:1600px;text-align:center;opacity:0;}
+#stamp span{display:inline-block;font-weight:700;font-size:96px;color:#fff;background:#ff4d6d;padding:10px 46px;border-radius:30px;border:8px solid #fff;box-shadow:0 12px 0 rgba(0,0,0,.18);}
+</style>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script>
+</head>
+<body>
+<div id="bg"></div>
+<div id="stage"></div>
+
+<!-- Textos (aparecen/desaparecen según el tiempo) -->
+<div class="t" id="t_sano" style="top:250px"><div class="huge">¿SANO?</div></div>
+<div class="t" id="t_mira" style="top:500px"><span class="pill">Mira lo que tiene adentro…</span></div>
+
+<div class="t" id="t_jugo" style="top:150px"><span class="pill">Jugo de naranja de caja · 240 ml</span></div>
+<div class="t" id="t_jugo_g" style="top:290px"><div class="huge"><span id="g1">0</span> g</div></div>
+<div class="t" id="t_jugo_c" style="top:500px"><div class="mid">= 5 cubos de azúcar</div></div>
+
+<div class="t" id="t_ener" style="top:150px"><span class="pill">Bebida energética · 250 ml</span></div>
+<div class="t" id="t_ener_g" style="top:290px"><div class="huge"><span id="g2">0</span> g</div></div>
+<div class="t" id="t_ener_c" style="top:500px"><div class="mid">= 7 cubos</div></div>
+
+<div class="t" id="t_ref" style="top:150px"><span class="pill">Refresco · lata 355 ml</span></div>
+<div class="t" id="t_ref_g" style="top:290px"><div class="huge red"><span id="g3">0</span> g</div></div>
+<div class="t" id="t_ref_c" style="top:500px"><div class="mid">¡Casi 10 cubos!</div></div>
+
+<div class="t" id="t_cubo" style="top:1820px"><span class="small">1 cubo ≈ 4 g de azúcar · valores aproximados</span></div>
+
+<div class="t" id="t_oms" style="top:150px"><span class="pill">La OMS recomienda, idealmente…</span></div>
+<div class="t" id="t_oms2" style="top:290px"><div class="mid">menos de 25 g de azúcar libre al día</div></div>
+<div id="bar"><div id="track"><div id="fill"></div></div><div id="mark"></div><div id="marklab">25 g</div><div id="barval"></div></div>
+<div id="stamp"><span>¡YA TE PASASTE!</span></div>
+<div class="t" id="t_oms_note" style="top:1820px"><span class="small">*Azúcares libres (incluye jugos) · ~5 % de la energía diaria</span></div>
+
+<div class="t" id="t_cambio" style="top:170px"><span class="pill">¿Mi cambio favorito?</span></div>
+<div class="t" id="t_agua" style="top:310px"><div class="mid">Agua con limón y menta</div></div>
+<div class="t" id="t_cero" style="top:500px"><div class="huge green">0 cubos</div></div>
+
+<div class="t" id="t_etiq" style="top:200px"><div class="mid">Etiqueta a quien se toma una de estas todos los días</div></div>
+<div class="t" id="t_sigue" style="top:520px"><span class="pill">Sígueme · Parte 2: desayunos</span></div>
+
+<script type="module">
+import * as THREE from 'three';
+import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
+
+const W = 1080, H = 1920;
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, preserveDrawingBuffer: true });
+renderer.setPixelRatio(1);
+renderer.setSize(W, H);
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+document.getElementById('stage').appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(35, W / H, 0.1, 100);
+
+scene.add(new THREE.HemisphereLight(0xffffff, 0xffe2c7, 1.5));
+const key = new THREE.DirectionalLight(0xffffff, 2.0); key.position.set(4, 8, 7); scene.add(key);
+const rim = new THREE.DirectionalLight(0xcfe9ff, 1.1); rim.position.set(-5, 5, -4); scene.add(rim);
+
+// ---------- helpers ----------
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const prog = (t, a, b) => clamp((t - a) / (b - a));
+const lerp = (a, b, k) => a + (b - a) * k;
+const easeOutBack = x => { const c1 = 1.70158, c3 = c1 + 1; return 1 + c3 * Math.pow(x - 1, 3) + c1 * Math.pow(x - 1, 2); };
+const easeInOut = x => x < .5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2;
+const easeIn = x => x * x * x;
+const easeOut = x => 1 - Math.pow(1 - x, 3);
+const mat = (c, o = {}) => new THREE.MeshStandardMaterial({ color: c, roughness: .45, metalness: 0, ...o });
+const sphere = new THREE.SphereGeometry(1, 28, 18);
+
+// blob shadow texture
+const sc = document.createElement('canvas'); sc.width = sc.height = 128;
+const sx = sc.getContext('2d'); const gr = sx.createRadialGradient(64, 64, 0, 64, 64, 64);
+gr.addColorStop(0, 'rgba(29,53,87,0.35)'); gr.addColorStop(1, 'rgba(29,53,87,0)');
+sx.fillStyle = gr; sx.fillRect(0, 0, 128, 128);
+const shadowTex = new THREE.CanvasTexture(sc);
+function blob(r) {
+  const m = new THREE.Mesh(new THREE.PlaneGeometry(r * 2, r * 2), new THREE.MeshBasicMaterial({ map: shadowTex, transparent: true, depthWrite: false }));
+  m.rotation.x = -Math.PI / 2; m.position.y = .01; return m;
+}
+
+// floor
+const floor = new THREE.Mesh(new THREE.CircleGeometry(4.6, 72), new THREE.MeshBasicMaterial({ color: 0xffffff, transparent: true, opacity: .5 }));
+floor.rotation.x = -Math.PI / 2; scene.add(floor);
+
+// ---------- face ----------
+function makeFace(s = 1) {
+  const g = new THREE.Group(); const eyes = [];
+  for (const sx of [-1, 1]) {
+    const e = new THREE.Group();
+    const ball = new THREE.Mesh(sphere, mat(0x1b1b2f, { roughness: .2 })); ball.scale.set(.13 * s, .16 * s, .06 * s); e.add(ball);
+    const hl = new THREE.Mesh(sphere, new THREE.MeshBasicMaterial({ color: 0xffffff })); hl.scale.setScalar(.045 * s); hl.position.set(.04 * s, .06 * s, .05 * s); e.add(hl);
+    e.position.set(sx * .28 * s, .12 * s, 0); g.add(e); eyes.push(e);
+  }
+  const mouth = new THREE.Mesh(new THREE.TorusGeometry(.16 * s, .035 * s, 10, 28, Math.PI), mat(0x1b1b2f)); g.add(mouth);
+  const omouth = new THREE.Mesh(new THREE.TorusGeometry(.09 * s, .035 * s, 10, 28), mat(0x1b1b2f)); omouth.scale.y = 1.3; omouth.position.y = -.18 * s; g.add(omouth);
+  for (const sx of [-1, 1]) {
+    const ch = new THREE.Mesh(sphere, mat(0xff8fa3, { transparent: true, opacity: .8 })); ch.scale.set(.11 * s, .07 * s, .03 * s); ch.position.set(sx * .5 * s, -.08 * s, -.01 * s); g.add(ch);
+  }
+  g.userData = { eyes, mouth, omouth, s };
+  setMood(g, 'happy'); return g;
+}
+function setMood(face, mood) {
+  const { mouth: m, omouth, s } = face.userData;
+  m.visible = mood !== 'shock'; omouth.visible = mood === 'shock';
+  if (mood === 'happy') { m.rotation.z = Math.PI; m.position.y = -.06 * s; m.scale.set(1, 1, 1); }
+  else if (mood === 'worried') { m.rotation.z = 0; m.position.y = -.3 * s; m.scale.set(.8, .55, 1); }
+  else if (mood === 'shock') { m.rotation.z = Math.PI; m.position.y = -.12 * s; m.scale.set(.6, 1.4, 1); }
+}
+function blink(face, t, seed = 0) {
+  const ph = (t + seed * 1.37) % 3.1;
+  const k = ph < .14 ? Math.sin(ph / .14 * Math.PI) : 0;
+  for (const e of face.userData.eyes) e.scale.y = 1 - .9 * k;
+}
+
+// ---------- characters ----------
+function makeJuice() {
+  const root = new THREE.Group(), body = new THREE.Group(); root.add(body);
+  const box = new THREE.Mesh(new RoundedBoxGeometry(1.6, 2.3, 1.0, 4, .14), mat(0xff9f1c)); box.position.y = 1.15; body.add(box);
+  const lab = new THREE.Mesh(new RoundedBoxGeometry(1.25, .8, .04, 2, .02), mat(0xfff3d6)); lab.position.set(0, .62, .5); body.add(lab);
+  const orange = new THREE.Mesh(new THREE.CylinderGeometry(.28, .28, .05, 32), mat(0xff7b00)); orange.rotation.x = Math.PI / 2; orange.position.set(0, .62, .53); body.add(orange);
+  const leaf = new THREE.Mesh(sphere, mat(0x52b788)); leaf.scale.set(.13, .06, .03); leaf.position.set(.24, .9, .54); leaf.rotation.z = .5; body.add(leaf);
+  const straw = mat(0xff4d6d);
+  const s1 = new THREE.Mesh(new THREE.CylinderGeometry(.06, .06, .9, 16), straw); s1.position.set(.45, 2.6, 0); body.add(s1);
+  const s2 = new THREE.Mesh(new THREE.CylinderGeometry(.06, .06, .45, 16), straw); s2.rotation.z = Math.PI / 2.6; s2.position.set(.3, 3.12, 0); body.add(s2);
+  const face = makeFace(1); face.position.set(0, 1.62, .52); body.add(face);
+  root.add(blob(1.3)); root.userData = { body, face, seed: 0 }; scene.add(root); return root;
+}
+function makeCan(color, band, seed) {
+  const root = new THREE.Group(), body = new THREE.Group(); root.add(body);
+  const r = .72, h = 2.4;
+  const can = new THREE.Mesh(new THREE.CylinderGeometry(r, r, h, 48), mat(color, { roughness: .3, metalness: .15 })); can.position.y = h / 2; body.add(can);
+  const b = new THREE.Mesh(new THREE.CylinderGeometry(r * 1.012, r * 1.012, h * .2, 48), mat(band, { roughness: .35 })); b.position.y = h * .28; body.add(b);
+  const metal = mat(0xdadde2, { roughness: .25, metalness: .85 });
+  const top = new THREE.Mesh(new THREE.CylinderGeometry(r * .9, r, .14, 48), metal); top.position.y = h + .07; body.add(top);
+  const bot = new THREE.Mesh(new THREE.CylinderGeometry(r, r * .9, .12, 48), metal); bot.position.y = -.0; body.add(bot);
+  const tab = new THREE.Mesh(new RoundedBoxGeometry(.35, .04, .2, 2, .02), metal); tab.position.set(0, h + .16, .2); body.add(tab);
+  const face = makeFace(1); face.position.set(0, h * .66, r - .03); body.add(face);
+  const drops = [];
+  for (let i = 0; i < 2; i++) { const d = new THREE.Mesh(sphere, mat(0x8ecae6, { roughness: .1 })); d.scale.set(.07, .11, .05); d.position.set(i ? .55 : -.5, h * .8, r * .5); d.visible = false; body.add(d); drops.push(d); }
+  root.add(blob(1.1)); root.userData = { body, face, seed, drops }; scene.add(root); return root;
+}
+function makeGlass() {
+  const root = new THREE.Group(), body = new THREE.Group(); root.add(body);
+  const glass = new THREE.Mesh(new THREE.CylinderGeometry(.85, .72, 2.3, 48, 1, true),
+    new THREE.MeshStandardMaterial({ color: 0xe8f9ff, transparent: true, opacity: .32, roughness: .05, side: THREE.DoubleSide, depthWrite: false }));
+  glass.position.y = 1.15; body.add(glass);
+  const water = new THREE.Mesh(new THREE.CylinderGeometry(.8, .7, 1.75, 48), mat(0x6ad1ff, { transparent: true, opacity: .6, roughness: .1 }));
+  water.position.y = .9; body.add(water);
+  const lemon = new THREE.Mesh(new THREE.CylinderGeometry(.42, .42, .09, 32), mat(0xffe066, { roughness: .5 }));
+  lemon.rotation.set(Math.PI / 2, 0, -.35); lemon.position.set(.7, 2.25, .1); body.add(lemon);
+  const pulp = new THREE.Mesh(new THREE.CylinderGeometry(.34, .34, .1, 32), mat(0xfff3b0)); pulp.rotation.copy(lemon.rotation); pulp.position.copy(lemon.position); pulp.position.z += .01; body.add(pulp);
+  for (const [x, y, rz] of [[-.4, 2.0, .7], [-.15, 2.1, -.3]]) {
+    const leaf = new THREE.Mesh(sphere, mat(0x2d9d5c)); leaf.scale.set(.24, .1, .03); leaf.position.set(x, y, .45); leaf.rotation.z = rz; body.add(leaf);
+  }
+  const face = makeFace(1); face.position.set(0, 1.05, .76); face.renderOrder = 5; body.add(face);
+  const stars = [];
+  for (let i = 0; i < 6; i++) { const s = new THREE.Mesh(new THREE.OctahedronGeometry(.12), new THREE.MeshBasicMaterial({ color: 0xffd60a })); body.add(s); stars.push(s); }
+  root.add(blob(1.2)); root.userData = { body, face, seed: 2, stars }; scene.add(root); return root;
+}
+
+const cubeGeo = new RoundedBoxGeometry(.55, .55, .55, 3, .09);
+const cubeMat = mat(0xffffff, { roughness: .8 });
+function makeCube() {
+  const g = new THREE.Group();
+  g.add(new THREE.Mesh(cubeGeo, cubeMat));
+  const f = makeFace(.33); f.position.z = .285; g.add(f);
+  g.userData = { face: f }; scene.add(g); return g;
+}
+
+const juice = makeJuice();
+const energy = makeCan(0x3a0ca3, 0xb5ff2e, 1);
+const soda = makeCan(0xe63946, 0xffffff, 3);
+const water = makeGlass();
+
+// ---------- appearances: [enter, exit, x, scale, fromX, toX] ----------
+const APPEAR = new Map([
+  [juice,  [{ enter: 0.0, exit: 11.35, x: t => lerp(0, -1.1, easeInOut(prog(t, 4.2, 4.9))), s: 1, from: -6, to: -6 },
+            { enter: 36.6, exit: 99, x: () => -1.52, s: .62, from: -6, to: -6 }]],
+  [energy, [{ enter: 11.6, exit: 16.85, x: () => -1.1, s: 1, from: -6, to: -6 }]],
+  [soda,   [{ enter: 17.15, exit: 31.65, x: () => -1.1, s: 1, from: -6, to: -6 },
+            { enter: 36.75, exit: 99, x: () => 1.52, s: .62, from: 6, to: 6 }]],
+  [water,  [{ enter: 32.1, exit: 99, x: () => 0, s: 1, from: 6, to: 6 }]],
+]);
+function placeChar(c, t) {
+  const w = APPEAR.get(c).find(w => t >= w.enter && t <= w.exit + .6);
+  if (!w) { c.visible = false; return; }
+  c.visible = true;
+  const x0 = w.x(t);
+  const pe = prog(t, w.enter, w.enter + .75);
+  let x = lerp(w.from, x0, easeOutBack(pe));
+  if (t > w.exit) x = lerp(x0, w.to, easeIn(prog(t, w.exit, w.exit + .55)));
+  c.position.x = x;
+  c.scale.setScalar(w.s);
+  const { body, face, seed } = c.userData;
+  const hop = pe < 1 ? Math.abs(Math.sin(pe * Math.PI * 3)) * .7 * (1 - pe) : 0;
+  const idle = Math.sin((t + seed) * 3.2) * .035;
+  body.position.y = hop;
+  body.scale.set(1 - idle * .6, 1 + idle, 1 - idle * .6);
+  body.rotation.z = Math.sin((t + seed) * 1.7) * .04;
+  blink(face, t, seed);
+}
+
+// ---------- sugar cube piles ----------
+const SLOTS = [[-.87, 0], [-.29, 0], [.29, 0], [.87, 0], [-.58, 1], [0, 1], [.58, 1], [-.29, 2], [.29, 2], [0, 3]];
+function makePile(n, cfg) { return { cubes: [...Array(n)].map(makeCube), ...cfg }; }
+const piles = [
+  makePile(5,  { start: 7.0,   end: 10.9,  remove: 11.35, px: 1.0, worried: 99 }),
+  makePile(7,  { start: 13.95, end: 16.4,  remove: 16.85, px: 1.0, worried: 99 }),
+  makePile(10, { start: 19.25, end: 21.6,  remove: 31.65, px: 1.0, worried: 29.1 }),
+];
+function updatePile(p, t) {
+  const n = p.cubes.length, step = (p.end - p.start) / n;
+  p.cubes.forEach((c, i) => {
+    const ts = p.start + i * step, fall = .45;
+    if (t < ts || t > p.remove + .5) { c.visible = false; return; }
+    c.visible = true;
+    const [sx, row] = SLOTS[i];
+    const tx = p.px + sx, ty = .275 + row * .56;
+    const k = prog(t, ts, ts + fall);
+    let y = lerp(6.2, ty, k * k);
+    let sy = 1, sxz = 1, rx = (1 - k) * (2.2 + i * .7), rz = (1 - k) * (1.4 + i * .4);
+    const dt = t - (ts + fall);
+    if (dt > 0) {
+      const b = Math.exp(-dt * 7) * Math.sin(dt * 22);
+      sy = 1 - .18 * b; sxz = 1 + .12 * b;
+      rz = Math.sin(t * 3.5 + i) * .05;
+    }
+    let s = 1;
+    if (t > p.remove) { const r = easeIn(prog(t, p.remove, p.remove + .45)); s = 1 - r; y += r * .6; }
+    c.position.set(tx, y, 0);
+    c.rotation.set(rx, 0, rz);
+    c.scale.set(sxz * s, sy * s, sxz * s);
+    setMood(c.userData.face, t > p.worried ? 'worried' : (dt > 0 && dt < .5 ? 'shock' : 'happy'));
+    blink(c.userData.face, t, i * .7);
+  });
+}
+
+// ---------- overlay text ----------
+const $ = id => document.getElementById(id);
+const TEXTS = [
+  ['t_sano', 0.15, 4.3], ['t_mira', 2.07, 4.3],
+  ['t_jugo', 4.54, 11.3], ['t_jugo_g', 6.98, 11.3], ['t_jugo_c', 9.55, 11.3],
+  ['t_ener', 11.77, 17.0], ['t_ener_g', 13.95, 17.0], ['t_ener_c', 15.3, 17.0],
+  ['t_ref', 17.22, 22.7], ['t_ref_g', 19.22, 22.7], ['t_ref_c', 20.6, 22.7],
+  ['t_cubo', 6.98, 22.7],
+  ['t_oms', 22.94, 31.6], ['t_oms2', 23.4, 31.6], ['t_oms_note', 23.4, 31.6],
+  ['t_cambio', 32.13, 36.4], ['t_agua', 33.61, 36.4], ['t_cero', 35.29, 36.4],
+  ['t_etiq', 36.68, 43], ['t_sigue', 40.36, 43],
+];
+function showText(el, t, a, b) {
+  if (t < a || t > b) { el.style.opacity = 0; return; }
+  const kin = prog(t, a, a + .35), kout = prog(t, b - .25, b);
+  const sc = lerp(.6, 1, easeOutBack(kin)) * (1 - .15 * kout);
+  el.style.opacity = Math.min(kin * 1.5, 1) * (1 - kout);
+  el.style.transform = `scale(${sc})`;
+}
+const BG = [ // [time, top, bottom]
+  [0, '#fff1dc', '#ffcf99'], [11.6, '#efe9ff', '#c3b1ff'], [17.15, '#ffe8e8', '#ffb3b3'],
+  [29.1, '#ffd0d0', '#ff8f8f'], [32.1, '#e6fff4', '#aef0dc'], [36.6, '#e6fff4', '#c6e6ff'],
+];
+const hex = h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16));
+const mix = (a, b, k) => 'rgb(' + hex(a).map((v, i) => Math.round(lerp(v, hex(b)[i], k))).join(',') + ')';
+function bgAt(t) {
+  let i = 0; while (i + 1 < BG.length && t >= BG[i + 1][0]) i++;
+  const prev = BG[Math.max(0, i - 1)], cur = BG[i];
+  const k = i === 0 ? 1 : easeInOut(prog(t, cur[0], cur[0] + .5));
+  return `linear-gradient(180deg, ${mix(prev[1], cur[1], k)} 0%, ${mix(prev[2], cur[2], k)} 100%)`;
+}
+
+// ---------- main render ----------
+window.renderAt = (t) => {
+  $('bg').style.background = bgAt(t);
+  for (const [id, a, b] of TEXTS) showText($(id), t, a, b);
+  $('g1').textContent = Math.round(21 * easeOut(prog(t, 6.98, 9.0)));
+  $('g2').textContent = Math.round(27 * easeOut(prog(t, 13.95, 15.0)));
+  $('g3').textContent = Math.round(39 * easeOut(prog(t, 19.22, 20.5)));
+
+  // OMS bar
+  const bar = $('bar'), MAXG = 45;
+  if (t >= 22.94 && t <= 31.6) {
+    const kin = prog(t, 22.94, 23.4), kout = prog(t, 31.3, 31.6);
+    bar.style.opacity = kin * (1 - kout);
+    const g = t < 29.11 ? 25 * easeInOut(prog(t, 23.6, 28.4)) : 25 + 14 * easeOut(prog(t, 29.11, 30.2));
+    const fill = $('fill');
+    fill.style.width = (g / MAXG * 100) + '%';
+    fill.style.background = g > 25.2 ? '#ff4d6d' : (g > 18 ? '#ffb703' : '#2ec4b6');
+    $('mark').style.left = `calc(${25 / MAXG * 100}% - 5px)`;
+    $('marklab').style.left = (25 / MAXG * 100) + '%';
+    $('barval').textContent = t < 29.11 ? `límite ideal ≈ 25 g` : `1 lata de refresco = ${Math.round(g)} g`;
+  } else bar.style.opacity = 0;
+  const st = $('stamp');
+  if (t >= 29.11 && t <= 31.6) {
+    const k = prog(t, 29.11, 29.4);
+    st.style.opacity = k * (1 - prog(t, 31.3, 31.6));
+    st.style.transform = `scale(${lerp(2.2, 1, easeOut(k))}) rotate(-6deg)`;
+  } else st.style.opacity = 0;
+
+  // characters
+  for (const c of [juice, energy, soda, water]) placeChar(c, t);
+  setMood(juice.userData.face, (t > 2.07 && t < 4.3) ? 'shock' : 'happy');
+  setMood(energy.userData.face, t > 13.95 && t < 16.85 ? 'worried' : 'happy');
+  const sodaWorried = t > 19.22 && t < 31.65;
+  setMood(soda.userData.face, sodaWorried ? (t > 29.11 ? 'shock' : 'worried') : 'happy');
+  soda.userData.drops.forEach((d, i) => {
+    d.visible = t > 29.11 && t < 31.65;
+    d.position.y = 2.4 * .82 - ((t * .9 + i * .5) % 1) * .6;
+  });
+  // energy can jitter
+  if (energy.visible) energy.userData.body.position.x = Math.sin(t * 47) * .03;
+  // water sparkles
+  water.userData.stars.forEach((s, i) => {
+    const a = t * 1.2 + i * Math.PI / 3;
+    const on = t > 35.29 ? easeOut(prog(t, 35.29, 35.7)) : 0;
+    s.position.set(Math.cos(a) * 1.25, 1.4 + Math.sin(a * 1.3) * .9, Math.sin(a) * .5);
+    s.rotation.set(t * 2, t * 3, 0);
+    s.scale.setScalar(on * (.8 + .4 * Math.sin(t * 6 + i)));
+  });
+  for (const p of piles) updatePile(p, t);
+
+  // camera (gentle drift + shakes)
+  let shake = 0;
+  for (const [ts, amp] of [[20.6, .09], [29.11, .12]]) { const d = t - ts; if (d > 0 && d < .6) shake += amp * Math.exp(-d * 6); }
+  camera.position.set(Math.sin(t * .4) * .25 + Math.sin(t * 53) * shake, 3.0 + Math.cos(t * 61) * shake, 13 - Math.sin(t * .2) * .25);
+  camera.lookAt(0, 2.45, 0);
+  renderer.render(scene, camera);
+};
+
+await document.fonts.load('700 50px Fredoka'); await document.fonts.load('600 50px Fredoka');
+window.renderAt(0);
+window.ready = true;
+</script>
+</body>
+</html>
