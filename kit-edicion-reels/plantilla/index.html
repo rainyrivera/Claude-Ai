@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, height=1920">
+    <script src="assets/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Inter"; font-weight: 700; src: url(assets/fonts/inter-latin-700-normal.woff2) format("woff2"); }
+      @font-face { font-family: "Inter"; font-weight: 800; src: url(assets/fonts/inter-latin-800-normal.woff2) format("woff2"); }
+      @font-face { font-family: "Playfair Display"; font-weight: 900; font-style: italic; src: url(assets/fonts/playfair-display-latin-900-italic.woff2) format("woff2"); }
+      @font-face { font-family: "JetBrains Mono"; font-weight: 600; src: url(assets/fonts/jetbrains-mono-latin-600-normal.woff2) format("woff2"); }
+      :root {
+        --accent: #fc804c;
+        --accent-ink: #d9663a;
+        --ink: #ffffff;
+        --paper: #fbfaf7;
+        --dark: #1b1a18;
+        --font-ui: "Inter", sans-serif;
+        --font-display: "Playfair Display", serif;
+        --font-mono: "JetBrains Mono", monospace;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #05060d; }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; font-family: var(--font-ui); }
+      .clip { position: absolute; }
+      .full { left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; }
+      #cam { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; transform-origin: 540px 760px; }
+
+      .title-wrap { z-index: 5; left: 0; top: 300px; width: 1080px; text-align: center; }
+      .title { display: inline-block; font: italic 900 222px/1 var(--font-display); color: var(--accent); letter-spacing: -4px;
+        text-shadow: 0 8px 30px rgba(0,0,0,.25); }
+      .cut { z-index: 6; }
+      .ui { z-index: 10; }
+
+      .sub { left: 70px; width: 940px; top: 1560px; text-align: center; font: 800 64px/1.15 var(--font-ui); color: var(--ink);
+        text-shadow: 0 3px 14px rgba(0,0,0,.65), 0 1px 3px rgba(0,0,0,.55); letter-spacing: -0.5px; }
+      .k { color: var(--accent); }
+
+      .kicker { left: 0; width: 1080px; top: 250px; display: flex; justify-content: center; align-items: center; gap: 22px;
+        font: 800 38px var(--font-ui); letter-spacing: .32em; color: var(--ink); text-shadow: 0 2px 12px rgba(0,0,0,.55); }
+      .kicker .ln { display: inline-block; height: 3px; width: 70px; background: var(--accent); }
+      .kicker .w { display: inline-block; }
+
+      /* hook: "por Claude" */
+      #por { left: 0; width: 1080px; top: 1440px; text-align: center; color: var(--ink); text-shadow: 0 4px 18px rgba(0,0,0,.55); }
+      #por .a { display: block; font: 800 54px var(--font-ui); letter-spacing: .18em; }
+      #por .b { display: block; font: italic 900 150px/1 var(--font-display); color: var(--accent); margin-top: 6px; }
+
+      /* pill label */
+      #pill { left: 44px; top: 980px; height: 54px; padding: 0 22px 0 16px; border-radius: 27px; background: rgba(20,20,26,.72);
+        display: flex; align-items: center; gap: 12px; font: 800 26px var(--font-ui); letter-spacing: .16em; color: var(--ink); }
+      #pill .d { width: 14px; height: 14px; border-radius: 50%; background: var(--accent); }
+
+      /* ad cards */
+      .ad { width: 230px; height: 400px; border-radius: 22px; background: var(--paper); padding: 10px; box-shadow: 0 20px 50px rgba(0,0,0,.35); }
+      .ad .img { width: 210px; height: 316px; border-radius: 14px; background-size: cover; background-position: center; }
+      .ad .lb { margin-top: 12px; display: flex; justify-content: space-between; align-items: center; font: 600 28px var(--font-mono); color: var(--dark); }
+      .ad .lb i { font-style: normal; color: var(--accent-ink); }
+      #ad1 { left: 52px; top: 330px; }
+      #ad2 { left: 798px; top: 300px; }
+      #ad3 { left: 810px; top: 760px; }
+
+      /* edit timeline card */
+      #tlc { left: 90px; width: 900px; top: 1150px; height: 290px; border-radius: 26px; background: rgba(17,17,24,.92); border: 2px solid rgba(255,255,255,.12);
+        box-shadow: 0 24px 60px rgba(0,0,0,.4); overflow: hidden; }
+      #tlc .hd { height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 26px; font: 600 28px var(--font-mono); color: rgba(255,255,255,.75); }
+      #tlc .hd b { color: var(--accent); font-weight: 600; }
+      #tlc .strip { position: absolute; left: 26px; top: 84px; width: 848px; height: 150px; display: flex; gap: 4px; border-radius: 10px; overflow: hidden; }
+      #tlc .strip div { flex: 1; background-size: cover; background-position: center 30%; }
+      #tlc .wave { position: absolute; left: 26px; top: 244px; width: 848px; height: 26px; border-radius: 6px;
+        background: repeating-linear-gradient(90deg, rgba(252,128,76,.75) 0 4px, transparent 4px 9px); opacity: .7; }
+      #tlc .cutm { position: absolute; top: 78px; width: 6px; height: 196px; margin-left: -3px; border-radius: 3px; background: var(--accent); }
+      #playhead { position: absolute; left: 26px; top: 70px; width: 4px; height: 210px; background: var(--ink); }
+
+      /* chips */
+      .chip { top: 1300px; height: 104px; padding: 0 34px 0 22px; border-radius: 52px; display: flex; align-items: center; gap: 16px;
+        background: var(--paper); color: var(--dark); font: 800 46px var(--font-ui); box-shadow: 0 18px 40px rgba(0,0,0,.35); }
+      .chip .ck { width: 60px; height: 60px; border-radius: 50%; background: var(--accent); display: flex; align-items: center; justify-content: center; }
+      #chip1 { left: 70px; }
+      #chip2 { left: 430px; top: 1420px; }
+
+      /* comment input */
+      .cmt { left: 90px; width: 900px; top: 1520px; height: 120px; border-radius: 60px; background: rgba(18,18,28,.84);
+        border: 2px solid rgba(255,255,255,.14); display: flex; align-items: center; padding: 0 22px; gap: 22px; }
+      .cmt .av { width: 76px; height: 76px; border-radius: 50%; background: linear-gradient(135deg, #fc804c, #f4b26b); flex: none; }
+      .cmt .tx { position: relative; flex: 1; height: 60px; font: 700 46px/60px var(--font-ui); color: var(--ink); white-space: nowrap; }
+      .cmt .ph { position: absolute; left: 0; top: 0; color: rgba(255,255,255,.5); }
+      .cmt .typed { position: absolute; left: 0; top: 0; }
+      .cmt .typed span { display: none; }
+      .cmt .caret { display: inline-block; width: 4px; height: 48px; background: var(--accent); vertical-align: -8px; margin-left: 4px; opacity: 0; }
+      .cmt .send { width: 76px; height: 76px; border-radius: 50%; background: var(--accent); flex: none; display: flex; align-items: center; justify-content: center; }
+
+      /* DM window with guide */
+      #dm { left: 150px; width: 780px; top: 1170px; height: 360px; border-radius: 26px; background: var(--paper);
+        box-shadow: 0 30px 70px rgba(0,0,0,.45); overflow: hidden; }
+      #dm .bar { position: relative; height: 56px; display: flex; align-items: center; padding: 0 22px; gap: 12px; border-bottom: 1px solid #e6e3dc; }
+      #dm .dot { width: 16px; height: 16px; border-radius: 50%; }
+      #dm .bar .t { position: absolute; left: 0; right: 0; text-align: center; font: 600 28px var(--font-mono); color: #6b665e; }
+      #dm .body { display: flex; gap: 26px; align-items: flex-start; padding: 22px 28px; }
+      #guide { position: relative; width: 180px; height: 250px; border-radius: 12px; flex: none; background: var(--accent); color: #fff; padding: 18px 16px;
+        box-shadow: 0 8px 18px rgba(0,0,0,.22); overflow: hidden; }
+      #guide .g1 { font: 600 20px var(--font-mono); letter-spacing: .12em; opacity: .9; }
+      #guide .g2 { margin-top: 26px; font: italic 900 44px/1.0 var(--font-display); }
+      #guide .g3 { position: absolute; left: 16px; bottom: 18px; font: 800 22px var(--font-ui); letter-spacing: .06em; }
+      #dm .msg { margin-top: 16px; font: 800 44px/1.1 var(--font-ui); color: var(--dark); }
+      #dm .meta { margin-top: 16px; font: 600 28px var(--font-mono); color: #8b867d; }
+      #stamp { left: 640px; top: 1180px; padding: 10px 26px; border: 5px solid var(--accent-ink); border-radius: 14px; color: var(--accent-ink);
+        font: 800 50px var(--font-ui); letter-spacing: .06em; background: rgba(251,250,247,.96); }
+
+      /* CTA */
+      #arrow { left: 500px; top: 1680px; width: 80px; height: 80px; }
+
+      /* end card */
+      #endbg { z-index: 20; }
+      #endshade { z-index: 21; left: 0; top: 0; width: 1080px; height: 1920px; background: rgba(8,10,20,.35); }
+      #endk { z-index: 22; top: 560px; }
+      #endt-wrap { z-index: 22; left: 0; top: 620px; width: 1080px; text-align: center; }
+      #endt { display: inline-block; font: italic 900 222px/1 var(--font-display); color: var(--accent); letter-spacing: -4px; text-shadow: 0 10px 40px rgba(0,0,0,.35); }
+      #endsub { z-index: 22; left: 0; width: 1080px; top: 900px; text-align: center; font: 800 52px/1.2 var(--font-ui); color: var(--ink); text-shadow: 0 3px 14px rgba(0,0,0,.5); }
+      #cmtEnd { z-index: 22; top: 1100px; }
+      #tA-wrap { top: 200px; }
+      #kA { top: 140px; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="18.6" data-width="1080" data-height="1920">
+
+      <!-- FOOTAGE: nine trims of one take; silences removed -->
+      <div id="cam">
+        <video id="vA" class="clip full footage" src="assets/footage.mp4" data-start="0" data-duration="2.56" data-media-start="0.56" data-has-audio="true" data-fade-in="0.02" data-fade-out="0.02" playsinline></video>
+        <video id="vB" class="clip full footage" src="assets/footage.mp4" data-start="2.56" data-duration="3.38" data-media-start="3.30" data-has-audio="true" data-fade-in="0.02" data-fade-out="0.02" playsinline></video>
+        <video id="vC" class="clip full footage" src="assets/footage.mp4" data-start="5.94" data-duration="0.86" data-media-start="6.90" data-has-audio="true" data-fade-in="0.02" data-fade-out="0.02" playsinline></video>
+        <video id="vD" class="clip full footage" src="assets/footage.mp4" data-start="6.80" data-duration="2.74" data-media-start="8.02" data-has-audio="true" data-fade-in="0.02" data-fade-out="0.02" playsinline></video>
+        <video id="vE" class="clip full footage" src="assets/footage.mp4" data-start="9.54" data-duration="0.80" data-media-start="11.04" data-has-audio="true" data-fade-in="0.02" data-fade-out="0.02" playsinline></video>
+        <video id="vF" class="clip full footage" src="assets/footage.mp4" data-start="10.34" data-duration="1.64" data-media-start="12.10" data-has-audio="true" data-fade-in="0.02" data-fade-out="0.02" playsinline></video>
+        <video id="vG" class="clip full footage" src="assets/footage.mp4" data-start="11.98" data-duration="1.70" data-media-start="14.14" data-has-audio="true" data-fade-in="0.02" data-fade-out="0.02" playsinline></video>
+        <video id="vH" class="clip full footage" src="assets/footage.mp4" data-start="13.68" data-duration="2.00" data-media-start="16.14" data-has-audio="true" data-fade-in="0.02" data-fade-out="0.02" playsinline></video>
+        <video id="vI" class="clip full footage" src="assets/footage.mp4" data-start="15.68" data-duration="0.92" data-media-start="18.38" data-has-audio="true" data-fade-in="0.02" data-fade-out="0.12" playsinline></video>
+      </div>
+
+      <!-- HOOK: 100% behind the head -->
+      <div id="tA-wrap" class="clip title-wrap" data-start="1.10" data-duration="1.46" data-track-index="1"><span id="tA" class="title" data-layout-allow-occlusion="">0%</span></div>
+      <video id="cutA" class="clip full footage cut" src="assets/cutA.webm" data-start="0.94" data-duration="1.62" data-media-start="0" muted playsinline data-track-index="2"></video>
+      <div id="kA" class="clip ui kicker" data-start="1.10" data-duration="1.46" data-track-index="4"><span class="ln" id="kAl1"></span><span class="w" id="kAw1">EDITADO</span><span class="w" id="kAw2">AL</span><span class="ln" id="kAl2"></span></div>
+      <div id="por" class="clip ui" data-start="1.88" data-duration="0.68" data-track-index="4"><span class="a">POR</span><span class="b">Claude</span></div>
+
+      <!-- "Aprender" behind the head -->
+      <div id="tG-wrap" class="clip title-wrap" data-start="12.84" data-duration="0.84" data-track-index="1"><span id="tG" class="title" data-layout-allow-occlusion="">Aprender</span></div>
+      <video id="cutG" class="clip full footage cut" src="assets/cutG.webm" data-start="12.54" data-duration="1.14" data-media-start="0" muted playsinline data-track-index="2"></video>
+
+      <!-- pill -->
+      <div id="pill" class="clip ui" data-start="2.56" data-duration="14.04" data-track-index="9"><span class="d"></span>EDITADO CON CLAUDE</div>
+
+      <!-- SUBTITLES -->
+      <div id="s01" class="clip ui sub" data-start="0.06" data-duration="1.04" data-track-index="3">Este video está <span class="k">editado</span></div>
+      <div id="s02" class="clip ui sub" data-start="2.56" data-duration="0.96" data-track-index="3">y así como me <span class="k">editó</span></div>
+      <div id="s03" class="clip ui sub" data-start="3.52" data-duration="0.52" data-track-index="3">este video,</div>
+      <div id="s04" class="clip ui sub" data-start="4.04" data-duration="1.04" data-track-index="3">también me <span class="k">edita</span></div>
+      <div id="s05" class="clip ui sub" data-start="5.08" data-duration="0.86" data-track-index="3">mis <span class="k">anuncios</span></div>
+      <div id="s06" class="clip ui sub" data-start="5.94" data-duration="0.86" data-track-index="3">para <span class="k">Meta Ads</span>.</div>
+      <div id="s07" class="clip ui sub" data-start="6.82" data-duration="0.74" data-track-index="3">Si tú también quieres</div>
+      <div id="s08" class="clip ui sub" data-start="7.56" data-duration="0.70" data-track-index="3"><span class="k">aprender</span> a hacer</div>
+      <div id="s09" class="clip ui sub" data-start="8.26" data-duration="0.88" data-track-index="3"><span class="k">ediciones</span> de video</div>
+      <div id="s10" class="clip ui sub" data-start="9.14" data-duration="0.40" data-track-index="3">para tus</div>
+      <div id="s11" class="clip ui sub" data-start="9.54" data-duration="0.80" data-track-index="3"><span class="k">anuncios</span></div>
+      <div id="s12" class="clip ui sub" data-start="10.36" data-duration="0.82" data-track-index="3">o ya sea para</div>
+      <div id="s13" class="clip ui sub" data-start="11.18" data-duration="0.80" data-track-index="3">tu <span class="k">marca personal</span>,</div>
+      <div id="s14" class="clip ui sub" data-start="13.70" data-duration="0.94" data-track-index="3">y te envío mi <span class="k">guía</span></div>
+      <div id="s15" class="clip ui sub" data-start="14.64" data-duration="1.04" data-track-index="3">totalmente <span class="k">gratis</span>.</div>
+      <div id="s16" class="clip ui sub" data-start="15.70" data-duration="0.90" data-track-index="3"><span class="k">Comenta</span> ahora</div>
+
+      <!-- AD CARDS -->
+      <div id="ad1" class="clip ui ad" data-start="5.26" data-duration="1.54" data-track-index="5"><div class="img" style="background-image:url(assets/th_2.0.jpg)"></div><div class="lb">anuncio <i>01</i></div></div>
+      <div id="ad2" class="clip ui ad" data-start="5.40" data-duration="1.40" data-track-index="6"><div class="img" style="background-image:url(assets/th_9.0.jpg)"></div><div class="lb">anuncio <i>02</i></div></div>
+      <div id="ad3" class="clip ui ad" data-start="5.54" data-duration="1.26" data-track-index="7"><div class="img" style="background-image:url(assets/th_12.5.jpg)"></div><div class="lb">anuncio <i>03</i></div></div>
+
+      <!-- EDIT TIMELINE -->
+      <div id="tlc" class="clip ui" data-start="8.26" data-duration="1.32" data-track-index="5">
+        <div class="hd"><span>edición · v1</span><span><b id="cuts">0</b> cortes</span></div>
+        <div class="strip"><div style="background-image:url(assets/th_2.0.jpg)"></div><div style="background-image:url(assets/th_5.5.jpg)"></div><div style="background-image:url(assets/th_9.0.jpg)"></div><div style="background-image:url(assets/th_12.5.jpg)"></div><div style="background-image:url(assets/th_17.0.jpg)"></div></div>
+        <div class="wave"></div>
+        <div class="cutm" id="cm1" style="left:230px"></div><div class="cutm" id="cm2" style="left:420px"></div><div class="cutm" id="cm3" style="left:600px"></div><div class="cutm" id="cm4" style="left:770px"></div>
+        <div id="playhead"></div>
+      </div>
+
+      <!-- CHIPS -->
+      <div id="chip1" class="clip ui chip" data-start="9.54" data-duration="2.40" data-track-index="5"><span class="ck"><svg width="36" height="36" viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z" fill="#fff" /></svg></span>Anuncios</div>
+      <div id="chip2" class="clip ui chip" data-start="11.18" data-duration="0.76" data-track-index="6"><span class="ck"><svg width="36" height="36" viewBox="0 0 24 24"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z" fill="#fff" /></svg></span>Marca personal</div>
+
+      <!-- COMMENT "Aprender" -->
+      <div id="kG" class="clip ui kicker" data-start="12.0" data-duration="1.68" data-track-index="4"><span class="ln" id="kGl1"></span><span class="w" id="kGw1">COMENTA</span><span class="w" id="kGw2">LA</span><span class="w" id="kGw3">PALABRA</span><span class="ln" id="kGl2"></span></div>
+      <div id="cmtG" class="clip ui cmt" data-layout-allow-overlap="" data-start="12.0" data-duration="1.68" data-track-index="5">
+        <div class="av"></div>
+        <div class="tx"><span class="ph" id="phG">Añade un comentario…</span><span class="typed" id="typedG"><span>A</span><span>p</span><span>r</span><span>e</span><span>n</span><span>d</span><span>e</span><span>r</span><i class="caret" id="caretG"></i></span></div>
+        <div class="send" id="sendG"><svg width="40" height="40" viewBox="0 0 24 24"><path d="M3 11.5 21 3l-8.5 18-2.2-7.3z" fill="#fff" /></svg></div>
+      </div>
+
+      <!-- DM + GUIDE -->
+      <div id="dm" class="clip ui" data-start="13.70" data-duration="1.94" data-track-index="5">
+        <div class="bar"><div class="dot" style="background:#ff5f57"></div><div class="dot" style="background:#febc2e"></div><div class="dot" style="background:#28c840"></div><div class="t">mensajes</div></div>
+        <div class="body">
+          <div id="guide"><div class="g1" data-layout-ignore="">GUÍA</div><div class="g2">Edición<br>de video</div><div class="g3" data-layout-ignore="">PDF · GRATIS</div></div>
+          <div><div class="msg">Aquí tienes<br>tu guía</div><div class="meta">toca para abrirla</div></div>
+        </div>
+      </div>
+      <div id="stamp" class="clip ui" data-start="15.06" data-duration="0.58" data-track-index="6">GRATIS</div>
+
+      <!-- CTA arrow -->
+      <div id="arrow" class="clip ui" data-start="15.70" data-duration="0.90" data-track-index="5"><svg width="80" height="80" viewBox="0 0 24 24"><path d="M11 4h2v12l5-5 1.4 1.4L12 19.8 4.6 12.4 6 11l5 5z" fill="#fc804c" /></svg></div>
+
+      <!-- END CARD -->
+      <img id="endbg" class="clip full" src="assets/last_blur.jpg" data-start="16.60" data-duration="2.00" data-track-index="10">
+      <div id="endshade" class="clip" data-start="16.60" data-duration="2.00" data-track-index="11"></div>
+      <div id="endk" class="clip kicker" data-start="16.60" data-duration="2.00" data-track-index="12"><span class="ln"></span><span class="w">COMENTA</span><span class="ln"></span></div>
+      <div id="endt-wrap" class="clip" data-start="16.60" data-duration="2.00" data-track-index="12"><span id="endt">Aprender</span></div>
+      <div id="endsub" class="clip" data-start="16.60" data-duration="2.00" data-track-index="13">y te envío mi guía <span class="k">gratis</span></div>
+      <div id="cmtEnd" class="clip cmt" data-start="16.60" data-duration="2.00" data-track-index="14">
+        <div class="av"></div>
+        <div class="tx"><span class="ph" id="phE">Añade un comentario…</span><span class="typed" id="typedE"><span>A</span><span>p</span><span>r</span><span>e</span><span>n</span><span>d</span><span>e</span><span>r</span><i class="caret" id="caretE"></i></span></div>
+        <div class="send" id="sendE"><svg width="40" height="40" viewBox="0 0 24 24"><path d="M3 11.5 21 3l-8.5 18-2.2-7.3z" fill="#fff" /></svg></div>
+      </div>
+
+      <!-- SOUND EFFECTS -->
+      <audio id="sfx" class="clip" src="assets/sfx.wav" data-start="0" data-duration="17.8" data-volume="0.5" data-track-index="15"></audio>
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      const pop = (sel, t, from = { y: 18, scale: 0.94 }, d = 0.16) =>
+        tl.fromTo(sel, { opacity: 0, ...from }, { opacity: 1, y: 0, x: 0, scale: 1, rotation: 0, duration: d, ease: "back.out(2)" }, t);
+
+      // camera: intro push + alternating punch-ins per cut (titles sit on 1.0 segments)
+      tl.fromTo("#cam", { scale: 1.08 }, { scale: 1, duration: 0.4, ease: "power3.out" }, 0);
+      [[2.56,1.12],[5.94,1],[6.80,1.12],[9.54,1],[10.34,1.12],[11.98,1],[13.68,1.12],[15.68,1]].forEach(([t,z]) => tl.set("#cam", { scale: z }, t));
+
+      // subtitles
+      document.querySelectorAll(".sub").forEach(el => pop(el, parseFloat(el.dataset.start)));
+
+      // HOOK
+      tl.fromTo(["#kAl1","#kAl2"], { scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: "power3.out" }, 1.10);
+      pop("#kAw1", 1.12, { y: 20 }, 0.18); pop("#kAw2", 1.30, { y: 20 }, 0.18);
+      tl.fromTo("#tA", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(1.7)" }, 1.10);
+      for (let i = 0; i <= 20; i++) tl.set("#tA", { textContent: (i * 5) + "%" }, 1.10 + i * 0.025);
+      tl.to("#tA", { scale: 1.08, duration: 0.1, yoyo: true, repeat: 1, ease: "sine.inOut" }, 1.60);
+      pop("#por .a", 1.88, { y: 24 }, 0.18);
+      tl.fromTo("#por .b", { opacity: 0, y: 40, scale: 0.8 }, { opacity: 1, y: 0, scale: 1, duration: 0.26, ease: "back.out(1.8)" }, 1.98);
+      tl.to(["#kA", "#por"], { opacity: 0, duration: 0.16 }, 2.40);
+      tl.to("#tA", { opacity: 0, y: -60, filter: "blur(14px)", duration: 0.18, ease: "power2.in" }, 2.38);
+
+      // pill
+      tl.fromTo("#pill", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.3, ease: "power3.out" }, 2.60);
+
+      // ad cards
+      [["#ad1",5.26,-6],["#ad2",5.40,5],["#ad3",5.54,4]].forEach(([id,t,r]) => {
+        tl.fromTo(id, { opacity: 0, scale: 0.5, rotation: r * 3, y: 60 }, { opacity: 1, scale: 1, rotation: r, y: 0, duration: 0.32, ease: "back.out(1.7)" }, t);
+        tl.to(id, { y: -14, duration: 0.9, ease: "sine.inOut" }, t + 0.34);
+      });
+      tl.to(["#ad1","#ad2","#ad3"], { opacity: 0, scale: 0.8, duration: 0.18, ease: "power2.in" }, 6.62);
+
+      // edit timeline
+      tl.fromTo("#tlc", { opacity: 0, y: 200, scale: 0.92 }, { opacity: 1, y: 0, scale: 1, duration: 0.32, ease: "back.out(1.6)" }, 8.26);
+      tl.fromTo("#playhead", { x: 0 }, { x: 844, duration: 1.1, ease: "none" }, 8.40);
+      [["#cm1",8.62],["#cm2",8.92],["#cm3",9.22],["#cm4",9.48]].forEach(([id,t],i) => {
+        tl.fromTo(id, { opacity: 0, scaleY: 0 }, { opacity: 1, scaleY: 1, duration: 0.12, ease: "back.out(2)" }, t);
+        tl.set("#cuts", { textContent: String(i + 1) }, t);
+      });
+      tl.to("#tlc", { opacity: 0, y: 160, duration: 0.18, ease: "power2.in" }, 9.40);
+
+      // chips
+      pop("#chip1", 9.54, { y: 120, scale: 0.8 }, 0.3);
+      pop("#chip2", 11.18, { y: 120, scale: 0.8 }, 0.3);
+      tl.to(["#chip1","#chip2"], { opacity: 0, y: 120, duration: 0.16, ease: "power2.in" }, 11.82);
+
+      // comment "Aprender" + title behind head
+      tl.fromTo(["#kGl1","#kGl2"], { scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: "power3.out" }, 12.0);
+      pop("#kGw1", 12.02, { y: 20 }, 0.18); pop("#kGw2", 12.30, { y: 20 }, 0.18); pop("#kGw3", 12.46, { y: 20 }, 0.18);
+      tl.fromTo("#cmtG", { opacity: 0, y: 160 }, { opacity: 1, y: 0, duration: 0.3, ease: "back.out(1.6)" }, 12.0);
+      tl.set("#phG", { opacity: 0 }, 12.84);
+      document.querySelectorAll("#typedG span").forEach((s, i) => tl.set(s, { display: "inline" }, 12.84 + i * 0.0525));
+      [12.84, 13.17, 13.50].forEach(t => { tl.set("#caretG", { opacity: 1 }, t); tl.set("#caretG", { opacity: 0 }, t + 0.2); });
+      tl.fromTo("#sendG", { scale: 1 }, { scale: 1.18, duration: 0.1, yoyo: true, repeat: 1, ease: "sine.inOut" }, 13.30);
+      tl.fromTo("#tG", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.32, ease: "back.out(1.7)" }, 12.84);
+      tl.to(["#kG", "#cmtG"], { opacity: 0, duration: 0.16 }, 13.52);
+      tl.to("#tG", { opacity: 0, y: -60, filter: "blur(14px)", duration: 0.18, ease: "power2.in" }, 13.50);
+
+      // DM + guide
+      tl.fromTo("#dm", { opacity: 0, y: 220, scale: 0.9 }, { opacity: 1, y: 0, scale: 1, duration: 0.34, ease: "back.out(1.6)" }, 13.70);
+      tl.fromTo("#guide", { opacity: 0, scale: 0.6, rotation: -8 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.28, ease: "back.out(1.8)" }, 14.36);
+      tl.fromTo("#stamp", { opacity: 0, scale: 2.2, rotation: -10 }, { opacity: 1, scale: 1, rotation: -10, duration: 0.22, ease: "power3.out" }, 15.06);
+      tl.to(["#dm", "#stamp"], { opacity: 0, y: 120, duration: 0.18, ease: "power2.in" }, 15.48);
+
+      // CTA arrow bounce
+      tl.fromTo("#arrow", { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 0.2, ease: "power2.out" }, 15.70);
+      tl.to("#arrow", { y: 18, duration: 0.18, yoyo: true, repeat: 3, ease: "sine.inOut" }, 15.90);
+
+      // END CARD
+      tl.fromTo("#endbg", { opacity: 0, scale: 1.08 }, { opacity: 1, scale: 1, duration: 0.3, ease: "power2.out" }, 16.60);
+      tl.fromTo("#endshade", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 16.60);
+      pop("#endk", 16.66, { y: 20 }, 0.2);
+      tl.fromTo("#endt", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.32, ease: "back.out(1.7)" }, 16.72);
+      pop("#endsub", 16.84, { y: 24 }, 0.2);
+      pop("#cmtEnd", 16.80, { y: 120 }, 0.3);
+      tl.set("#phE", { opacity: 0 }, 16.90);
+      document.querySelectorAll("#typedE span").forEach((s, i) => tl.set(s, { display: "inline" }, 16.90 + i * 0.05));
+      [16.90, 17.25, 17.60, 17.95, 18.30].forEach(t => { tl.set("#caretE", { opacity: 1 }, t); tl.set("#caretE", { opacity: 0 }, t + 0.18); });
+      tl.fromTo("#sendE", { scale: 1 }, { scale: 1.18, duration: 0.1, yoyo: true, repeat: 1, ease: "sine.inOut" }, 17.36);
+
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
