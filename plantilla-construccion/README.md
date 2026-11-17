@@ -17,7 +17,11 @@ Base: video de la regleta/luz (`reel-luz/`). Es el formato actual de la cuenta.
    - Sincroniza con `T('palabra', n)`.
 5. `audio.py`: cambia los SFX por los del tema. El cierre ya se ajusta solo a `END`.
 6. Haz previews con `node render.js preview 1,5,10 carpeta` (usa `CTA=yt` para ver el cierre de YouTube).
-7. Render final: `VENV=<venv con numpy> ./build.sh reel_<tema>`. Genera dos archivos:
+7. Render final **por partes** (un video de 1:45 tarda más de 2 h y las tareas en segundo plano se cortan a las 2 h):
+   lanza 4 copias en paralelo, cada una en segundo plano con timeout máximo y su propio puerto:
+   `PORT=8781 VENV=<venv con numpy> ./partes.sh reel_<tema>` (8782, 8783, 8784…).
+   Cada copia se detiene sola a los ~80 min; vuelve a lanzarla y sigue donde quedó. Cuando están todas las partes, la última copia arma los dos archivos
+   (`build.sh` sigue sirviendo solo para videos cortos). Genera dos archivos:
    - `reel_<tema>_9x16.mp4`, con el cierre ¡SÍGUEME!
    - `reel_<tema>_youtube_9x16.mp4`, con el cierre ¡SUSCRÍBETE!
 

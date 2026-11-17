@@ -50,10 +50,11 @@ Plantilla: `plantilla-reel-3d/` (ver su README). Video de referencia: `reel-eyac
 2. Intentar transcripción con faster-whisper; **en este entorno Hugging Face/OpenAI/Vosk están bloqueados**, así que usar `align.py` (frases por silencios + reparto silábico + micro-pausas). Avisar al usuario de la limitación.
 3. Escenas en `main.js`: `CUTS` (tiempo → escenario), `HEAD` (titulares), funciones `animX(t)`; usar `T('palabra', n)` para sincronizar con la voz (ojo con palabras repetidas: contar ocurrencias).
 4. Previews: `node render.js preview t1,t2,... outdir` y hoja de contacto (`tile`, no `xstack`: crashea en ffmpeg 6.1). Revisar: elementos cortados en bordes, etiquetas tapando titulares/subtítulos, huecos vacíos en transiciones, legibilidad.
-5. Render completo en segundo plano: `VENV=<venv con numpy> ./build.sh` (~1 s/cuadro con SwiftShader, ~30 min para 56 s).
+5. Render completo **por partes**: `PORT=878x VENV=<venv con numpy> ./partes.sh reel_<tema>` en 4 tareas en segundo plano (timeout máximo, un PORT distinto cada una). Con 4 en paralelo va ~4 s/cuadro por tarea: un video de 1:45 (≈3150 cuadros) tarda ~2,5–3 h en total. Las tareas se cortan a las 2 h; `partes.sh` se detiene sola a los ~80 min y al relanzarla sigue donde quedó (no se pierde nada). NO usar `build.sh` para videos de más de ~40 s: si se corta, se pierde todo.
 6. QA final: hoja 1 fps de todo el video, duración, LUFS. Luego commit + push y enviar con SendUserFile (`display: render`).
 
 ## 5. Trampas conocidas
+- Dos renders a la vez con el mismo puerto fallan (EADDRINUSE): usar `PORT` distinto en cada uno.
 - No instalar `playwright` local: usar el preinstalado (`/opt/node-tools`).
 - `ffmpeg -v error` oculta `showinfo`; para cortes usar `scdet` sin `-v error`.
 - Lanzar Chromium con `--use-angle=swiftshader --enable-unsafe-swiftshader`.
