@@ -10,7 +10,7 @@ Tema: [tema, p. ej. "por qué se cae el agua de la cisterna"]. Guion: [pegar el 
 
 Créame el video completo siguiendo estas reglas:
 
-1. **Antes de empezar**, lee `CLAUDE.md`, la skill `.claude/skills/reel-3d-animado/SKILL.md`,
+1. **Antes de empezar**, trae la rama `claude/elegant-noether-gp5umh` (`git fetch origin claude/elegant-noether-gp5umh && git merge FETCH_HEAD`) si tu rama no tiene `plantilla-construccion/partes.sh`. Después lee `CLAUDE.md`, la skill `.claude/skills/reel-3d-animado/SKILL.md`,
    `plantilla-construccion/README.md` y `estilo-construccion.md`. Úsalos como manual.
 2. **Estilo:** Estilo B "construcción en corte" en 3D (three.js), 1080×1920, 30 fps, ~1:45.
    - Mismos personajes: el dueño de casa (camisa naranja) y el ingeniero (camisa azul, casco amarillo, portapapeles).
