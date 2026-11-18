@@ -1,0 +1,4 @@
+node_modules/
+**/seg/
+**/music.wav
+**/sfx.wav
