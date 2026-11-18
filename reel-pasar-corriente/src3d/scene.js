@@ -36,7 +36,7 @@ const carB = makeCar(0x5a7dff, -.42); carB.g.position.set(CX + 2.2, 0, -.2); car
 // ---- cables con pinzas ----
 function clamp3(col) { const g = new THREE.Group(); const a = rbox(.1, .06, .16, .02, lp(col)); a.position.y = .05; const b = rbox(.1, .06, .16, .02, lp(col)); b.position.y = -.02; b.rotation.x = .25; const j = M(new THREE.BoxGeometry(.06, .05, .05), mat(0xc9ced8, { metalness: .7 })); j.position.set(0, .01, -.09); g.add(a, b, j); add(g); return g; }
 const CAB = { r: { col: 0xd8323a, a: clamp3(0xd8323a), b: clamp3(0xd8323a), mesh: null }, k: { col: 0x1d1f25, a: clamp3(0x1d1f25), b: clamp3(0x1d1f25), mesh: null } };
-function tube(c, pa, pb) { if (c.mesh) { scene.remove(c.mesh); c.mesh.geometry.dispose(); } const m = pa.clone().lerp(pb, .5); m.y = Math.min(pa.y, pb.y) - .55; m.y = Math.max(.1, m.y); const cv = new THREE.CatmullRomCurve3([pa, pa.clone().add(V(0, -.25, .15)), m, pb.clone().add(V(0, -.25, .15)), pb]); c.mesh = add(M(new THREE.TubeGeometry(cv, 40, .025, 6), lp(c.col), false)); }
+function tube(c, pa, pb) { if (c.mesh) { scene.remove(c.mesh); c.mesh.geometry.dispose(); } const m = pa.clone().lerp(pb, .5); m.y = Math.min(pa.y, pb.y) - .55; m.y = Math.max(.1, m.y); const cv = new THREE.CatmullRomCurve3([pa, pa.clone().add(V(0, -.25, .15)), m, pb.clone().add(V(0, -.25, .15)), pb]); c.mat = c.mat || lp(c.col); c.mesh = add(M(new THREE.TubeGeometry(cv, 40, .025, 6), c.mat, false)); }
 const PILE = { ra: V(CX - .25, .12, .95), rb: V(CX - .1, .12, 1.0), ka: V(CX + .1, .12, 1.0), kb: V(CX + .25, .12, .95) };
 // gas, chispas, humo
 const gasM = new THREE.MeshBasicMaterial({ color: 0x7cff9a, transparent: true, opacity: .22, depthWrite: false });
