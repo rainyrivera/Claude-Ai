@@ -1,0 +1,9591 @@
+{
+ "dur": 591.44,
+ "phrases": [
+  {
+   "t": "¿Y si te digo que tu techo podría estar pagándote la luz…",
+   "s": 0.04,
+   "e": 3.18,
+   "micro": 0
+  },
+  {
+   "t": "y lo tienes vacío?",
+   "s": 3.57,
+   "e": 4.46,
+   "micro": 0
+  },
+  {
+   "t": "Cada mes le das miles de pesos a la distribuidora, y encima se va la luz. Pero hay casas,",
+   "s": 5.13,
+   "e": 9.46,
+   "micro": 1
+  },
+  {
+   "t": "aquí mismo en República Dominicana,",
+   "s": 9.98,
+   "e": 12.69,
+   "micro": 1
+  },
+  {
+   "t": "que pagan una fracción de eso,",
+   "s": 13.01,
+   "e": 14.91,
+   "micro": 1
+  },
+  {
+   "t": "porque producen su propia electricidad con el sol.",
+   "s": 15.21,
+   "e": 17.65,
+   "micro": 0
+  },
+  {
+   "t": "Hoy te explico, paso a paso, cómo funcionan los paneles solares,",
+   "s": 18.29,
+   "e": 22.08,
+   "micro": 2
+  },
+  {
+   "t": "cuánto cuestan de verdad,",
+   "s": 22.45,
+   "e": 23.7,
+   "micro": 0
+  },
+  {
+   "t": "qué permisos necesitas,",
+   "s": 24.07,
+   "e": 25.4,
+   "micro": 0
+  },
+  {
+   "t": "cómo recuperar hasta un cuarenta por ciento de lo que inviertes en los equipos…",
+   "s": 25.76,
+   "e": 29.51,
+   "micro": 0
+  },
+  {
+   "t": "y los errores que hacen que mucha gente pierda su dinero.",
+   "s": 29.94,
+   "e": 32.82,
+   "micro": 0
+  },
+  {
+   "t": "Quédate hasta el final,",
+   "s": 33.4,
+   "e": 34.28,
+   "micro": 0
+  },
+  {
+   "t": "porque el error número uno lo comete casi todo el mundo,",
+   "s": 34.59,
+   "e": 37.69,
+   "micro": 2
+  },
+  {
+   "t": "y te puede costar miles de dólares.",
+   "s": 38.0,
+   "e": 39.99,
+   "micro": 0
+  },
+  {
+   "t": "Antes de empezar,",
+   "s": 40.62,
+   "e": 41.49,
+   "micro": 0
+  },
+  {
+   "t": "una verdad que muchos vendedores no te dicen:",
+   "s": 41.76,
+   "e": 44.12,
+   "micro": 0
+  },
+  {
+   "t": "con paneles solares conectados a la red, casi nunca vas a pagar cero.",
+   "s": 44.73,
+   "e": 48.69,
+   "micro": 2
+  },
+  {
+   "t": "Vas a seguir pagando un cargo fijo,",
+   "s": 49.21,
+   "e": 50.97,
+   "micro": 0
+  },
+  {
+   "t": "y desde noviembre de este año hay un cargo nuevo para algunas personas que le mandan energía a la red.",
+   "s": 51.35,
+   "e": 56.27,
+   "micro": 0
+  },
+  {
+   "t": "Pero si lo haces bien,",
+   "s": 56.94,
+   "e": 57.89,
+   "micro": 0
+  },
+  {
+   "t": "tu factura puede bajar muchísimo.",
+   "s": 58.21,
+   "e": 60.21,
+   "micro": 1
+  },
+  {
+   "t": "Y eso es lo que te voy a enseñar.",
+   "s": 60.66,
+   "e": 62.32,
+   "micro": 1
+  },
+  {
+   "t": "Primero, entiende cómo funciona.",
+   "s": 62.97,
+   "e": 65.05,
+   "micro": 3
+  },
+  {
+   "t": "Los paneles de tu techo reciben la luz del sol y la convierten en electricidad.",
+   "s": 65.62,
+   "e": 69.68,
+   "micro": 0
+  },
+  {
+   "t": "Pero esa electricidad sale como corriente directa,",
+   "s": 70.3,
+   "e": 72.84,
+   "micro": 1
+  },
+  {
+   "t": "y tu casa usa corriente alterna.",
+   "s": 73.16,
+   "e": 75.1,
+   "micro": 0
+  },
+  {
+   "t": "Por eso hay un aparato clave:",
+   "s": 75.65,
+   "e": 77.24,
+   "micro": 1
+  },
+  {
+   "t": "el inversor.",
+   "s": 77.74,
+   "e": 78.48,
+   "micro": 0
+  },
+  {
+   "t": "El inversor convierte esa energía para que tu nevera, tu televisor y tu aire la puedan usar.",
+   "s": 79.03,
+   "e": 84.2,
+   "micro": 1
+  },
+  {
+   "t": "Durante el día, tu casa usa primero la energía del sol.",
+   "s": 84.78,
+   "e": 87.76,
+   "micro": 1
+  },
+  {
+   "t": "Si te sobra,",
+   "s": 88.31,
+   "e": 88.98,
+   "micro": 0
+  },
+  {
+   "t": "esa energía se va a la red de la distribuidora.",
+   "s": 89.3,
+   "e": 91.67,
+   "micro": 0
+  },
+  {
+   "t": "Y de noche, cuando no hay sol,",
+   "s": 92.16,
+   "e": 93.76,
+   "micro": 1
+  },
+  {
+   "t": "tomas energía de la red como siempre.",
+   "s": 94.15,
+   "e": 96.0,
+   "micro": 1
+  },
+  {
+   "t": "Para que todo eso se cuente bien,",
+   "s": 96.61,
+   "e": 98.27,
+   "micro": 0
+  },
+  {
+   "t": "la distribuidora te pone un contador especial,",
+   "s": 98.56,
+   "e": 100.77,
+   "micro": 0
+  },
+  {
+   "t": "que se llama bidireccional:",
+   "s": 101.11,
+   "e": 102.58,
+   "micro": 0
+  },
+  {
+   "t": "cuenta la energía que tú tomas y la que tú entregas.",
+   "s": 103.16,
+   "e": 106.0,
+   "micro": 1
+  },
+  {
+   "t": "A eso se le llama medición neta.",
+   "s": 106.53,
+   "e": 108.55,
+   "micro": 1
+  },
+  {
+   "t": "Ahora sí,",
+   "s": 109.13,
+   "e": 109.57,
+   "micro": 0
+  },
+  {
+   "t": "vamos al paso a paso.",
+   "s": 109.93,
+   "e": 111.23,
+   "micro": 0
+  },
+  {
+   "t": "Paso uno:",
+   "s": 111.81,
+   "e": 112.37,
+   "micro": 0
+  },
+  {
+   "t": "saca tu factura y busca cuántos kilovatios hora gastas al mes.",
+   "s": 112.88,
+   "e": 116.62,
+   "micro": 1
+  },
+  {
+   "t": "No mires cuántos pesos pagas,",
+   "s": 117.06,
+   "e": 118.8,
+   "micro": 1
+  },
+  {
+   "t": "mira los kilovatios.",
+   "s": 119.09,
+   "e": 120.38,
+   "micro": 1
+  },
+  {
+   "t": "Y si puedes,",
+   "s": 120.82,
+   "e": 121.46,
+   "micro": 0
+  },
+  {
+   "t": "busca los últimos doce meses,",
+   "s": 121.76,
+   "e": 123.49,
+   "micro": 0
+  },
+  {
+   "t": "porque en verano, con el aire prendido,",
+   "s": 123.81,
+   "e": 125.59,
+   "micro": 1
+  },
+  {
+   "t": "gastas mucho más que en diciembre.",
+   "s": 125.88,
+   "e": 127.66,
+   "micro": 0
+  },
+  {
+   "t": "Saca el promedio.",
+   "s": 128.18,
+   "e": 129.13,
+   "micro": 0
+  },
+  {
+   "t": "Ese número es la base de todo.",
+   "s": 129.59,
+   "e": 131.45,
+   "micro": 0
+  },
+  {
+   "t": "Si gastas doscientos kilovatios al mes, necesitas un sistema pequeño.",
+   "s": 131.94,
+   "e": 135.77,
+   "micro": 2
+  },
+  {
+   "t": "Si gastas mil,",
+   "s": 136.25,
+   "e": 137.04,
+   "micro": 0
+  },
+  {
+   "t": "necesitas uno mucho más grande.",
+   "s": 137.34,
+   "e": 139.12,
+   "micro": 0
+  },
+  {
+   "t": "Y sin ese número,",
+   "s": 139.62,
+   "e": 140.52,
+   "micro": 0
+  },
+  {
+   "t": "cualquier cotización es un número inventado.",
+   "s": 140.81,
+   "e": 143.16,
+   "micro": 0
+  },
+  {
+   "t": "Paso dos:",
+   "s": 143.77,
+   "e": 144.46,
+   "micro": 0
+  },
+  {
+   "t": "antes de comprar paneles, baja tu consumo.",
+   "s": 144.93,
+   "e": 147.51,
+   "micro": 2
+  },
+  {
+   "t": "Esto es lo que más dinero te ahorra, y casi nadie lo hace primero.",
+   "s": 148.02,
+   "e": 151.73,
+   "micro": 1
+  },
+  {
+   "t": "Cambia los bombillos viejos por bombillos LED.",
+   "s": 152.24,
+   "e": 154.49,
+   "micro": 0
+  },
+  {
+   "t": "Revisa la goma de la nevera.",
+   "s": 155.03,
+   "e": 156.47,
+   "micro": 0
+  },
+  {
+   "t": "Pon el aire en veinticuatro o veinticinco grados, no en dieciocho. Desconecta lo que no estás usando.",
+   "s": 156.99,
+   "e": 162.97,
+   "micro": 4
+  },
+  {
+   "t": "¿Por qué primero?",
+   "s": 163.53,
+   "e": 164.14,
+   "micro": 0
+  },
+  {
+   "t": "Porque cada kilovatio que dejas de gastar es un pedazo de sistema que no tienes que comprar.",
+   "s": 164.61,
+   "e": 169.63,
+   "micro": 2
+  },
+  {
+   "t": "Es más barato ahorrar energía que producirla.",
+   "s": 170.15,
+   "e": 172.56,
+   "micro": 0
+  },
+  {
+   "t": "Paso tres:",
+   "s": 173.2,
+   "e": 173.94,
+   "micro": 0
+  },
+  {
+   "t": "calcula, más o menos, el tamaño de tu sistema.",
+   "s": 174.39,
+   "e": 177.39,
+   "micro": 3
+  },
+  {
+   "t": "Aquí te dejo una regla sencilla para tener una idea.",
+   "s": 177.86,
+   "e": 180.42,
+   "micro": 0
+  },
+  {
+   "t": "En República Dominicana, cada kilovatio de paneles produce, aproximadamente, unos ciento veinte kilovatios hora al mes.",
+   "s": 180.89,
+   "e": 188.08,
+   "micro": 2
+  },
+  {
+   "t": "Entonces,",
+   "s": 188.47,
+   "e": 189.09,
+   "micro": 0
+  },
+  {
+   "t": "si tu casa gasta seiscientos kilovatios hora al mes,",
+   "s": 189.35,
+   "e": 192.2,
+   "micro": 0
+  },
+  {
+   "t": "divides seiscientos entre ciento veinte, y te da cinco.",
+   "s": 192.5,
+   "e": 195.88,
+   "micro": 1
+  },
+  {
+   "t": "Necesitarías un sistema de unos cinco kilovatios.",
+   "s": 196.36,
+   "e": 199.12,
+   "micro": 0
+  },
+  {
+   "t": "Ojo:",
+   "s": 199.59,
+   "e": 199.92,
+   "micro": 0
+  },
+  {
+   "t": "esto es solo para que tengas una idea y no te engañen.",
+   "s": 200.3,
+   "e": 203.14,
+   "micro": 0
+  },
+  {
+   "t": "El cálculo exacto lo hace el instalador, según tu techo, la sombra y la zona donde vives.",
+   "s": 203.66,
+   "e": 209.04,
+   "micro": 4
+  },
+  {
+   "t": "Paso cuatro:",
+   "s": 209.7,
+   "e": 210.45,
+   "micro": 0
+  },
+  {
+   "t": "decide qué tipo de sistema quieres.",
+   "s": 210.9,
+   "e": 213.03,
+   "micro": 2
+  },
+  {
+   "t": "Y aquí viene algo muy importante,",
+   "s": 213.51,
+   "e": 215.39,
+   "micro": 1
+  },
+  {
+   "t": "porque hay tres tipos.",
+   "s": 215.66,
+   "e": 216.94,
+   "micro": 2
+  },
+  {
+   "t": "El primero es conectado a la red,",
+   "s": 217.44,
+   "e": 219.08,
+   "micro": 0
+  },
+  {
+   "t": "con medición neta.",
+   "s": 219.39,
+   "e": 220.39,
+   "micro": 1
+  },
+  {
+   "t": "Es el más barato, porque no lleva baterías.",
+   "s": 220.82,
+   "e": 223.31,
+   "micro": 2
+  },
+  {
+   "t": "Pero tiene un detalle que casi nadie te dice:",
+   "s": 223.68,
+   "e": 226.14,
+   "micro": 1
+  },
+  {
+   "t": "cuando se va la luz,",
+   "s": 226.61,
+   "e": 227.6,
+   "micro": 0
+  },
+  {
+   "t": "tus paneles también se apagan.",
+   "s": 227.87,
+   "e": 229.52,
+   "micro": 1
+  },
+  {
+   "t": "Sí,",
+   "s": 230.03,
+   "e": 230.37,
+   "micro": 0
+  },
+  {
+   "t": "aunque haya sol.",
+   "s": 230.67,
+   "e": 231.51,
+   "micro": 0
+  },
+  {
+   "t": "Es por seguridad,",
+   "s": 231.91,
+   "e": 232.7,
+   "micro": 0
+  },
+  {
+   "t": "para no electrocutar a los técnicos que están arreglando las líneas.",
+   "s": 233.07,
+   "e": 236.19,
+   "micro": 1
+  },
+  {
+   "t": "El segundo es de inyección cero.",
+   "s": 236.87,
+   "e": 238.79,
+   "micro": 0
+  },
+  {
+   "t": "Tus paneles alimentan tu casa, pero no le mandan nada a la red.",
+   "s": 239.29,
+   "e": 242.76,
+   "micro": 1
+  },
+  {
+   "t": "Con el reglamento nuevo, estos sistemas no pagan el cargo por energía inyectada,",
+   "s": 243.26,
+   "e": 247.6,
+   "micro": 1
+  },
+  {
+   "t": "porque no inyectan nada.",
+   "s": 247.89,
+   "e": 249.19,
+   "micro": 1
+  },
+  {
+   "t": "Pero lo que te sobra de día se pierde,",
+   "s": 249.6,
+   "e": 251.64,
+   "micro": 0
+  },
+  {
+   "t": "si no tienes dónde guardarlo.",
+   "s": 251.95,
+   "e": 253.26,
+   "micro": 0
+  },
+  {
+   "t": "Y el tercero es híbrido,",
+   "s": 253.99,
+   "e": 255.53,
+   "micro": 2
+  },
+  {
+   "t": "con baterías.",
+   "s": 255.87,
+   "e": 256.71,
+   "micro": 1
+  },
+  {
+   "t": "Es el más caro,",
+   "s": 257.12,
+   "e": 257.9,
+   "micro": 0
+  },
+  {
+   "t": "pero es el que te mantiene la luz cuando hay apagón,",
+   "s": 258.21,
+   "e": 260.42,
+   "micro": 0
+  },
+  {
+   "t": "porque guarda energía para la noche y para los cortes.",
+   "s": 260.77,
+   "e": 263.63,
+   "micro": 1
+  },
+  {
+   "t": "Pero ojo,",
+   "s": 264.03,
+   "e": 264.54,
+   "micro": 0
+  },
+  {
+   "t": "para eso necesita un inversor híbrido preparado para funcionar aislado de la red.",
+   "s": 264.93,
+   "e": 269.22,
+   "micro": 1
+  },
+  {
+   "t": "Si en tu zona se va la luz muchas horas, este es el que más vas a agradecer.",
+   "s": 269.73,
+   "e": 273.9,
+   "micro": 1
+  },
+  {
+   "t": "Y antes de seguir con los permisos y con cómo recuperar hasta el cuarenta por ciento de lo que cuestan los equipos,",
+   "s": 274.65,
+   "e": 280.17,
+   "micro": 0
+  },
+  {
+   "t": "si este video te está sirviendo, suscríbete y activa la campanita.",
+   "s": 280.51,
+   "e": 284.2,
+   "micro": 0
+  },
+  {
+   "t": "Aquí te explico cómo funcionan las cosas de tu casa, de tu carro y de tu celular,",
+   "s": 284.62,
+   "e": 288.99,
+   "micro": 2
+  },
+  {
+   "t": "para que ahorres tiempo y dinero.",
+   "s": 289.3,
+   "e": 291.01,
+   "micro": 1
+  },
+  {
+   "t": "Ahora sí,",
+   "s": 291.57,
+   "e": 292.03,
+   "micro": 0
+  },
+  {
+   "t": "seguimos.",
+   "s": 292.4,
+   "e": 293.0,
+   "micro": 0
+  },
+  {
+   "t": "Paso cinco:",
+   "s": 293.68,
+   "e": 294.44,
+   "micro": 0
+  },
+  {
+   "t": "revisa tu techo.",
+   "s": 294.9,
+   "e": 295.95,
+   "micro": 0
+  },
+  {
+   "t": "Los paneles necesitan sol directo la mayor parte del día,",
+   "s": 296.49,
+   "e": 299.8,
+   "micro": 1
+  },
+  {
+   "t": "sin sombra de árboles, de tinacos o del edificio de al lado.",
+   "s": 300.17,
+   "e": 303.54,
+   "micro": 1
+  },
+  {
+   "t": "Una sombra pequeña sobre un panel puede bajar la producción de todo el grupo.",
+   "s": 304.06,
+   "e": 308.3,
+   "micro": 3
+  },
+  {
+   "t": "El techo tiene que aguantar el peso y no tener filtraciones,",
+   "s": 308.8,
+   "e": 312.16,
+   "micro": 1
+  },
+  {
+   "t": "porque arreglar el techo después, con los paneles encima, sale mucho más caro.",
+   "s": 312.47,
+   "e": 316.69,
+   "micro": 2
+  },
+  {
+   "t": "Si tu techo está viejo, impermeabilízalo antes.",
+   "s": 317.26,
+   "e": 320.18,
+   "micro": 2
+  },
+  {
+   "t": "Paso seis:",
+   "s": 320.49,
+   "e": 321.22,
+   "micro": 0
+  },
+  {
+   "t": "pide por lo menos tres cotizaciones.",
+   "s": 321.73,
+   "e": 323.81,
+   "micro": 1
+  },
+  {
+   "t": "Y no compares solo el precio final.",
+   "s": 324.23,
+   "e": 325.96,
+   "micro": 0
+  },
+  {
+   "t": "Pide que cada cotización diga cuántos paneles son y de cuántos vatios,",
+   "s": 326.46,
+   "e": 330.66,
+   "micro": 1
+  },
+  {
+   "t": "la marca y el modelo del inversor,",
+   "s": 331.04,
+   "e": 332.92,
+   "micro": 0
+  },
+  {
+   "t": "si incluye baterías y de qué tipo,",
+   "s": 333.33,
+   "e": 335.26,
+   "micro": 0
+  },
+  {
+   "t": "cuánta energía va a producir al mes,",
+   "s": 335.63,
+   "e": 337.53,
+   "micro": 0
+  },
+  {
+   "t": "cuánto tiempo de garantía tienen los paneles, el inversor y la instalación,",
+   "s": 337.91,
+   "e": 341.86,
+   "micro": 1
+  },
+  {
+   "t": "y si ellos se encargan de los permisos con la distribuidora y del trámite del crédito fiscal.",
+   "s": 342.21,
+   "e": 346.68,
+   "micro": 0
+  },
+  {
+   "t": "Una cotización que no dice cuánta energía vas a producir no te sirve para comparar.",
+   "s": 347.18,
+   "e": 351.83,
+   "micro": 1
+  },
+  {
+   "t": "Y pide ver casas donde ya hayan instalado.",
+   "s": 352.35,
+   "e": 354.53,
+   "micro": 0
+  },
+  {
+   "t": "Ve,",
+   "s": 354.93,
+   "e": 355.26,
+   "micro": 0
+  },
+  {
+   "t": "mira y pregunta.",
+   "s": 355.53,
+   "e": 356.73,
+   "micro": 1
+  },
+  {
+   "t": "Paso siete:",
+   "s": 357.42,
+   "e": 358.14,
+   "micro": 0
+  },
+  {
+   "t": "los permisos.",
+   "s": 358.53,
+   "e": 359.43,
+   "micro": 0
+  },
+  {
+   "t": "Si tu sistema va conectado a la red, la distribuidora tiene que aprobarlo.",
+   "s": 359.94,
+   "e": 363.71,
+   "micro": 3
+  },
+  {
+   "t": "Tú, o tu instalador, hacen la solicitud a tu distribuidora:",
+   "s": 364.12,
+   "e": 367.32,
+   "micro": 2
+  },
+  {
+   "t": "Edesur, Edenorte o Edeeste.",
+   "s": 367.72,
+   "e": 369.79,
+   "micro": 1
+  },
+  {
+   "t": "Se firma un acuerdo de interconexión,",
+   "s": 370.22,
+   "e": 372.12,
+   "micro": 0
+  },
+  {
+   "t": "y si vas con medición neta, también un acuerdo de medición neta.",
+   "s": 372.38,
+   "e": 375.83,
+   "micro": 3
+  },
+  {
+   "t": "Después te cambian el contador por uno bidireccional.",
+   "s": 376.22,
+   "e": 378.98,
+   "micro": 0
+  },
+  {
+   "t": "No conectes nada a la red sin ese permiso, porque es peligroso y te puede traer problemas con la distribuidora.",
+   "s": 379.43,
+   "e": 385.55,
+   "micro": 2
+  },
+  {
+   "t": "Y aquí está el cambio de este año.",
+   "s": 386.02,
+   "e": 387.79,
+   "micro": 0
+  },
+  {
+   "t": "La Superintendencia de Electricidad aprobó un reglamento nuevo de generación distribuida,",
+   "s": 388.2,
+   "e": 392.79,
+   "micro": 0
+  },
+  {
+   "t": "y las solicitudes nuevas ya van con esas reglas.",
+   "s": 393.09,
+   "e": 395.79,
+   "micro": 0
+  },
+  {
+   "t": "Desde el uno de noviembre, a los usuarios con tarifa monómica que le mandan energía a la red les cobran un cargo:",
+   "s": 396.17,
+   "e": 402.08,
+   "micro": 2
+  },
+  {
+   "t": "el veinticinco por ciento del cargo por energía,",
+   "s": 402.48,
+   "e": 404.93,
+   "micro": 0
+  },
+  {
+   "t": "pero solo sobre la energía que entregan a la red,",
+   "s": 405.28,
+   "e": 407.62,
+   "micro": 0
+  },
+  {
+   "t": "no sobre todo lo que producen.",
+   "s": 407.96,
+   "e": 409.58,
+   "micro": 0
+  },
+  {
+   "t": "Quien ya tenía su sistema aprobado tiene un período de transición de hasta cinco años.",
+   "s": 410.04,
+   "e": 414.6,
+   "micro": 1
+  },
+  {
+   "t": "Por eso hoy, más que nunca, conviene usar en tu casa la mayor parte de lo que producen tus paneles.",
+   "s": 414.97,
+   "e": 420.48,
+   "micro": 4
+  },
+  {
+   "t": "Paso ocho:",
+   "s": 421.18,
+   "e": 421.84,
+   "micro": 0
+  },
+  {
+   "t": "recupera parte de tu dinero con la Ley cincuenta y siete, cero siete.",
+   "s": 422.26,
+   "e": 425.94,
+   "micro": 2
+  },
+  {
+   "t": "Esta ley de energías renovables te da dos beneficios.",
+   "s": 426.42,
+   "e": 429.42,
+   "micro": 0
+  },
+  {
+   "t": "Uno:",
+   "s": 429.84,
+   "e": 430.07,
+   "micro": 0
+  },
+  {
+   "t": "los equipos, como paneles e inversores,",
+   "s": 430.5,
+   "e": 432.72,
+   "micro": 1
+  },
+  {
+   "t": "están exentos de ITBIS.",
+   "s": 432.98,
+   "e": 434.56,
+   "micro": 0
+  },
+  {
+   "t": "Y dos:",
+   "s": 434.96,
+   "e": 435.47,
+   "micro": 0
+  },
+  {
+   "t": "puedes recibir un crédito fiscal de hasta el cuarenta por ciento de lo que costaron los equipos.",
+   "s": 435.77,
+   "e": 440.34,
+   "micro": 1
+  },
+  {
+   "t": "Pero ojo:",
+   "s": 440.74,
+   "e": 441.23,
+   "micro": 0
+  },
+  {
+   "t": "ese crédito se descuenta del impuesto sobre la renta.",
+   "s": 441.64,
+   "e": 444.31,
+   "micro": 1
+  },
+  {
+   "t": "Si tú no pagas impuesto sobre la renta, ese cuarenta por ciento no te llega en efectivo.",
+   "s": 444.73,
+   "e": 449.46,
+   "micro": 2
+  },
+  {
+   "t": "Se solicita a la Comisión Nacional de Energía,",
+   "s": 449.93,
+   "e": 452.35,
+   "micro": 0
+  },
+  {
+   "t": "con tu cédula, el título de la casa o el contrato de alquiler, y las facturas.",
+   "s": 452.64,
+   "e": 456.87,
+   "micro": 2
+  },
+  {
+   "t": "Pregúntale a tu instalador si él te hace ese trámite.",
+   "s": 457.25,
+   "e": 459.81,
+   "micro": 1
+  },
+  {
+   "t": "Paso nueve:",
+   "s": 460.53,
+   "e": 461.2,
+   "micro": 0
+  },
+  {
+   "t": "haz los números.",
+   "s": 461.64,
+   "e": 462.62,
+   "micro": 0
+  },
+  {
+   "t": "Según guías de precios de este año, un sistema de unos cinco kilovatios, instalado,",
+   "s": 463.03,
+   "e": 467.86,
+   "micro": 3
+  },
+  {
+   "t": "cuesta más o menos entre cinco mil y ocho mil dólares.",
+   "s": 468.14,
+   "e": 471.31,
+   "micro": 0
+  },
+  {
+   "t": "Con baterías, sube bastante.",
+   "s": 471.67,
+   "e": 473.42,
+   "micro": 1
+  },
+  {
+   "t": "Para saber si te conviene, haz esta cuenta:",
+   "s": 473.78,
+   "e": 476.04,
+   "micro": 1
+  },
+  {
+   "t": "lo que pagas de luz al mes hoy, menos lo que pagarías con paneles.",
+   "s": 476.59,
+   "e": 480.39,
+   "micro": 2
+  },
+  {
+   "t": "Esa diferencia es tu ahorro mensual.",
+   "s": 480.78,
+   "e": 482.8,
+   "micro": 1
+  },
+  {
+   "t": "Divide el costo del sistema entre ese ahorro, y te da cuántos meses tardas en recuperarlo.",
+   "s": 483.26,
+   "e": 488.24,
+   "micro": 2
+  },
+  {
+   "t": "Muchas guías hablan de recuperarlo en cinco a siete años, y los paneles suelen durar mucho más que eso.",
+   "s": 488.66,
+   "e": 494.22,
+   "micro": 1
+  },
+  {
+   "t": "Pero haz la cuenta con tus números, no con los del vendedor.",
+   "s": 494.6,
+   "e": 497.72,
+   "micro": 1
+  },
+  {
+   "t": "Paso diez:",
+   "s": 498.65,
+   "e": 499.38,
+   "micro": 0
+  },
+  {
+   "t": "el mantenimiento.",
+   "s": 499.73,
+   "e": 500.69,
+   "micro": 1
+  },
+  {
+   "t": "Es poco, pero no es cero.",
+   "s": 501.15,
+   "e": 502.8,
+   "micro": 1
+  },
+  {
+   "t": "Limpia los paneles con agua y un paño suave cuando tengan polvo o sucio de pájaros,",
+   "s": 503.25,
+   "e": 507.88,
+   "micro": 0
+  },
+  {
+   "t": "temprano en la mañana o al final de la tarde,",
+   "s": 508.15,
+   "e": 510.4,
+   "micro": 0
+  },
+  {
+   "t": "nunca con el panel caliente,",
+   "s": 510.69,
+   "e": 512.24,
+   "micro": 0
+  },
+  {
+   "t": "y nunca te subas al techo sin seguridad.",
+   "s": 512.53,
+   "e": 514.88,
+   "micro": 0
+  },
+  {
+   "t": "Revisa la aplicación del inversor:",
+   "s": 515.39,
+   "e": 516.99,
+   "micro": 0
+  },
+  {
+   "t": "si un día produce mucho menos que otros días parecidos,",
+   "s": 517.48,
+   "e": 520.48,
+   "micro": 0
+  },
+  {
+   "t": "algo está pasando.",
+   "s": 520.76,
+   "e": 521.75,
+   "micro": 0
+  },
+  {
+   "t": "Y si tienes baterías, que las revise un técnico.",
+   "s": 522.16,
+   "e": 524.79,
+   "micro": 1
+  },
+  {
+   "t": "Ahora,",
+   "s": 525.49,
+   "e": 525.86,
+   "micro": 0
+  },
+  {
+   "t": "los errores que hacen que la gente pierda su dinero.",
+   "s": 526.18,
+   "e": 528.95,
+   "micro": 1
+  },
+  {
+   "t": "Comprar el sistema más grande que le venden, sin mirar su consumo.",
+   "s": 529.46,
+   "e": 533.11,
+   "micro": 0
+  },
+  {
+   "t": "Elegir solo por el precio más barato.",
+   "s": 533.6,
+   "e": 535.82,
+   "micro": 1
+  },
+  {
+   "t": "No preguntar si el sistema funciona en los apagones.",
+   "s": 536.29,
+   "e": 538.88,
+   "micro": 0
+  },
+  {
+   "t": "Instalar sobre un techo con filtraciones.",
+   "s": 539.3,
+   "e": 541.52,
+   "micro": 0
+  },
+  {
+   "t": "Conectarse sin permiso.",
+   "s": 541.93,
+   "e": 543.51,
+   "micro": 0
+  },
+  {
+   "t": "Y el error número uno:",
+   "s": 544.03,
+   "e": 545.27,
+   "micro": 0
+  },
+  {
+   "t": "no bajar primero el consumo.",
+   "s": 545.7,
+   "e": 547.47,
+   "micro": 0
+  },
+  {
+   "t": "Si gastas de más, vas a pagar paneles de más.",
+   "s": 547.83,
+   "e": 550.71,
+   "micro": 2
+  },
+  {
+   "t": "Resumen:",
+   "s": 551.37,
+   "e": 551.9,
+   "micro": 0
+  },
+  {
+   "t": "mira tus kilovatios,",
+   "s": 552.42,
+   "e": 553.59,
+   "micro": 1
+  },
+  {
+   "t": "baja tu consumo,",
+   "s": 553.94,
+   "e": 554.89,
+   "micro": 0
+  },
+  {
+   "t": "calcula el tamaño,",
+   "s": 555.33,
+   "e": 556.28,
+   "micro": 0
+  },
+  {
+   "t": "decide el tipo de sistema,",
+   "s": 556.74,
+   "e": 558.24,
+   "micro": 0
+  },
+  {
+   "t": "revisa tu techo,",
+   "s": 558.67,
+   "e": 559.66,
+   "micro": 0
+  },
+  {
+   "t": "compara tres cotizaciones,",
+   "s": 560.11,
+   "e": 561.75,
+   "micro": 1
+  },
+  {
+   "t": "saca los permisos,",
+   "s": 562.14,
+   "e": 563.32,
+   "micro": 0
+  },
+  {
+   "t": "pide tu crédito fiscal,",
+   "s": 563.73,
+   "e": 564.94,
+   "micro": 0
+  },
+  {
+   "t": "haz tus números y dale mantenimiento.",
+   "s": 565.46,
+   "e": 567.72,
+   "micro": 1
+  },
+  {
+   "t": "Y recuerda:",
+   "s": 568.23,
+   "e": 568.83,
+   "micro": 0
+  },
+  {
+   "t": "todo lo eléctrico de este proyecto lo tiene que hacer un instalador certificado.",
+   "s": 569.21,
+   "e": 573.33,
+   "micro": 1
+  },
+  {
+   "t": "No es un trabajo para hacerlo tú solo.",
+   "s": 573.69,
+   "e": 575.86,
+   "micro": 1
+  },
+  {
+   "t": "Si este video te sirvió, dale like,",
+   "s": 576.52,
+   "e": 578.65,
+   "micro": 2
+  },
+  {
+   "t": "compártelo con alguien que esté pagando demasiado de luz, y suscríbete para que no te pierdas el próximo.",
+   "s": 578.92,
+   "e": 584.28,
+   "micro": 1
+  },
+  {
+   "t": "Y cuéntame en los comentarios:",
+   "s": 584.67,
+   "e": 585.93,
+   "micro": 0
+  },
+  {
+   "t": "¿cuántos kilovatios gastas tú al mes?",
+   "s": 586.25,
+   "e": 588.4,
+   "micro": 1
+  },
+  {
+   "t": "Yo te leo.",
+   "s": 588.74,
+   "e": 589.33,
+   "micro": 0
+  },
+  {
+   "t": "Nos vemos en el próximo video.",
+   "s": 589.67,
+   "e": 591.22,
+   "micro": 0
+  }
+ ],
+ "words": [
+  {
+   "w": "¿Y",
+   "s": 0.04,
+   "e": 0.217
+  },
+  {
+   "w": "si",
+   "s": 0.217,
+   "e": 0.394
+  },
+  {
+   "w": "te",
+   "s": 0.394,
+   "e": 0.571
+  },
+  {
+   "w": "digo",
+   "s": 0.571,
+   "e": 0.866
+  },
+  {
+   "w": "que",
+   "s": 0.866,
+   "e": 1.043
+  },
+  {
+   "w": "tu",
+   "s": 1.043,
+   "e": 1.22
+  },
+  {
+   "w": "techo",
+   "s": 1.22,
+   "e": 1.516
+  },
+  {
+   "w": "podría",
+   "s": 1.516,
+   "e": 1.929
+  },
+  {
+   "w": "estar",
+   "s": 1.929,
+   "e": 2.224
+  },
+  {
+   "w": "pagándote",
+   "s": 2.224,
+   "e": 2.755
+  },
+  {
+   "w": "la",
+   "s": 2.755,
+   "e": 2.932
+  },
+  {
+   "w": "luz…",
+   "s": 2.932,
+   "e": 3.18
+  },
+  {
+   "w": "y",
+   "s": 3.57,
+   "e": 3.709
+  },
+  {
+   "w": "lo",
+   "s": 3.709,
+   "e": 3.848
+  },
+  {
+   "w": "tienes",
+   "s": 3.848,
+   "e": 4.08
+  },
+  {
+   "w": "vacío?",
+   "s": 4.08,
+   "e": 4.46
+  },
+  {
+   "w": "Cada",
+   "s": 5.13,
+   "e": 7.86
+  },
+  {
+   "w": "mes",
+   "s": 2.75,
+   "e": 3.009
+  },
+  {
+   "w": "le",
+   "s": 3.009,
+   "e": 3.269
+  },
+  {
+   "w": "das",
+   "s": 3.269,
+   "e": 3.528
+  },
+  {
+   "w": "miles",
+   "s": 3.528,
+   "e": 3.961
+  },
+  {
+   "w": "de",
+   "s": 3.961,
+   "e": 4.22
+  },
+  {
+   "w": "pesos",
+   "s": 4.22,
+   "e": 4.652
+  },
+  {
+   "w": "a",
+   "s": 4.652,
+   "e": 4.912
+  },
+  {
+   "w": "la",
+   "s": 4.912,
+   "e": 5.171
+  },
+  {
+   "w": "distribuidora,",
+   "s": 5.171,
+   "e": 6.226
+  },
+  {
+   "w": "y",
+   "s": 6.226,
+   "e": 6.485
+  },
+  {
+   "w": "encima",
+   "s": 6.485,
+   "e": 7.091
+  },
+  {
+   "w": "se",
+   "s": 7.091,
+   "e": 7.35
+  },
+  {
+   "w": "va",
+   "s": 7.35,
+   "e": 7.61
+  },
+  {
+   "w": "la",
+   "s": 7.61,
+   "e": 7.869
+  },
+  {
+   "w": "luz.",
+   "s": 7.869,
+   "e": 8.232
+  },
+  {
+   "w": "Pero",
+   "s": 8.232,
+   "e": 8.664
+  },
+  {
+   "w": "hay",
+   "s": 8.664,
+   "e": 8.924
+  },
+  {
+   "w": "casas,",
+   "s": 8.924,
+   "e": 9.46
+  },
+  {
+   "w": "aquí",
+   "s": 9.98,
+   "e": 10.504
+  },
+  {
+   "w": "mismo",
+   "s": 10.504,
+   "e": 10.878
+  },
+  {
+   "w": "en",
+   "s": 10.878,
+   "e": 11.103
+  },
+  {
+   "w": "República",
+   "s": 11.103,
+   "e": 11.777
+  },
+  {
+   "w": "Dominicana,",
+   "s": 11.777,
+   "e": 12.69
+  },
+  {
+   "w": "que",
+   "s": 13.01,
+   "e": 13.22
+  },
+  {
+   "w": "pagan",
+   "s": 13.22,
+   "e": 13.569
+  },
+  {
+   "w": "una",
+   "s": 13.569,
+   "e": 13.918
+  },
+  {
+   "w": "fracción",
+   "s": 13.918,
+   "e": 14.267
+  },
+  {
+   "w": "de",
+   "s": 14.267,
+   "e": 14.477
+  },
+  {
+   "w": "eso,",
+   "s": 14.477,
+   "e": 14.91
+  },
+  {
+   "w": "porque",
+   "s": 15.21,
+   "e": 15.506
+  },
+  {
+   "w": "producen",
+   "s": 15.506,
+   "e": 15.921
+  },
+  {
+   "w": "su",
+   "s": 15.921,
+   "e": 16.098
+  },
+  {
+   "w": "propia",
+   "s": 16.098,
+   "e": 16.394
+  },
+  {
+   "w": "electricidad",
+   "s": 16.394,
+   "e": 17.046
+  },
+  {
+   "w": "con",
+   "s": 17.046,
+   "e": 17.224
+  },
+  {
+   "w": "el",
+   "s": 17.224,
+   "e": 17.401
+  },
+  {
+   "w": "sol.",
+   "s": 17.401,
+   "e": 17.65
+  },
+  {
+   "w": "Hoy",
+   "s": 18.29,
+   "e": 18.484
+  },
+  {
+   "w": "te",
+   "s": 18.484,
+   "e": 18.678
+  },
+  {
+   "w": "explico,",
+   "s": 18.678,
+   "e": 19.208
+  },
+  {
+   "w": "paso",
+   "s": 19.208,
+   "e": 19.532
+  },
+  {
+   "w": "a",
+   "s": 19.532,
+   "e": 19.726
+  },
+  {
+   "w": "paso,",
+   "s": 19.726,
+   "e": 20.127
+  },
+  {
+   "w": "cómo",
+   "s": 20.127,
+   "e": 20.45
+  },
+  {
+   "w": "funcionan",
+   "s": 20.45,
+   "e": 20.903
+  },
+  {
+   "w": "los",
+   "s": 20.903,
+   "e": 21.097
+  },
+  {
+   "w": "paneles",
+   "s": 21.097,
+   "e": 21.55
+  },
+  {
+   "w": "solares,",
+   "s": 21.55,
+   "e": 22.08
+  },
+  {
+   "w": "cuánto",
+   "s": 22.45,
+   "e": 22.776
+  },
+  {
+   "w": "cuestan",
+   "s": 22.776,
+   "e": 23.101
+  },
+  {
+   "w": "de",
+   "s": 23.101,
+   "e": 23.296
+  },
+  {
+   "w": "verdad,",
+   "s": 23.296,
+   "e": 23.7
+  },
+  {
+   "w": "qué",
+   "s": 24.07,
+   "e": 24.268
+  },
+  {
+   "w": "permisos",
+   "s": 24.268,
+   "e": 24.728
+  },
+  {
+   "w": "necesitas,",
+   "s": 24.728,
+   "e": 25.4
+  },
+  {
+   "w": "cómo",
+   "s": 25.76,
+   "e": 26.039
+  },
+  {
+   "w": "recuperar",
+   "s": 26.039,
+   "e": 26.541
+  },
+  {
+   "w": "hasta",
+   "s": 26.541,
+   "e": 26.82
+  },
+  {
+   "w": "un",
+   "s": 26.82,
+   "e": 26.988
+  },
+  {
+   "w": "cuarenta",
+   "s": 26.988,
+   "e": 27.378
+  },
+  {
+   "w": "por",
+   "s": 27.378,
+   "e": 27.546
+  },
+  {
+   "w": "ciento",
+   "s": 27.546,
+   "e": 27.825
+  },
+  {
+   "w": "de",
+   "s": 27.825,
+   "e": 27.992
+  },
+  {
+   "w": "lo",
+   "s": 27.992,
+   "e": 28.16
+  },
+  {
+   "w": "que",
+   "s": 28.16,
+   "e": 28.327
+  },
+  {
+   "w": "inviertes",
+   "s": 28.327,
+   "e": 28.718
+  },
+  {
+   "w": "en",
+   "s": 28.718,
+   "e": 28.885
+  },
+  {
+   "w": "los",
+   "s": 28.885,
+   "e": 29.052
+  },
+  {
+   "w": "equipos…",
+   "s": 29.052,
+   "e": 29.51
+  },
+  {
+   "w": "y",
+   "s": 29.94,
+   "e": 30.112
+  },
+  {
+   "w": "los",
+   "s": 30.112,
+   "e": 30.284
+  },
+  {
+   "w": "errores",
+   "s": 30.284,
+   "e": 30.686
+  },
+  {
+   "w": "que",
+   "s": 30.686,
+   "e": 30.858
+  },
+  {
+   "w": "hacen",
+   "s": 30.858,
+   "e": 31.145
+  },
+  {
+   "w": "que",
+   "s": 31.145,
+   "e": 31.317
+  },
+  {
+   "w": "mucha",
+   "s": 31.317,
+   "e": 31.604
+  },
+  {
+   "w": "gente",
+   "s": 31.604,
+   "e": 31.891
+  },
+  {
+   "w": "pierda",
+   "s": 31.891,
+   "e": 32.177
+  },
+  {
+   "w": "su",
+   "s": 32.177,
+   "e": 32.35
+  },
+  {
+   "w": "dinero.",
+   "s": 32.35,
+   "e": 32.82
+  },
+  {
+   "w": "Quédate",
+   "s": 33.4,
+   "e": 33.691
+  },
+  {
+   "w": "hasta",
+   "s": 33.691,
+   "e": 33.898
+  },
+  {
+   "w": "el",
+   "s": 33.898,
+   "e": 34.023
+  },
+  {
+   "w": "final,",
+   "s": 34.023,
+   "e": 34.28
+  },
+  {
+   "w": "porque",
+   "s": 34.59,
+   "e": 34.876
+  },
+  {
+   "w": "el",
+   "s": 34.876,
+   "e": 35.048
+  },
+  {
+   "w": "error",
+   "s": 35.048,
+   "e": 35.334
+  },
+  {
+   "w": "número",
+   "s": 35.334,
+   "e": 35.734
+  },
+  {
+   "w": "uno",
+   "s": 35.734,
+   "e": 36.02
+  },
+  {
+   "w": "lo",
+   "s": 36.02,
+   "e": 36.191
+  },
+  {
+   "w": "comete",
+   "s": 36.191,
+   "e": 36.592
+  },
+  {
+   "w": "casi",
+   "s": 36.592,
+   "e": 36.878
+  },
+  {
+   "w": "todo",
+   "s": 36.878,
+   "e": 37.164
+  },
+  {
+   "w": "el",
+   "s": 37.164,
+   "e": 37.335
+  },
+  {
+   "w": "mundo,",
+   "s": 37.335,
+   "e": 37.69
+  },
+  {
+   "w": "y",
+   "s": 38.0,
+   "e": 38.185
+  },
+  {
+   "w": "te",
+   "s": 38.185,
+   "e": 38.371
+  },
+  {
+   "w": "puede",
+   "s": 38.371,
+   "e": 38.68
+  },
+  {
+   "w": "costar",
+   "s": 38.68,
+   "e": 38.989
+  },
+  {
+   "w": "miles",
+   "s": 38.989,
+   "e": 39.298
+  },
+  {
+   "w": "de",
+   "s": 39.298,
+   "e": 39.483
+  },
+  {
+   "w": "dólares.",
+   "s": 39.483,
+   "e": 39.99
+  },
+  {
+   "w": "Antes",
+   "s": 40.62,
+   "e": 40.889
+  },
+  {
+   "w": "de",
+   "s": 40.889,
+   "e": 41.05
+  },
+  {
+   "w": "empezar,",
+   "s": 41.05,
+   "e": 41.49
+  },
+  {
+   "w": "una",
+   "s": 41.76,
+   "e": 42.061
+  },
+  {
+   "w": "verdad",
+   "s": 42.061,
+   "e": 42.362
+  },
+  {
+   "w": "que",
+   "s": 42.362,
+   "e": 42.543
+  },
+  {
+   "w": "muchos",
+   "s": 42.543,
+   "e": 42.844
+  },
+  {
+   "w": "vendedores",
+   "s": 42.844,
+   "e": 43.386
+  },
+  {
+   "w": "no",
+   "s": 43.386,
+   "e": 43.566
+  },
+  {
+   "w": "te",
+   "s": 43.566,
+   "e": 43.747
+  },
+  {
+   "w": "dicen:",
+   "s": 43.747,
+   "e": 44.12
+  },
+  {
+   "w": "con",
+   "s": 44.73,
+   "e": 44.917
+  },
+  {
+   "w": "paneles",
+   "s": 44.917,
+   "e": 45.355
+  },
+  {
+   "w": "solares",
+   "s": 45.355,
+   "e": 45.792
+  },
+  {
+   "w": "conectados",
+   "s": 45.792,
+   "e": 46.354
+  },
+  {
+   "w": "a",
+   "s": 46.354,
+   "e": 46.541
+  },
+  {
+   "w": "la",
+   "s": 46.541,
+   "e": 46.729
+  },
+  {
+   "w": "red,",
+   "s": 46.729,
+   "e": 46.991
+  },
+  {
+   "w": "casi",
+   "s": 46.991,
+   "e": 47.303
+  },
+  {
+   "w": "nunca",
+   "s": 47.303,
+   "e": 47.616
+  },
+  {
+   "w": "vas",
+   "s": 47.616,
+   "e": 47.803
+  },
+  {
+   "w": "a",
+   "s": 47.803,
+   "e": 47.99
+  },
+  {
+   "w": "pagar",
+   "s": 47.99,
+   "e": 48.303
+  },
+  {
+   "w": "cero.",
+   "s": 48.303,
+   "e": 48.69
+  },
+  {
+   "w": "Vas",
+   "s": 49.21,
+   "e": 49.374
+  },
+  {
+   "w": "a",
+   "s": 49.374,
+   "e": 49.538
+  },
+  {
+   "w": "seguir",
+   "s": 49.538,
+   "e": 49.811
+  },
+  {
+   "w": "pagando",
+   "s": 49.811,
+   "e": 50.194
+  },
+  {
+   "w": "un",
+   "s": 50.194,
+   "e": 50.358
+  },
+  {
+   "w": "cargo",
+   "s": 50.358,
+   "e": 50.631
+  },
+  {
+   "w": "fijo,",
+   "s": 50.631,
+   "e": 50.97
+  },
+  {
+   "w": "y",
+   "s": 51.35,
+   "e": 51.508
+  },
+  {
+   "w": "desde",
+   "s": 51.508,
+   "e": 51.772
+  },
+  {
+   "w": "noviembre",
+   "s": 51.772,
+   "e": 52.142
+  },
+  {
+   "w": "de",
+   "s": 52.142,
+   "e": 52.3
+  },
+  {
+   "w": "este",
+   "s": 52.3,
+   "e": 52.564
+  },
+  {
+   "w": "año",
+   "s": 52.564,
+   "e": 52.828
+  },
+  {
+   "w": "hay",
+   "s": 52.828,
+   "e": 52.986
+  },
+  {
+   "w": "un",
+   "s": 52.986,
+   "e": 53.145
+  },
+  {
+   "w": "cargo",
+   "s": 53.145,
+   "e": 53.409
+  },
+  {
+   "w": "nuevo",
+   "s": 53.409,
+   "e": 53.673
+  },
+  {
+   "w": "para",
+   "s": 53.673,
+   "e": 53.937
+  },
+  {
+   "w": "algunas",
+   "s": 53.937,
+   "e": 54.306
+  },
+  {
+   "w": "personas",
+   "s": 54.306,
+   "e": 54.676
+  },
+  {
+   "w": "que",
+   "s": 54.676,
+   "e": 54.834
+  },
+  {
+   "w": "le",
+   "s": 54.834,
+   "e": 54.992
+  },
+  {
+   "w": "mandan",
+   "s": 54.992,
+   "e": 55.256
+  },
+  {
+   "w": "energía",
+   "s": 55.256,
+   "e": 55.732
+  },
+  {
+   "w": "a",
+   "s": 55.732,
+   "e": 55.89
+  },
+  {
+   "w": "la",
+   "s": 55.89,
+   "e": 56.048
+  },
+  {
+   "w": "red.",
+   "s": 56.048,
+   "e": 56.27
+  },
+  {
+   "w": "Pero",
+   "s": 56.94,
+   "e": 57.175
+  },
+  {
+   "w": "si",
+   "s": 57.175,
+   "e": 57.316
+  },
+  {
+   "w": "lo",
+   "s": 57.316,
+   "e": 57.457
+  },
+  {
+   "w": "haces",
+   "s": 57.457,
+   "e": 57.692
+  },
+  {
+   "w": "bien,",
+   "s": 57.692,
+   "e": 57.89
+  },
+  {
+   "w": "tu",
+   "s": 58.21,
+   "e": 58.409
+  },
+  {
+   "w": "factura",
+   "s": 58.409,
+   "e": 58.872
+  },
+  {
+   "w": "puede",
+   "s": 58.872,
+   "e": 59.203
+  },
+  {
+   "w": "bajar",
+   "s": 59.203,
+   "e": 59.535
+  },
+  {
+   "w": "muchísimo.",
+   "s": 59.535,
+   "e": 60.21
+  },
+  {
+   "w": "Y",
+   "s": 60.66,
+   "e": 60.806
+  },
+  {
+   "w": "eso",
+   "s": 60.806,
+   "e": 61.048
+  },
+  {
+   "w": "es",
+   "s": 61.048,
+   "e": 61.194
+  },
+  {
+   "w": "lo",
+   "s": 61.194,
+   "e": 61.34
+  },
+  {
+   "w": "que",
+   "s": 61.34,
+   "e": 61.485
+  },
+  {
+   "w": "te",
+   "s": 61.485,
+   "e": 61.631
+  },
+  {
+   "w": "voy",
+   "s": 61.631,
+   "e": 61.776
+  },
+  {
+   "w": "a",
+   "s": 61.776,
+   "e": 61.922
+  },
+  {
+   "w": "enseñar.",
+   "s": 61.922,
+   "e": 62.32
+  },
+  {
+   "w": "Primero,",
+   "s": 62.97,
+   "e": 63.571
+  },
+  {
+   "w": "entiende",
+   "s": 63.571,
+   "e": 64.083
+  },
+  {
+   "w": "cómo",
+   "s": 64.083,
+   "e": 64.449
+  },
+  {
+   "w": "funciona.",
+   "s": 64.449,
+   "e": 65.05
+  },
+  {
+   "w": "Los",
+   "s": 65.62,
+   "e": 65.799
+  },
+  {
+   "w": "paneles",
+   "s": 65.799,
+   "e": 66.215
+  },
+  {
+   "w": "de",
+   "s": 66.215,
+   "e": 66.394
+  },
+  {
+   "w": "tu",
+   "s": 66.394,
+   "e": 66.572
+  },
+  {
+   "w": "techo",
+   "s": 66.572,
+   "e": 66.87
+  },
+  {
+   "w": "reciben",
+   "s": 66.87,
+   "e": 67.287
+  },
+  {
+   "w": "la",
+   "s": 67.287,
+   "e": 67.465
+  },
+  {
+   "w": "luz",
+   "s": 67.465,
+   "e": 67.644
+  },
+  {
+   "w": "del",
+   "s": 67.644,
+   "e": 67.823
+  },
+  {
+   "w": "sol",
+   "s": 67.823,
+   "e": 68.001
+  },
+  {
+   "w": "y",
+   "s": 68.001,
+   "e": 68.18
+  },
+  {
+   "w": "la",
+   "s": 68.18,
+   "e": 68.358
+  },
+  {
+   "w": "convierten",
+   "s": 68.358,
+   "e": 68.775
+  },
+  {
+   "w": "en",
+   "s": 68.775,
+   "e": 68.954
+  },
+  {
+   "w": "electricidad.",
+   "s": 68.954,
+   "e": 69.68
+  },
+  {
+   "w": "Pero",
+   "s": 70.3,
+   "e": 70.575
+  },
+  {
+   "w": "esa",
+   "s": 70.575,
+   "e": 70.85
+  },
+  {
+   "w": "electricidad",
+   "s": 70.85,
+   "e": 71.455
+  },
+  {
+   "w": "sale",
+   "s": 71.455,
+   "e": 71.729
+  },
+  {
+   "w": "como",
+   "s": 71.729,
+   "e": 72.004
+  },
+  {
+   "w": "corriente",
+   "s": 72.004,
+   "e": 72.389
+  },
+  {
+   "w": "directa,",
+   "s": 72.389,
+   "e": 72.84
+  },
+  {
+   "w": "y",
+   "s": 73.16,
+   "e": 73.347
+  },
+  {
+   "w": "tu",
+   "s": 73.347,
+   "e": 73.533
+  },
+  {
+   "w": "casa",
+   "s": 73.533,
+   "e": 73.844
+  },
+  {
+   "w": "usa",
+   "s": 73.844,
+   "e": 74.155
+  },
+  {
+   "w": "corriente",
+   "s": 74.155,
+   "e": 74.59
+  },
+  {
+   "w": "alterna.",
+   "s": 74.59,
+   "e": 75.1
+  },
+  {
+   "w": "Por",
+   "s": 75.65,
+   "e": 75.813
+  },
+  {
+   "w": "eso",
+   "s": 75.813,
+   "e": 76.086
+  },
+  {
+   "w": "hay",
+   "s": 76.086,
+   "e": 76.249
+  },
+  {
+   "w": "un",
+   "s": 76.249,
+   "e": 76.412
+  },
+  {
+   "w": "aparato",
+   "s": 76.412,
+   "e": 76.902
+  },
+  {
+   "w": "clave:",
+   "s": 76.902,
+   "e": 77.24
+  },
+  {
+   "w": "el",
+   "s": 77.74,
+   "e": 77.938
+  },
+  {
+   "w": "inversor.",
+   "s": 77.938,
+   "e": 78.48
+  },
+  {
+   "w": "El",
+   "s": 79.03,
+   "e": 79.207
+  },
+  {
+   "w": "inversor",
+   "s": 79.207,
+   "e": 79.622
+  },
+  {
+   "w": "convierte",
+   "s": 79.622,
+   "e": 80.036
+  },
+  {
+   "w": "esa",
+   "s": 80.036,
+   "e": 80.331
+  },
+  {
+   "w": "energía",
+   "s": 80.331,
+   "e": 80.864
+  },
+  {
+   "w": "para",
+   "s": 80.864,
+   "e": 81.16
+  },
+  {
+   "w": "que",
+   "s": 81.16,
+   "e": 81.337
+  },
+  {
+   "w": "tu",
+   "s": 81.337,
+   "e": 81.514
+  },
+  {
+   "w": "nevera,",
+   "s": 81.514,
+   "e": 81.999
+  },
+  {
+   "w": "tu",
+   "s": 81.999,
+   "e": 82.177
+  },
+  {
+   "w": "televisor",
+   "s": 82.177,
+   "e": 82.709
+  },
+  {
+   "w": "y",
+   "s": 82.709,
+   "e": 82.887
+  },
+  {
+   "w": "tu",
+   "s": 82.887,
+   "e": 83.064
+  },
+  {
+   "w": "aire",
+   "s": 83.064,
+   "e": 83.36
+  },
+  {
+   "w": "la",
+   "s": 83.36,
+   "e": 83.537
+  },
+  {
+   "w": "puedan",
+   "s": 83.537,
+   "e": 83.833
+  },
+  {
+   "w": "usar.",
+   "s": 83.833,
+   "e": 84.2
+  },
+  {
+   "w": "Durante",
+   "s": 84.78,
+   "e": 85.157
+  },
+  {
+   "w": "el",
+   "s": 85.157,
+   "e": 85.318
+  },
+  {
+   "w": "día,",
+   "s": 85.318,
+   "e": 85.651
+  },
+  {
+   "w": "tu",
+   "s": 85.651,
+   "e": 85.813
+  },
+  {
+   "w": "casa",
+   "s": 85.813,
+   "e": 86.082
+  },
+  {
+   "w": "usa",
+   "s": 86.082,
+   "e": 86.351
+  },
+  {
+   "w": "primero",
+   "s": 86.351,
+   "e": 86.727
+  },
+  {
+   "w": "la",
+   "s": 86.727,
+   "e": 86.889
+  },
+  {
+   "w": "energía",
+   "s": 86.889,
+   "e": 87.373
+  },
+  {
+   "w": "del",
+   "s": 87.373,
+   "e": 87.534
+  },
+  {
+   "w": "sol.",
+   "s": 87.534,
+   "e": 87.76
+  },
+  {
+   "w": "Si",
+   "s": 88.31,
+   "e": 88.475
+  },
+  {
+   "w": "te",
+   "s": 88.475,
+   "e": 88.64
+  },
+  {
+   "w": "sobra,",
+   "s": 88.64,
+   "e": 88.98
+  },
+  {
+   "w": "esa",
+   "s": 89.3,
+   "e": 89.551
+  },
+  {
+   "w": "energía",
+   "s": 89.551,
+   "e": 90.003
+  },
+  {
+   "w": "se",
+   "s": 90.003,
+   "e": 90.154
+  },
+  {
+   "w": "va",
+   "s": 90.154,
+   "e": 90.304
+  },
+  {
+   "w": "a",
+   "s": 90.304,
+   "e": 90.455
+  },
+  {
+   "w": "la",
+   "s": 90.455,
+   "e": 90.606
+  },
+  {
+   "w": "red",
+   "s": 90.606,
+   "e": 90.756
+  },
+  {
+   "w": "de",
+   "s": 90.756,
+   "e": 90.907
+  },
+  {
+   "w": "la",
+   "s": 90.907,
+   "e": 91.057
+  },
+  {
+   "w": "distribuidora.",
+   "s": 91.057,
+   "e": 91.67
+  },
+  {
+   "w": "Y",
+   "s": 92.16,
+   "e": 92.335
+  },
+  {
+   "w": "de",
+   "s": 92.335,
+   "e": 92.51
+  },
+  {
+   "w": "noche,",
+   "s": 92.51,
+   "e": 92.872
+  },
+  {
+   "w": "cuando",
+   "s": 92.872,
+   "e": 93.164
+  },
+  {
+   "w": "no",
+   "s": 93.164,
+   "e": 93.34
+  },
+  {
+   "w": "hay",
+   "s": 93.34,
+   "e": 93.515
+  },
+  {
+   "w": "sol,",
+   "s": 93.515,
+   "e": 93.76
+  },
+  {
+   "w": "tomas",
+   "s": 94.15,
+   "e": 94.42
+  },
+  {
+   "w": "energía",
+   "s": 94.42,
+   "e": 94.907
+  },
+  {
+   "w": "de",
+   "s": 94.907,
+   "e": 95.07
+  },
+  {
+   "w": "la",
+   "s": 95.07,
+   "e": 95.232
+  },
+  {
+   "w": "red",
+   "s": 95.232,
+   "e": 95.394
+  },
+  {
+   "w": "como",
+   "s": 95.394,
+   "e": 95.665
+  },
+  {
+   "w": "siempre.",
+   "s": 95.665,
+   "e": 96.0
+  },
+  {
+   "w": "Para",
+   "s": 96.61,
+   "e": 96.885
+  },
+  {
+   "w": "que",
+   "s": 96.885,
+   "e": 97.05
+  },
+  {
+   "w": "todo",
+   "s": 97.05,
+   "e": 97.325
+  },
+  {
+   "w": "eso",
+   "s": 97.325,
+   "e": 97.599
+  },
+  {
+   "w": "se",
+   "s": 97.599,
+   "e": 97.764
+  },
+  {
+   "w": "cuente",
+   "s": 97.764,
+   "e": 98.039
+  },
+  {
+   "w": "bien,",
+   "s": 98.039,
+   "e": 98.27
+  },
+  {
+   "w": "la",
+   "s": 98.56,
+   "e": 98.725
+  },
+  {
+   "w": "distribuidora",
+   "s": 98.725,
+   "e": 99.33
+  },
+  {
+   "w": "te",
+   "s": 99.33,
+   "e": 99.495
+  },
+  {
+   "w": "pone",
+   "s": 99.495,
+   "e": 99.769
+  },
+  {
+   "w": "un",
+   "s": 99.769,
+   "e": 99.934
+  },
+  {
+   "w": "contador",
+   "s": 99.934,
+   "e": 100.319
+  },
+  {
+   "w": "especial,",
+   "s": 100.319,
+   "e": 100.77
+  },
+  {
+   "w": "que",
+   "s": 101.11,
+   "e": 101.3
+  },
+  {
+   "w": "se",
+   "s": 101.3,
+   "e": 101.49
+  },
+  {
+   "w": "llama",
+   "s": 101.49,
+   "e": 101.807
+  },
+  {
+   "w": "bidireccional:",
+   "s": 101.807,
+   "e": 102.58
+  },
+  {
+   "w": "cuenta",
+   "s": 103.16,
+   "e": 103.455
+  },
+  {
+   "w": "la",
+   "s": 103.455,
+   "e": 103.631
+  },
+  {
+   "w": "energía",
+   "s": 103.631,
+   "e": 104.162
+  },
+  {
+   "w": "que",
+   "s": 104.162,
+   "e": 104.338
+  },
+  {
+   "w": "tú",
+   "s": 104.338,
+   "e": 104.515
+  },
+  {
+   "w": "tomas",
+   "s": 104.515,
+   "e": 104.81
+  },
+  {
+   "w": "y",
+   "s": 104.81,
+   "e": 104.987
+  },
+  {
+   "w": "la",
+   "s": 104.987,
+   "e": 105.163
+  },
+  {
+   "w": "que",
+   "s": 105.163,
+   "e": 105.34
+  },
+  {
+   "w": "tú",
+   "s": 105.34,
+   "e": 105.517
+  },
+  {
+   "w": "entregas.",
+   "s": 105.517,
+   "e": 106.0
+  },
+  {
+   "w": "A",
+   "s": 106.53,
+   "e": 106.718
+  },
+  {
+   "w": "eso",
+   "s": 106.718,
+   "e": 107.032
+  },
+  {
+   "w": "se",
+   "s": 107.032,
+   "e": 107.22
+  },
+  {
+   "w": "le",
+   "s": 107.22,
+   "e": 107.408
+  },
+  {
+   "w": "llama",
+   "s": 107.408,
+   "e": 107.722
+  },
+  {
+   "w": "medición",
+   "s": 107.722,
+   "e": 108.161
+  },
+  {
+   "w": "neta.",
+   "s": 108.161,
+   "e": 108.55
+  },
+  {
+   "w": "Ahora",
+   "s": 109.13,
+   "e": 109.405
+  },
+  {
+   "w": "sí,",
+   "s": 109.405,
+   "e": 109.57
+  },
+  {
+   "w": "vamos",
+   "s": 109.93,
+   "e": 110.223
+  },
+  {
+   "w": "al",
+   "s": 110.223,
+   "e": 110.398
+  },
+  {
+   "w": "paso",
+   "s": 110.398,
+   "e": 110.691
+  },
+  {
+   "w": "a",
+   "s": 110.691,
+   "e": 110.867
+  },
+  {
+   "w": "paso.",
+   "s": 110.867,
+   "e": 111.23
+  },
+  {
+   "w": "Paso",
+   "s": 111.81,
+   "e": 112.06
+  },
+  {
+   "w": "uno:",
+   "s": 112.06,
+   "e": 112.37
+  },
+  {
+   "w": "saca",
+   "s": 112.88,
+   "e": 113.225
+  },
+  {
+   "w": "tu",
+   "s": 113.225,
+   "e": 113.432
+  },
+  {
+   "w": "factura",
+   "s": 113.432,
+   "e": 113.915
+  },
+  {
+   "w": "y",
+   "s": 113.915,
+   "e": 114.122
+  },
+  {
+   "w": "busca",
+   "s": 114.122,
+   "e": 114.467
+  },
+  {
+   "w": "cuántos",
+   "s": 114.467,
+   "e": 114.812
+  },
+  {
+   "w": "kilovatios",
+   "s": 114.812,
+   "e": 115.433
+  },
+  {
+   "w": "hora",
+   "s": 115.433,
+   "e": 115.778
+  },
+  {
+   "w": "gastas",
+   "s": 115.778,
+   "e": 116.123
+  },
+  {
+   "w": "al",
+   "s": 116.123,
+   "e": 116.33
+  },
+  {
+   "w": "mes.",
+   "s": 116.33,
+   "e": 116.62
+  },
+  {
+   "w": "No",
+   "s": 117.06,
+   "e": 117.276
+  },
+  {
+   "w": "mires",
+   "s": 117.276,
+   "e": 117.635
+  },
+  {
+   "w": "cuántos",
+   "s": 117.635,
+   "e": 117.995
+  },
+  {
+   "w": "pesos",
+   "s": 117.995,
+   "e": 118.354
+  },
+  {
+   "w": "pagas,",
+   "s": 118.354,
+   "e": 118.8
+  },
+  {
+   "w": "mira",
+   "s": 119.09,
+   "e": 119.444
+  },
+  {
+   "w": "los",
+   "s": 119.444,
+   "e": 119.657
+  },
+  {
+   "w": "kilovatios.",
+   "s": 119.657,
+   "e": 120.38
+  },
+  {
+   "w": "Y",
+   "s": 120.82,
+   "e": 120.977
+  },
+  {
+   "w": "si",
+   "s": 120.977,
+   "e": 121.135
+  },
+  {
+   "w": "puedes,",
+   "s": 121.135,
+   "e": 121.46
+  },
+  {
+   "w": "busca",
+   "s": 121.76,
+   "e": 122.09
+  },
+  {
+   "w": "los",
+   "s": 122.09,
+   "e": 122.288
+  },
+  {
+   "w": "últimos",
+   "s": 122.288,
+   "e": 122.75
+  },
+  {
+   "w": "doce",
+   "s": 122.75,
+   "e": 123.081
+  },
+  {
+   "w": "meses,",
+   "s": 123.081,
+   "e": 123.49
+  },
+  {
+   "w": "porque",
+   "s": 123.81,
+   "e": 124.061
+  },
+  {
+   "w": "en",
+   "s": 124.061,
+   "e": 124.212
+  },
+  {
+   "w": "verano,",
+   "s": 124.212,
+   "e": 124.625
+  },
+  {
+   "w": "con",
+   "s": 124.625,
+   "e": 124.775
+  },
+  {
+   "w": "el",
+   "s": 124.775,
+   "e": 124.926
+  },
+  {
+   "w": "aire",
+   "s": 124.926,
+   "e": 125.178
+  },
+  {
+   "w": "prendido,",
+   "s": 125.178,
+   "e": 125.59
+  },
+  {
+   "w": "gastas",
+   "s": 125.88,
+   "e": 126.207
+  },
+  {
+   "w": "mucho",
+   "s": 126.207,
+   "e": 126.534
+  },
+  {
+   "w": "más",
+   "s": 126.534,
+   "e": 126.731
+  },
+  {
+   "w": "que",
+   "s": 126.731,
+   "e": 126.927
+  },
+  {
+   "w": "en",
+   "s": 126.927,
+   "e": 127.123
+  },
+  {
+   "w": "diciembre.",
+   "s": 127.123,
+   "e": 127.66
+  },
+  {
+   "w": "Saca",
+   "s": 128.18,
+   "e": 128.473
+  },
+  {
+   "w": "el",
+   "s": 128.473,
+   "e": 128.649
+  },
+  {
+   "w": "promedio.",
+   "s": 128.649,
+   "e": 129.13
+  },
+  {
+   "w": "Ese",
+   "s": 129.59,
+   "e": 129.879
+  },
+  {
+   "w": "número",
+   "s": 129.879,
+   "e": 130.283
+  },
+  {
+   "w": "es",
+   "s": 130.283,
+   "e": 130.456
+  },
+  {
+   "w": "la",
+   "s": 130.456,
+   "e": 130.63
+  },
+  {
+   "w": "base",
+   "s": 130.63,
+   "e": 130.919
+  },
+  {
+   "w": "de",
+   "s": 130.919,
+   "e": 131.092
+  },
+  {
+   "w": "todo.",
+   "s": 131.092,
+   "e": 131.45
+  },
+  {
+   "w": "Si",
+   "s": 131.94,
+   "e": 132.137
+  },
+  {
+   "w": "gastas",
+   "s": 132.137,
+   "e": 132.465
+  },
+  {
+   "w": "doscientos",
+   "s": 132.465,
+   "e": 132.924
+  },
+  {
+   "w": "kilovatios",
+   "s": 132.924,
+   "e": 133.514
+  },
+  {
+   "w": "al",
+   "s": 133.514,
+   "e": 133.711
+  },
+  {
+   "w": "mes,",
+   "s": 133.711,
+   "e": 133.986
+  },
+  {
+   "w": "necesitas",
+   "s": 133.986,
+   "e": 134.576
+  },
+  {
+   "w": "un",
+   "s": 134.576,
+   "e": 134.773
+  },
+  {
+   "w": "sistema",
+   "s": 134.773,
+   "e": 135.232
+  },
+  {
+   "w": "pequeño.",
+   "s": 135.232,
+   "e": 135.77
+  },
+  {
+   "w": "Si",
+   "s": 136.25,
+   "e": 136.444
+  },
+  {
+   "w": "gastas",
+   "s": 136.444,
+   "e": 136.768
+  },
+  {
+   "w": "mil,",
+   "s": 136.768,
+   "e": 137.04
+  },
+  {
+   "w": "necesitas",
+   "s": 137.34,
+   "e": 137.908
+  },
+  {
+   "w": "uno",
+   "s": 137.908,
+   "e": 138.224
+  },
+  {
+   "w": "mucho",
+   "s": 138.224,
+   "e": 138.539
+  },
+  {
+   "w": "más",
+   "s": 138.539,
+   "e": 138.729
+  },
+  {
+   "w": "grande.",
+   "s": 138.729,
+   "e": 139.12
+  },
+  {
+   "w": "Y",
+   "s": 139.62,
+   "e": 139.761
+  },
+  {
+   "w": "sin",
+   "s": 139.761,
+   "e": 139.901
+  },
+  {
+   "w": "ese",
+   "s": 139.901,
+   "e": 140.136
+  },
+  {
+   "w": "número,",
+   "s": 140.136,
+   "e": 140.52
+  },
+  {
+   "w": "cualquier",
+   "s": 140.81,
+   "e": 141.323
+  },
+  {
+   "w": "cotización",
+   "s": 141.323,
+   "e": 141.837
+  },
+  {
+   "w": "es",
+   "s": 141.837,
+   "e": 142.008
+  },
+  {
+   "w": "un",
+   "s": 142.008,
+   "e": 142.179
+  },
+  {
+   "w": "número",
+   "s": 142.179,
+   "e": 142.578
+  },
+  {
+   "w": "inventado.",
+   "s": 142.578,
+   "e": 143.16
+  },
+  {
+   "w": "Paso",
+   "s": 143.77,
+   "e": 144.145
+  },
+  {
+   "w": "dos:",
+   "s": 144.145,
+   "e": 144.46
+  },
+  {
+   "w": "antes",
+   "s": 144.93,
+   "e": 145.275
+  },
+  {
+   "w": "de",
+   "s": 145.275,
+   "e": 145.482
+  },
+  {
+   "w": "comprar",
+   "s": 145.482,
+   "e": 145.827
+  },
+  {
+   "w": "paneles,",
+   "s": 145.827,
+   "e": 146.392
+  },
+  {
+   "w": "baja",
+   "s": 146.392,
+   "e": 146.737
+  },
+  {
+   "w": "tu",
+   "s": 146.737,
+   "e": 146.944
+  },
+  {
+   "w": "consumo.",
+   "s": 146.944,
+   "e": 147.51
+  },
+  {
+   "w": "Esto",
+   "s": 148.02,
+   "e": 148.308
+  },
+  {
+   "w": "es",
+   "s": 148.308,
+   "e": 148.481
+  },
+  {
+   "w": "lo",
+   "s": 148.481,
+   "e": 148.654
+  },
+  {
+   "w": "que",
+   "s": 148.654,
+   "e": 148.827
+  },
+  {
+   "w": "más",
+   "s": 148.827,
+   "e": 148.999
+  },
+  {
+   "w": "dinero",
+   "s": 148.999,
+   "e": 149.403
+  },
+  {
+   "w": "te",
+   "s": 149.403,
+   "e": 149.575
+  },
+  {
+   "w": "ahorra,",
+   "s": 149.575,
+   "e": 150.048
+  },
+  {
+   "w": "y",
+   "s": 150.048,
+   "e": 150.221
+  },
+  {
+   "w": "casi",
+   "s": 150.221,
+   "e": 150.509
+  },
+  {
+   "w": "nadie",
+   "s": 150.509,
+   "e": 150.797
+  },
+  {
+   "w": "lo",
+   "s": 150.797,
+   "e": 150.97
+  },
+  {
+   "w": "hace",
+   "s": 150.97,
+   "e": 151.258
+  },
+  {
+   "w": "primero.",
+   "s": 151.258,
+   "e": 151.73
+  },
+  {
+   "w": "Cambia",
+   "s": 152.24,
+   "e": 152.569
+  },
+  {
+   "w": "los",
+   "s": 152.569,
+   "e": 152.766
+  },
+  {
+   "w": "bombillos",
+   "s": 152.766,
+   "e": 153.227
+  },
+  {
+   "w": "viejos",
+   "s": 153.227,
+   "e": 153.556
+  },
+  {
+   "w": "por",
+   "s": 153.556,
+   "e": 153.753
+  },
+  {
+   "w": "bombillos",
+   "s": 153.753,
+   "e": 154.214
+  },
+  {
+   "w": "LED.",
+   "s": 154.214,
+   "e": 154.49
+  },
+  {
+   "w": "Revisa",
+   "s": 155.03,
+   "e": 155.375
+  },
+  {
+   "w": "la",
+   "s": 155.375,
+   "e": 155.523
+  },
+  {
+   "w": "goma",
+   "s": 155.523,
+   "e": 155.77
+  },
+  {
+   "w": "de",
+   "s": 155.77,
+   "e": 155.918
+  },
+  {
+   "w": "la",
+   "s": 155.918,
+   "e": 156.066
+  },
+  {
+   "w": "nevera.",
+   "s": 156.066,
+   "e": 156.47
+  },
+  {
+   "w": "Pon",
+   "s": 156.99,
+   "e": 157.197
+  },
+  {
+   "w": "el",
+   "s": 157.197,
+   "e": 157.404
+  },
+  {
+   "w": "aire",
+   "s": 157.404,
+   "e": 157.75
+  },
+  {
+   "w": "en",
+   "s": 157.75,
+   "e": 157.957
+  },
+  {
+   "w": "veinticuatro",
+   "s": 157.957,
+   "e": 158.578
+  },
+  {
+   "w": "o",
+   "s": 158.578,
+   "e": 158.785
+  },
+  {
+   "w": "veinticinco",
+   "s": 158.785,
+   "e": 159.407
+  },
+  {
+   "w": "grados,",
+   "s": 159.407,
+   "e": 159.835
+  },
+  {
+   "w": "no",
+   "s": 159.835,
+   "e": 160.042
+  },
+  {
+   "w": "en",
+   "s": 160.042,
+   "e": 160.249
+  },
+  {
+   "w": "dieciocho.",
+   "s": 160.249,
+   "e": 160.816
+  },
+  {
+   "w": "Desconecta",
+   "s": 160.816,
+   "e": 161.437
+  },
+  {
+   "w": "lo",
+   "s": 161.437,
+   "e": 161.644
+  },
+  {
+   "w": "que",
+   "s": 161.644,
+   "e": 161.851
+  },
+  {
+   "w": "no",
+   "s": 161.851,
+   "e": 162.058
+  },
+  {
+   "w": "estás",
+   "s": 162.058,
+   "e": 162.404
+  },
+  {
+   "w": "usando.",
+   "s": 162.404,
+   "e": 162.97
+  },
+  {
+   "w": "¿Por",
+   "s": 163.53,
+   "e": 163.659
+  },
+  {
+   "w": "qué",
+   "s": 163.659,
+   "e": 163.788
+  },
+  {
+   "w": "primero?",
+   "s": 163.788,
+   "e": 164.14
+  },
+  {
+   "w": "Porque",
+   "s": 164.61,
+   "e": 164.931
+  },
+  {
+   "w": "cada",
+   "s": 164.931,
+   "e": 165.252
+  },
+  {
+   "w": "kilovatio",
+   "s": 165.252,
+   "e": 165.83
+  },
+  {
+   "w": "que",
+   "s": 165.83,
+   "e": 166.022
+  },
+  {
+   "w": "dejas",
+   "s": 166.022,
+   "e": 166.343
+  },
+  {
+   "w": "de",
+   "s": 166.343,
+   "e": 166.536
+  },
+  {
+   "w": "gastar",
+   "s": 166.536,
+   "e": 166.857
+  },
+  {
+   "w": "es",
+   "s": 166.857,
+   "e": 167.049
+  },
+  {
+   "w": "un",
+   "s": 167.049,
+   "e": 167.242
+  },
+  {
+   "w": "pedazo",
+   "s": 167.242,
+   "e": 167.691
+  },
+  {
+   "w": "de",
+   "s": 167.691,
+   "e": 167.884
+  },
+  {
+   "w": "sistema",
+   "s": 167.884,
+   "e": 168.333
+  },
+  {
+   "w": "que",
+   "s": 168.333,
+   "e": 168.526
+  },
+  {
+   "w": "no",
+   "s": 168.526,
+   "e": 168.718
+  },
+  {
+   "w": "tienes",
+   "s": 168.718,
+   "e": 169.039
+  },
+  {
+   "w": "que",
+   "s": 169.039,
+   "e": 169.232
+  },
+  {
+   "w": "comprar.",
+   "s": 169.232,
+   "e": 169.63
+  },
+  {
+   "w": "Es",
+   "s": 170.15,
+   "e": 170.321
+  },
+  {
+   "w": "más",
+   "s": 170.321,
+   "e": 170.493
+  },
+  {
+   "w": "barato",
+   "s": 170.493,
+   "e": 170.892
+  },
+  {
+   "w": "ahorrar",
+   "s": 170.892,
+   "e": 171.292
+  },
+  {
+   "w": "energía",
+   "s": 171.292,
+   "e": 171.806
+  },
+  {
+   "w": "que",
+   "s": 171.806,
+   "e": 171.977
+  },
+  {
+   "w": "producirla.",
+   "s": 171.977,
+   "e": 172.56
+  },
+  {
+   "w": "Paso",
+   "s": 173.2,
+   "e": 173.602
+  },
+  {
+   "w": "tres:",
+   "s": 173.602,
+   "e": 173.94
+  },
+  {
+   "w": "calcula,",
+   "s": 174.39,
+   "e": 174.942
+  },
+  {
+   "w": "más",
+   "s": 174.942,
+   "e": 175.143
+  },
+  {
+   "w": "o",
+   "s": 175.143,
+   "e": 175.345
+  },
+  {
+   "w": "menos,",
+   "s": 175.345,
+   "e": 175.762
+  },
+  {
+   "w": "el",
+   "s": 175.762,
+   "e": 175.964
+  },
+  {
+   "w": "tamaño",
+   "s": 175.964,
+   "e": 176.435
+  },
+  {
+   "w": "de",
+   "s": 176.435,
+   "e": 176.637
+  },
+  {
+   "w": "tu",
+   "s": 176.637,
+   "e": 176.838
+  },
+  {
+   "w": "sistema.",
+   "s": 176.838,
+   "e": 177.39
+  },
+  {
+   "w": "Aquí",
+   "s": 177.86,
+   "e": 178.185
+  },
+  {
+   "w": "te",
+   "s": 178.185,
+   "e": 178.324
+  },
+  {
+   "w": "dejo",
+   "s": 178.324,
+   "e": 178.556
+  },
+  {
+   "w": "una",
+   "s": 178.556,
+   "e": 178.788
+  },
+  {
+   "w": "regla",
+   "s": 178.788,
+   "e": 179.019
+  },
+  {
+   "w": "sencilla",
+   "s": 179.019,
+   "e": 179.344
+  },
+  {
+   "w": "para",
+   "s": 179.344,
+   "e": 179.576
+  },
+  {
+   "w": "tener",
+   "s": 179.576,
+   "e": 179.808
+  },
+  {
+   "w": "una",
+   "s": 179.808,
+   "e": 180.04
+  },
+  {
+   "w": "idea.",
+   "s": 180.04,
+   "e": 180.42
+  },
+  {
+   "w": "En",
+   "s": 180.89,
+   "e": 181.088
+  },
+  {
+   "w": "República",
+   "s": 181.088,
+   "e": 181.683
+  },
+  {
+   "w": "Dominicana,",
+   "s": 181.683,
+   "e": 182.489
+  },
+  {
+   "w": "cada",
+   "s": 182.489,
+   "e": 182.82
+  },
+  {
+   "w": "kilovatio",
+   "s": 182.82,
+   "e": 183.414
+  },
+  {
+   "w": "de",
+   "s": 183.414,
+   "e": 183.613
+  },
+  {
+   "w": "paneles",
+   "s": 183.613,
+   "e": 184.075
+  },
+  {
+   "w": "produce,",
+   "s": 184.075,
+   "e": 184.617
+  },
+  {
+   "w": "aproximadamente,",
+   "s": 184.617,
+   "e": 185.688
+  },
+  {
+   "w": "unos",
+   "s": 185.688,
+   "e": 186.018
+  },
+  {
+   "w": "ciento",
+   "s": 186.018,
+   "e": 186.349
+  },
+  {
+   "w": "veinte",
+   "s": 186.349,
+   "e": 186.679
+  },
+  {
+   "w": "kilovatios",
+   "s": 186.679,
+   "e": 187.274
+  },
+  {
+   "w": "hora",
+   "s": 187.274,
+   "e": 187.604
+  },
+  {
+   "w": "al",
+   "s": 187.604,
+   "e": 187.802
+  },
+  {
+   "w": "mes.",
+   "s": 187.802,
+   "e": 188.08
+  },
+  {
+   "w": "Entonces,",
+   "s": 188.47,
+   "e": 189.09
+  },
+  {
+   "w": "si",
+   "s": 189.35,
+   "e": 189.543
+  },
+  {
+   "w": "tu",
+   "s": 189.543,
+   "e": 189.737
+  },
+  {
+   "w": "casa",
+   "s": 189.737,
+   "e": 190.059
+  },
+  {
+   "w": "gasta",
+   "s": 190.059,
+   "e": 190.382
+  },
+  {
+   "w": "seiscientos",
+   "s": 190.382,
+   "e": 190.833
+  },
+  {
+   "w": "kilovatios",
+   "s": 190.833,
+   "e": 191.413
+  },
+  {
+   "w": "hora",
+   "s": 191.413,
+   "e": 191.736
+  },
+  {
+   "w": "al",
+   "s": 191.736,
+   "e": 191.929
+  },
+  {
+   "w": "mes,",
+   "s": 191.929,
+   "e": 192.2
+  },
+  {
+   "w": "divides",
+   "s": 192.5,
+   "e": 193.021
+  },
+  {
+   "w": "seiscientos",
+   "s": 193.021,
+   "e": 193.542
+  },
+  {
+   "w": "entre",
+   "s": 193.542,
+   "e": 193.915
+  },
+  {
+   "w": "ciento",
+   "s": 193.915,
+   "e": 194.287
+  },
+  {
+   "w": "veinte,",
+   "s": 194.287,
+   "e": 194.748
+  },
+  {
+   "w": "y",
+   "s": 194.748,
+   "e": 194.972
+  },
+  {
+   "w": "te",
+   "s": 194.972,
+   "e": 195.195
+  },
+  {
+   "w": "da",
+   "s": 195.195,
+   "e": 195.418
+  },
+  {
+   "w": "cinco.",
+   "s": 195.418,
+   "e": 195.88
+  },
+  {
+   "w": "Necesitarías",
+   "s": 196.36,
+   "e": 197.137
+  },
+  {
+   "w": "un",
+   "s": 197.137,
+   "e": 197.316
+  },
+  {
+   "w": "sistema",
+   "s": 197.316,
+   "e": 197.734
+  },
+  {
+   "w": "de",
+   "s": 197.734,
+   "e": 197.913
+  },
+  {
+   "w": "unos",
+   "s": 197.913,
+   "e": 198.212
+  },
+  {
+   "w": "cinco",
+   "s": 198.212,
+   "e": 198.511
+  },
+  {
+   "w": "kilovatios.",
+   "s": 198.511,
+   "e": 199.12
+  },
+  {
+   "w": "Ojo:",
+   "s": 199.59,
+   "e": 199.92
+  },
+  {
+   "w": "esto",
+   "s": 200.3,
+   "e": 200.557
+  },
+  {
+   "w": "es",
+   "s": 200.557,
+   "e": 200.712
+  },
+  {
+   "w": "solo",
+   "s": 200.712,
+   "e": 200.969
+  },
+  {
+   "w": "para",
+   "s": 200.969,
+   "e": 201.226
+  },
+  {
+   "w": "que",
+   "s": 201.226,
+   "e": 201.38
+  },
+  {
+   "w": "tengas",
+   "s": 201.38,
+   "e": 201.638
+  },
+  {
+   "w": "una",
+   "s": 201.638,
+   "e": 201.895
+  },
+  {
+   "w": "idea",
+   "s": 201.895,
+   "e": 202.255
+  },
+  {
+   "w": "y",
+   "s": 202.255,
+   "e": 202.409
+  },
+  {
+   "w": "no",
+   "s": 202.409,
+   "e": 202.564
+  },
+  {
+   "w": "te",
+   "s": 202.564,
+   "e": 202.718
+  },
+  {
+   "w": "engañen.",
+   "s": 202.718,
+   "e": 203.14
+  },
+  {
+   "w": "El",
+   "s": 203.66,
+   "e": 203.855
+  },
+  {
+   "w": "cálculo",
+   "s": 203.855,
+   "e": 204.311
+  },
+  {
+   "w": "exacto",
+   "s": 204.311,
+   "e": 204.767
+  },
+  {
+   "w": "lo",
+   "s": 204.767,
+   "e": 204.963
+  },
+  {
+   "w": "hace",
+   "s": 204.963,
+   "e": 205.288
+  },
+  {
+   "w": "el",
+   "s": 205.288,
+   "e": 205.484
+  },
+  {
+   "w": "instalador,",
+   "s": 205.484,
+   "e": 206.148
+  },
+  {
+   "w": "según",
+   "s": 206.148,
+   "e": 206.474
+  },
+  {
+   "w": "tu",
+   "s": 206.474,
+   "e": 206.669
+  },
+  {
+   "w": "techo,",
+   "s": 206.669,
+   "e": 207.073
+  },
+  {
+   "w": "la",
+   "s": 207.073,
+   "e": 207.268
+  },
+  {
+   "w": "sombra",
+   "s": 207.268,
+   "e": 207.594
+  },
+  {
+   "w": "y",
+   "s": 207.594,
+   "e": 207.789
+  },
+  {
+   "w": "la",
+   "s": 207.789,
+   "e": 207.985
+  },
+  {
+   "w": "zona",
+   "s": 207.985,
+   "e": 208.311
+  },
+  {
+   "w": "donde",
+   "s": 208.311,
+   "e": 208.636
+  },
+  {
+   "w": "vives.",
+   "s": 208.636,
+   "e": 209.04
+  },
+  {
+   "w": "Paso",
+   "s": 209.7,
+   "e": 210.035
+  },
+  {
+   "w": "cuatro:",
+   "s": 210.035,
+   "e": 210.45
+  },
+  {
+   "w": "decide",
+   "s": 210.9,
+   "e": 211.324
+  },
+  {
+   "w": "qué",
+   "s": 211.324,
+   "e": 211.505
+  },
+  {
+   "w": "tipo",
+   "s": 211.505,
+   "e": 211.808
+  },
+  {
+   "w": "de",
+   "s": 211.808,
+   "e": 211.989
+  },
+  {
+   "w": "sistema",
+   "s": 211.989,
+   "e": 212.413
+  },
+  {
+   "w": "quieres.",
+   "s": 212.413,
+   "e": 213.03
+  },
+  {
+   "w": "Y",
+   "s": 213.51,
+   "e": 213.68
+  },
+  {
+   "w": "aquí",
+   "s": 213.68,
+   "e": 214.076
+  },
+  {
+   "w": "viene",
+   "s": 214.076,
+   "e": 214.359
+  },
+  {
+   "w": "algo",
+   "s": 214.359,
+   "e": 214.643
+  },
+  {
+   "w": "muy",
+   "s": 214.643,
+   "e": 214.812
+  },
+  {
+   "w": "importante,",
+   "s": 214.812,
+   "e": 215.39
+  },
+  {
+   "w": "porque",
+   "s": 215.66,
+   "e": 216.032
+  },
+  {
+   "w": "hay",
+   "s": 216.032,
+   "e": 216.255
+  },
+  {
+   "w": "tres",
+   "s": 216.255,
+   "e": 216.479
+  },
+  {
+   "w": "tipos.",
+   "s": 216.479,
+   "e": 216.94
+  },
+  {
+   "w": "El",
+   "s": 217.44,
+   "e": 217.593
+  },
+  {
+   "w": "primero",
+   "s": 217.593,
+   "e": 217.949
+  },
+  {
+   "w": "es",
+   "s": 217.949,
+   "e": 218.102
+  },
+  {
+   "w": "conectado",
+   "s": 218.102,
+   "e": 218.56
+  },
+  {
+   "w": "a",
+   "s": 218.56,
+   "e": 218.713
+  },
+  {
+   "w": "la",
+   "s": 218.713,
+   "e": 218.866
+  },
+  {
+   "w": "red,",
+   "s": 218.866,
+   "e": 219.08
+  },
+  {
+   "w": "con",
+   "s": 219.39,
+   "e": 219.575
+  },
+  {
+   "w": "medición",
+   "s": 219.575,
+   "e": 220.007
+  },
+  {
+   "w": "neta.",
+   "s": 220.007,
+   "e": 220.39
+  },
+  {
+   "w": "Es",
+   "s": 220.82,
+   "e": 221.005
+  },
+  {
+   "w": "el",
+   "s": 221.005,
+   "e": 221.19
+  },
+  {
+   "w": "más",
+   "s": 221.19,
+   "e": 221.375
+  },
+  {
+   "w": "barato,",
+   "s": 221.375,
+   "e": 221.88
+  },
+  {
+   "w": "porque",
+   "s": 221.88,
+   "e": 222.188
+  },
+  {
+   "w": "no",
+   "s": 222.188,
+   "e": 222.373
+  },
+  {
+   "w": "lleva",
+   "s": 222.373,
+   "e": 222.681
+  },
+  {
+   "w": "baterías.",
+   "s": 222.681,
+   "e": 223.31
+  },
+  {
+   "w": "Pero",
+   "s": 223.68,
+   "e": 223.971
+  },
+  {
+   "w": "tiene",
+   "s": 223.971,
+   "e": 224.263
+  },
+  {
+   "w": "un",
+   "s": 224.263,
+   "e": 224.438
+  },
+  {
+   "w": "detalle",
+   "s": 224.438,
+   "e": 224.846
+  },
+  {
+   "w": "que",
+   "s": 224.846,
+   "e": 225.021
+  },
+  {
+   "w": "casi",
+   "s": 225.021,
+   "e": 225.312
+  },
+  {
+   "w": "nadie",
+   "s": 225.312,
+   "e": 225.604
+  },
+  {
+   "w": "te",
+   "s": 225.604,
+   "e": 225.779
+  },
+  {
+   "w": "dice:",
+   "s": 225.779,
+   "e": 226.14
+  },
+  {
+   "w": "cuando",
+   "s": 226.61,
+   "e": 226.882
+  },
+  {
+   "w": "se",
+   "s": 226.882,
+   "e": 227.045
+  },
+  {
+   "w": "va",
+   "s": 227.045,
+   "e": 227.208
+  },
+  {
+   "w": "la",
+   "s": 227.208,
+   "e": 227.372
+  },
+  {
+   "w": "luz,",
+   "s": 227.372,
+   "e": 227.6
+  },
+  {
+   "w": "tus",
+   "s": 227.87,
+   "e": 228.059
+  },
+  {
+   "w": "paneles",
+   "s": 228.059,
+   "e": 228.5
+  },
+  {
+   "w": "también",
+   "s": 228.5,
+   "e": 228.815
+  },
+  {
+   "w": "se",
+   "s": 228.815,
+   "e": 229.004
+  },
+  {
+   "w": "apagan.",
+   "s": 229.004,
+   "e": 229.52
+  },
+  {
+   "w": "Sí,",
+   "s": 230.03,
+   "e": 230.37
+  },
+  {
+   "w": "aunque",
+   "s": 230.67,
+   "e": 230.966
+  },
+  {
+   "w": "haya",
+   "s": 230.966,
+   "e": 231.262
+  },
+  {
+   "w": "sol.",
+   "s": 231.262,
+   "e": 231.51
+  },
+  {
+   "w": "Es",
+   "s": 231.91,
+   "e": 232.056
+  },
+  {
+   "w": "por",
+   "s": 232.056,
+   "e": 232.203
+  },
+  {
+   "w": "seguridad,",
+   "s": 232.203,
+   "e": 232.7
+  },
+  {
+   "w": "para",
+   "s": 233.07,
+   "e": 233.329
+  },
+  {
+   "w": "no",
+   "s": 233.329,
+   "e": 233.485
+  },
+  {
+   "w": "electrocutar",
+   "s": 233.485,
+   "e": 234.055
+  },
+  {
+   "w": "a",
+   "s": 234.055,
+   "e": 234.21
+  },
+  {
+   "w": "los",
+   "s": 234.21,
+   "e": 234.366
+  },
+  {
+   "w": "técnicos",
+   "s": 234.366,
+   "e": 234.728
+  },
+  {
+   "w": "que",
+   "s": 234.728,
+   "e": 234.884
+  },
+  {
+   "w": "están",
+   "s": 234.884,
+   "e": 235.143
+  },
+  {
+   "w": "arreglando",
+   "s": 235.143,
+   "e": 235.61
+  },
+  {
+   "w": "las",
+   "s": 235.61,
+   "e": 235.765
+  },
+  {
+   "w": "líneas.",
+   "s": 235.765,
+   "e": 236.19
+  },
+  {
+   "w": "El",
+   "s": 236.87,
+   "e": 237.067
+  },
+  {
+   "w": "segundo",
+   "s": 237.067,
+   "e": 237.528
+  },
+  {
+   "w": "es",
+   "s": 237.528,
+   "e": 237.725
+  },
+  {
+   "w": "de",
+   "s": 237.725,
+   "e": 237.922
+  },
+  {
+   "w": "inyección",
+   "s": 237.922,
+   "e": 238.382
+  },
+  {
+   "w": "cero.",
+   "s": 238.382,
+   "e": 238.79
+  },
+  {
+   "w": "Tus",
+   "s": 239.29,
+   "e": 239.465
+  },
+  {
+   "w": "paneles",
+   "s": 239.465,
+   "e": 239.874
+  },
+  {
+   "w": "alimentan",
+   "s": 239.874,
+   "e": 240.4
+  },
+  {
+   "w": "tu",
+   "s": 240.4,
+   "e": 240.575
+  },
+  {
+   "w": "casa,",
+   "s": 240.575,
+   "e": 240.937
+  },
+  {
+   "w": "pero",
+   "s": 240.937,
+   "e": 241.229
+  },
+  {
+   "w": "no",
+   "s": 241.229,
+   "e": 241.405
+  },
+  {
+   "w": "le",
+   "s": 241.405,
+   "e": 241.58
+  },
+  {
+   "w": "mandan",
+   "s": 241.58,
+   "e": 241.872
+  },
+  {
+   "w": "nada",
+   "s": 241.872,
+   "e": 242.164
+  },
+  {
+   "w": "a",
+   "s": 242.164,
+   "e": 242.339
+  },
+  {
+   "w": "la",
+   "s": 242.339,
+   "e": 242.515
+  },
+  {
+   "w": "red.",
+   "s": 242.515,
+   "e": 242.76
+  },
+  {
+   "w": "Con",
+   "s": 243.26,
+   "e": 243.442
+  },
+  {
+   "w": "el",
+   "s": 243.442,
+   "e": 243.625
+  },
+  {
+   "w": "reglamento",
+   "s": 243.625,
+   "e": 244.172
+  },
+  {
+   "w": "nuevo,",
+   "s": 244.172,
+   "e": 244.549
+  },
+  {
+   "w": "estos",
+   "s": 244.549,
+   "e": 244.853
+  },
+  {
+   "w": "sistemas",
+   "s": 244.853,
+   "e": 245.278
+  },
+  {
+   "w": "no",
+   "s": 245.278,
+   "e": 245.46
+  },
+  {
+   "w": "pagan",
+   "s": 245.46,
+   "e": 245.764
+  },
+  {
+   "w": "el",
+   "s": 245.764,
+   "e": 245.947
+  },
+  {
+   "w": "cargo",
+   "s": 245.947,
+   "e": 246.251
+  },
+  {
+   "w": "por",
+   "s": 246.251,
+   "e": 246.433
+  },
+  {
+   "w": "energía",
+   "s": 246.433,
+   "e": 246.98
+  },
+  {
+   "w": "inyectada,",
+   "s": 246.98,
+   "e": 247.6
+  },
+  {
+   "w": "porque",
+   "s": 247.89,
+   "e": 248.197
+  },
+  {
+   "w": "no",
+   "s": 248.197,
+   "e": 248.381
+  },
+  {
+   "w": "inyectan",
+   "s": 248.381,
+   "e": 248.81
+  },
+  {
+   "w": "nada.",
+   "s": 248.81,
+   "e": 249.19
+  },
+  {
+   "w": "Pero",
+   "s": 249.6,
+   "e": 249.882
+  },
+  {
+   "w": "lo",
+   "s": 249.882,
+   "e": 250.051
+  },
+  {
+   "w": "que",
+   "s": 250.051,
+   "e": 250.22
+  },
+  {
+   "w": "te",
+   "s": 250.22,
+   "e": 250.389
+  },
+  {
+   "w": "sobra",
+   "s": 250.389,
+   "e": 250.671
+  },
+  {
+   "w": "de",
+   "s": 250.671,
+   "e": 250.84
+  },
+  {
+   "w": "día",
+   "s": 250.84,
+   "e": 251.122
+  },
+  {
+   "w": "se",
+   "s": 251.122,
+   "e": 251.291
+  },
+  {
+   "w": "pierde,",
+   "s": 251.291,
+   "e": 251.64
+  },
+  {
+   "w": "si",
+   "s": 251.95,
+   "e": 252.112
+  },
+  {
+   "w": "no",
+   "s": 252.112,
+   "e": 252.275
+  },
+  {
+   "w": "tienes",
+   "s": 252.275,
+   "e": 252.545
+  },
+  {
+   "w": "dónde",
+   "s": 252.545,
+   "e": 252.816
+  },
+  {
+   "w": "guardarlo.",
+   "s": 252.816,
+   "e": 253.26
+  },
+  {
+   "w": "Y",
+   "s": 253.99,
+   "e": 254.181
+  },
+  {
+   "w": "el",
+   "s": 254.181,
+   "e": 254.372
+  },
+  {
+   "w": "tercero",
+   "s": 254.372,
+   "e": 254.817
+  },
+  {
+   "w": "es",
+   "s": 254.817,
+   "e": 255.008
+  },
+  {
+   "w": "híbrido,",
+   "s": 255.008,
+   "e": 255.53
+  },
+  {
+   "w": "con",
+   "s": 255.87,
+   "e": 256.061
+  },
+  {
+   "w": "baterías.",
+   "s": 256.061,
+   "e": 256.71
+  },
+  {
+   "w": "Es",
+   "s": 257.12,
+   "e": 257.274
+  },
+  {
+   "w": "el",
+   "s": 257.274,
+   "e": 257.428
+  },
+  {
+   "w": "más",
+   "s": 257.428,
+   "e": 257.582
+  },
+  {
+   "w": "caro,",
+   "s": 257.582,
+   "e": 257.9
+  },
+  {
+   "w": "pero",
+   "s": 258.21,
+   "e": 258.449
+  },
+  {
+   "w": "es",
+   "s": 258.449,
+   "e": 258.593
+  },
+  {
+   "w": "el",
+   "s": 258.593,
+   "e": 258.736
+  },
+  {
+   "w": "que",
+   "s": 258.736,
+   "e": 258.88
+  },
+  {
+   "w": "te",
+   "s": 258.88,
+   "e": 259.023
+  },
+  {
+   "w": "mantiene",
+   "s": 259.023,
+   "e": 259.358
+  },
+  {
+   "w": "la",
+   "s": 259.358,
+   "e": 259.502
+  },
+  {
+   "w": "luz",
+   "s": 259.502,
+   "e": 259.645
+  },
+  {
+   "w": "cuando",
+   "s": 259.645,
+   "e": 259.884
+  },
+  {
+   "w": "hay",
+   "s": 259.884,
+   "e": 260.028
+  },
+  {
+   "w": "apagón,",
+   "s": 260.028,
+   "e": 260.42
+  },
+  {
+   "w": "porque",
+   "s": 260.77,
+   "e": 261.061
+  },
+  {
+   "w": "guarda",
+   "s": 261.061,
+   "e": 261.351
+  },
+  {
+   "w": "energía",
+   "s": 261.351,
+   "e": 261.874
+  },
+  {
+   "w": "para",
+   "s": 261.874,
+   "e": 262.165
+  },
+  {
+   "w": "la",
+   "s": 262.165,
+   "e": 262.34
+  },
+  {
+   "w": "noche",
+   "s": 262.34,
+   "e": 262.63
+  },
+  {
+   "w": "y",
+   "s": 262.63,
+   "e": 262.805
+  },
+  {
+   "w": "para",
+   "s": 262.805,
+   "e": 263.095
+  },
+  {
+   "w": "los",
+   "s": 263.095,
+   "e": 263.27
+  },
+  {
+   "w": "cortes.",
+   "s": 263.27,
+   "e": 263.63
+  },
+  {
+   "w": "Pero",
+   "s": 264.03,
+   "e": 264.258
+  },
+  {
+   "w": "ojo,",
+   "s": 264.258,
+   "e": 264.54
+  },
+  {
+   "w": "para",
+   "s": 264.93,
+   "e": 265.219
+  },
+  {
+   "w": "eso",
+   "s": 265.219,
+   "e": 265.508
+  },
+  {
+   "w": "necesita",
+   "s": 265.508,
+   "e": 266.029
+  },
+  {
+   "w": "un",
+   "s": 266.029,
+   "e": 266.202
+  },
+  {
+   "w": "inversor",
+   "s": 266.202,
+   "e": 266.607
+  },
+  {
+   "w": "híbrido",
+   "s": 266.607,
+   "e": 267.011
+  },
+  {
+   "w": "preparado",
+   "s": 267.011,
+   "e": 267.532
+  },
+  {
+   "w": "para",
+   "s": 267.532,
+   "e": 267.821
+  },
+  {
+   "w": "funcionar",
+   "s": 267.821,
+   "e": 268.226
+  },
+  {
+   "w": "aislado",
+   "s": 268.226,
+   "e": 268.63
+  },
+  {
+   "w": "de",
+   "s": 268.63,
+   "e": 268.804
+  },
+  {
+   "w": "la",
+   "s": 268.804,
+   "e": 268.977
+  },
+  {
+   "w": "red.",
+   "s": 268.977,
+   "e": 269.22
+  },
+  {
+   "w": "Si",
+   "s": 269.73,
+   "e": 269.908
+  },
+  {
+   "w": "en",
+   "s": 269.908,
+   "e": 270.085
+  },
+  {
+   "w": "tu",
+   "s": 270.085,
+   "e": 270.263
+  },
+  {
+   "w": "zona",
+   "s": 270.263,
+   "e": 270.559
+  },
+  {
+   "w": "se",
+   "s": 270.559,
+   "e": 270.737
+  },
+  {
+   "w": "va",
+   "s": 270.737,
+   "e": 270.915
+  },
+  {
+   "w": "la",
+   "s": 270.915,
+   "e": 271.092
+  },
+  {
+   "w": "luz",
+   "s": 271.092,
+   "e": 271.27
+  },
+  {
+   "w": "muchas",
+   "s": 271.27,
+   "e": 271.566
+  },
+  {
+   "w": "horas,",
+   "s": 271.566,
+   "e": 271.933
+  },
+  {
+   "w": "este",
+   "s": 271.933,
+   "e": 272.23
+  },
+  {
+   "w": "es",
+   "s": 272.23,
+   "e": 272.407
+  },
+  {
+   "w": "el",
+   "s": 272.407,
+   "e": 272.585
+  },
+  {
+   "w": "que",
+   "s": 272.585,
+   "e": 272.763
+  },
+  {
+   "w": "más",
+   "s": 272.763,
+   "e": 272.94
+  },
+  {
+   "w": "vas",
+   "s": 272.94,
+   "e": 273.118
+  },
+  {
+   "w": "a",
+   "s": 273.118,
+   "e": 273.296
+  },
+  {
+   "w": "agradecer.",
+   "s": 273.296,
+   "e": 273.9
+  },
+  {
+   "w": "Y",
+   "s": 274.65,
+   "e": 274.82
+  },
+  {
+   "w": "antes",
+   "s": 274.82,
+   "e": 275.104
+  },
+  {
+   "w": "de",
+   "s": 275.104,
+   "e": 275.275
+  },
+  {
+   "w": "seguir",
+   "s": 275.275,
+   "e": 275.559
+  },
+  {
+   "w": "con",
+   "s": 275.559,
+   "e": 275.729
+  },
+  {
+   "w": "los",
+   "s": 275.729,
+   "e": 275.899
+  },
+  {
+   "w": "permisos",
+   "s": 275.899,
+   "e": 276.297
+  },
+  {
+   "w": "y",
+   "s": 276.297,
+   "e": 276.467
+  },
+  {
+   "w": "con",
+   "s": 276.467,
+   "e": 276.638
+  },
+  {
+   "w": "cómo",
+   "s": 276.638,
+   "e": 276.922
+  },
+  {
+   "w": "recuperar",
+   "s": 276.922,
+   "e": 277.433
+  },
+  {
+   "w": "hasta",
+   "s": 277.433,
+   "e": 277.717
+  },
+  {
+   "w": "el",
+   "s": 277.717,
+   "e": 277.887
+  },
+  {
+   "w": "cuarenta",
+   "s": 277.887,
+   "e": 278.285
+  },
+  {
+   "w": "por",
+   "s": 278.285,
+   "e": 278.455
+  },
+  {
+   "w": "ciento",
+   "s": 278.455,
+   "e": 278.739
+  },
+  {
+   "w": "de",
+   "s": 278.739,
+   "e": 278.909
+  },
+  {
+   "w": "lo",
+   "s": 278.909,
+   "e": 279.08
+  },
+  {
+   "w": "que",
+   "s": 279.08,
+   "e": 279.25
+  },
+  {
+   "w": "cuestan",
+   "s": 279.25,
+   "e": 279.534
+  },
+  {
+   "w": "los",
+   "s": 279.534,
+   "e": 279.704
+  },
+  {
+   "w": "equipos,",
+   "s": 279.704,
+   "e": 280.17
+  },
+  {
+   "w": "si",
+   "s": 280.51,
+   "e": 280.685
+  },
+  {
+   "w": "este",
+   "s": 280.685,
+   "e": 280.976
+  },
+  {
+   "w": "video",
+   "s": 280.976,
+   "e": 281.383
+  },
+  {
+   "w": "te",
+   "s": 281.383,
+   "e": 281.558
+  },
+  {
+   "w": "está",
+   "s": 281.558,
+   "e": 281.849
+  },
+  {
+   "w": "sirviendo,",
+   "s": 281.849,
+   "e": 282.326
+  },
+  {
+   "w": "suscríbete",
+   "s": 282.326,
+   "e": 282.85
+  },
+  {
+   "w": "y",
+   "s": 282.85,
+   "e": 283.024
+  },
+  {
+   "w": "activa",
+   "s": 283.024,
+   "e": 283.432
+  },
+  {
+   "w": "la",
+   "s": 283.432,
+   "e": 283.606
+  },
+  {
+   "w": "campanita.",
+   "s": 283.606,
+   "e": 284.2
+  },
+  {
+   "w": "Aquí",
+   "s": 284.62,
+   "e": 285.015
+  },
+  {
+   "w": "te",
+   "s": 285.015,
+   "e": 285.185
+  },
+  {
+   "w": "explico",
+   "s": 285.185,
+   "e": 285.58
+  },
+  {
+   "w": "cómo",
+   "s": 285.58,
+   "e": 285.862
+  },
+  {
+   "w": "funcionan",
+   "s": 285.862,
+   "e": 286.257
+  },
+  {
+   "w": "las",
+   "s": 286.257,
+   "e": 286.427
+  },
+  {
+   "w": "cosas",
+   "s": 286.427,
+   "e": 286.709
+  },
+  {
+   "w": "de",
+   "s": 286.709,
+   "e": 286.878
+  },
+  {
+   "w": "tu",
+   "s": 286.878,
+   "e": 287.048
+  },
+  {
+   "w": "casa,",
+   "s": 287.048,
+   "e": 287.398
+  },
+  {
+   "w": "de",
+   "s": 287.398,
+   "e": 287.567
+  },
+  {
+   "w": "tu",
+   "s": 287.567,
+   "e": 287.737
+  },
+  {
+   "w": "carro",
+   "s": 287.737,
+   "e": 288.019
+  },
+  {
+   "w": "y",
+   "s": 288.019,
+   "e": 288.188
+  },
+  {
+   "w": "de",
+   "s": 288.188,
+   "e": 288.358
+  },
+  {
+   "w": "tu",
+   "s": 288.358,
+   "e": 288.527
+  },
+  {
+   "w": "celular,",
+   "s": 288.527,
+   "e": 288.99
+  },
+  {
+   "w": "para",
+   "s": 289.3,
+   "e": 289.574
+  },
+  {
+   "w": "que",
+   "s": 289.574,
+   "e": 289.738
+  },
+  {
+   "w": "ahorres",
+   "s": 289.738,
+   "e": 290.122
+  },
+  {
+   "w": "tiempo",
+   "s": 290.122,
+   "e": 290.396
+  },
+  {
+   "w": "y",
+   "s": 290.396,
+   "e": 290.561
+  },
+  {
+   "w": "dinero.",
+   "s": 290.561,
+   "e": 291.01
+  },
+  {
+   "w": "Ahora",
+   "s": 291.57,
+   "e": 291.857
+  },
+  {
+   "w": "sí,",
+   "s": 291.857,
+   "e": 292.03
+  },
+  {
+   "w": "seguimos.",
+   "s": 292.4,
+   "e": 293.0
+  },
+  {
+   "w": "Paso",
+   "s": 293.68,
+   "e": 294.019
+  },
+  {
+   "w": "cinco:",
+   "s": 294.019,
+   "e": 294.44
+  },
+  {
+   "w": "revisa",
+   "s": 294.9,
+   "e": 295.354
+  },
+  {
+   "w": "tu",
+   "s": 295.354,
+   "e": 295.548
+  },
+  {
+   "w": "techo.",
+   "s": 295.548,
+   "e": 295.95
+  },
+  {
+   "w": "Los",
+   "s": 296.49,
+   "e": 296.684
+  },
+  {
+   "w": "paneles",
+   "s": 296.684,
+   "e": 297.136
+  },
+  {
+   "w": "necesitan",
+   "s": 297.136,
+   "e": 297.718
+  },
+  {
+   "w": "sol",
+   "s": 297.718,
+   "e": 297.912
+  },
+  {
+   "w": "directo",
+   "s": 297.912,
+   "e": 298.365
+  },
+  {
+   "w": "la",
+   "s": 298.365,
+   "e": 298.559
+  },
+  {
+   "w": "mayor",
+   "s": 298.559,
+   "e": 298.882
+  },
+  {
+   "w": "parte",
+   "s": 298.882,
+   "e": 299.205
+  },
+  {
+   "w": "del",
+   "s": 299.205,
+   "e": 299.399
+  },
+  {
+   "w": "día,",
+   "s": 299.399,
+   "e": 299.8
+  },
+  {
+   "w": "sin",
+   "s": 300.17,
+   "e": 300.349
+  },
+  {
+   "w": "sombra",
+   "s": 300.349,
+   "e": 300.648
+  },
+  {
+   "w": "de",
+   "s": 300.648,
+   "e": 300.827
+  },
+  {
+   "w": "árboles,",
+   "s": 300.827,
+   "e": 301.317
+  },
+  {
+   "w": "de",
+   "s": 301.317,
+   "e": 301.496
+  },
+  {
+   "w": "tinacos",
+   "s": 301.496,
+   "e": 301.915
+  },
+  {
+   "w": "o",
+   "s": 301.915,
+   "e": 302.094
+  },
+  {
+   "w": "del",
+   "s": 302.094,
+   "e": 302.273
+  },
+  {
+   "w": "edificio",
+   "s": 302.273,
+   "e": 302.811
+  },
+  {
+   "w": "de",
+   "s": 302.811,
+   "e": 302.99
+  },
+  {
+   "w": "al",
+   "s": 302.99,
+   "e": 303.17
+  },
+  {
+   "w": "lado.",
+   "s": 303.17,
+   "e": 303.54
+  },
+  {
+   "w": "Una",
+   "s": 304.06,
+   "e": 304.375
+  },
+  {
+   "w": "sombra",
+   "s": 304.375,
+   "e": 304.691
+  },
+  {
+   "w": "pequeña",
+   "s": 304.691,
+   "e": 305.133
+  },
+  {
+   "w": "sobre",
+   "s": 305.133,
+   "e": 305.448
+  },
+  {
+   "w": "un",
+   "s": 305.448,
+   "e": 305.637
+  },
+  {
+   "w": "panel",
+   "s": 305.637,
+   "e": 305.953
+  },
+  {
+   "w": "puede",
+   "s": 305.953,
+   "e": 306.268
+  },
+  {
+   "w": "bajar",
+   "s": 306.268,
+   "e": 306.584
+  },
+  {
+   "w": "la",
+   "s": 306.584,
+   "e": 306.773
+  },
+  {
+   "w": "producción",
+   "s": 306.773,
+   "e": 307.215
+  },
+  {
+   "w": "de",
+   "s": 307.215,
+   "e": 307.404
+  },
+  {
+   "w": "todo",
+   "s": 307.404,
+   "e": 307.72
+  },
+  {
+   "w": "el",
+   "s": 307.72,
+   "e": 307.909
+  },
+  {
+   "w": "grupo.",
+   "s": 307.909,
+   "e": 308.3
+  },
+  {
+   "w": "El",
+   "s": 308.8,
+   "e": 308.993
+  },
+  {
+   "w": "techo",
+   "s": 308.993,
+   "e": 309.315
+  },
+  {
+   "w": "tiene",
+   "s": 309.315,
+   "e": 309.637
+  },
+  {
+   "w": "que",
+   "s": 309.637,
+   "e": 309.83
+  },
+  {
+   "w": "aguantar",
+   "s": 309.83,
+   "e": 310.28
+  },
+  {
+   "w": "el",
+   "s": 310.28,
+   "e": 310.474
+  },
+  {
+   "w": "peso",
+   "s": 310.474,
+   "e": 310.795
+  },
+  {
+   "w": "y",
+   "s": 310.795,
+   "e": 310.989
+  },
+  {
+   "w": "no",
+   "s": 310.989,
+   "e": 311.182
+  },
+  {
+   "w": "tener",
+   "s": 311.182,
+   "e": 311.503
+  },
+  {
+   "w": "filtraciones,",
+   "s": 311.503,
+   "e": 312.16
+  },
+  {
+   "w": "porque",
+   "s": 312.47,
+   "e": 312.787
+  },
+  {
+   "w": "arreglar",
+   "s": 312.787,
+   "e": 313.23
+  },
+  {
+   "w": "el",
+   "s": 313.23,
+   "e": 313.42
+  },
+  {
+   "w": "techo",
+   "s": 313.42,
+   "e": 313.737
+  },
+  {
+   "w": "después,",
+   "s": 313.737,
+   "e": 314.13
+  },
+  {
+   "w": "con",
+   "s": 314.13,
+   "e": 314.32
+  },
+  {
+   "w": "los",
+   "s": 314.32,
+   "e": 314.51
+  },
+  {
+   "w": "paneles",
+   "s": 314.51,
+   "e": 314.954
+  },
+  {
+   "w": "encima,",
+   "s": 314.954,
+   "e": 315.473
+  },
+  {
+   "w": "sale",
+   "s": 315.473,
+   "e": 315.79
+  },
+  {
+   "w": "mucho",
+   "s": 315.79,
+   "e": 316.107
+  },
+  {
+   "w": "más",
+   "s": 316.107,
+   "e": 316.297
+  },
+  {
+   "w": "caro.",
+   "s": 316.297,
+   "e": 316.69
+  },
+  {
+   "w": "Si",
+   "s": 317.26,
+   "e": 317.453
+  },
+  {
+   "w": "tu",
+   "s": 317.453,
+   "e": 317.646
+  },
+  {
+   "w": "techo",
+   "s": 317.646,
+   "e": 317.967
+  },
+  {
+   "w": "está",
+   "s": 317.967,
+   "e": 318.289
+  },
+  {
+   "w": "viejo,",
+   "s": 318.289,
+   "e": 318.688
+  },
+  {
+   "w": "impermeabilízalo",
+   "s": 318.688,
+   "e": 319.781
+  },
+  {
+   "w": "antes.",
+   "s": 319.781,
+   "e": 320.18
+  },
+  {
+   "w": "Paso",
+   "s": 320.49,
+   "e": 320.887
+  },
+  {
+   "w": "seis:",
+   "s": 320.887,
+   "e": 321.22
+  },
+  {
+   "w": "pide",
+   "s": 321.73,
+   "e": 322.063
+  },
+  {
+   "w": "por",
+   "s": 322.063,
+   "e": 322.263
+  },
+  {
+   "w": "lo",
+   "s": 322.263,
+   "e": 322.463
+  },
+  {
+   "w": "menos",
+   "s": 322.463,
+   "e": 322.797
+  },
+  {
+   "w": "tres",
+   "s": 322.797,
+   "e": 322.997
+  },
+  {
+   "w": "cotizaciones.",
+   "s": 322.997,
+   "e": 323.81
+  },
+  {
+   "w": "Y",
+   "s": 324.23,
+   "e": 324.391
+  },
+  {
+   "w": "no",
+   "s": 324.391,
+   "e": 324.552
+  },
+  {
+   "w": "compares",
+   "s": 324.552,
+   "e": 324.928
+  },
+  {
+   "w": "solo",
+   "s": 324.928,
+   "e": 325.197
+  },
+  {
+   "w": "el",
+   "s": 325.197,
+   "e": 325.358
+  },
+  {
+   "w": "precio",
+   "s": 325.358,
+   "e": 325.627
+  },
+  {
+   "w": "final.",
+   "s": 325.627,
+   "e": 325.96
+  },
+  {
+   "w": "Pide",
+   "s": 326.46,
+   "e": 326.815
+  },
+  {
+   "w": "que",
+   "s": 326.815,
+   "e": 327.028
+  },
+  {
+   "w": "cada",
+   "s": 327.028,
+   "e": 327.382
+  },
+  {
+   "w": "cotización",
+   "s": 327.382,
+   "e": 328.021
+  },
+  {
+   "w": "diga",
+   "s": 328.021,
+   "e": 328.376
+  },
+  {
+   "w": "cuántos",
+   "s": 328.376,
+   "e": 328.73
+  },
+  {
+   "w": "paneles",
+   "s": 328.73,
+   "e": 329.227
+  },
+  {
+   "w": "son",
+   "s": 329.227,
+   "e": 329.44
+  },
+  {
+   "w": "y",
+   "s": 329.44,
+   "e": 329.653
+  },
+  {
+   "w": "de",
+   "s": 329.653,
+   "e": 329.865
+  },
+  {
+   "w": "cuántos",
+   "s": 329.865,
+   "e": 330.22
+  },
+  {
+   "w": "vatios,",
+   "s": 330.22,
+   "e": 330.66
+  },
+  {
+   "w": "la",
+   "s": 331.04,
+   "e": 331.215
+  },
+  {
+   "w": "marca",
+   "s": 331.215,
+   "e": 331.507
+  },
+  {
+   "w": "y",
+   "s": 331.507,
+   "e": 331.682
+  },
+  {
+   "w": "el",
+   "s": 331.682,
+   "e": 331.857
+  },
+  {
+   "w": "modelo",
+   "s": 331.857,
+   "e": 332.266
+  },
+  {
+   "w": "del",
+   "s": 332.266,
+   "e": 332.441
+  },
+  {
+   "w": "inversor,",
+   "s": 332.441,
+   "e": 332.92
+  },
+  {
+   "w": "si",
+   "s": 333.33,
+   "e": 333.499
+  },
+  {
+   "w": "incluye",
+   "s": 333.499,
+   "e": 333.894
+  },
+  {
+   "w": "baterías",
+   "s": 333.894,
+   "e": 334.402
+  },
+  {
+   "w": "y",
+   "s": 334.402,
+   "e": 334.572
+  },
+  {
+   "w": "de",
+   "s": 334.572,
+   "e": 334.741
+  },
+  {
+   "w": "qué",
+   "s": 334.741,
+   "e": 334.91
+  },
+  {
+   "w": "tipo,",
+   "s": 334.91,
+   "e": 335.26
+  },
+  {
+   "w": "cuánta",
+   "s": 335.63,
+   "e": 335.908
+  },
+  {
+   "w": "energía",
+   "s": 335.908,
+   "e": 336.408
+  },
+  {
+   "w": "va",
+   "s": 336.408,
+   "e": 336.574
+  },
+  {
+   "w": "a",
+   "s": 336.574,
+   "e": 336.741
+  },
+  {
+   "w": "producir",
+   "s": 336.741,
+   "e": 337.13
+  },
+  {
+   "w": "al",
+   "s": 337.13,
+   "e": 337.297
+  },
+  {
+   "w": "mes,",
+   "s": 337.297,
+   "e": 337.53
+  },
+  {
+   "w": "cuánto",
+   "s": 337.91,
+   "e": 338.217
+  },
+  {
+   "w": "tiempo",
+   "s": 338.217,
+   "e": 338.523
+  },
+  {
+   "w": "de",
+   "s": 338.523,
+   "e": 338.707
+  },
+  {
+   "w": "garantía",
+   "s": 338.707,
+   "e": 339.259
+  },
+  {
+   "w": "tienen",
+   "s": 339.259,
+   "e": 339.566
+  },
+  {
+   "w": "los",
+   "s": 339.566,
+   "e": 339.75
+  },
+  {
+   "w": "paneles,",
+   "s": 339.75,
+   "e": 340.253
+  },
+  {
+   "w": "el",
+   "s": 340.253,
+   "e": 340.437
+  },
+  {
+   "w": "inversor",
+   "s": 340.437,
+   "e": 340.866
+  },
+  {
+   "w": "y",
+   "s": 340.866,
+   "e": 341.05
+  },
+  {
+   "w": "la",
+   "s": 341.05,
+   "e": 341.234
+  },
+  {
+   "w": "instalación,",
+   "s": 341.234,
+   "e": 341.86
+  },
+  {
+   "w": "y",
+   "s": 342.21,
+   "e": 342.377
+  },
+  {
+   "w": "si",
+   "s": 342.377,
+   "e": 342.544
+  },
+  {
+   "w": "ellos",
+   "s": 342.544,
+   "e": 342.823
+  },
+  {
+   "w": "se",
+   "s": 342.823,
+   "e": 342.99
+  },
+  {
+   "w": "encargan",
+   "s": 342.99,
+   "e": 343.38
+  },
+  {
+   "w": "de",
+   "s": 343.38,
+   "e": 343.548
+  },
+  {
+   "w": "los",
+   "s": 343.548,
+   "e": 343.715
+  },
+  {
+   "w": "permisos",
+   "s": 343.715,
+   "e": 344.105
+  },
+  {
+   "w": "con",
+   "s": 344.105,
+   "e": 344.272
+  },
+  {
+   "w": "la",
+   "s": 344.272,
+   "e": 344.439
+  },
+  {
+   "w": "distribuidora",
+   "s": 344.439,
+   "e": 345.053
+  },
+  {
+   "w": "y",
+   "s": 345.053,
+   "e": 345.22
+  },
+  {
+   "w": "del",
+   "s": 345.22,
+   "e": 345.387
+  },
+  {
+   "w": "trámite",
+   "s": 345.387,
+   "e": 345.777
+  },
+  {
+   "w": "del",
+   "s": 345.777,
+   "e": 345.944
+  },
+  {
+   "w": "crédito",
+   "s": 345.944,
+   "e": 346.334
+  },
+  {
+   "w": "fiscal.",
+   "s": 346.334,
+   "e": 346.68
+  },
+  {
+   "w": "Una",
+   "s": 347.18,
+   "e": 347.485
+  },
+  {
+   "w": "cotización",
+   "s": 347.485,
+   "e": 348.034
+  },
+  {
+   "w": "que",
+   "s": 348.034,
+   "e": 348.217
+  },
+  {
+   "w": "no",
+   "s": 348.217,
+   "e": 348.4
+  },
+  {
+   "w": "dice",
+   "s": 348.4,
+   "e": 348.706
+  },
+  {
+   "w": "cuánta",
+   "s": 348.706,
+   "e": 349.011
+  },
+  {
+   "w": "energía",
+   "s": 349.011,
+   "e": 349.56
+  },
+  {
+   "w": "vas",
+   "s": 349.56,
+   "e": 349.743
+  },
+  {
+   "w": "a",
+   "s": 349.743,
+   "e": 349.926
+  },
+  {
+   "w": "producir",
+   "s": 349.926,
+   "e": 350.353
+  },
+  {
+   "w": "no",
+   "s": 350.353,
+   "e": 350.536
+  },
+  {
+   "w": "te",
+   "s": 350.536,
+   "e": 350.719
+  },
+  {
+   "w": "sirve",
+   "s": 350.719,
+   "e": 351.024
+  },
+  {
+   "w": "para",
+   "s": 351.024,
+   "e": 351.33
+  },
+  {
+   "w": "comparar.",
+   "s": 351.33,
+   "e": 351.83
+  },
+  {
+   "w": "Y",
+   "s": 352.35,
+   "e": 352.517
+  },
+  {
+   "w": "pide",
+   "s": 352.517,
+   "e": 352.795
+  },
+  {
+   "w": "ver",
+   "s": 352.795,
+   "e": 352.962
+  },
+  {
+   "w": "casas",
+   "s": 352.962,
+   "e": 353.24
+  },
+  {
+   "w": "donde",
+   "s": 353.24,
+   "e": 353.518
+  },
+  {
+   "w": "ya",
+   "s": 353.518,
+   "e": 353.685
+  },
+  {
+   "w": "hayan",
+   "s": 353.685,
+   "e": 353.963
+  },
+  {
+   "w": "instalado.",
+   "s": 353.963,
+   "e": 354.53
+  },
+  {
+   "w": "Ve,",
+   "s": 354.93,
+   "e": 355.26
+  },
+  {
+   "w": "mira",
+   "s": 355.53,
+   "e": 355.9
+  },
+  {
+   "w": "y",
+   "s": 355.9,
+   "e": 356.123
+  },
+  {
+   "w": "pregunta.",
+   "s": 356.123,
+   "e": 356.73
+  },
+  {
+   "w": "Paso",
+   "s": 357.42,
+   "e": 357.741
+  },
+  {
+   "w": "siete:",
+   "s": 357.741,
+   "e": 358.14
+  },
+  {
+   "w": "los",
+   "s": 358.53,
+   "e": 358.771
+  },
+  {
+   "w": "permisos.",
+   "s": 358.771,
+   "e": 359.43
+  },
+  {
+   "w": "Si",
+   "s": 359.94,
+   "e": 360.108
+  },
+  {
+   "w": "tu",
+   "s": 360.108,
+   "e": 360.276
+  },
+  {
+   "w": "sistema",
+   "s": 360.276,
+   "e": 360.667
+  },
+  {
+   "w": "va",
+   "s": 360.667,
+   "e": 360.835
+  },
+  {
+   "w": "conectado",
+   "s": 360.835,
+   "e": 361.338
+  },
+  {
+   "w": "a",
+   "s": 361.338,
+   "e": 361.506
+  },
+  {
+   "w": "la",
+   "s": 361.506,
+   "e": 361.674
+  },
+  {
+   "w": "red,",
+   "s": 361.674,
+   "e": 361.909
+  },
+  {
+   "w": "la",
+   "s": 361.909,
+   "e": 362.077
+  },
+  {
+   "w": "distribuidora",
+   "s": 362.077,
+   "e": 362.692
+  },
+  {
+   "w": "tiene",
+   "s": 362.692,
+   "e": 362.972
+  },
+  {
+   "w": "que",
+   "s": 362.972,
+   "e": 363.139
+  },
+  {
+   "w": "aprobarlo.",
+   "s": 363.139,
+   "e": 363.71
+  },
+  {
+   "w": "Tú,",
+   "s": 364.12,
+   "e": 364.362
+  },
+  {
+   "w": "o",
+   "s": 364.362,
+   "e": 364.534
+  },
+  {
+   "w": "tu",
+   "s": 364.534,
+   "e": 364.707
+  },
+  {
+   "w": "instalador,",
+   "s": 364.707,
+   "e": 365.294
+  },
+  {
+   "w": "hacen",
+   "s": 365.294,
+   "e": 365.582
+  },
+  {
+   "w": "la",
+   "s": 365.582,
+   "e": 365.755
+  },
+  {
+   "w": "solicitud",
+   "s": 365.755,
+   "e": 366.273
+  },
+  {
+   "w": "a",
+   "s": 366.273,
+   "e": 366.445
+  },
+  {
+   "w": "tu",
+   "s": 366.445,
+   "e": 366.618
+  },
+  {
+   "w": "distribuidora:",
+   "s": 366.618,
+   "e": 367.32
+  },
+  {
+   "w": "Edesur,",
+   "s": 367.72,
+   "e": 368.278
+  },
+  {
+   "w": "Edenorte",
+   "s": 368.278,
+   "e": 368.891
+  },
+  {
+   "w": "o",
+   "s": 368.891,
+   "e": 369.095
+  },
+  {
+   "w": "Edeeste.",
+   "s": 369.095,
+   "e": 369.79
+  },
+  {
+   "w": "Se",
+   "s": 370.22,
+   "e": 370.392
+  },
+  {
+   "w": "firma",
+   "s": 370.392,
+   "e": 370.678
+  },
+  {
+   "w": "un",
+   "s": 370.678,
+   "e": 370.85
+  },
+  {
+   "w": "acuerdo",
+   "s": 370.85,
+   "e": 371.25
+  },
+  {
+   "w": "de",
+   "s": 371.25,
+   "e": 371.422
+  },
+  {
+   "w": "interconexión,",
+   "s": 371.422,
+   "e": 372.12
+  },
+  {
+   "w": "y",
+   "s": 372.38,
+   "e": 372.564
+  },
+  {
+   "w": "si",
+   "s": 372.564,
+   "e": 372.747
+  },
+  {
+   "w": "vas",
+   "s": 372.747,
+   "e": 372.931
+  },
+  {
+   "w": "con",
+   "s": 372.931,
+   "e": 373.114
+  },
+  {
+   "w": "medición",
+   "s": 373.114,
+   "e": 373.542
+  },
+  {
+   "w": "neta,",
+   "s": 373.542,
+   "e": 373.921
+  },
+  {
+   "w": "también",
+   "s": 373.921,
+   "e": 374.227
+  },
+  {
+   "w": "un",
+   "s": 374.227,
+   "e": 374.411
+  },
+  {
+   "w": "acuerdo",
+   "s": 374.411,
+   "e": 374.839
+  },
+  {
+   "w": "de",
+   "s": 374.839,
+   "e": 375.023
+  },
+  {
+   "w": "medición",
+   "s": 375.023,
+   "e": 375.451
+  },
+  {
+   "w": "neta.",
+   "s": 375.451,
+   "e": 375.83
+  },
+  {
+   "w": "Después",
+   "s": 376.22,
+   "e": 376.539
+  },
+  {
+   "w": "te",
+   "s": 376.539,
+   "e": 376.731
+  },
+  {
+   "w": "cambian",
+   "s": 376.731,
+   "e": 377.051
+  },
+  {
+   "w": "el",
+   "s": 377.051,
+   "e": 377.242
+  },
+  {
+   "w": "contador",
+   "s": 377.242,
+   "e": 377.689
+  },
+  {
+   "w": "por",
+   "s": 377.689,
+   "e": 377.881
+  },
+  {
+   "w": "uno",
+   "s": 377.881,
+   "e": 378.201
+  },
+  {
+   "w": "bidireccional.",
+   "s": 378.201,
+   "e": 378.98
+  },
+  {
+   "w": "No",
+   "s": 379.43,
+   "e": 379.617
+  },
+  {
+   "w": "conectes",
+   "s": 379.617,
+   "e": 380.052
+  },
+  {
+   "w": "nada",
+   "s": 380.052,
+   "e": 380.363
+  },
+  {
+   "w": "a",
+   "s": 380.363,
+   "e": 380.55
+  },
+  {
+   "w": "la",
+   "s": 380.55,
+   "e": 380.736
+  },
+  {
+   "w": "red",
+   "s": 380.736,
+   "e": 380.923
+  },
+  {
+   "w": "sin",
+   "s": 380.923,
+   "e": 381.109
+  },
+  {
+   "w": "ese",
+   "s": 381.109,
+   "e": 381.42
+  },
+  {
+   "w": "permiso,",
+   "s": 381.42,
+   "e": 381.93
+  },
+  {
+   "w": "porque",
+   "s": 381.93,
+   "e": 382.241
+  },
+  {
+   "w": "es",
+   "s": 382.241,
+   "e": 382.428
+  },
+  {
+   "w": "peligroso",
+   "s": 382.428,
+   "e": 382.988
+  },
+  {
+   "w": "y",
+   "s": 382.988,
+   "e": 383.174
+  },
+  {
+   "w": "te",
+   "s": 383.174,
+   "e": 383.361
+  },
+  {
+   "w": "puede",
+   "s": 383.361,
+   "e": 383.672
+  },
+  {
+   "w": "traer",
+   "s": 383.672,
+   "e": 383.983
+  },
+  {
+   "w": "problemas",
+   "s": 383.983,
+   "e": 384.418
+  },
+  {
+   "w": "con",
+   "s": 384.418,
+   "e": 384.605
+  },
+  {
+   "w": "la",
+   "s": 384.605,
+   "e": 384.791
+  },
+  {
+   "w": "distribuidora.",
+   "s": 384.791,
+   "e": 385.55
+  },
+  {
+   "w": "Y",
+   "s": 386.02,
+   "e": 386.163
+  },
+  {
+   "w": "aquí",
+   "s": 386.163,
+   "e": 386.496
+  },
+  {
+   "w": "está",
+   "s": 386.496,
+   "e": 386.734
+  },
+  {
+   "w": "el",
+   "s": 386.734,
+   "e": 386.876
+  },
+  {
+   "w": "cambio",
+   "s": 386.876,
+   "e": 387.114
+  },
+  {
+   "w": "de",
+   "s": 387.114,
+   "e": 387.257
+  },
+  {
+   "w": "este",
+   "s": 387.257,
+   "e": 387.495
+  },
+  {
+   "w": "año.",
+   "s": 387.495,
+   "e": 387.79
+  },
+  {
+   "w": "La",
+   "s": 388.2,
+   "e": 388.381
+  },
+  {
+   "w": "Superintendencia",
+   "s": 388.381,
+   "e": 389.164
+  },
+  {
+   "w": "de",
+   "s": 389.164,
+   "e": 389.344
+  },
+  {
+   "w": "Electricidad",
+   "s": 389.344,
+   "e": 390.007
+  },
+  {
+   "w": "aprobó",
+   "s": 390.007,
+   "e": 390.429
+  },
+  {
+   "w": "un",
+   "s": 390.429,
+   "e": 390.609
+  },
+  {
+   "w": "reglamento",
+   "s": 390.609,
+   "e": 391.152
+  },
+  {
+   "w": "nuevo",
+   "s": 391.152,
+   "e": 391.453
+  },
+  {
+   "w": "de",
+   "s": 391.453,
+   "e": 391.633
+  },
+  {
+   "w": "generación",
+   "s": 391.633,
+   "e": 392.176
+  },
+  {
+   "w": "distribuida,",
+   "s": 392.176,
+   "e": 392.79
+  },
+  {
+   "w": "y",
+   "s": 393.09,
+   "e": 393.282
+  },
+  {
+   "w": "las",
+   "s": 393.282,
+   "e": 393.474
+  },
+  {
+   "w": "solicitudes",
+   "s": 393.474,
+   "e": 394.178
+  },
+  {
+   "w": "nuevas",
+   "s": 394.178,
+   "e": 394.498
+  },
+  {
+   "w": "ya",
+   "s": 394.498,
+   "e": 394.69
+  },
+  {
+   "w": "van",
+   "s": 394.69,
+   "e": 394.881
+  },
+  {
+   "w": "con",
+   "s": 394.881,
+   "e": 395.073
+  },
+  {
+   "w": "esas",
+   "s": 395.073,
+   "e": 395.393
+  },
+  {
+   "w": "reglas.",
+   "s": 395.393,
+   "e": 395.79
+  },
+  {
+   "w": "Desde",
+   "s": 396.17,
+   "e": 396.459
+  },
+  {
+   "w": "el",
+   "s": 396.459,
+   "e": 396.632
+  },
+  {
+   "w": "uno",
+   "s": 396.632,
+   "e": 396.92
+  },
+  {
+   "w": "de",
+   "s": 396.92,
+   "e": 397.093
+  },
+  {
+   "w": "noviembre,",
+   "s": 397.093,
+   "e": 397.567
+  },
+  {
+   "w": "a",
+   "s": 397.567,
+   "e": 397.74
+  },
+  {
+   "w": "los",
+   "s": 397.74,
+   "e": 397.913
+  },
+  {
+   "w": "usuarios",
+   "s": 397.913,
+   "e": 398.317
+  },
+  {
+   "w": "con",
+   "s": 398.317,
+   "e": 398.49
+  },
+  {
+   "w": "tarifa",
+   "s": 398.49,
+   "e": 398.894
+  },
+  {
+   "w": "monómica",
+   "s": 398.894,
+   "e": 399.414
+  },
+  {
+   "w": "que",
+   "s": 399.414,
+   "e": 399.587
+  },
+  {
+   "w": "le",
+   "s": 399.587,
+   "e": 399.76
+  },
+  {
+   "w": "mandan",
+   "s": 399.76,
+   "e": 400.048
+  },
+  {
+   "w": "energía",
+   "s": 400.048,
+   "e": 400.568
+  },
+  {
+   "w": "a",
+   "s": 400.568,
+   "e": 400.741
+  },
+  {
+   "w": "la",
+   "s": 400.741,
+   "e": 400.914
+  },
+  {
+   "w": "red",
+   "s": 400.914,
+   "e": 401.087
+  },
+  {
+   "w": "les",
+   "s": 401.087,
+   "e": 401.26
+  },
+  {
+   "w": "cobran",
+   "s": 401.26,
+   "e": 401.549
+  },
+  {
+   "w": "un",
+   "s": 401.549,
+   "e": 401.722
+  },
+  {
+   "w": "cargo:",
+   "s": 401.722,
+   "e": 402.08
+  },
+  {
+   "w": "el",
+   "s": 402.48,
+   "e": 402.658
+  },
+  {
+   "w": "veinticinco",
+   "s": 402.658,
+   "e": 403.194
+  },
+  {
+   "w": "por",
+   "s": 403.194,
+   "e": 403.372
+  },
+  {
+   "w": "ciento",
+   "s": 403.372,
+   "e": 403.669
+  },
+  {
+   "w": "del",
+   "s": 403.669,
+   "e": 403.848
+  },
+  {
+   "w": "cargo",
+   "s": 403.848,
+   "e": 404.145
+  },
+  {
+   "w": "por",
+   "s": 404.145,
+   "e": 404.323
+  },
+  {
+   "w": "energía,",
+   "s": 404.323,
+   "e": 404.93
+  },
+  {
+   "w": "pero",
+   "s": 405.28,
+   "e": 405.528
+  },
+  {
+   "w": "solo",
+   "s": 405.528,
+   "e": 405.776
+  },
+  {
+   "w": "sobre",
+   "s": 405.776,
+   "e": 406.024
+  },
+  {
+   "w": "la",
+   "s": 406.024,
+   "e": 406.172
+  },
+  {
+   "w": "energía",
+   "s": 406.172,
+   "e": 406.619
+  },
+  {
+   "w": "que",
+   "s": 406.619,
+   "e": 406.767
+  },
+  {
+   "w": "entregan",
+   "s": 406.767,
+   "e": 407.114
+  },
+  {
+   "w": "a",
+   "s": 407.114,
+   "e": 407.263
+  },
+  {
+   "w": "la",
+   "s": 407.263,
+   "e": 407.412
+  },
+  {
+   "w": "red,",
+   "s": 407.412,
+   "e": 407.62
+  },
+  {
+   "w": "no",
+   "s": 407.96,
+   "e": 408.139
+  },
+  {
+   "w": "sobre",
+   "s": 408.139,
+   "e": 408.436
+  },
+  {
+   "w": "todo",
+   "s": 408.436,
+   "e": 408.734
+  },
+  {
+   "w": "lo",
+   "s": 408.734,
+   "e": 408.913
+  },
+  {
+   "w": "que",
+   "s": 408.913,
+   "e": 409.092
+  },
+  {
+   "w": "producen.",
+   "s": 409.092,
+   "e": 409.58
+  },
+  {
+   "w": "Quien",
+   "s": 410.04,
+   "e": 410.428
+  },
+  {
+   "w": "ya",
+   "s": 410.428,
+   "e": 410.595
+  },
+  {
+   "w": "tenía",
+   "s": 410.595,
+   "e": 410.983
+  },
+  {
+   "w": "su",
+   "s": 410.983,
+   "e": 411.149
+  },
+  {
+   "w": "sistema",
+   "s": 411.149,
+   "e": 411.538
+  },
+  {
+   "w": "aprobado",
+   "s": 411.538,
+   "e": 412.037
+  },
+  {
+   "w": "tiene",
+   "s": 412.037,
+   "e": 412.314
+  },
+  {
+   "w": "un",
+   "s": 412.314,
+   "e": 412.481
+  },
+  {
+   "w": "período",
+   "s": 412.481,
+   "e": 412.98
+  },
+  {
+   "w": "de",
+   "s": 412.98,
+   "e": 413.147
+  },
+  {
+   "w": "transición",
+   "s": 413.147,
+   "e": 413.535
+  },
+  {
+   "w": "de",
+   "s": 413.535,
+   "e": 413.701
+  },
+  {
+   "w": "hasta",
+   "s": 413.701,
+   "e": 413.979
+  },
+  {
+   "w": "cinco",
+   "s": 413.979,
+   "e": 414.256
+  },
+  {
+   "w": "años.",
+   "s": 414.256,
+   "e": 414.6
+  },
+  {
+   "w": "Por",
+   "s": 414.97,
+   "e": 415.159
+  },
+  {
+   "w": "eso",
+   "s": 415.159,
+   "e": 415.473
+  },
+  {
+   "w": "hoy,",
+   "s": 415.473,
+   "e": 415.737
+  },
+  {
+   "w": "más",
+   "s": 415.737,
+   "e": 415.926
+  },
+  {
+   "w": "que",
+   "s": 415.926,
+   "e": 416.115
+  },
+  {
+   "w": "nunca,",
+   "s": 416.115,
+   "e": 416.505
+  },
+  {
+   "w": "conviene",
+   "s": 416.505,
+   "e": 416.945
+  },
+  {
+   "w": "usar",
+   "s": 416.945,
+   "e": 417.26
+  },
+  {
+   "w": "en",
+   "s": 417.26,
+   "e": 417.448
+  },
+  {
+   "w": "tu",
+   "s": 417.448,
+   "e": 417.637
+  },
+  {
+   "w": "casa",
+   "s": 417.637,
+   "e": 417.951
+  },
+  {
+   "w": "la",
+   "s": 417.951,
+   "e": 418.14
+  },
+  {
+   "w": "mayor",
+   "s": 418.14,
+   "e": 418.455
+  },
+  {
+   "w": "parte",
+   "s": 418.455,
+   "e": 418.769
+  },
+  {
+   "w": "de",
+   "s": 418.769,
+   "e": 418.958
+  },
+  {
+   "w": "lo",
+   "s": 418.958,
+   "e": 419.147
+  },
+  {
+   "w": "que",
+   "s": 419.147,
+   "e": 419.335
+  },
+  {
+   "w": "producen",
+   "s": 419.335,
+   "e": 419.776
+  },
+  {
+   "w": "tus",
+   "s": 419.776,
+   "e": 419.964
+  },
+  {
+   "w": "paneles.",
+   "s": 419.964,
+   "e": 420.48
+  },
+  {
+   "w": "Paso",
+   "s": 421.18,
+   "e": 421.475
+  },
+  {
+   "w": "ocho:",
+   "s": 421.475,
+   "e": 421.84
+  },
+  {
+   "w": "recupera",
+   "s": 422.26,
+   "e": 422.782
+  },
+  {
+   "w": "parte",
+   "s": 422.782,
+   "e": 423.073
+  },
+  {
+   "w": "de",
+   "s": 423.073,
+   "e": 423.247
+  },
+  {
+   "w": "tu",
+   "s": 423.247,
+   "e": 423.421
+  },
+  {
+   "w": "dinero",
+   "s": 423.421,
+   "e": 423.827
+  },
+  {
+   "w": "con",
+   "s": 423.827,
+   "e": 424.001
+  },
+  {
+   "w": "la",
+   "s": 424.001,
+   "e": 424.175
+  },
+  {
+   "w": "Ley",
+   "s": 424.175,
+   "e": 424.35
+  },
+  {
+   "w": "cincuenta",
+   "s": 424.35,
+   "e": 424.756
+  },
+  {
+   "w": "y",
+   "s": 424.756,
+   "e": 424.93
+  },
+  {
+   "w": "siete,",
+   "s": 424.93,
+   "e": 425.29
+  },
+  {
+   "w": "cero",
+   "s": 425.29,
+   "e": 425.58
+  },
+  {
+   "w": "siete.",
+   "s": 425.58,
+   "e": 425.94
+  },
+  {
+   "w": "Esta",
+   "s": 426.42,
+   "e": 426.731
+  },
+  {
+   "w": "ley",
+   "s": 426.731,
+   "e": 426.918
+  },
+  {
+   "w": "de",
+   "s": 426.918,
+   "e": 427.105
+  },
+  {
+   "w": "energías",
+   "s": 427.105,
+   "e": 427.665
+  },
+  {
+   "w": "renovables",
+   "s": 427.665,
+   "e": 428.225
+  },
+  {
+   "w": "te",
+   "s": 428.225,
+   "e": 428.412
+  },
+  {
+   "w": "da",
+   "s": 428.412,
+   "e": 428.598
+  },
+  {
+   "w": "dos",
+   "s": 428.598,
+   "e": 428.785
+  },
+  {
+   "w": "beneficios.",
+   "s": 428.785,
+   "e": 429.42
+  },
+  {
+   "w": "Uno:",
+   "s": 429.84,
+   "e": 430.07
+  },
+  {
+   "w": "los",
+   "s": 430.5,
+   "e": 430.683
+  },
+  {
+   "w": "equipos,",
+   "s": 430.683,
+   "e": 431.183
+  },
+  {
+   "w": "como",
+   "s": 431.183,
+   "e": 431.488
+  },
+  {
+   "w": "paneles",
+   "s": 431.488,
+   "e": 431.915
+  },
+  {
+   "w": "e",
+   "s": 431.915,
+   "e": 432.098
+  },
+  {
+   "w": "inversores,",
+   "s": 432.098,
+   "e": 432.72
+  },
+  {
+   "w": "están",
+   "s": 432.98,
+   "e": 433.353
+  },
+  {
+   "w": "exentos",
+   "s": 433.353,
+   "e": 433.874
+  },
+  {
+   "w": "de",
+   "s": 433.874,
+   "e": 434.098
+  },
+  {
+   "w": "ITBIS.",
+   "s": 434.098,
+   "e": 434.56
+  },
+  {
+   "w": "Y",
+   "s": 434.96,
+   "e": 435.173
+  },
+  {
+   "w": "dos:",
+   "s": 435.173,
+   "e": 435.47
+  },
+  {
+   "w": "puedes",
+   "s": 435.77,
+   "e": 436.055
+  },
+  {
+   "w": "recibir",
+   "s": 436.055,
+   "e": 436.454
+  },
+  {
+   "w": "un",
+   "s": 436.454,
+   "e": 436.625
+  },
+  {
+   "w": "crédito",
+   "s": 436.625,
+   "e": 437.024
+  },
+  {
+   "w": "fiscal",
+   "s": 437.024,
+   "e": 437.309
+  },
+  {
+   "w": "de",
+   "s": 437.309,
+   "e": 437.479
+  },
+  {
+   "w": "hasta",
+   "s": 437.479,
+   "e": 437.764
+  },
+  {
+   "w": "el",
+   "s": 437.764,
+   "e": 437.935
+  },
+  {
+   "w": "cuarenta",
+   "s": 437.935,
+   "e": 438.334
+  },
+  {
+   "w": "por",
+   "s": 438.334,
+   "e": 438.505
+  },
+  {
+   "w": "ciento",
+   "s": 438.505,
+   "e": 438.79
+  },
+  {
+   "w": "de",
+   "s": 438.79,
+   "e": 438.961
+  },
+  {
+   "w": "lo",
+   "s": 438.961,
+   "e": 439.132
+  },
+  {
+   "w": "que",
+   "s": 439.132,
+   "e": 439.303
+  },
+  {
+   "w": "costaron",
+   "s": 439.303,
+   "e": 439.702
+  },
+  {
+   "w": "los",
+   "s": 439.702,
+   "e": 439.873
+  },
+  {
+   "w": "equipos.",
+   "s": 439.873,
+   "e": 440.34
+  },
+  {
+   "w": "Pero",
+   "s": 440.74,
+   "e": 440.959
+  },
+  {
+   "w": "ojo:",
+   "s": 440.959,
+   "e": 441.23
+  },
+  {
+   "w": "ese",
+   "s": 441.64,
+   "e": 441.929
+  },
+  {
+   "w": "crédito",
+   "s": 441.929,
+   "e": 442.334
+  },
+  {
+   "w": "se",
+   "s": 442.334,
+   "e": 442.507
+  },
+  {
+   "w": "descuenta",
+   "s": 442.507,
+   "e": 442.911
+  },
+  {
+   "w": "del",
+   "s": 442.911,
+   "e": 443.085
+  },
+  {
+   "w": "impuesto",
+   "s": 443.085,
+   "e": 443.489
+  },
+  {
+   "w": "sobre",
+   "s": 443.489,
+   "e": 443.778
+  },
+  {
+   "w": "la",
+   "s": 443.778,
+   "e": 443.952
+  },
+  {
+   "w": "renta.",
+   "s": 443.952,
+   "e": 444.31
+  },
+  {
+   "w": "Si",
+   "s": 444.73,
+   "e": 444.909
+  },
+  {
+   "w": "tú",
+   "s": 444.909,
+   "e": 445.087
+  },
+  {
+   "w": "no",
+   "s": 445.087,
+   "e": 445.266
+  },
+  {
+   "w": "pagas",
+   "s": 445.266,
+   "e": 445.564
+  },
+  {
+   "w": "impuesto",
+   "s": 445.564,
+   "e": 445.981
+  },
+  {
+   "w": "sobre",
+   "s": 445.981,
+   "e": 446.279
+  },
+  {
+   "w": "la",
+   "s": 446.279,
+   "e": 446.458
+  },
+  {
+   "w": "renta,",
+   "s": 446.458,
+   "e": 446.827
+  },
+  {
+   "w": "ese",
+   "s": 446.827,
+   "e": 447.125
+  },
+  {
+   "w": "cuarenta",
+   "s": 447.125,
+   "e": 447.542
+  },
+  {
+   "w": "por",
+   "s": 447.542,
+   "e": 447.721
+  },
+  {
+   "w": "ciento",
+   "s": 447.721,
+   "e": 448.018
+  },
+  {
+   "w": "no",
+   "s": 448.018,
+   "e": 448.197
+  },
+  {
+   "w": "te",
+   "s": 448.197,
+   "e": 448.376
+  },
+  {
+   "w": "llega",
+   "s": 448.376,
+   "e": 448.674
+  },
+  {
+   "w": "en",
+   "s": 448.674,
+   "e": 448.852
+  },
+  {
+   "w": "efectivo.",
+   "s": 448.852,
+   "e": 449.46
+  },
+  {
+   "w": "Se",
+   "s": 449.93,
+   "e": 450.091
+  },
+  {
+   "w": "solicita",
+   "s": 450.091,
+   "e": 450.572
+  },
+  {
+   "w": "a",
+   "s": 450.572,
+   "e": 450.733
+  },
+  {
+   "w": "la",
+   "s": 450.733,
+   "e": 450.894
+  },
+  {
+   "w": "Comisión",
+   "s": 450.894,
+   "e": 451.268
+  },
+  {
+   "w": "Nacional",
+   "s": 451.268,
+   "e": 451.643
+  },
+  {
+   "w": "de",
+   "s": 451.643,
+   "e": 451.804
+  },
+  {
+   "w": "Energía,",
+   "s": 451.804,
+   "e": 452.35
+  },
+  {
+   "w": "con",
+   "s": 452.64,
+   "e": 452.812
+  },
+  {
+   "w": "tu",
+   "s": 452.812,
+   "e": 452.985
+  },
+  {
+   "w": "cédula,",
+   "s": 452.985,
+   "e": 453.456
+  },
+  {
+   "w": "el",
+   "s": 453.456,
+   "e": 453.629
+  },
+  {
+   "w": "título",
+   "s": 453.629,
+   "e": 454.031
+  },
+  {
+   "w": "de",
+   "s": 454.031,
+   "e": 454.203
+  },
+  {
+   "w": "la",
+   "s": 454.203,
+   "e": 454.376
+  },
+  {
+   "w": "casa",
+   "s": 454.376,
+   "e": 454.663
+  },
+  {
+   "w": "o",
+   "s": 454.663,
+   "e": 454.835
+  },
+  {
+   "w": "el",
+   "s": 454.835,
+   "e": 455.008
+  },
+  {
+   "w": "contrato",
+   "s": 455.008,
+   "e": 455.41
+  },
+  {
+   "w": "de",
+   "s": 455.41,
+   "e": 455.583
+  },
+  {
+   "w": "alquiler,",
+   "s": 455.583,
+   "e": 456.054
+  },
+  {
+   "w": "y",
+   "s": 456.054,
+   "e": 456.226
+  },
+  {
+   "w": "las",
+   "s": 456.226,
+   "e": 456.399
+  },
+  {
+   "w": "facturas.",
+   "s": 456.399,
+   "e": 456.87
+  },
+  {
+   "w": "Pregúntale",
+   "s": 457.25,
+   "e": 457.7
+  },
+  {
+   "w": "a",
+   "s": 457.7,
+   "e": 457.85
+  },
+  {
+   "w": "tu",
+   "s": 457.85,
+   "e": 458.0
+  },
+  {
+   "w": "instalador",
+   "s": 458.0,
+   "e": 458.45
+  },
+  {
+   "w": "si",
+   "s": 458.45,
+   "e": 458.6
+  },
+  {
+   "w": "él",
+   "s": 458.6,
+   "e": 458.75
+  },
+  {
+   "w": "te",
+   "s": 458.75,
+   "e": 458.9
+  },
+  {
+   "w": "hace",
+   "s": 458.9,
+   "e": 459.15
+  },
+  {
+   "w": "ese",
+   "s": 459.15,
+   "e": 459.4
+  },
+  {
+   "w": "trámite.",
+   "s": 459.4,
+   "e": 459.81
+  },
+  {
+   "w": "Paso",
+   "s": 460.53,
+   "e": 460.829
+  },
+  {
+   "w": "nueve:",
+   "s": 460.829,
+   "e": 461.2
+  },
+  {
+   "w": "haz",
+   "s": 461.64,
+   "e": 461.847
+  },
+  {
+   "w": "los",
+   "s": 461.847,
+   "e": 462.054
+  },
+  {
+   "w": "números.",
+   "s": 462.054,
+   "e": 462.62
+  },
+  {
+   "w": "Según",
+   "s": 463.03,
+   "e": 463.341
+  },
+  {
+   "w": "guías",
+   "s": 463.341,
+   "e": 463.777
+  },
+  {
+   "w": "de",
+   "s": 463.777,
+   "e": 463.964
+  },
+  {
+   "w": "precios",
+   "s": 463.964,
+   "e": 464.275
+  },
+  {
+   "w": "de",
+   "s": 464.275,
+   "e": 464.462
+  },
+  {
+   "w": "este",
+   "s": 464.462,
+   "e": 464.773
+  },
+  {
+   "w": "año,",
+   "s": 464.773,
+   "e": 465.159
+  },
+  {
+   "w": "un",
+   "s": 465.159,
+   "e": 465.345
+  },
+  {
+   "w": "sistema",
+   "s": 465.345,
+   "e": 465.781
+  },
+  {
+   "w": "de",
+   "s": 465.781,
+   "e": 465.968
+  },
+  {
+   "w": "unos",
+   "s": 465.968,
+   "e": 466.279
+  },
+  {
+   "w": "cinco",
+   "s": 466.279,
+   "e": 466.59
+  },
+  {
+   "w": "kilovatios,",
+   "s": 466.59,
+   "e": 467.225
+  },
+  {
+   "w": "instalado,",
+   "s": 467.225,
+   "e": 467.86
+  },
+  {
+   "w": "cuesta",
+   "s": 468.14,
+   "e": 468.469
+  },
+  {
+   "w": "más",
+   "s": 468.469,
+   "e": 468.666
+  },
+  {
+   "w": "o",
+   "s": 468.666,
+   "e": 468.863
+  },
+  {
+   "w": "menos",
+   "s": 468.863,
+   "e": 469.192
+  },
+  {
+   "w": "entre",
+   "s": 469.192,
+   "e": 469.521
+  },
+  {
+   "w": "cinco",
+   "s": 469.521,
+   "e": 469.85
+  },
+  {
+   "w": "mil",
+   "s": 469.85,
+   "e": 470.047
+  },
+  {
+   "w": "y",
+   "s": 470.047,
+   "e": 470.245
+  },
+  {
+   "w": "ocho",
+   "s": 470.245,
+   "e": 470.573
+  },
+  {
+   "w": "mil",
+   "s": 470.573,
+   "e": 470.771
+  },
+  {
+   "w": "dólares.",
+   "s": 470.771,
+   "e": 471.31
+  },
+  {
+   "w": "Con",
+   "s": 471.67,
+   "e": 471.869
+  },
+  {
+   "w": "baterías,",
+   "s": 471.869,
+   "e": 472.545
+  },
+  {
+   "w": "sube",
+   "s": 472.545,
+   "e": 472.876
+  },
+  {
+   "w": "bastante.",
+   "s": 472.876,
+   "e": 473.42
+  },
+  {
+   "w": "Para",
+   "s": 473.78,
+   "e": 474.074
+  },
+  {
+   "w": "saber",
+   "s": 474.074,
+   "e": 474.369
+  },
+  {
+   "w": "si",
+   "s": 474.369,
+   "e": 474.545
+  },
+  {
+   "w": "te",
+   "s": 474.545,
+   "e": 474.722
+  },
+  {
+   "w": "conviene,",
+   "s": 474.722,
+   "e": 475.204
+  },
+  {
+   "w": "haz",
+   "s": 475.204,
+   "e": 475.381
+  },
+  {
+   "w": "esta",
+   "s": 475.381,
+   "e": 475.675
+  },
+  {
+   "w": "cuenta:",
+   "s": 475.675,
+   "e": 476.04
+  },
+  {
+   "w": "lo",
+   "s": 476.59,
+   "e": 476.785
+  },
+  {
+   "w": "que",
+   "s": 476.785,
+   "e": 476.98
+  },
+  {
+   "w": "pagas",
+   "s": 476.98,
+   "e": 477.306
+  },
+  {
+   "w": "de",
+   "s": 477.306,
+   "e": 477.501
+  },
+  {
+   "w": "luz",
+   "s": 477.501,
+   "e": 477.696
+  },
+  {
+   "w": "al",
+   "s": 477.696,
+   "e": 477.891
+  },
+  {
+   "w": "mes",
+   "s": 477.891,
+   "e": 478.087
+  },
+  {
+   "w": "hoy,",
+   "s": 478.087,
+   "e": 478.36
+  },
+  {
+   "w": "menos",
+   "s": 478.36,
+   "e": 478.685
+  },
+  {
+   "w": "lo",
+   "s": 478.685,
+   "e": 478.88
+  },
+  {
+   "w": "que",
+   "s": 478.88,
+   "e": 479.076
+  },
+  {
+   "w": "pagarías",
+   "s": 479.076,
+   "e": 479.661
+  },
+  {
+   "w": "con",
+   "s": 479.661,
+   "e": 479.856
+  },
+  {
+   "w": "paneles.",
+   "s": 479.856,
+   "e": 480.39
+  },
+  {
+   "w": "Esa",
+   "s": 480.78,
+   "e": 481.084
+  },
+  {
+   "w": "diferencia",
+   "s": 481.084,
+   "e": 481.632
+  },
+  {
+   "w": "es",
+   "s": 481.632,
+   "e": 481.814
+  },
+  {
+   "w": "tu",
+   "s": 481.814,
+   "e": 481.997
+  },
+  {
+   "w": "ahorro",
+   "s": 481.997,
+   "e": 482.423
+  },
+  {
+   "w": "mensual.",
+   "s": 482.423,
+   "e": 482.8
+  },
+  {
+   "w": "Divide",
+   "s": 483.26,
+   "e": 483.683
+  },
+  {
+   "w": "el",
+   "s": 483.683,
+   "e": 483.864
+  },
+  {
+   "w": "costo",
+   "s": 483.864,
+   "e": 484.167
+  },
+  {
+   "w": "del",
+   "s": 484.167,
+   "e": 484.348
+  },
+  {
+   "w": "sistema",
+   "s": 484.348,
+   "e": 484.771
+  },
+  {
+   "w": "entre",
+   "s": 484.771,
+   "e": 485.073
+  },
+  {
+   "w": "ese",
+   "s": 485.073,
+   "e": 485.375
+  },
+  {
+   "w": "ahorro,",
+   "s": 485.375,
+   "e": 485.871
+  },
+  {
+   "w": "y",
+   "s": 485.871,
+   "e": 486.052
+  },
+  {
+   "w": "te",
+   "s": 486.052,
+   "e": 486.233
+  },
+  {
+   "w": "da",
+   "s": 486.233,
+   "e": 486.415
+  },
+  {
+   "w": "cuántos",
+   "s": 486.415,
+   "e": 486.717
+  },
+  {
+   "w": "meses",
+   "s": 486.717,
+   "e": 487.019
+  },
+  {
+   "w": "tardas",
+   "s": 487.019,
+   "e": 487.321
+  },
+  {
+   "w": "en",
+   "s": 487.321,
+   "e": 487.503
+  },
+  {
+   "w": "recuperarlo.",
+   "s": 487.503,
+   "e": 488.24
+  },
+  {
+   "w": "Muchas",
+   "s": 488.66,
+   "e": 488.958
+  },
+  {
+   "w": "guías",
+   "s": 488.958,
+   "e": 489.374
+  },
+  {
+   "w": "hablan",
+   "s": 489.374,
+   "e": 489.672
+  },
+  {
+   "w": "de",
+   "s": 489.672,
+   "e": 489.851
+  },
+  {
+   "w": "recuperarlo",
+   "s": 489.851,
+   "e": 490.505
+  },
+  {
+   "w": "en",
+   "s": 490.505,
+   "e": 490.684
+  },
+  {
+   "w": "cinco",
+   "s": 490.684,
+   "e": 490.982
+  },
+  {
+   "w": "a",
+   "s": 490.982,
+   "e": 491.16
+  },
+  {
+   "w": "siete",
+   "s": 491.16,
+   "e": 491.458
+  },
+  {
+   "w": "años,",
+   "s": 491.458,
+   "e": 491.827
+  },
+  {
+   "w": "y",
+   "s": 491.827,
+   "e": 492.006
+  },
+  {
+   "w": "los",
+   "s": 492.006,
+   "e": 492.184
+  },
+  {
+   "w": "paneles",
+   "s": 492.184,
+   "e": 492.601
+  },
+  {
+   "w": "suelen",
+   "s": 492.601,
+   "e": 492.898
+  },
+  {
+   "w": "durar",
+   "s": 492.898,
+   "e": 493.196
+  },
+  {
+   "w": "mucho",
+   "s": 493.196,
+   "e": 493.494
+  },
+  {
+   "w": "más",
+   "s": 493.494,
+   "e": 493.672
+  },
+  {
+   "w": "que",
+   "s": 493.672,
+   "e": 493.851
+  },
+  {
+   "w": "eso.",
+   "s": 493.851,
+   "e": 494.22
+  },
+  {
+   "w": "Pero",
+   "s": 494.6,
+   "e": 494.91
+  },
+  {
+   "w": "haz",
+   "s": 494.91,
+   "e": 495.095
+  },
+  {
+   "w": "la",
+   "s": 495.095,
+   "e": 495.281
+  },
+  {
+   "w": "cuenta",
+   "s": 495.281,
+   "e": 495.59
+  },
+  {
+   "w": "con",
+   "s": 495.59,
+   "e": 495.776
+  },
+  {
+   "w": "tus",
+   "s": 495.776,
+   "e": 495.962
+  },
+  {
+   "w": "números,",
+   "s": 495.962,
+   "e": 496.47
+  },
+  {
+   "w": "no",
+   "s": 496.47,
+   "e": 496.655
+  },
+  {
+   "w": "con",
+   "s": 496.655,
+   "e": 496.841
+  },
+  {
+   "w": "los",
+   "s": 496.841,
+   "e": 497.027
+  },
+  {
+   "w": "del",
+   "s": 497.027,
+   "e": 497.212
+  },
+  {
+   "w": "vendedor.",
+   "s": 497.212,
+   "e": 497.72
+  },
+  {
+   "w": "Paso",
+   "s": 498.65,
+   "e": 499.047
+  },
+  {
+   "w": "diez:",
+   "s": 499.047,
+   "e": 499.38
+  },
+  {
+   "w": "el",
+   "s": 499.73,
+   "e": 499.919
+  },
+  {
+   "w": "mantenimiento.",
+   "s": 499.919,
+   "e": 500.69
+  },
+  {
+   "w": "Es",
+   "s": 501.15,
+   "e": 501.337
+  },
+  {
+   "w": "poco,",
+   "s": 501.337,
+   "e": 501.725
+  },
+  {
+   "w": "pero",
+   "s": 501.725,
+   "e": 502.038
+  },
+  {
+   "w": "no",
+   "s": 502.038,
+   "e": 502.225
+  },
+  {
+   "w": "es",
+   "s": 502.225,
+   "e": 502.413
+  },
+  {
+   "w": "cero.",
+   "s": 502.413,
+   "e": 502.8
+  },
+  {
+   "w": "Limpia",
+   "s": 503.25,
+   "e": 503.566
+  },
+  {
+   "w": "los",
+   "s": 503.566,
+   "e": 503.756
+  },
+  {
+   "w": "paneles",
+   "s": 503.756,
+   "e": 504.199
+  },
+  {
+   "w": "con",
+   "s": 504.199,
+   "e": 504.389
+  },
+  {
+   "w": "agua",
+   "s": 504.389,
+   "e": 504.705
+  },
+  {
+   "w": "y",
+   "s": 504.705,
+   "e": 504.895
+  },
+  {
+   "w": "un",
+   "s": 504.895,
+   "e": 505.084
+  },
+  {
+   "w": "paño",
+   "s": 505.084,
+   "e": 505.401
+  },
+  {
+   "w": "suave",
+   "s": 505.401,
+   "e": 505.717
+  },
+  {
+   "w": "cuando",
+   "s": 505.717,
+   "e": 506.033
+  },
+  {
+   "w": "tengan",
+   "s": 506.033,
+   "e": 506.349
+  },
+  {
+   "w": "polvo",
+   "s": 506.349,
+   "e": 506.666
+  },
+  {
+   "w": "o",
+   "s": 506.666,
+   "e": 506.855
+  },
+  {
+   "w": "sucio",
+   "s": 506.855,
+   "e": 507.172
+  },
+  {
+   "w": "de",
+   "s": 507.172,
+   "e": 507.361
+  },
+  {
+   "w": "pájaros,",
+   "s": 507.361,
+   "e": 507.88
+  },
+  {
+   "w": "temprano",
+   "s": 508.15,
+   "e": 508.515
+  },
+  {
+   "w": "en",
+   "s": 508.515,
+   "e": 508.671
+  },
+  {
+   "w": "la",
+   "s": 508.671,
+   "e": 508.827
+  },
+  {
+   "w": "mañana",
+   "s": 508.827,
+   "e": 509.192
+  },
+  {
+   "w": "o",
+   "s": 509.192,
+   "e": 509.348
+  },
+  {
+   "w": "al",
+   "s": 509.348,
+   "e": 509.504
+  },
+  {
+   "w": "final",
+   "s": 509.504,
+   "e": 509.765
+  },
+  {
+   "w": "de",
+   "s": 509.765,
+   "e": 509.921
+  },
+  {
+   "w": "la",
+   "s": 509.921,
+   "e": 510.077
+  },
+  {
+   "w": "tarde,",
+   "s": 510.077,
+   "e": 510.4
+  },
+  {
+   "w": "nunca",
+   "s": 510.69,
+   "e": 511.01
+  },
+  {
+   "w": "con",
+   "s": 511.01,
+   "e": 511.202
+  },
+  {
+   "w": "el",
+   "s": 511.202,
+   "e": 511.395
+  },
+  {
+   "w": "panel",
+   "s": 511.395,
+   "e": 511.715
+  },
+  {
+   "w": "caliente,",
+   "s": 511.715,
+   "e": 512.24
+  },
+  {
+   "w": "y",
+   "s": 512.53,
+   "e": 512.72
+  },
+  {
+   "w": "nunca",
+   "s": 512.72,
+   "e": 513.035
+  },
+  {
+   "w": "te",
+   "s": 513.035,
+   "e": 513.225
+  },
+  {
+   "w": "subas",
+   "s": 513.225,
+   "e": 513.541
+  },
+  {
+   "w": "al",
+   "s": 513.541,
+   "e": 513.73
+  },
+  {
+   "w": "techo",
+   "s": 513.73,
+   "e": 514.046
+  },
+  {
+   "w": "sin",
+   "s": 514.046,
+   "e": 514.236
+  },
+  {
+   "w": "seguridad.",
+   "s": 514.236,
+   "e": 514.88
+  },
+  {
+   "w": "Revisa",
+   "s": 515.39,
+   "e": 515.761
+  },
+  {
+   "w": "la",
+   "s": 515.761,
+   "e": 515.92
+  },
+  {
+   "w": "aplicación",
+   "s": 515.92,
+   "e": 516.397
+  },
+  {
+   "w": "del",
+   "s": 516.397,
+   "e": 516.556
+  },
+  {
+   "w": "inversor:",
+   "s": 516.556,
+   "e": 516.99
+  },
+  {
+   "w": "si",
+   "s": 517.48,
+   "e": 517.656
+  },
+  {
+   "w": "un",
+   "s": 517.656,
+   "e": 517.832
+  },
+  {
+   "w": "día",
+   "s": 517.832,
+   "e": 518.125
+  },
+  {
+   "w": "produce",
+   "s": 518.125,
+   "e": 518.535
+  },
+  {
+   "w": "mucho",
+   "s": 518.535,
+   "e": 518.828
+  },
+  {
+   "w": "menos",
+   "s": 518.828,
+   "e": 519.121
+  },
+  {
+   "w": "que",
+   "s": 519.121,
+   "e": 519.296
+  },
+  {
+   "w": "otros",
+   "s": 519.296,
+   "e": 519.589
+  },
+  {
+   "w": "días",
+   "s": 519.589,
+   "e": 519.882
+  },
+  {
+   "w": "parecidos,",
+   "s": 519.882,
+   "e": 520.48
+  },
+  {
+   "w": "algo",
+   "s": 520.76,
+   "e": 521.032
+  },
+  {
+   "w": "está",
+   "s": 521.032,
+   "e": 521.304
+  },
+  {
+   "w": "pasando.",
+   "s": 521.304,
+   "e": 521.75
+  },
+  {
+   "w": "Y",
+   "s": 522.16,
+   "e": 522.334
+  },
+  {
+   "w": "si",
+   "s": 522.334,
+   "e": 522.508
+  },
+  {
+   "w": "tienes",
+   "s": 522.508,
+   "e": 522.797
+  },
+  {
+   "w": "baterías,",
+   "s": 522.797,
+   "e": 523.388
+  },
+  {
+   "w": "que",
+   "s": 523.388,
+   "e": 523.562
+  },
+  {
+   "w": "las",
+   "s": 523.562,
+   "e": 523.736
+  },
+  {
+   "w": "revise",
+   "s": 523.736,
+   "e": 524.141
+  },
+  {
+   "w": "un",
+   "s": 524.141,
+   "e": 524.315
+  },
+  {
+   "w": "técnico.",
+   "s": 524.315,
+   "e": 524.79
+  },
+  {
+   "w": "Ahora,",
+   "s": 525.49,
+   "e": 525.86
+  },
+  {
+   "w": "los",
+   "s": 526.18,
+   "e": 526.364
+  },
+  {
+   "w": "errores",
+   "s": 526.364,
+   "e": 526.793
+  },
+  {
+   "w": "que",
+   "s": 526.793,
+   "e": 526.977
+  },
+  {
+   "w": "hacen",
+   "s": 526.977,
+   "e": 527.283
+  },
+  {
+   "w": "que",
+   "s": 527.283,
+   "e": 527.467
+  },
+  {
+   "w": "la",
+   "s": 527.467,
+   "e": 527.651
+  },
+  {
+   "w": "gente",
+   "s": 527.651,
+   "e": 527.957
+  },
+  {
+   "w": "pierda",
+   "s": 527.957,
+   "e": 528.264
+  },
+  {
+   "w": "su",
+   "s": 528.264,
+   "e": 528.447
+  },
+  {
+   "w": "dinero.",
+   "s": 528.447,
+   "e": 528.95
+  },
+  {
+   "w": "Comprar",
+   "s": 529.46,
+   "e": 529.795
+  },
+  {
+   "w": "el",
+   "s": 529.795,
+   "e": 529.997
+  },
+  {
+   "w": "sistema",
+   "s": 529.997,
+   "e": 530.466
+  },
+  {
+   "w": "más",
+   "s": 530.466,
+   "e": 530.668
+  },
+  {
+   "w": "grande",
+   "s": 530.668,
+   "e": 531.003
+  },
+  {
+   "w": "que",
+   "s": 531.003,
+   "e": 531.204
+  },
+  {
+   "w": "le",
+   "s": 531.204,
+   "e": 531.406
+  },
+  {
+   "w": "venden,",
+   "s": 531.406,
+   "e": 531.822
+  },
+  {
+   "w": "sin",
+   "s": 531.822,
+   "e": 532.023
+  },
+  {
+   "w": "mirar",
+   "s": 532.023,
+   "e": 532.359
+  },
+  {
+   "w": "su",
+   "s": 532.359,
+   "e": 532.56
+  },
+  {
+   "w": "consumo.",
+   "s": 532.56,
+   "e": 533.11
+  },
+  {
+   "w": "Elegir",
+   "s": 533.6,
+   "e": 534.054
+  },
+  {
+   "w": "solo",
+   "s": 534.054,
+   "e": 534.379
+  },
+  {
+   "w": "por",
+   "s": 534.379,
+   "e": 534.574
+  },
+  {
+   "w": "el",
+   "s": 534.574,
+   "e": 534.768
+  },
+  {
+   "w": "precio",
+   "s": 534.768,
+   "e": 535.093
+  },
+  {
+   "w": "más",
+   "s": 535.093,
+   "e": 535.288
+  },
+  {
+   "w": "barato.",
+   "s": 535.288,
+   "e": 535.82
+  },
+  {
+   "w": "No",
+   "s": 536.29,
+   "e": 536.458
+  },
+  {
+   "w": "preguntar",
+   "s": 536.458,
+   "e": 536.851
+  },
+  {
+   "w": "si",
+   "s": 536.851,
+   "e": 537.019
+  },
+  {
+   "w": "el",
+   "s": 537.019,
+   "e": 537.187
+  },
+  {
+   "w": "sistema",
+   "s": 537.187,
+   "e": 537.579
+  },
+  {
+   "w": "funciona",
+   "s": 537.579,
+   "e": 537.972
+  },
+  {
+   "w": "en",
+   "s": 537.972,
+   "e": 538.14
+  },
+  {
+   "w": "los",
+   "s": 538.14,
+   "e": 538.308
+  },
+  {
+   "w": "apagones.",
+   "s": 538.308,
+   "e": 538.88
+  },
+  {
+   "w": "Instalar",
+   "s": 539.3,
+   "e": 539.768
+  },
+  {
+   "w": "sobre",
+   "s": 539.768,
+   "e": 540.102
+  },
+  {
+   "w": "un",
+   "s": 540.102,
+   "e": 540.303
+  },
+  {
+   "w": "techo",
+   "s": 540.303,
+   "e": 540.637
+  },
+  {
+   "w": "con",
+   "s": 540.637,
+   "e": 540.838
+  },
+  {
+   "w": "filtraciones.",
+   "s": 540.838,
+   "e": 541.52
+  },
+  {
+   "w": "Conectarse",
+   "s": 541.93,
+   "e": 542.634
+  },
+  {
+   "w": "sin",
+   "s": 542.634,
+   "e": 542.869
+  },
+  {
+   "w": "permiso.",
+   "s": 542.869,
+   "e": 543.51
+  },
+  {
+   "w": "Y",
+   "s": 544.03,
+   "e": 544.184
+  },
+  {
+   "w": "el",
+   "s": 544.184,
+   "e": 544.337
+  },
+  {
+   "w": "error",
+   "s": 544.337,
+   "e": 544.594
+  },
+  {
+   "w": "número",
+   "s": 544.594,
+   "e": 544.952
+  },
+  {
+   "w": "uno:",
+   "s": 544.952,
+   "e": 545.27
+  },
+  {
+   "w": "no",
+   "s": 545.7,
+   "e": 545.903
+  },
+  {
+   "w": "bajar",
+   "s": 545.903,
+   "e": 546.24
+  },
+  {
+   "w": "primero",
+   "s": 546.24,
+   "e": 546.713
+  },
+  {
+   "w": "el",
+   "s": 546.713,
+   "e": 546.916
+  },
+  {
+   "w": "consumo.",
+   "s": 546.916,
+   "e": 547.47
+  },
+  {
+   "w": "Si",
+   "s": 547.83,
+   "e": 548.044
+  },
+  {
+   "w": "gastas",
+   "s": 548.044,
+   "e": 548.4
+  },
+  {
+   "w": "de",
+   "s": 548.4,
+   "e": 548.614
+  },
+  {
+   "w": "más,",
+   "s": 548.614,
+   "e": 548.914
+  },
+  {
+   "w": "vas",
+   "s": 548.914,
+   "e": 549.127
+  },
+  {
+   "w": "a",
+   "s": 549.127,
+   "e": 549.341
+  },
+  {
+   "w": "pagar",
+   "s": 549.341,
+   "e": 549.698
+  },
+  {
+   "w": "paneles",
+   "s": 549.698,
+   "e": 550.197
+  },
+  {
+   "w": "de",
+   "s": 550.197,
+   "e": 550.411
+  },
+  {
+   "w": "más.",
+   "s": 550.411,
+   "e": 550.71
+  },
+  {
+   "w": "Resumen:",
+   "s": 551.37,
+   "e": 551.9
+  },
+  {
+   "w": "mira",
+   "s": 552.42,
+   "e": 552.741
+  },
+  {
+   "w": "tus",
+   "s": 552.741,
+   "e": 552.934
+  },
+  {
+   "w": "kilovatios,",
+   "s": 552.934,
+   "e": 553.59
+  },
+  {
+   "w": "baja",
+   "s": 553.94,
+   "e": 554.233
+  },
+  {
+   "w": "tu",
+   "s": 554.233,
+   "e": 554.409
+  },
+  {
+   "w": "consumo,",
+   "s": 554.409,
+   "e": 554.89
+  },
+  {
+   "w": "calcula",
+   "s": 555.33,
+   "e": 555.695
+  },
+  {
+   "w": "el",
+   "s": 555.695,
+   "e": 555.852
+  },
+  {
+   "w": "tamaño,",
+   "s": 555.852,
+   "e": 556.28
+  },
+  {
+   "w": "decide",
+   "s": 556.74,
+   "e": 557.141
+  },
+  {
+   "w": "el",
+   "s": 557.141,
+   "e": 557.313
+  },
+  {
+   "w": "tipo",
+   "s": 557.313,
+   "e": 557.599
+  },
+  {
+   "w": "de",
+   "s": 557.599,
+   "e": 557.771
+  },
+  {
+   "w": "sistema,",
+   "s": 557.771,
+   "e": 558.24
+  },
+  {
+   "w": "revisa",
+   "s": 558.67,
+   "e": 559.098
+  },
+  {
+   "w": "tu",
+   "s": 559.098,
+   "e": 559.281
+  },
+  {
+   "w": "techo,",
+   "s": 559.281,
+   "e": 559.66
+  },
+  {
+   "w": "compara",
+   "s": 560.11,
+   "e": 560.627
+  },
+  {
+   "w": "tres",
+   "s": 560.627,
+   "e": 560.849
+  },
+  {
+   "w": "cotizaciones,",
+   "s": 560.849,
+   "e": 561.75
+  },
+  {
+   "w": "saca",
+   "s": 562.14,
+   "e": 562.504
+  },
+  {
+   "w": "los",
+   "s": 562.504,
+   "e": 562.723
+  },
+  {
+   "w": "permisos,",
+   "s": 562.723,
+   "e": 563.32
+  },
+  {
+   "w": "pide",
+   "s": 563.73,
+   "e": 564.015
+  },
+  {
+   "w": "tu",
+   "s": 564.015,
+   "e": 564.187
+  },
+  {
+   "w": "crédito",
+   "s": 564.187,
+   "e": 564.586
+  },
+  {
+   "w": "fiscal,",
+   "s": 564.586,
+   "e": 564.94
+  },
+  {
+   "w": "haz",
+   "s": 565.46,
+   "e": 565.664
+  },
+  {
+   "w": "tus",
+   "s": 565.664,
+   "e": 565.868
+  },
+  {
+   "w": "números",
+   "s": 565.868,
+   "e": 566.345
+  },
+  {
+   "w": "y",
+   "s": 566.345,
+   "e": 566.549
+  },
+  {
+   "w": "dale",
+   "s": 566.549,
+   "e": 566.89
+  },
+  {
+   "w": "mantenimiento.",
+   "s": 566.89,
+   "e": 567.72
+  },
+  {
+   "w": "Y",
+   "s": 568.23,
+   "e": 568.391
+  },
+  {
+   "w": "recuerda:",
+   "s": 568.391,
+   "e": 568.83
+  },
+  {
+   "w": "todo",
+   "s": 569.21,
+   "e": 569.495
+  },
+  {
+   "w": "lo",
+   "s": 569.495,
+   "e": 569.667
+  },
+  {
+   "w": "eléctrico",
+   "s": 569.667,
+   "e": 570.18
+  },
+  {
+   "w": "de",
+   "s": 570.18,
+   "e": 570.351
+  },
+  {
+   "w": "este",
+   "s": 570.351,
+   "e": 570.637
+  },
+  {
+   "w": "proyecto",
+   "s": 570.637,
+   "e": 571.036
+  },
+  {
+   "w": "lo",
+   "s": 571.036,
+   "e": 571.207
+  },
+  {
+   "w": "tiene",
+   "s": 571.207,
+   "e": 571.493
+  },
+  {
+   "w": "que",
+   "s": 571.493,
+   "e": 571.664
+  },
+  {
+   "w": "hacer",
+   "s": 571.664,
+   "e": 571.949
+  },
+  {
+   "w": "un",
+   "s": 571.949,
+   "e": 572.12
+  },
+  {
+   "w": "instalador",
+   "s": 572.12,
+   "e": 572.634
+  },
+  {
+   "w": "certificado.",
+   "s": 572.634,
+   "e": 573.33
+  },
+  {
+   "w": "No",
+   "s": 573.69,
+   "e": 573.865
+  },
+  {
+   "w": "es",
+   "s": 573.865,
+   "e": 574.04
+  },
+  {
+   "w": "un",
+   "s": 574.04,
+   "e": 574.215
+  },
+  {
+   "w": "trabajo",
+   "s": 574.215,
+   "e": 574.623
+  },
+  {
+   "w": "para",
+   "s": 574.623,
+   "e": 574.915
+  },
+  {
+   "w": "hacerlo",
+   "s": 574.915,
+   "e": 575.323
+  },
+  {
+   "w": "tú",
+   "s": 575.323,
+   "e": 575.498
+  },
+  {
+   "w": "solo.",
+   "s": 575.498,
+   "e": 575.86
+  },
+  {
+   "w": "Si",
+   "s": 576.52,
+   "e": 576.701
+  },
+  {
+   "w": "este",
+   "s": 576.701,
+   "e": 577.001
+  },
+  {
+   "w": "video",
+   "s": 577.001,
+   "e": 577.423
+  },
+  {
+   "w": "te",
+   "s": 577.423,
+   "e": 577.603
+  },
+  {
+   "w": "sirvió,",
+   "s": 577.603,
+   "e": 577.976
+  },
+  {
+   "w": "dale",
+   "s": 577.976,
+   "e": 578.277
+  },
+  {
+   "w": "like,",
+   "s": 578.277,
+   "e": 578.65
+  },
+  {
+   "w": "compártelo",
+   "s": 578.92,
+   "e": 579.431
+  },
+  {
+   "w": "con",
+   "s": 579.431,
+   "e": 579.601
+  },
+  {
+   "w": "alguien",
+   "s": 579.601,
+   "e": 580.112
+  },
+  {
+   "w": "que",
+   "s": 580.112,
+   "e": 580.283
+  },
+  {
+   "w": "esté",
+   "s": 580.283,
+   "e": 580.567
+  },
+  {
+   "w": "pagando",
+   "s": 580.567,
+   "e": 580.964
+  },
+  {
+   "w": "demasiado",
+   "s": 580.964,
+   "e": 581.475
+  },
+  {
+   "w": "de",
+   "s": 581.475,
+   "e": 581.645
+  },
+  {
+   "w": "luz,",
+   "s": 581.645,
+   "e": 581.884
+  },
+  {
+   "w": "y",
+   "s": 581.884,
+   "e": 582.054
+  },
+  {
+   "w": "suscríbete",
+   "s": 582.054,
+   "e": 582.565
+  },
+  {
+   "w": "para",
+   "s": 582.565,
+   "e": 582.849
+  },
+  {
+   "w": "que",
+   "s": 582.849,
+   "e": 583.019
+  },
+  {
+   "w": "no",
+   "s": 583.019,
+   "e": 583.19
+  },
+  {
+   "w": "te",
+   "s": 583.19,
+   "e": 583.36
+  },
+  {
+   "w": "pierdas",
+   "s": 583.36,
+   "e": 583.644
+  },
+  {
+   "w": "el",
+   "s": 583.644,
+   "e": 583.814
+  },
+  {
+   "w": "próximo.",
+   "s": 583.814,
+   "e": 584.28
+  },
+  {
+   "w": "Y",
+   "s": 584.67,
+   "e": 584.814
+  },
+  {
+   "w": "cuéntame",
+   "s": 584.814,
+   "e": 585.151
+  },
+  {
+   "w": "en",
+   "s": 585.151,
+   "e": 585.295
+  },
+  {
+   "w": "los",
+   "s": 585.295,
+   "e": 585.439
+  },
+  {
+   "w": "comentarios:",
+   "s": 585.439,
+   "e": 585.93
+  },
+  {
+   "w": "¿cuántos",
+   "s": 586.25,
+   "e": 586.618
+  },
+  {
+   "w": "kilovatios",
+   "s": 586.618,
+   "e": 587.281
+  },
+  {
+   "w": "gastas",
+   "s": 587.281,
+   "e": 587.649
+  },
+  {
+   "w": "tú",
+   "s": 587.649,
+   "e": 587.87
+  },
+  {
+   "w": "al",
+   "s": 587.87,
+   "e": 588.091
+  },
+  {
+   "w": "mes?",
+   "s": 588.091,
+   "e": 588.4
+  },
+  {
+   "w": "Yo",
+   "s": 588.74,
+   "e": 588.885
+  },
+  {
+   "w": "te",
+   "s": 588.885,
+   "e": 589.03
+  },
+  {
+   "w": "leo.",
+   "s": 589.03,
+   "e": 589.33
+  },
+  {
+   "w": "Nos",
+   "s": 589.67,
+   "e": 589.829
+  },
+  {
+   "w": "vemos",
+   "s": 589.829,
+   "e": 590.095
+  },
+  {
+   "w": "en",
+   "s": 590.095,
+   "e": 590.254
+  },
+  {
+   "w": "el",
+   "s": 590.254,
+   "e": 590.413
+  },
+  {
+   "w": "próximo",
+   "s": 590.413,
+   "e": 590.785
+  },
+  {
+   "w": "video.",
+   "s": 590.785,
+   "e": 591.22
+  }
+ ]
+}
