@@ -165,15 +165,15 @@ function popSprite(sp, t, at, d = .35) { const k = eback(P(t, at, d)); sp.visibl
 // ---------- renderer (estilo B: low-poly de día) ----------
 const glc = document.getElementById('gl'), out = document.getElementById('out'), g = out.getContext('2d');
 const renderer = new THREE.WebGLRenderer({ canvas: glc, antialias: true, preserveDrawingBuffer: true });
-renderer.setPixelRatio(1); renderer.setSize(W, H, false);
+const RS = .75; renderer.setPixelRatio(1); renderer.setSize(Math.round(W * RS), Math.round(H * RS), false);
 renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.0;
 const scene = new THREE.Scene(); scene.fog = new THREE.Fog(0xbfe3ff, 30, 80);
 const cam = new THREE.PerspectiveCamera(50, W / H, .05, 200);
-const rt = new THREE.WebGLRenderTarget(W, H, { samples: 2, type: THREE.HalfFloatType });
+const rt = new THREE.WebGLRenderTarget(Math.round(W * RS), Math.round(H * RS), { samples: 2, type: THREE.HalfFloatType });
 const composer = new EffectComposer(renderer, rt);
 composer.addPass(new RenderPass(scene, cam));
-const bloom = new UnrealBloomPass(new THREE.Vector2(W / 2, H / 2), .35, .4, .92); composer.addPass(bloom);
+const bloom = new UnrealBloomPass(new THREE.Vector2(W * RS / 2, H * RS / 2), .35, .4, .92); composer.addPass(bloom);
 composer.addPass(new OutputPass());
 const hemi = new THREE.HemisphereLight(0xcfe8ff, 0x6b8a4a, 1.3); scene.add(hemi);
 const sunL = new THREE.DirectionalLight(0xfff4dc, 2.6); sunL.castShadow = true; sunL.shadow.mapSize.set(1024, 1024); sunL.shadow.bias = -.0005; sunL.shadow.normalBias = .02;
@@ -413,7 +413,7 @@ function followCTA(t) {
 function renderAt(t) {
   seed = 7 + Math.floor(t * 30) * 13;
   camAt(t); animWorld(t);
-  composer.render(); g.drawImage(glc, 0, 0);
+  composer.render(); g.drawImage(glc, 0, 0, W, H);
   const vg = g.createRadialGradient(540, 960, 650, 540, 960, 1300); vg.addColorStop(0, 'rgba(0,0,0,0)'); vg.addColorStop(1, 'rgba(0,0,0,.28)'); g.fillStyle = vg; g.fillRect(0, 0, W, H);
   overlayLabels(t); if (t < CTA_ST) { overlay2d(t); caption(t); } watermark(t); followCTA(t);
   const fo = P(t, END - .3, .3); if (fo > 0) { g.fillStyle = `rgba(0,0,0,${fo})`; g.fillRect(0, 0, W, H); }
