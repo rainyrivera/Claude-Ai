@@ -5,7 +5,12 @@ description: Crear reels/TikToks verticales 9:16 animados en 3D con personajes e
 
 # Reel 3D animado — estilo aprobado por el usuario
 
-## 0. FORMATO ACTUAL DE LA CUENTA "Así funciona con Rai" (usar por defecto)
+## 00. NUEVO FORMATO POR DEFECTO (desde 2026-11-21): Estilo C "Escalada 3D"
+- Leer **`estilo-escalada.md`** antes de cualquier video. Referencia: `referencias/estilo-escalada-balcon.mp4`.
+- Mundo 3D low-poly que crece, sin personajes presentadores, subtítulos arriba con caja de selección azul, píldoras, palabras golpe, tarjetas de dato, cierre con encuesta.
+- Se mantienen marca de agua, cierre de 3,7 s y las dos versiones. Estilo B (abajo) solo si el usuario lo pide.
+
+## 0. Formato anterior (Estilo B) — solo si lo pide
 - Desde el video del pozo/cisterna/regleta, el usuario trabaja el **Estilo B "construcción en corte"** (ver `estilo-construccion.md`).
 - **Plantilla: `plantilla-construccion/`** (base: `reel-luz/`). Copiarla a `reel-<tema>/src3d/` y seguir su README.
 - Guiones de **~1:45** (≈280–300 palabras con la voz "Relaxed"), segunda persona, "pero…" cada 5–8 s, final "Y felicidades…" + pregunta.
