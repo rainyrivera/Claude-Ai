@@ -170,6 +170,10 @@ function floaters(t, n = 14, col = 'rgba(255,255,255,.85)', kind = 'leaf') {
 }
 // cota / línea de medida
 function dimLine(t, a, b, p0, p1, text, col = '#ffffff') { if (!inn(t, a, b)) return; const A = proj(p0), B = proj(p1); const k = eout(P(t, a, .4)); g.save(); g.strokeStyle = col; g.fillStyle = col; g.lineWidth = 3; g.beginPath(); g.moveTo(A.x, A.y); g.lineTo(lerp(A.x, B.x, k), lerp(A.y, B.y, k)); g.stroke(); g.font = '800 34px I'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.shadowColor = 'rgba(0,0,0,.6)'; g.shadowBlur = 8; if (k > .9) g.fillText(text, (A.x + B.x) / 2 + 50, (A.y + B.y) / 2); g.restore(); }
+// partículas instanciadas
+function parts(n, c, r = .05, geo) { const m = new THREE.InstancedMesh(geo || new THREE.SphereGeometry(r, 6, 4), c.isMaterial ? c : new THREE.MeshBasicMaterial({ color: c }), n); m.frustumCulled = false; scene.add(m); return m; }
+const tmp = new THREE.Object3D();
+function setP(m, i, x, y, z, vis, s = 1, rot = 0) { tmp.position.set(x, y, z); tmp.rotation.set(rot, rot * .7, 0); tmp.scale.setScalar(vis ? s : .001); tmp.updateMatrix(); m.setMatrixAt(i, tmp.matrix); }
 // ================= LA FLECHA DE LA GASOLINA =================
 const DISC = 'Recreación ilustrativa · no está a escala';
 const KW = { mira: T('mira'), flechita: T('flechita'), diciendo: T('diciendo'), lado1: T('lado'), izq: T('izquierda'), der: T('derecha'), facil: T('fácil'), sirve: T('sirve'), bomba: T('bomba'), prestado: T('prestado'), paras: T('paras'), otro: T('otro'), vuelta: T('vuelta'), manguera: T('manguera'), verguenza: T('vergüenza'), susc: T('suscríbete'), ojo: T('ojo'), falso: T('falso'), manguerita: T('manguerita'), siempre: T('siempre'), manda: T('manda'), noTiene: T('tiene'), manual: T('manual'), fijate: T('fíjate'), coment: T('comentarios') };
@@ -200,7 +204,7 @@ const PUMPS = []; for (const x of [-3, 3]) { const p = new THREE.Group(); const 
 const hoseCurve = new THREE.CatmullRomCurve3([V(27, 1.4, .3), V(27.2, 2.4, 1.2), V(28.6, 2.6, 2.2), V(28.9, 2.1, 3.3), V(28.95, 1.0, 3.2)]);
 const hoseG = new THREE.TubeGeometry(hoseCurve, 60, .06, 6); const HOSE = add(M(hoseG, lp(0x1b1d22)));
 // ruta de "dar la vuelta" (para el final, estacionarse bien)
-const loop = new THREE.CatmullRomCurve3([V(30, 0, 2.2), V(38, 0, 2.6), V(44, 0, -1), V(41, 0, -7), V(26, 0, -8.5), V(17, 0, -5), V(20, 0, -2.2), V(30, 0, -2.2)]);
+const loop = new THREE.CatmullRomCurve3([V(30, 0, 2.2), V(37, 0, 2.6), V(41, 0, -1), V(38, 0, -5.5), V(26, 0, -6), V(20, 0, -4.5), V(21, 0, -2.2), V(30, 0, -2.2)]);
 const dashPts = loop.getPoints(80); const DASH = add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(dashPts.map(p => V(p.x, .08, p.z))), new THREE.LineDashedMaterial({ color: 0xffd23a, dashSize: .6, gapSize: .4, linewidth: 2 }))); DASH.computeLineDistances();
 // manual
 const MANUAL = add(new THREE.Group()); { const b = rbox(1.4, 1.9, .22, .04, lp(0x2b5fd0)); const tx = texPlane(1.2, 1.6, 240, 320, (x, w, h) => { x.fillStyle = '#fff'; x.font = '900 46px I'; x.textAlign = 'center'; x.fillText('MANUAL', w / 2, 90); x.font = '600 26px I'; x.fillText('del propietario', w / 2, 130); x.strokeStyle = '#fff'; x.lineWidth = 6; x.beginPath(); x.arc(w / 2, 220, 50, 0, 6.29); x.stroke(); }); tx.position.z = .12; MANUAL.add(b, tx); }
@@ -240,7 +244,7 @@ SHOTS = [
   [PS(14), PS(15), [36, 6, 14], [24, 6, 14], [30, 2, 0], [30, 2, 0]],
   [PS(15), PS(20), [BX + 2.4, 3.9, 10], [BX + 2.0, 3.8, 8.5], [BX + 1.6, 3.6, 0], [BX + 1.6, 3.6, 0]],
   [PS(20), PS(21) + 1.2, [BX - 2, 4.2, 14], [BX, 4.2, 13], [BX - .5, 3.6, 0], [BX - .5, 3.6, 0]],
-  [PS(21) + 1.2, PS(22), [30, 14, 18], [30, 12, 16], [30, 0, -1], [30, 0, -1]],
+  [PS(21) + 1.2, PS(22), [28, 9, -21], [31, 8.5, -20], [30, 0, -2], [30, 0, -2]],
   [PS(22), END, [24, 7, 16], [22, 7.5, 18], [30, 1.5, 0], [30, 1.5, 0]]
 ];
 SHAKE = [[KW.paras, KW.paras + .4, .05], [KW.verguenza, KW.verguenza + .7, .06]];
