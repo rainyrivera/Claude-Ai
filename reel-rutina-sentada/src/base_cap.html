@@ -1,0 +1,14 @@
+// ---------- captions ----------
+const GROUPS=(()=>{const g=[];let cur=[];W.forEach((w,i)=>{cur.push(i);const end=/[.?:,…!]$/.test(w.w)||/\.\.\.$/.test(w.w);if(end||cur.length>=4){g.push(cur);cur=[];}});if(cur.length)g.push(cur);return g;})();
+function captions(t){
+  let gi=-1;for(let k=0;k<GROUPS.length;k++){if(t>=S(GROUPS[k][0])-0.05)gi=k;}
+  if(gi<0)return '';const g=GROUPS[gi];const last=g[g.length-1];
+  const next=gi+1<GROUPS.length?S(GROUPS[gi+1][0])-0.05:DUR;
+  if(t>Math.min(next,E(last)+0.9))return '';
+  const k=popk(t,S(g[0])-0.05);
+  let s=`<div class="cap" style="transform:scale(${f1(0.9+0.1*clamp(k,0,1.1))})">`;
+  for(const i of g){let cls='w';if(t>=S(i))cls+=' on';if(t>=S(i)&&t<E(i)+0.05)cls+=' cur';s+=`<span class="${cls}">${W[i].w.replace('...','…')}</span>`;}
+  return s+'</div>';
+}
+window.frame=frame;window.DUR=DUR;
+</script></body></html>

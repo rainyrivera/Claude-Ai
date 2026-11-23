@@ -1,0 +1,115 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+html,body{margin:0;padding:0;width:1080px;height:1920px;overflow:hidden;background:#cfeedd;}
+#root{position:relative;width:1080px;height:1920px;overflow:hidden;font-family:Inter,sans-serif;}
+#scene,#ovs{position:absolute;left:0;top:0;width:1080px;height:1920px;}
+#ov{position:absolute;left:0;top:0;width:1080px;height:1920px;}
+.band{position:absolute;left:0;right:0;top:240px;height:190px;background:linear-gradient(180deg,rgba(40,95,70,0) 0%,rgba(40,95,70,.30) 18%,rgba(40,95,70,.30) 82%,rgba(40,95,70,0) 100%);}
+.cap{position:absolute;left:60px;right:60px;top:240px;height:190px;display:flex;flex-wrap:wrap;align-content:center;justify-content:center;gap:4px 18px;font-weight:800;font-size:68px;line-height:84px;letter-spacing:-0.5px;}
+.w{color:rgba(255,255,255,.42);text-shadow:0 3px 0 rgba(0,0,0,.10);padding:0 8px;border-radius:14px;}
+.w.on{color:#fff;text-shadow:0 4px 0 rgba(0,0,0,.22);}
+.w.cur{color:#fff;background:#7c5cff;box-shadow:0 6px 0 #4b33c4;text-shadow:none;}
+.pill{position:absolute;transform-origin:center;white-space:nowrap;font-weight:900;font-size:46px;letter-spacing:.5px;color:#fff;padding:12px 30px;border-radius:999px;box-shadow:0 7px 0 rgba(0,0,0,.25);}
+.red{background:#ff3b4a;box-shadow:0 7px 0 #b51d2a;}
+.blue{background:#3d6bff;box-shadow:0 7px 0 #2241b5;}
+.green{background:#22c55e;box-shadow:0 7px 0 #138a3e;}
+.violet{background:#7c5cff;box-shadow:0 7px 0 #4b33c4;}
+.gray{background:#7d8a84;box-shadow:0 7px 0 #56615c;}
+.dark{background:#17171c;box-shadow:0 7px 0 #000;}
+.badge{position:absolute;font-weight:900;font-size:56px;color:#fff;padding:12px 38px;border-radius:999px;border:5px solid #fff;letter-spacing:1px;}
+.card{position:absolute;width:190px;height:190px;border-radius:40px;background:#fff;box-shadow:0 10px 0 rgba(0,0,0,.15);display:flex;align-items:center;justify-content:center;font-size:110px;font-family:'Noto Color Emoji';}
+.card .ck{position:absolute;right:-14px;top:-14px;width:64px;height:64px;border-radius:50%;background:#22c55e;color:#fff;font:900 44px Inter;display:flex;align-items:center;justify-content:center;border:5px solid #fff;}
+.cal{position:absolute;width:260px;height:290px;border-radius:30px;background:#fff;box-shadow:0 12px 0 rgba(0,0,0,.18);overflow:hidden;text-align:center;}
+.cal .h{background:#ff3b4a;color:#fff;font-weight:900;font-size:32px;padding:18px 0 14px;}
+.cal .n{font-weight:900;font-size:140px;line-height:150px;color:#17171c;}
+.cal .d{font-weight:800;font-size:30px;color:#555;margin-top:-10px;}
+</style></head>
+<body><div id="root">
+<svg id="scene" viewBox="0 0 1080 1920"></svg>
+<svg id="ovs" viewBox="0 0 1080 1920"></svg>
+<div id="ov"></div>
+</div>
+<script>
+const W = __WORDS__;
+const S=i=>W[i].s, E=i=>W[i].e;
+const DUR=__DUR__;
+// ---------- math helpers ----------
+const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
+const lerp=(a,b,k)=>a+(b-a)*k;
+const ease=k=>{k=clamp(k,0,1);return k<.5?4*k*k*k:1-Math.pow(-2*k+2,3)/2;};
+const ramp=(t,t0,d)=>ease((t-t0)/d);
+const backOut=k=>{k=clamp(k,0,1);const c1=1.9,c3=c1+1;return 1+c3*Math.pow(k-1,3)+c1*Math.pow(k-1,2);};
+const V=(x,y)=>({x,y});
+const add=(a,b)=>V(a.x+b.x,a.y+b.y), sub=(a,b)=>V(a.x-b.x,a.y-b.y), mul=(a,k)=>V(a.x*k,a.y*k);
+const len=a=>Math.hypot(a.x,a.y), unit=a=>mul(a,1/len(a));
+const ang=a=>Math.atan2(a.y,a.x)*180/Math.PI;
+const fromAng=(deg)=>V(Math.cos(deg*Math.PI/180),Math.sin(deg*Math.PI/180));
+const lerpV=(a,b,k)=>V(lerp(a.x,b.x,k),lerp(a.y,b.y,k));
+const f1=n=>n.toFixed(1);
+function smoothPath(pts,closed=true){ // catmull-rom -> bezier
+  const n=pts.length;let d=`M${f1(pts[0].x)},${f1(pts[0].y)}`;
+  for(let i=0;i<(closed?n:n-1);i++){
+    const p0=pts[(i-1+n)%n],p1=pts[i],p2=pts[(i+1)%n],p3=pts[(i+2)%n];
+    const c1=add(p1,mul(sub(p2,p0),1/6)),c2=sub(p2,mul(sub(p3,p1),1/6));
+    d+=`C${f1(c1.x)},${f1(c1.y)} ${f1(c2.x)},${f1(c2.y)} ${f1(p2.x)},${f1(p2.y)}`;
+  }
+  return d+(closed?'Z':'');
+}
+// ---------- palette ----------
+const SKIN='url(#skin)', SKIN2='url(#skin2)', RIM='#3b3b46', OUT='#7c5cff', OUT2='#5f43e0';
+function limb(a,b,w1,w2,fill,stroke=RIM){
+  const u=unit(sub(b,a)),n=V(-u.y,u.x);
+  const p=[add(a,mul(n,w1/2)),add(b,mul(n,w2/2)),sub(b,mul(n,w2/2)),sub(a,mul(n,w1/2))];
+  const pts=p.map(v=>f1(v.x)+','+f1(v.y)).join(' ');
+  return `<g><circle cx="${f1(a.x)}" cy="${f1(a.y)}" r="${w1/2}" fill="${fill}" stroke="${stroke}" stroke-width="3"/><circle cx="${f1(b.x)}" cy="${f1(b.y)}" r="${w2/2}" fill="${fill}" stroke="${stroke}" stroke-width="3"/><polygon points="${pts}" fill="${fill}"/><line x1="${f1(p[0].x)}" y1="${f1(p[0].y)}" x2="${f1(p[1].x)}" y2="${f1(p[1].y)}" stroke="${stroke}" stroke-width="3"/><line x1="${f1(p[2].x)}" y1="${f1(p[2].y)}" x2="${f1(p[3].x)}" y2="${f1(p[3].y)}" stroke="${stroke}" stroke-width="3"/></g>`;
+}
+function ell(c,rx,ry,rot,fill,extra=''){return `<ellipse cx="${f1(c.x)}" cy="${f1(c.y)}" rx="${rx}" ry="${ry}" transform="rotate(${f1(rot)} ${f1(c.x)} ${f1(c.y)})" fill="${fill}" ${extra}/>`;}
+function gloss(c,rx,ry,rot,op=.22){return ell(c,rx,ry,rot,'url(#gloss)',`opacity="${op}"`);}
+
+// ---------- muscle highlight ----------
+let hlId=0;
+function muscle(c,rx,ry,rot,k,t,color='red'){
+  if(k<=0.01) return '';
+  const col=color==='red'?['#ff2a2a','#ff8a7a','#ff5050']:color==='green'?['#1fd16a','#9df5c0','#36e07f']:['#8a9690','#c7d0cc','#9aa6a0'];
+  const pulse=color==='gray'?1:(0.85+0.15*Math.sin(t*9));
+  const id='hc'+(hlId++);
+  let s=`<g opacity="${f1(k)}"><defs><clipPath id="${id}"><ellipse cx="${f1(c.x)}" cy="${f1(c.y)}" rx="${rx}" ry="${ry}" transform="rotate(${f1(rot)} ${f1(c.x)} ${f1(c.y)})"/></clipPath></defs>`;
+  s+=ell(c,rx*1.45,ry*1.6,rot,col[0],`opacity="${f1(.28*pulse)}" filter="url(#blur)"`);
+  s+=ell(c,rx,ry,rot,col[0],`opacity="${f1(.9*pulse)}"`);
+  // stripes along major axis
+  const u=fromAng(rot),n=V(-u.y,u.x);let st='';
+  for(let i=-6;i<=6;i++){const o=add(c,mul(n,i*ry/4.2));st+=`<line x1="${f1(o.x-u.x*rx*1.2)}" y1="${f1(o.y-u.y*rx*1.2)}" x2="${f1(o.x+u.x*rx*1.2)}" y2="${f1(o.y+u.y*rx*1.2)}" stroke="${col[1]}" stroke-width="4" opacity=".75"/>`;}
+  s+=`<g clip-path="url(#${id})">${st}</g>`;
+  s+=ell(add(c,mul(n,-ry*.35)),rx*.6,ry*.25,rot,'#fff','opacity=".25"');
+  return s+'</g>';
+}
+function sparks(c,r,t,k,color='#ff3030'){
+  if(k<=0.01)return '';let s='';
+  for(let i=0;i<6;i++){
+    const a=i*60+15*Math.sin(t*3+i);const ph=(t*2.2+i*.37)%1;
+    const d=r*(1.0+ph*0.35);const p=add(c,mul(fromAng(a),d));const q=fromAng(a+90);const u=fromAng(a);
+    const pts=[p,add(add(p,mul(u,14)),mul(q,10)),add(add(p,mul(u,26)),mul(q,-10)),add(p,mul(u,40))];
+    s+=`<polyline points="${pts.map(v=>f1(v.x)+','+f1(v.y)).join(' ')}" fill="none" stroke="${color}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity="${f1(k*(1-ph*.7))}"/>`;
+  }
+  return s;
+}
+function arrow(a,b,color,k,w=16){
+  if(k<=0.01)return '';const u=unit(sub(b,a)),n=V(-u.y,u.x);const e=lerpV(a,b,clamp(k*1.3,0,1));
+  const h1=add(sub(e,mul(u,34)),mul(n,26)),h2=sub(sub(e,mul(u,34)),mul(n,26));
+  return `<g opacity="${f1(clamp(k*3,0,1))}"><line x1="${f1(a.x)}" y1="${f1(a.y)}" x2="${f1(e.x-u.x*20)}" y2="${f1(e.y-u.y*20)}" stroke="${color}" stroke-width="${w}" stroke-linecap="round"/><path d="M${f1(e.x)},${f1(e.y)}L${f1(h1.x)},${f1(h1.y)}L${f1(h2.x)},${f1(h2.y)}Z" fill="${color}" stroke="${color}" stroke-width="8" stroke-linejoin="round"/></g>`;
+}
+function xMark(c,k,s=48){if(k<=.01)return '';const sc=backOut(k);return `<g transform="translate(${f1(c.x)} ${f1(c.y)}) scale(${f1(sc)})"><circle r="${s}" fill="#ff3b4a" stroke="#fff" stroke-width="7"/><path d="M${-s*.4},${-s*.4}L${s*.4},${s*.4}M${s*.4},${-s*.4}L${-s*.4},${s*.4}" stroke="#fff" stroke-width="12" stroke-linecap="round"/></g>`;}
+function check(c,k,s=48){if(k<=.01)return '';const sc=backOut(k);return `<g transform="translate(${f1(c.x)} ${f1(c.y)}) scale(${f1(sc)})"><circle r="${s}" fill="#22c55e" stroke="#fff" stroke-width="7"/><path d="M${-s*.45},0L${-s*.1},${s*.35}L${s*.48},${-s*.35}" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/></g>`;}
+
+// ---------- eyes ----------
+function eye(c,mode,rot,sz=1,t=0){
+  const blink=(t%3.7)<0.12?0.15:1;
+  let s=`<g transform="translate(${f1(c.x)} ${f1(c.y)}) rotate(${f1(rot)}) scale(${sz})">`;
+  if(mode==='strain') s+=`<path d="M-14,-12L10,0L-14,12" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>`;
+  else if(mode==='happy') s+=`<path d="M-14,6Q0,-14 14,6" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>`;
+  else if(mode==='surprised') s+=`<ellipse rx="17" ry="${22*blink}" fill="#fff"/><circle cx="2" cy="-2" r="${8*blink}" fill="#111"/>`;
+  else if(mode==='bored') s+=`<ellipse rx="13" ry="10" cy="4" fill="#fff"/><circle cx="4" cy="6" r="6" fill="#111"/><line x1="-17" y1="-2" x2="17" y2="-2" stroke="#141418" stroke-width="9"/>`;
+  else s+=`<ellipse rx="13" ry="${18*blink}" fill="#fff"/><circle cx="4" cy="-4" r="${7*blink}" fill="#111"/>`;
+  return s+'</g>';
+}
