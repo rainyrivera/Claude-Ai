@@ -12,10 +12,10 @@ const SHO=V(2,-372);
 function shoulderOf(p,far){return add(p.hip,rotP(p.lean||0,V(SHO.x+(far?-10:0),SHO.y)));}
 function legAng(p,w){const leg=p[w+'Leg'];if(leg)return {th:leg.th,sh:leg.sh};const Ls=p.Ls||1;const A=p[w+'A'];const K=ik2(p.hip,A,L1B*Ls,L2B*Ls,p[w+'Ks']||1);return {th:angOf(sub(K,p.hip)),sh:angOf(sub(A,K))};}
 function armAngP(p,w){const arm=p[w+'Arm'];if(arm)return {a:arm.a,f:arm.f};const sh=shoulderOf(p,w==='f');const H=p[w+'Hand'];const E=ik2(sh,H,AL1,AL2,p[w+'Es']||-1);return {a:angOf(sub(E,sh)),f:angOf(sub(H,E))};}
-function norm(p){return {hip:p.hip,lean:p.lean||0,bow:p.bow||0,neck:p.neck||0,Ls:p.Ls||1,nLeg:legAng(p,'n'),fLeg:legAng(p,'f'),nArm:armAngP(p,'n'),fArm:armAngP(p,'f')};}
-function pLerp(a,b,k){a=a.nLeg&&a.nArm&&!a.nA?a:norm(a);b=b.nLeg&&b.nArm&&!b.nA?b:norm(b);
+function norm(p){if(p._n)return p;return {_n:1,hip:p.hip,lean:p.lean||0,bow:p.bow||0,neck:p.neck||0,Ls:p.Ls||1,nLeg:legAng(p,'n'),fLeg:legAng(p,'f'),nArm:armAngP(p,'n'),fArm:armAngP(p,'f')};}
+function pLerp(a,b,k){a=norm(a);b=norm(b);
   const L=(x,y)=>({th:lerpA(x.th,y.th,k),sh:lerpA(x.sh,y.sh,k)}),A=(x,y)=>({a:lerpA(x.a,y.a,k),f:lerpA(x.f,y.f,k)});
-  return {hip:lerpV(a.hip,b.hip,k),lean:lerpA(a.lean,b.lean,k),bow:lerp(a.bow,b.bow,k),Ls:lerp(a.Ls,b.Ls,k),nLeg:L(a.nLeg,b.nLeg),fLeg:L(a.fLeg,b.fLeg),nArm:A(a.nArm,b.nArm),fArm:A(a.fArm,b.fArm),neck:lerp(a.neck,b.neck,k)};}
+  return {_n:1,hip:lerpV(a.hip,b.hip,k),lean:lerpA(a.lean,b.lean,k),bow:lerp(a.bow,b.bow,k),Ls:lerp(a.Ls,b.Ls,k),nLeg:L(a.nLeg,b.nLeg),fLeg:L(a.fLeg,b.fLeg),nArm:A(a.nArm,b.nArm),fArm:A(a.fArm,b.fArm),neck:lerp(a.neck,b.neck,k)};}
 // sequence of [t, poseObj, dur]
 function seqPose(keys,t){let cur=norm(keys[0][1]);for(const [tk,P,d] of keys){if(t<tk)break;cur=pLerp(cur,norm(P),ease((t-tk)/(d||0.6)));}return cur;}
 // oscillate between A and B: phase 0 at A
@@ -24,7 +24,7 @@ const repCount=(t,t0,period,max)=>Math.min(max,Math.max(0,Math.floor((t-t0)/peri
 
 // ---------- side body (athletic) ----------
 function body(p,st,t){
-  p=p.nLeg&&p.nArm&&!p.nA?p:norm(p);
+  p=norm(p);
   const Ls=p.Ls,L1=L1B*Ls,L2=L2B*Ls;const hip=p.hip;const lean=p.lean;
   const R=q=>add(hip,rotP(lean,q));const fwd=rotP(lean,V(1,0));
   const leg=(lg,dx)=>{const H=add(hip,V(dx,dx*0.4));const K=add(H,mul(Dv(lg.th),L1));const A=add(K,mul(Dv(lg.sh),L2));const toe=add(A,mul(Dv(lg.sh+90),82));return {H,K,A,toe,th:lg.th,sh:lg.sh};};
@@ -87,6 +87,7 @@ function body(p,st,t){
     tri:{c:add(lerpV(na.sh,na.E,.5),mul(V(-unit(sub(na.E,na.sh)).y,unit(sub(na.E,na.sh)).x),-14)),rx:80,ry:24,r:ang(sub(na.E,na.sh))},
     shoulder:{c:na.sh,rx:50,ry:46,r:0},
     oblique:{c:R(V(0,-150)),rx:40,ry:80,r:lean},
+    knee:{c:nl.K,rx:50,ry:50,r:0},
   };
   for(const k in hl){if(P[k]&&hl[k]>0){const q=P[k];g+=muscle(q.c,q.rx,q.ry,q.r,hl[k],t,hc[k]||'red');}}
   if(st.spark&&P[st.spark.at]) g+=sparks(P[st.spark.at].c,90,t,st.spark.k);
@@ -114,6 +115,8 @@ const ARMS2={
   Y:{e:[V(330,520),V(750,520)],h:[V(372,340),V(708,340)]},
   splank:{e:[V(286,900),V(866,800)],h:[V(414,1045),V(900,830)]},
   sidelie:{e:[V(286,900),V(800,560)],h:[V(414,1045),V(640,470)]},
+  T:{e:[V(230,745),V(850,745)],h:[V(60,750),V(1020,750)]},
+  belly:{e:[V(330,900),V(750,900)],h:[V(500,960),V(580,960)]},
 };
 function fig(st,t){
   const back=st.view==='back';const br=Math.sin(t*2.4)*4;
@@ -128,7 +131,7 @@ function fig(st,t){
   const legG=(hip,kx,ax,sgn)=>{const K=V(kx,1405),A=V(ax,1690);let s=limb(hip,K,148,88,SKIN)+limb(K,A,88,52,SKIN)+ell(V(kx-sgn*4,1505),46,100,sgn*3,SKIN,`stroke="${RIM}" stroke-width="3"`)+ell(V(ax+(back?0:-sgn*12),1718),52,26,0,SKIN,`stroke="${RIM}" stroke-width="3"`);
     s+=gloss(V(hip.x-sgn*14,1250),14,76,0,.22)+`<path d="M${kx+sgn*30},${1330} Q${kx+sgn*48},${1375} ${kx+sgn*20},${1395}" fill="none" stroke="#3a3a44" stroke-width="4" opacity=".9"/>`+gloss(V(kx-sgn*14,1490),10,40,0,.2);return s;};
   const abd=st.legAbd||0;
-  g+=`<g transform="rotate(${f1(-abd)} 476 1105)">${legG(hipL,484,488,1)}</g>`+legG(hipR,596,592,-1);
+  g+=`<g transform="rotate(${f1(st.legRot||0)} 540 1110)"><g transform="rotate(${f1(abd)} 476 1105)">${legG(hipL,484,488,1)}</g>${legG(hipR,596,592,-1)}</g>`;
   const tor=[V(410,722),V(540,712),V(670,722),V(698,764),V(670,860),V(624,960),V(680,1060),V(694,1140),V(540,1172),V(386,1140),V(400,1060),V(456,960),V(410,860),V(382,764)];
   g+=`<path d="${smoothPath(tor)}" fill="${SKIN}" stroke="${RIM}" stroke-width="3"/>`;
   g+=limb(V(540,650),V(540,735),72,88,SKIN);
@@ -158,6 +161,7 @@ function fig(st,t){
   const hl=st.hl||{},col=st.hlColor||{};
   if(hl.glute){g+=muscle(V(484,1122),72,78,0,hl.glute,t,col.glute||'red')+muscle(V(596,1122),72,78,0,hl.glute,t,col.glute||'red');}
   if(hl.gmed){g+=muscle(V(400,1080),40,60,0,hl.gmed,t,col.gmed||'red');}
+  if(hl.gmedR){g+=muscle(V(680,1080),40,60,0,hl.gmedR,t,col.gmedR||col.gmed||'red');}
   if(hl.back) g+=muscle(V(540,975),95,42,0,hl.back,t,col.back||'red');
   if(hl.core) g+=muscle(V(540,968),72,92,0,hl.core,t,col.core||'red');
   if(hl.oblique) g+=muscle(V(452,980),36,80,0,hl.oblique,t,col.oblique||'red')+muscle(V(628,980),36,80,0,hl.oblique,t,col.oblique||'red');
