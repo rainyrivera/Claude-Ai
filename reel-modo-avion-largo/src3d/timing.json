@@ -1,0 +1,8349 @@
+{
+ "dur": 515.28,
+ "phrases": [
+  {
+   "t": "Pones el celular en modo avión para que cargue más rápido…",
+   "s": 0.06,
+   "e": 3.05,
+   "micro": 0
+  },
+  {
+   "t": "¿Pero de verdad funciona, o es otro cuento de internet?",
+   "s": 3.64,
+   "e": 6.88,
+   "micro": 2
+  },
+  {
+   "t": "Hoy lo vamos a poner a prueba.",
+   "s": 7.39,
+   "e": 9.05,
+   "micro": 0
+  },
+  {
+   "t": "Y al final de este video vas a saber exactamente qué hacer para que tu celular cargue más rápido,",
+   "s": 9.5,
+   "e": 14.95,
+   "micro": 2
+  },
+  {
+   "t": "te dure más y no se dañe.",
+   "s": 15.3,
+   "e": 17.0,
+   "micro": 1
+  },
+  {
+   "t": "Pero te adelanto algo:",
+   "s": 17.46,
+   "e": 18.58,
+   "micro": 0
+  },
+  {
+   "t": "el truco que de verdad funciona no es el modo avión.",
+   "s": 18.98,
+   "e": 22.16,
+   "micro": 1
+  },
+  {
+   "t": "Y el error que más daña tu batería, seguramente lo cometes todas las noches.",
+   "s": 22.64,
+   "e": 27.04,
+   "micro": 3
+  },
+  {
+   "t": "Quédate hasta el final, porque te lo voy a explicar paso a paso.",
+   "s": 27.44,
+   "e": 30.54,
+   "micro": 2
+  },
+  {
+   "t": "Empecemos por lo básico.",
+   "s": 31.11,
+   "e": 32.31,
+   "micro": 0
+  },
+  {
+   "t": "¿Qué pasa dentro de tu celular cuando lo conectas al cargador?",
+   "s": 32.85,
+   "e": 35.89,
+   "micro": 1
+  },
+  {
+   "t": "Imagínate que la batería es un tanque de agua,",
+   "s": 36.46,
+   "e": 38.84,
+   "micro": 0
+  },
+  {
+   "t": "y el cargador es la manguera que lo llena.",
+   "s": 39.17,
+   "e": 41.16,
+   "micro": 0
+  },
+  {
+   "t": "Fácil, ¿verdad?",
+   "s": 41.63,
+   "e": 42.26,
+   "micro": 0
+  },
+  {
+   "t": "Pero ese tanque tiene un problema:",
+   "s": 42.73,
+   "e": 44.42,
+   "micro": 1
+  },
+  {
+   "t": "mientras lo llenas,",
+   "s": 44.9,
+   "e": 45.8,
+   "micro": 0
+  },
+  {
+   "t": "tiene una llave abierta por abajo.",
+   "s": 46.06,
+   "e": 47.69,
+   "micro": 0
+  },
+  {
+   "t": "Y por esa llave se va saliendo el agua.",
+   "s": 48.16,
+   "e": 50.26,
+   "micro": 0
+  },
+  {
+   "t": "Esa llave es todo lo que tu celular sigue haciendo mientras carga.",
+   "s": 50.79,
+   "e": 54.49,
+   "micro": 1
+  },
+  {
+   "t": "Aunque tú no lo estés usando, el teléfono está trabajando.",
+   "s": 54.98,
+   "e": 58.18,
+   "micro": 1
+  },
+  {
+   "t": "Está buscando señal con la antena.",
+   "s": 58.62,
+   "e": 60.34,
+   "micro": 0
+  },
+  {
+   "t": "Está conectado al wifi.",
+   "s": 60.62,
+   "e": 61.86,
+   "micro": 1
+  },
+  {
+   "t": "Tiene el bluetooth prendido.",
+   "s": 62.22,
+   "e": 63.46,
+   "micro": 0
+  },
+  {
+   "t": "Está revisando tu ubicación.",
+   "s": 63.83,
+   "e": 65.39,
+   "micro": 0
+  },
+  {
+   "t": "Las aplicaciones se actualizan solas,",
+   "s": 65.92,
+   "e": 67.84,
+   "micro": 0
+  },
+  {
+   "t": "las fotos se suben a la nube,",
+   "s": 68.13,
+   "e": 69.63,
+   "micro": 0
+  },
+  {
+   "t": "te llegan mensajes y notificaciones,",
+   "s": 69.91,
+   "e": 71.85,
+   "micro": 0
+  },
+  {
+   "t": "y la pantalla se enciende cada vez que suena algo.",
+   "s": 72.14,
+   "e": 74.87,
+   "micro": 2
+  },
+  {
+   "t": "Todo eso gasta energía.",
+   "s": 75.36,
+   "e": 77.01,
+   "micro": 0
+  },
+  {
+   "t": "Así que una parte de la energía que entra por el cargador,",
+   "s": 77.46,
+   "e": 80.25,
+   "micro": 0
+  },
+  {
+   "t": "se está saliendo por el otro lado.",
+   "s": 80.54,
+   "e": 82.38,
+   "micro": 0
+  },
+  {
+   "t": "Y aquí es donde entra el famoso modo avión.",
+   "s": 82.84,
+   "e": 85.51,
+   "micro": 1
+  },
+  {
+   "t": "Cuando activas el modo avión, el celular apaga la antena, el wifi y el bluetooth.",
+   "s": 86.08,
+   "e": 90.75,
+   "micro": 5
+  },
+  {
+   "t": "Es como cerrar una buena parte de esa llave de abajo.",
+   "s": 91.3,
+   "e": 93.95,
+   "micro": 0
+  },
+  {
+   "t": "Ya no está buscando señal,",
+   "s": 94.44,
+   "e": 95.75,
+   "micro": 0
+  },
+  {
+   "t": "ya no está recibiendo datos,",
+   "s": 96.14,
+   "e": 97.54,
+   "micro": 0
+  },
+  {
+   "t": "y ya no se despierta cada dos minutos.",
+   "s": 97.81,
+   "e": 100.07,
+   "micro": 2
+  },
+  {
+   "t": "Entonces,",
+   "s": 100.46,
+   "e": 101.1,
+   "micro": 0
+  },
+  {
+   "t": "más energía se queda en la batería.",
+   "s": 101.38,
+   "e": 103.36,
+   "micro": 0
+  },
+  {
+   "t": "¿Eso quiere decir que funciona?",
+   "s": 103.93,
+   "e": 105.41,
+   "micro": 0
+  },
+  {
+   "t": "Sí.",
+   "s": 106.03,
+   "e": 106.3,
+   "micro": 0
+  },
+  {
+   "t": "Funciona.",
+   "s": 106.65,
+   "e": 107.21,
+   "micro": 0
+  },
+  {
+   "t": "De hecho,",
+   "s": 107.64,
+   "e": 108.14,
+   "micro": 0
+  },
+  {
+   "t": "Samsung, en su propia página de consejos,",
+   "s": 108.4,
+   "e": 110.72,
+   "micro": 0
+  },
+  {
+   "t": "recomienda cargar el teléfono en modo avión para aumentar la velocidad de carga.",
+   "s": 111.03,
+   "e": 115.18,
+   "micro": 0
+  },
+  {
+   "t": "Pero aquí viene la parte que nadie te dice.",
+   "s": 115.61,
+   "e": 117.86,
+   "micro": 0
+  },
+  {
+   "t": "¿Cuánto más rápido?",
+   "s": 118.48,
+   "e": 119.63,
+   "micro": 0
+  },
+  {
+   "t": "En las pruebas que han hecho varios medios de tecnología,",
+   "s": 120.26,
+   "e": 122.78,
+   "micro": 0
+  },
+  {
+   "t": "la diferencia está entre cuatro y once minutos.",
+   "s": 123.12,
+   "e": 125.91,
+   "micro": 3
+  },
+  {
+   "t": "Nada más.",
+   "s": 126.3,
+   "e": 127.03,
+   "micro": 0
+  },
+  {
+   "t": "O sea,",
+   "s": 127.44,
+   "e": 127.77,
+   "micro": 0
+  },
+  {
+   "t": "no es que tu celular va a cargar en la mitad del tiempo.",
+   "s": 128.13,
+   "e": 130.65,
+   "micro": 0
+  },
+  {
+   "t": "Es un empujoncito.",
+   "s": 131.1,
+   "e": 132.1,
+   "micro": 1
+  },
+  {
+   "t": "¿Y por qué tan poquito?",
+   "s": 132.65,
+   "e": 133.75,
+   "micro": 0
+  },
+  {
+   "t": "Porque la mayor parte de la energía que entra por el cargador ya va directo a la batería.",
+   "s": 134.3,
+   "e": 138.85,
+   "micro": 1
+  },
+  {
+   "t": "Lo que gastan las antenas y el wifi es pequeño comparado con lo que entra por un buen cargador.",
+   "s": 139.28,
+   "e": 144.29,
+   "micro": 2
+  },
+  {
+   "t": "Y ojo con una cosa:",
+   "s": 144.78,
+   "e": 145.9,
+   "micro": 0
+  },
+  {
+   "t": "en modo avión no te entran llamadas ni mensajes.",
+   "s": 146.33,
+   "e": 149.29,
+   "micro": 2
+  },
+  {
+   "t": "Así que si estás esperando una llamada importante, del trabajo o de tu familia,",
+   "s": 149.66,
+   "e": 153.67,
+   "micro": 1
+  },
+  {
+   "t": "mejor no lo uses.",
+   "s": 154.04,
+   "e": 155.3,
+   "micro": 1
+  },
+  {
+   "t": "Ahora,",
+   "s": 155.6,
+   "e": 155.99,
+   "micro": 0
+  },
+  {
+   "t": "¿quieres el truco que de verdad carga más rápido?",
+   "s": 156.38,
+   "e": 158.97,
+   "micro": 0
+  },
+  {
+   "t": "Apágalo completo.",
+   "s": 159.46,
+   "e": 160.87,
+   "micro": 1
+  },
+  {
+   "t": "Así como lo oyes.",
+   "s": 161.35,
+   "e": 162.32,
+   "micro": 0
+  },
+  {
+   "t": "Cuando el celular está apagado, no hay pantalla, no hay aplicaciones, no hay antenas, no hay nada.",
+   "s": 162.73,
+   "e": 168.63,
+   "micro": 2
+  },
+  {
+   "t": "La llave de abajo se cierra por completo,",
+   "s": 169.04,
+   "e": 171.34,
+   "micro": 1
+  },
+  {
+   "t": "y toda la energía del cargador va a la batería.",
+   "s": 171.67,
+   "e": 174.23,
+   "micro": 0
+  },
+  {
+   "t": "Por eso, si vas a salir en veinte minutos y tienes la batería en rojo,",
+   "s": 174.65,
+   "e": 178.29,
+   "micro": 1
+  },
+  {
+   "t": "no pierdas tiempo:",
+   "s": 178.61,
+   "e": 179.64,
+   "micro": 0
+  },
+  {
+   "t": "apágalo y conéctalo.",
+   "s": 180.03,
+   "e": 181.45,
+   "micro": 2
+  },
+  {
+   "t": "Ese es el truco de emergencia que sí se nota.",
+   "s": 181.83,
+   "e": 184.41,
+   "micro": 1
+  },
+  {
+   "t": "Si hasta aquí ya aprendiste algo nuevo, suscríbete, que en este canal te explico cómo funcionan las cosas que usas todos los días.",
+   "s": 184.97,
+   "e": 192.0,
+   "micro": 4
+  },
+  {
+   "t": "Y quédate, porque ahora viene lo más interesante.",
+   "s": 192.35,
+   "e": 195.07,
+   "micro": 2
+  },
+  {
+   "t": "¿Te has fijado que tu celular carga rapidísimo al principio, y después, cuando pasa del ochenta por ciento, se pone lentísimo?",
+   "s": 195.73,
+   "e": 202.9,
+   "micro": 2
+  },
+  {
+   "t": "No es tu imaginación.",
+   "s": 203.36,
+   "e": 204.69,
+   "micro": 0
+  },
+  {
+   "t": "Y no,",
+   "s": 205.0,
+   "e": 205.33,
+   "micro": 0
+  },
+  {
+   "t": "tu celular no está dañado.",
+   "s": 205.61,
+   "e": 207.2,
+   "micro": 0
+  },
+  {
+   "t": "Apple lo explica así:",
+   "s": 207.66,
+   "e": 208.83,
+   "micro": 0
+  },
+  {
+   "t": "su batería se carga rápido hasta llegar al ochenta por ciento,",
+   "s": 209.3,
+   "e": 212.49,
+   "micro": 1
+  },
+  {
+   "t": "y después cambia a una carga más lenta.",
+   "s": 212.88,
+   "e": 215.35,
+   "micro": 2
+  },
+  {
+   "t": "Y la mayoría de los celulares hace algo parecido.",
+   "s": 215.73,
+   "e": 218.26,
+   "micro": 0
+  },
+  {
+   "t": "Piénsalo como cuando llenas un vaso de agua.",
+   "s": 218.7,
+   "e": 220.77,
+   "micro": 0
+  },
+  {
+   "t": "Al principio echas rápido, sin miedo.",
+   "s": 221.18,
+   "e": 223.39,
+   "micro": 1
+  },
+  {
+   "t": "Pero cuando el vaso está casi lleno, echas despacito para que no se derrame.",
+   "s": 223.77,
+   "e": 227.89,
+   "micro": 2
+  },
+  {
+   "t": "Con la batería pasa algo parecido.",
+   "s": 228.38,
+   "e": 230.16,
+   "micro": 0
+  },
+  {
+   "t": "Cuando está casi llena, forzarla con mucha corriente la estresa.",
+   "s": 230.58,
+   "e": 234.31,
+   "micro": 2
+  },
+  {
+   "t": "Entonces el celular baja la velocidad a propósito para protegerla.",
+   "s": 234.66,
+   "e": 238.29,
+   "micro": 0
+  },
+  {
+   "t": "Por eso, cuando tengas prisa, recuerda esto:",
+   "s": 238.75,
+   "e": 241.35,
+   "micro": 2
+  },
+  {
+   "t": "de cero a ochenta es la parte rápida.",
+   "s": 241.82,
+   "e": 244.11,
+   "micro": 0
+  },
+  {
+   "t": "El último veinte por ciento es el que se tarda.",
+   "s": 244.51,
+   "e": 247.02,
+   "micro": 0
+  },
+  {
+   "t": "Muchas veces, sacarlo en ochenta es suficiente para salir del apuro.",
+   "s": 247.46,
+   "e": 251.18,
+   "micro": 2
+  },
+  {
+   "t": "Y aquí llegamos al enemigo número uno de tu batería:",
+   "s": 251.78,
+   "e": 254.71,
+   "micro": 0
+  },
+  {
+   "t": "el calor.",
+   "s": 255.13,
+   "e": 255.83,
+   "micro": 0
+  },
+  {
+   "t": "Cuando tu celular se calienta, se defiende.",
+   "s": 256.34,
+   "e": 258.56,
+   "micro": 1
+  },
+  {
+   "t": "¿Cómo?",
+   "s": 259.07,
+   "e": 259.35,
+   "micro": 0
+  },
+  {
+   "t": "Bajando la velocidad de carga.",
+   "s": 259.75,
+   "e": 261.45,
+   "micro": 0
+  },
+  {
+   "t": "Apple incluso explica que su software puede limitar la carga por encima del ochenta por ciento cuando la batería pasa de la temperatura recomendada.",
+   "s": 261.91,
+   "e": 269.72,
+   "micro": 4
+  },
+  {
+   "t": "Entonces, mira estos errores tan comunes:",
+   "s": 270.14,
+   "e": 272.72,
+   "micro": 3
+  },
+  {
+   "t": "cargarlo debajo del sol,",
+   "s": 273.15,
+   "e": 274.51,
+   "micro": 0
+  },
+  {
+   "t": "dentro del carro caliente,",
+   "s": 274.9,
+   "e": 276.28,
+   "micro": 0
+  },
+  {
+   "t": "debajo de la almohada,",
+   "s": 276.7,
+   "e": 277.79,
+   "micro": 0
+  },
+  {
+   "t": "o jugando y viendo videos mientras carga.",
+   "s": 278.06,
+   "e": 280.25,
+   "micro": 0
+  },
+  {
+   "t": "Todo eso lo calienta.",
+   "s": 280.72,
+   "e": 281.98,
+   "micro": 1
+  },
+  {
+   "t": "Y mientras más caliente está, más lento carga.",
+   "s": 282.37,
+   "e": 285.21,
+   "micro": 1
+  },
+  {
+   "t": "Pero el calor no solo lo hace cargar lento.",
+   "s": 285.68,
+   "e": 287.88,
+   "micro": 1
+  },
+  {
+   "t": "También lo envejece.",
+   "s": 288.35,
+   "e": 289.5,
+   "micro": 0
+  },
+  {
+   "t": "Los expertos explican que las baterías se gastan más rápido por dos cosas:",
+   "s": 290.01,
+   "e": 294.16,
+   "micro": 2
+  },
+  {
+   "t": "el calor y el voltaje alto.",
+   "s": 294.54,
+   "e": 296.32,
+   "micro": 2
+  },
+  {
+   "t": "Por eso, una batería que siempre se calienta, a los meses ya no te dura igual.",
+   "s": 296.81,
+   "e": 301.2,
+   "micro": 2
+  },
+  {
+   "t": "Y fíjate que aquí el modo avión vuelve a ayudarte:",
+   "s": 301.77,
+   "e": 304.32,
+   "micro": 1
+  },
+  {
+   "t": "como apaga las antenas, el celular trabaja menos, y se calienta menos. Un consejo extra:",
+   "s": 304.79,
+   "e": 310.19,
+   "micro": 4
+  },
+  {
+   "t": "si notas que se pone muy caliente mientras carga,",
+   "s": 310.68,
+   "e": 313.33,
+   "micro": 0
+  },
+  {
+   "t": "quítale el forro y ponlo en un lugar fresco.",
+   "s": 313.75,
+   "e": 316.17,
+   "micro": 0
+  },
+  {
+   "t": "Ahora,",
+   "s": 316.97,
+   "e": 317.32,
+   "micro": 0
+  },
+  {
+   "t": "de nada sirve el modo avión si el cargador es malo.",
+   "s": 317.63,
+   "e": 320.38,
+   "micro": 0
+  },
+  {
+   "t": "Y aquí te voy a contar algo que te va a dar miedo.",
+   "s": 321.01,
+   "e": 323.53,
+   "micro": 0
+  },
+  {
+   "t": "En Inglaterra probaron sesenta y cuatro cargadores genéricos para iPhone.",
+   "s": 324.16,
+   "e": 328.12,
+   "micro": 1
+  },
+  {
+   "t": "¿Sabes cuántos pasaron las pruebas de seguridad?",
+   "s": 328.79,
+   "e": 331.04,
+   "micro": 1
+  },
+  {
+   "t": "Uno.",
+   "s": 331.75,
+   "e": 332.08,
+   "micro": 0
+  },
+  {
+   "t": "Solo uno.",
+   "s": 332.51,
+   "e": 333.43,
+   "micro": 1
+  },
+  {
+   "t": "Y en otra prueba con cuatrocientos cargadores falsos comprados por internet,",
+   "s": 334.14,
+   "e": 338.04,
+   "micro": 0
+  },
+  {
+   "t": "solo tres tenían el aislamiento suficiente para proteger a la persona que los usa.",
+   "s": 338.47,
+   "e": 342.7,
+   "micro": 1
+  },
+  {
+   "t": "¿Qué quiere decir eso?",
+   "s": 343.37,
+   "e": 344.19,
+   "micro": 0
+  },
+  {
+   "t": "Que por fuera se ven iguales al original,",
+   "s": 344.81,
+   "e": 346.83,
+   "micro": 0
+  },
+  {
+   "t": "pero por dentro les faltan piezas.",
+   "s": 347.34,
+   "e": 349.48,
+   "micro": 2
+  },
+  {
+   "t": "Y un cargador así no solo carga lento.",
+   "s": 350.08,
+   "e": 352.26,
+   "micro": 0
+  },
+  {
+   "t": "Puede calentarse demasiado,",
+   "s": 352.81,
+   "e": 354.26,
+   "micro": 0
+  },
+  {
+   "t": "dañar tu celular,",
+   "s": 354.6,
+   "e": 355.71,
+   "micro": 0
+  },
+  {
+   "t": "darte corriente,",
+   "s": 356.02,
+   "e": 357.05,
+   "micro": 0
+  },
+  {
+   "t": "o hasta provocar un incendio.",
+   "s": 357.32,
+   "e": 358.85,
+   "micro": 0
+  },
+  {
+   "t": "Y el cable también importa.",
+   "s": 359.52,
+   "e": 361.16,
+   "micro": 2
+  },
+  {
+   "t": "Los cables baratos, sin marca y sin certificación,",
+   "s": 361.69,
+   "e": 364.7,
+   "micro": 1
+  },
+  {
+   "t": "pueden calentarse y hasta quemar el puerto de tu teléfono.",
+   "s": 365.02,
+   "e": 368.05,
+   "micro": 1
+  },
+  {
+   "t": "No tiene que ser el más caro.",
+   "s": 368.63,
+   "e": 369.86,
+   "micro": 0
+  },
+  {
+   "t": "Pero sí original,",
+   "s": 370.32,
+   "e": 371.49,
+   "micro": 0
+  },
+  {
+   "t": "o de una marca certificada.",
+   "s": 371.84,
+   "e": 373.33,
+   "micro": 0
+  },
+  {
+   "t": "Y conéctalo directo a la pared,",
+   "s": 373.92,
+   "e": 375.44,
+   "micro": 2
+  },
+  {
+   "t": "no a una regleta llena de cosas ni al puerto de la computadora,",
+   "s": 375.86,
+   "e": 379.21,
+   "micro": 0
+  },
+  {
+   "t": "que normalmente da mucha menos potencia.",
+   "s": 379.56,
+   "e": 381.81,
+   "micro": 0
+  },
+  {
+   "t": "¿Te acuerdas del error que te dije al principio?",
+   "s": 382.61,
+   "e": 384.64,
+   "micro": 0
+  },
+  {
+   "t": "El que seguramente cometes todas las noches.",
+   "s": 385.03,
+   "e": 387.43,
+   "micro": 1
+  },
+  {
+   "t": "Es este:",
+   "s": 387.9,
+   "e": 388.38,
+   "micro": 0
+  },
+  {
+   "t": "dejar el celular cargando toda la noche al cien por ciento.",
+   "s": 388.9,
+   "e": 392.41,
+   "micro": 2
+  },
+  {
+   "t": "Tranquilo, tu celular no va a explotar por eso.",
+   "s": 393.03,
+   "e": 395.78,
+   "micro": 1
+  },
+  {
+   "t": "Las baterías modernas tienen un circuito que corta la carga cuando se llena.",
+   "s": 396.32,
+   "e": 400.14,
+   "micro": 0
+  },
+  {
+   "t": "El problema es otro.",
+   "s": 400.72,
+   "e": 401.79,
+   "micro": 1
+  },
+  {
+   "t": "Pasar muchas horas pegado entre el ochenta y el cien por ciento hace que la batería envejezca más rápido.",
+   "s": 402.32,
+   "e": 405.63,
+   "micro": 0
+  },
+  {
+   "t": "Por eso los celulares nuevos traen una función que se llama carga optimizada.",
+   "s": 405.93,
+   "e": 408.14,
+   "micro": 1
+  },
+  {
+   "t": "El iPhone,",
+   "s": 408.75,
+   "e": 412.94,
+   "micro": 2
+  },
+  {
+   "t": "por ejemplo,",
+   "s": 413.51,
+   "e": 414.69,
+   "micro": 0
+  },
+  {
+   "t": "aprende tu rutina,",
+   "s": 414.99,
+   "e": 416.03,
+   "micro": 0
+  },
+  {
+   "t": "se queda esperando en el ochenta por ciento,",
+   "s": 416.37,
+   "e": 418.44,
+   "micro": 0
+  },
+  {
+   "t": "y termina de cargar justo antes de que te levantes.",
+   "s": 418.78,
+   "e": 421.48,
+   "micro": 2
+  },
+  {
+   "t": "Muchos Android tienen opciones parecidas para proteger la batería.",
+   "s": 422.05,
+   "e": 425.35,
+   "micro": 1
+  },
+  {
+   "t": "Búscala en los ajustes de batería y actívala.",
+   "s": 425.89,
+   "e": 428.34,
+   "micro": 1
+  },
+  {
+   "t": "Es gratis, y tu batería te lo va a agradecer.",
+   "s": 428.83,
+   "e": 431.4,
+   "micro": 2
+  },
+  {
+   "t": "Y ya que estamos, otro mito:",
+   "s": 432.16,
+   "e": 433.79,
+   "micro": 2
+  },
+  {
+   "t": "¿hay que dejar que la batería se descargue completa antes de cargarla?",
+   "s": 434.38,
+   "e": 437.73,
+   "micro": 0
+  },
+  {
+   "t": "No.",
+   "s": 438.31,
+   "e": 438.59,
+   "micro": 0
+  },
+  {
+   "t": "Eso era con las baterías viejas.",
+   "s": 439.09,
+   "e": 440.88,
+   "micro": 1
+  },
+  {
+   "t": "Con las de ahora,",
+   "s": 441.36,
+   "e": 442.05,
+   "micro": 0
+  },
+  {
+   "t": "Apple lo dice claro:",
+   "s": 442.35,
+   "e": 443.39,
+   "micro": 0
+  },
+  {
+   "t": "puedes cargarla cuando quieras, sin esperar a que se descargue.",
+   "s": 443.91,
+   "e": 447.18,
+   "micro": 1
+  },
+  {
+   "t": "Entonces, vamos a resumir todo en cinco pasos, para que no se te olvide.",
+   "s": 447.9,
+   "e": 452.05,
+   "micro": 3
+  },
+  {
+   "t": "Uno:",
+   "s": 452.72,
+   "e": 453.0,
+   "micro": 0
+  },
+  {
+   "t": "si tienes prisa, ponlo en modo avión.",
+   "s": 453.45,
+   "e": 455.57,
+   "micro": 1
+  },
+  {
+   "t": "Ganas unos minutos.",
+   "s": 456.04,
+   "e": 457.24,
+   "micro": 1
+  },
+  {
+   "t": "Dos:",
+   "s": 457.82,
+   "e": 458.23,
+   "micro": 0
+  },
+  {
+   "t": "si tienes muchísima prisa, apágalo completo.",
+   "s": 458.63,
+   "e": 461.49,
+   "micro": 2
+  },
+  {
+   "t": "Ese es el truco que más se nota.",
+   "s": 461.98,
+   "e": 463.81,
+   "micro": 1
+  },
+  {
+   "t": "Tres:",
+   "s": 464.41,
+   "e": 464.77,
+   "micro": 0
+  },
+  {
+   "t": "usa el cargador original o uno certificado,",
+   "s": 465.2,
+   "e": 467.7,
+   "micro": 0
+  },
+  {
+   "t": "y conéctalo directo a la pared.",
+   "s": 468.04,
+   "e": 469.58,
+   "micro": 2
+  },
+  {
+   "t": "Cuatro:",
+   "s": 470.31,
+   "e": 470.66,
+   "micro": 0
+  },
+  {
+   "t": "aléjalo del calor.",
+   "s": 471.12,
+   "e": 472.19,
+   "micro": 0
+  },
+  {
+   "t": "Ni al sol, ni debajo de la almohada, ni jugando mientras carga.",
+   "s": 472.53,
+   "e": 476.31,
+   "micro": 2
+  },
+  {
+   "t": "Cinco:",
+   "s": 476.91,
+   "e": 477.41,
+   "micro": 0
+  },
+  {
+   "t": "activa la carga optimizada, y no te obsesiones con el cien por ciento.",
+   "s": 477.88,
+   "e": 481.73,
+   "micro": 2
+  },
+  {
+   "t": "Y recuerda:",
+   "s": 482.12,
+   "e": 482.73,
+   "micro": 0
+  },
+  {
+   "t": "de cero a ochenta carga rápido,",
+   "s": 483.13,
+   "e": 485.08,
+   "micro": 0
+  },
+  {
+   "t": "y el resto va lento a propósito, para cuidar tu batería.",
+   "s": 485.35,
+   "e": 488.56,
+   "micro": 1
+  },
+  {
+   "t": "Así que el modo avión no es magia…",
+   "s": 489.07,
+   "e": 490.94,
+   "micro": 0
+  },
+  {
+   "t": "pero tampoco es mentira.",
+   "s": 491.33,
+   "e": 492.72,
+   "micro": 0
+  },
+  {
+   "t": "Cuando estás apurado, esos minutos cuentan.",
+   "s": 493.12,
+   "e": 495.72,
+   "micro": 1
+  },
+  {
+   "t": "Y ahora ya sabes los trucos que de verdad hacen la diferencia.",
+   "s": 496.26,
+   "e": 499.49,
+   "micro": 0
+  },
+  {
+   "t": "Dime en los comentarios:",
+   "s": 499.94,
+   "e": 501.03,
+   "micro": 0
+  },
+  {
+   "t": "¿tú cargas el celular en modo avión?",
+   "s": 501.37,
+   "e": 503.01,
+   "micro": 0
+  },
+  {
+   "t": "Pon \"sí\" o \"nunca\".",
+   "s": 503.4,
+   "e": 504.77,
+   "micro": 1
+  },
+  {
+   "t": "Y cuéntame también:",
+   "s": 505.15,
+   "e": 506.07,
+   "micro": 0
+  },
+  {
+   "t": "¿cuánto te dura la batería a ti en un día normal?",
+   "s": 506.41,
+   "e": 508.84,
+   "micro": 0
+  },
+  {
+   "t": "Te leo.",
+   "s": 509.31,
+   "e": 509.73,
+   "micro": 0
+  },
+  {
+   "t": "Y si te sirvió, compártelo con esa persona que siempre anda con el celular en dos por ciento.",
+   "s": 510.09,
+   "e": 515.04,
+   "micro": 2
+  }
+ ],
+ "words": [
+  {
+   "w": "Pones",
+   "s": 0.06,
+   "e": 0.346
+  },
+  {
+   "w": "el",
+   "s": 0.346,
+   "e": 0.518
+  },
+  {
+   "w": "celular",
+   "s": 0.518,
+   "e": 0.919
+  },
+  {
+   "w": "en",
+   "s": 0.919,
+   "e": 1.091
+  },
+  {
+   "w": "modo",
+   "s": 1.091,
+   "e": 1.377
+  },
+  {
+   "w": "avión",
+   "s": 1.377,
+   "e": 1.664
+  },
+  {
+   "w": "para",
+   "s": 1.664,
+   "e": 1.95
+  },
+  {
+   "w": "que",
+   "s": 1.95,
+   "e": 2.122
+  },
+  {
+   "w": "cargue",
+   "s": 2.122,
+   "e": 2.408
+  },
+  {
+   "w": "más",
+   "s": 2.408,
+   "e": 2.58
+  },
+  {
+   "w": "rápido…",
+   "s": 2.58,
+   "e": 3.05
+  },
+  {
+   "w": "¿Pero",
+   "s": 3.64,
+   "e": 5.14
+  },
+  {
+   "w": "de",
+   "s": 2.4,
+   "e": 2.71
+  },
+  {
+   "w": "verdad",
+   "s": 2.71,
+   "e": 3.226
+  },
+  {
+   "w": "funciona,",
+   "s": 3.226,
+   "e": 4.072
+  },
+  {
+   "w": "o",
+   "s": 4.072,
+   "e": 4.382
+  },
+  {
+   "w": "es",
+   "s": 4.382,
+   "e": 4.692
+  },
+  {
+   "w": "otro",
+   "s": 4.692,
+   "e": 5.208
+  },
+  {
+   "w": "cuento",
+   "s": 5.208,
+   "e": 5.724
+  },
+  {
+   "w": "de",
+   "s": 5.724,
+   "e": 6.034
+  },
+  {
+   "w": "internet?",
+   "s": 6.034,
+   "e": 6.88
+  },
+  {
+   "w": "Hoy",
+   "s": 7.39,
+   "e": 7.567
+  },
+  {
+   "w": "lo",
+   "s": 7.567,
+   "e": 7.743
+  },
+  {
+   "w": "vamos",
+   "s": 7.743,
+   "e": 8.038
+  },
+  {
+   "w": "a",
+   "s": 8.038,
+   "e": 8.214
+  },
+  {
+   "w": "poner",
+   "s": 8.214,
+   "e": 8.508
+  },
+  {
+   "w": "a",
+   "s": 8.508,
+   "e": 8.685
+  },
+  {
+   "w": "prueba.",
+   "s": 8.685,
+   "e": 9.05
+  },
+  {
+   "w": "Y",
+   "s": 9.5,
+   "e": 9.681
+  },
+  {
+   "w": "al",
+   "s": 9.681,
+   "e": 9.863
+  },
+  {
+   "w": "final",
+   "s": 9.863,
+   "e": 10.165
+  },
+  {
+   "w": "de",
+   "s": 10.165,
+   "e": 10.346
+  },
+  {
+   "w": "este",
+   "s": 10.346,
+   "e": 10.648
+  },
+  {
+   "w": "video",
+   "s": 10.648,
+   "e": 11.071
+  },
+  {
+   "w": "vas",
+   "s": 11.071,
+   "e": 11.252
+  },
+  {
+   "w": "a",
+   "s": 11.252,
+   "e": 11.433
+  },
+  {
+   "w": "saber",
+   "s": 11.433,
+   "e": 11.736
+  },
+  {
+   "w": "exactamente",
+   "s": 11.736,
+   "e": 12.4
+  },
+  {
+   "w": "qué",
+   "s": 12.4,
+   "e": 12.581
+  },
+  {
+   "w": "hacer",
+   "s": 12.581,
+   "e": 12.884
+  },
+  {
+   "w": "para",
+   "s": 12.884,
+   "e": 13.186
+  },
+  {
+   "w": "que",
+   "s": 13.186,
+   "e": 13.367
+  },
+  {
+   "w": "tu",
+   "s": 13.367,
+   "e": 13.548
+  },
+  {
+   "w": "celular",
+   "s": 13.548,
+   "e": 13.971
+  },
+  {
+   "w": "cargue",
+   "s": 13.971,
+   "e": 14.273
+  },
+  {
+   "w": "más",
+   "s": 14.273,
+   "e": 14.455
+  },
+  {
+   "w": "rápido,",
+   "s": 14.455,
+   "e": 14.95
+  },
+  {
+   "w": "te",
+   "s": 15.3,
+   "e": 15.495
+  },
+  {
+   "w": "dure",
+   "s": 15.495,
+   "e": 15.819
+  },
+  {
+   "w": "más",
+   "s": 15.819,
+   "e": 16.014
+  },
+  {
+   "w": "y",
+   "s": 16.014,
+   "e": 16.208
+  },
+  {
+   "w": "no",
+   "s": 16.208,
+   "e": 16.403
+  },
+  {
+   "w": "se",
+   "s": 16.403,
+   "e": 16.598
+  },
+  {
+   "w": "dañe.",
+   "s": 16.598,
+   "e": 17.0
+  },
+  {
+   "w": "Pero",
+   "s": 17.46,
+   "e": 17.701
+  },
+  {
+   "w": "te",
+   "s": 17.701,
+   "e": 17.846
+  },
+  {
+   "w": "adelanto",
+   "s": 17.846,
+   "e": 18.281
+  },
+  {
+   "w": "algo:",
+   "s": 18.281,
+   "e": 18.58
+  },
+  {
+   "w": "el",
+   "s": 18.98,
+   "e": 19.186
+  },
+  {
+   "w": "truco",
+   "s": 19.186,
+   "e": 19.531
+  },
+  {
+   "w": "que",
+   "s": 19.531,
+   "e": 19.737
+  },
+  {
+   "w": "de",
+   "s": 19.737,
+   "e": 19.944
+  },
+  {
+   "w": "verdad",
+   "s": 19.944,
+   "e": 20.288
+  },
+  {
+   "w": "funciona",
+   "s": 20.288,
+   "e": 20.77
+  },
+  {
+   "w": "no",
+   "s": 20.77,
+   "e": 20.976
+  },
+  {
+   "w": "es",
+   "s": 20.976,
+   "e": 21.183
+  },
+  {
+   "w": "el",
+   "s": 21.183,
+   "e": 21.389
+  },
+  {
+   "w": "modo",
+   "s": 21.389,
+   "e": 21.733
+  },
+  {
+   "w": "avión.",
+   "s": 21.733,
+   "e": 22.16
+  },
+  {
+   "w": "Y",
+   "s": 22.64,
+   "e": 22.828
+  },
+  {
+   "w": "el",
+   "s": 22.828,
+   "e": 23.015
+  },
+  {
+   "w": "error",
+   "s": 23.015,
+   "e": 23.328
+  },
+  {
+   "w": "que",
+   "s": 23.328,
+   "e": 23.515
+  },
+  {
+   "w": "más",
+   "s": 23.515,
+   "e": 23.703
+  },
+  {
+   "w": "daña",
+   "s": 23.703,
+   "e": 24.015
+  },
+  {
+   "w": "tu",
+   "s": 24.015,
+   "e": 24.203
+  },
+  {
+   "w": "batería,",
+   "s": 24.203,
+   "e": 24.84
+  },
+  {
+   "w": "seguramente",
+   "s": 24.84,
+   "e": 25.527
+  },
+  {
+   "w": "lo",
+   "s": 25.527,
+   "e": 25.715
+  },
+  {
+   "w": "cometes",
+   "s": 25.715,
+   "e": 26.152
+  },
+  {
+   "w": "todas",
+   "s": 26.152,
+   "e": 26.465
+  },
+  {
+   "w": "las",
+   "s": 26.465,
+   "e": 26.652
+  },
+  {
+   "w": "noches.",
+   "s": 26.652,
+   "e": 27.04
+  },
+  {
+   "w": "Quédate",
+   "s": 27.44,
+   "e": 27.805
+  },
+  {
+   "w": "hasta",
+   "s": 27.805,
+   "e": 28.066
+  },
+  {
+   "w": "el",
+   "s": 28.066,
+   "e": 28.223
+  },
+  {
+   "w": "final,",
+   "s": 28.223,
+   "e": 28.546
+  },
+  {
+   "w": "porque",
+   "s": 28.546,
+   "e": 28.807
+  },
+  {
+   "w": "te",
+   "s": 28.807,
+   "e": 28.964
+  },
+  {
+   "w": "lo",
+   "s": 28.964,
+   "e": 29.12
+  },
+  {
+   "w": "voy",
+   "s": 29.12,
+   "e": 29.277
+  },
+  {
+   "w": "a",
+   "s": 29.277,
+   "e": 29.434
+  },
+  {
+   "w": "explicar",
+   "s": 29.434,
+   "e": 29.799
+  },
+  {
+   "w": "paso",
+   "s": 29.799,
+   "e": 30.06
+  },
+  {
+   "w": "a",
+   "s": 30.06,
+   "e": 30.216
+  },
+  {
+   "w": "paso.",
+   "s": 30.216,
+   "e": 30.54
+  },
+  {
+   "w": "Empecemos",
+   "s": 31.11,
+   "e": 31.576
+  },
+  {
+   "w": "por",
+   "s": 31.576,
+   "e": 31.731
+  },
+  {
+   "w": "lo",
+   "s": 31.731,
+   "e": 31.886
+  },
+  {
+   "w": "básico.",
+   "s": 31.886,
+   "e": 32.31
+  },
+  {
+   "w": "¿Qué",
+   "s": 32.85,
+   "e": 33.025
+  },
+  {
+   "w": "pasa",
+   "s": 33.025,
+   "e": 33.316
+  },
+  {
+   "w": "dentro",
+   "s": 33.316,
+   "e": 33.607
+  },
+  {
+   "w": "de",
+   "s": 33.607,
+   "e": 33.782
+  },
+  {
+   "w": "tu",
+   "s": 33.782,
+   "e": 33.957
+  },
+  {
+   "w": "celular",
+   "s": 33.957,
+   "e": 34.364
+  },
+  {
+   "w": "cuando",
+   "s": 34.364,
+   "e": 34.655
+  },
+  {
+   "w": "lo",
+   "s": 34.655,
+   "e": 34.83
+  },
+  {
+   "w": "conectas",
+   "s": 34.83,
+   "e": 35.238
+  },
+  {
+   "w": "al",
+   "s": 35.238,
+   "e": 35.412
+  },
+  {
+   "w": "cargador?",
+   "s": 35.412,
+   "e": 35.89
+  },
+  {
+   "w": "Imagínate",
+   "s": 36.46,
+   "e": 37.027
+  },
+  {
+   "w": "que",
+   "s": 37.027,
+   "e": 37.181
+  },
+  {
+   "w": "la",
+   "s": 37.181,
+   "e": 37.336
+  },
+  {
+   "w": "batería",
+   "s": 37.336,
+   "e": 37.799
+  },
+  {
+   "w": "es",
+   "s": 37.799,
+   "e": 37.954
+  },
+  {
+   "w": "un",
+   "s": 37.954,
+   "e": 38.108
+  },
+  {
+   "w": "tanque",
+   "s": 38.108,
+   "e": 38.366
+  },
+  {
+   "w": "de",
+   "s": 38.366,
+   "e": 38.521
+  },
+  {
+   "w": "agua,",
+   "s": 38.521,
+   "e": 38.84
+  },
+  {
+   "w": "y",
+   "s": 39.17,
+   "e": 39.326
+  },
+  {
+   "w": "el",
+   "s": 39.326,
+   "e": 39.483
+  },
+  {
+   "w": "cargador",
+   "s": 39.483,
+   "e": 39.847
+  },
+  {
+   "w": "es",
+   "s": 39.847,
+   "e": 40.004
+  },
+  {
+   "w": "la",
+   "s": 40.004,
+   "e": 40.16
+  },
+  {
+   "w": "manguera",
+   "s": 40.16,
+   "e": 40.524
+  },
+  {
+   "w": "que",
+   "s": 40.524,
+   "e": 40.681
+  },
+  {
+   "w": "lo",
+   "s": 40.681,
+   "e": 40.837
+  },
+  {
+   "w": "llena.",
+   "s": 40.837,
+   "e": 41.16
+  },
+  {
+   "w": "Fácil,",
+   "s": 41.63,
+   "e": 41.945
+  },
+  {
+   "w": "¿verdad?",
+   "s": 41.945,
+   "e": 42.26
+  },
+  {
+   "w": "Pero",
+   "s": 42.73,
+   "e": 43.001
+  },
+  {
+   "w": "ese",
+   "s": 43.001,
+   "e": 43.272
+  },
+  {
+   "w": "tanque",
+   "s": 43.272,
+   "e": 43.542
+  },
+  {
+   "w": "tiene",
+   "s": 43.542,
+   "e": 43.813
+  },
+  {
+   "w": "un",
+   "s": 43.813,
+   "e": 43.976
+  },
+  {
+   "w": "problema:",
+   "s": 43.976,
+   "e": 44.42
+  },
+  {
+   "w": "mientras",
+   "s": 44.9,
+   "e": 45.217
+  },
+  {
+   "w": "lo",
+   "s": 45.217,
+   "e": 45.407
+  },
+  {
+   "w": "llenas,",
+   "s": 45.407,
+   "e": 45.8
+  },
+  {
+   "w": "tiene",
+   "s": 46.06,
+   "e": 46.305
+  },
+  {
+   "w": "una",
+   "s": 46.305,
+   "e": 46.551
+  },
+  {
+   "w": "llave",
+   "s": 46.551,
+   "e": 46.796
+  },
+  {
+   "w": "abierta",
+   "s": 46.796,
+   "e": 47.14
+  },
+  {
+   "w": "por",
+   "s": 47.14,
+   "e": 47.287
+  },
+  {
+   "w": "abajo.",
+   "s": 47.287,
+   "e": 47.69
+  },
+  {
+   "w": "Y",
+   "s": 48.16,
+   "e": 48.325
+  },
+  {
+   "w": "por",
+   "s": 48.325,
+   "e": 48.49
+  },
+  {
+   "w": "esa",
+   "s": 48.49,
+   "e": 48.765
+  },
+  {
+   "w": "llave",
+   "s": 48.765,
+   "e": 49.04
+  },
+  {
+   "w": "se",
+   "s": 49.04,
+   "e": 49.205
+  },
+  {
+   "w": "va",
+   "s": 49.205,
+   "e": 49.369
+  },
+  {
+   "w": "saliendo",
+   "s": 49.369,
+   "e": 49.754
+  },
+  {
+   "w": "el",
+   "s": 49.754,
+   "e": 49.919
+  },
+  {
+   "w": "agua.",
+   "s": 49.919,
+   "e": 50.26
+  },
+  {
+   "w": "Esa",
+   "s": 50.79,
+   "e": 51.113
+  },
+  {
+   "w": "llave",
+   "s": 51.113,
+   "e": 51.437
+  },
+  {
+   "w": "es",
+   "s": 51.437,
+   "e": 51.631
+  },
+  {
+   "w": "todo",
+   "s": 51.631,
+   "e": 51.954
+  },
+  {
+   "w": "lo",
+   "s": 51.954,
+   "e": 52.148
+  },
+  {
+   "w": "que",
+   "s": 52.148,
+   "e": 52.342
+  },
+  {
+   "w": "tu",
+   "s": 52.342,
+   "e": 52.537
+  },
+  {
+   "w": "celular",
+   "s": 52.537,
+   "e": 52.989
+  },
+  {
+   "w": "sigue",
+   "s": 52.989,
+   "e": 53.313
+  },
+  {
+   "w": "haciendo",
+   "s": 53.313,
+   "e": 53.766
+  },
+  {
+   "w": "mientras",
+   "s": 53.766,
+   "e": 54.089
+  },
+  {
+   "w": "carga.",
+   "s": 54.089,
+   "e": 54.49
+  },
+  {
+   "w": "Aunque",
+   "s": 54.98,
+   "e": 55.274
+  },
+  {
+   "w": "tú",
+   "s": 55.274,
+   "e": 55.451
+  },
+  {
+   "w": "no",
+   "s": 55.451,
+   "e": 55.627
+  },
+  {
+   "w": "lo",
+   "s": 55.627,
+   "e": 55.804
+  },
+  {
+   "w": "estés",
+   "s": 55.804,
+   "e": 56.098
+  },
+  {
+   "w": "usando,",
+   "s": 56.098,
+   "e": 56.58
+  },
+  {
+   "w": "el",
+   "s": 56.58,
+   "e": 56.756
+  },
+  {
+   "w": "teléfono",
+   "s": 56.756,
+   "e": 57.286
+  },
+  {
+   "w": "está",
+   "s": 57.286,
+   "e": 57.58
+  },
+  {
+   "w": "trabajando.",
+   "s": 57.58,
+   "e": 58.18
+  },
+  {
+   "w": "Está",
+   "s": 58.62,
+   "e": 58.896
+  },
+  {
+   "w": "buscando",
+   "s": 58.896,
+   "e": 59.282
+  },
+  {
+   "w": "señal",
+   "s": 59.282,
+   "e": 59.557
+  },
+  {
+   "w": "con",
+   "s": 59.557,
+   "e": 59.723
+  },
+  {
+   "w": "la",
+   "s": 59.723,
+   "e": 59.888
+  },
+  {
+   "w": "antena.",
+   "s": 59.888,
+   "e": 60.34
+  },
+  {
+   "w": "Está",
+   "s": 60.62,
+   "e": 60.887
+  },
+  {
+   "w": "conectado",
+   "s": 60.887,
+   "e": 61.368
+  },
+  {
+   "w": "al",
+   "s": 61.368,
+   "e": 61.529
+  },
+  {
+   "w": "wifi.",
+   "s": 61.529,
+   "e": 61.86
+  },
+  {
+   "w": "Tiene",
+   "s": 62.22,
+   "e": 62.487
+  },
+  {
+   "w": "el",
+   "s": 62.487,
+   "e": 62.648
+  },
+  {
+   "w": "bluetooth",
+   "s": 62.648,
+   "e": 63.022
+  },
+  {
+   "w": "prendido.",
+   "s": 63.022,
+   "e": 63.46
+  },
+  {
+   "w": "Está",
+   "s": 63.83,
+   "e": 64.117
+  },
+  {
+   "w": "revisando",
+   "s": 64.117,
+   "e": 64.633
+  },
+  {
+   "w": "tu",
+   "s": 64.633,
+   "e": 64.805
+  },
+  {
+   "w": "ubicación.",
+   "s": 64.805,
+   "e": 65.39
+  },
+  {
+   "w": "Las",
+   "s": 65.92,
+   "e": 66.099
+  },
+  {
+   "w": "aplicaciones",
+   "s": 66.099,
+   "e": 66.755
+  },
+  {
+   "w": "se",
+   "s": 66.755,
+   "e": 66.934
+  },
+  {
+   "w": "actualizan",
+   "s": 66.934,
+   "e": 67.47
+  },
+  {
+   "w": "solas,",
+   "s": 67.47,
+   "e": 67.84
+  },
+  {
+   "w": "las",
+   "s": 68.13,
+   "e": 68.29
+  },
+  {
+   "w": "fotos",
+   "s": 68.29,
+   "e": 68.556
+  },
+  {
+   "w": "se",
+   "s": 68.556,
+   "e": 68.715
+  },
+  {
+   "w": "suben",
+   "s": 68.715,
+   "e": 68.981
+  },
+  {
+   "w": "a",
+   "s": 68.981,
+   "e": 69.141
+  },
+  {
+   "w": "la",
+   "s": 69.141,
+   "e": 69.3
+  },
+  {
+   "w": "nube,",
+   "s": 69.3,
+   "e": 69.63
+  },
+  {
+   "w": "te",
+   "s": 69.91,
+   "e": 70.091
+  },
+  {
+   "w": "llegan",
+   "s": 70.091,
+   "e": 70.392
+  },
+  {
+   "w": "mensajes",
+   "s": 70.392,
+   "e": 70.814
+  },
+  {
+   "w": "y",
+   "s": 70.814,
+   "e": 70.994
+  },
+  {
+   "w": "notificaciones,",
+   "s": 70.994,
+   "e": 71.85
+  },
+  {
+   "w": "y",
+   "s": 72.14,
+   "e": 72.321
+  },
+  {
+   "w": "la",
+   "s": 72.321,
+   "e": 72.502
+  },
+  {
+   "w": "pantalla",
+   "s": 72.502,
+   "e": 72.925
+  },
+  {
+   "w": "se",
+   "s": 72.925,
+   "e": 73.106
+  },
+  {
+   "w": "enciende",
+   "s": 73.106,
+   "e": 73.529
+  },
+  {
+   "w": "cada",
+   "s": 73.529,
+   "e": 73.831
+  },
+  {
+   "w": "vez",
+   "s": 73.831,
+   "e": 74.012
+  },
+  {
+   "w": "que",
+   "s": 74.012,
+   "e": 74.194
+  },
+  {
+   "w": "suena",
+   "s": 74.194,
+   "e": 74.496
+  },
+  {
+   "w": "algo.",
+   "s": 74.496,
+   "e": 74.87
+  },
+  {
+   "w": "Todo",
+   "s": 75.36,
+   "e": 75.687
+  },
+  {
+   "w": "eso",
+   "s": 75.687,
+   "e": 76.015
+  },
+  {
+   "w": "gasta",
+   "s": 76.015,
+   "e": 76.342
+  },
+  {
+   "w": "energía.",
+   "s": 76.342,
+   "e": 77.01
+  },
+  {
+   "w": "Así",
+   "s": 77.46,
+   "e": 77.713
+  },
+  {
+   "w": "que",
+   "s": 77.713,
+   "e": 77.864
+  },
+  {
+   "w": "una",
+   "s": 77.864,
+   "e": 78.117
+  },
+  {
+   "w": "parte",
+   "s": 78.117,
+   "e": 78.37
+  },
+  {
+   "w": "de",
+   "s": 78.37,
+   "e": 78.521
+  },
+  {
+   "w": "la",
+   "s": 78.521,
+   "e": 78.673
+  },
+  {
+   "w": "energía",
+   "s": 78.673,
+   "e": 79.128
+  },
+  {
+   "w": "que",
+   "s": 79.128,
+   "e": 79.28
+  },
+  {
+   "w": "entra",
+   "s": 79.28,
+   "e": 79.532
+  },
+  {
+   "w": "por",
+   "s": 79.532,
+   "e": 79.684
+  },
+  {
+   "w": "el",
+   "s": 79.684,
+   "e": 79.836
+  },
+  {
+   "w": "cargador,",
+   "s": 79.836,
+   "e": 80.25
+  },
+  {
+   "w": "se",
+   "s": 80.54,
+   "e": 80.711
+  },
+  {
+   "w": "está",
+   "s": 80.711,
+   "e": 80.997
+  },
+  {
+   "w": "saliendo",
+   "s": 80.997,
+   "e": 81.397
+  },
+  {
+   "w": "por",
+   "s": 81.397,
+   "e": 81.569
+  },
+  {
+   "w": "el",
+   "s": 81.569,
+   "e": 81.74
+  },
+  {
+   "w": "otro",
+   "s": 81.74,
+   "e": 82.026
+  },
+  {
+   "w": "lado.",
+   "s": 82.026,
+   "e": 82.38
+  },
+  {
+   "w": "Y",
+   "s": 82.84,
+   "e": 83.021
+  },
+  {
+   "w": "aquí",
+   "s": 83.021,
+   "e": 83.444
+  },
+  {
+   "w": "es",
+   "s": 83.444,
+   "e": 83.625
+  },
+  {
+   "w": "donde",
+   "s": 83.625,
+   "e": 83.927
+  },
+  {
+   "w": "entra",
+   "s": 83.927,
+   "e": 84.229
+  },
+  {
+   "w": "el",
+   "s": 84.229,
+   "e": 84.411
+  },
+  {
+   "w": "famoso",
+   "s": 84.411,
+   "e": 84.833
+  },
+  {
+   "w": "modo",
+   "s": 84.833,
+   "e": 85.135
+  },
+  {
+   "w": "avión.",
+   "s": 85.135,
+   "e": 85.51
+  },
+  {
+   "w": "Cuando",
+   "s": 86.08,
+   "e": 86.385
+  },
+  {
+   "w": "activas",
+   "s": 86.385,
+   "e": 86.812
+  },
+  {
+   "w": "el",
+   "s": 86.812,
+   "e": 86.994
+  },
+  {
+   "w": "modo",
+   "s": 86.994,
+   "e": 87.299
+  },
+  {
+   "w": "avión,",
+   "s": 87.299,
+   "e": 87.677
+  },
+  {
+   "w": "el",
+   "s": 87.677,
+   "e": 87.86
+  },
+  {
+   "w": "celular",
+   "s": 87.86,
+   "e": 88.287
+  },
+  {
+   "w": "apaga",
+   "s": 88.287,
+   "e": 88.714
+  },
+  {
+   "w": "la",
+   "s": 88.714,
+   "e": 88.897
+  },
+  {
+   "w": "antena,",
+   "s": 88.897,
+   "e": 89.397
+  },
+  {
+   "w": "el",
+   "s": 89.397,
+   "e": 89.579
+  },
+  {
+   "w": "wifi",
+   "s": 89.579,
+   "e": 89.884
+  },
+  {
+   "w": "y",
+   "s": 89.884,
+   "e": 90.067
+  },
+  {
+   "w": "el",
+   "s": 90.067,
+   "e": 90.25
+  },
+  {
+   "w": "bluetooth.",
+   "s": 90.25,
+   "e": 90.75
+  },
+  {
+   "w": "Es",
+   "s": 91.3,
+   "e": 91.452
+  },
+  {
+   "w": "como",
+   "s": 91.452,
+   "e": 91.706
+  },
+  {
+   "w": "cerrar",
+   "s": 91.706,
+   "e": 91.96
+  },
+  {
+   "w": "una",
+   "s": 91.96,
+   "e": 92.214
+  },
+  {
+   "w": "buena",
+   "s": 92.214,
+   "e": 92.468
+  },
+  {
+   "w": "parte",
+   "s": 92.468,
+   "e": 92.721
+  },
+  {
+   "w": "de",
+   "s": 92.721,
+   "e": 92.874
+  },
+  {
+   "w": "esa",
+   "s": 92.874,
+   "e": 93.128
+  },
+  {
+   "w": "llave",
+   "s": 93.128,
+   "e": 93.381
+  },
+  {
+   "w": "de",
+   "s": 93.381,
+   "e": 93.534
+  },
+  {
+   "w": "abajo.",
+   "s": 93.534,
+   "e": 93.95
+  },
+  {
+   "w": "Ya",
+   "s": 94.44,
+   "e": 94.602
+  },
+  {
+   "w": "no",
+   "s": 94.602,
+   "e": 94.765
+  },
+  {
+   "w": "está",
+   "s": 94.765,
+   "e": 95.035
+  },
+  {
+   "w": "buscando",
+   "s": 95.035,
+   "e": 95.414
+  },
+  {
+   "w": "señal,",
+   "s": 95.414,
+   "e": 95.75
+  },
+  {
+   "w": "ya",
+   "s": 96.14,
+   "e": 96.3
+  },
+  {
+   "w": "no",
+   "s": 96.3,
+   "e": 96.461
+  },
+  {
+   "w": "está",
+   "s": 96.461,
+   "e": 96.728
+  },
+  {
+   "w": "recibiendo",
+   "s": 96.728,
+   "e": 97.209
+  },
+  {
+   "w": "datos,",
+   "s": 97.209,
+   "e": 97.54
+  },
+  {
+   "w": "y",
+   "s": 97.81,
+   "e": 98.003
+  },
+  {
+   "w": "ya",
+   "s": 98.003,
+   "e": 98.195
+  },
+  {
+   "w": "no",
+   "s": 98.195,
+   "e": 98.388
+  },
+  {
+   "w": "se",
+   "s": 98.388,
+   "e": 98.58
+  },
+  {
+   "w": "despierta",
+   "s": 98.58,
+   "e": 99.03
+  },
+  {
+   "w": "cada",
+   "s": 99.03,
+   "e": 99.351
+  },
+  {
+   "w": "dos",
+   "s": 99.351,
+   "e": 99.544
+  },
+  {
+   "w": "minutos.",
+   "s": 99.544,
+   "e": 100.07
+  },
+  {
+   "w": "Entonces,",
+   "s": 100.46,
+   "e": 101.1
+  },
+  {
+   "w": "más",
+   "s": 101.38,
+   "e": 101.544
+  },
+  {
+   "w": "energía",
+   "s": 101.544,
+   "e": 102.036
+  },
+  {
+   "w": "se",
+   "s": 102.036,
+   "e": 102.2
+  },
+  {
+   "w": "queda",
+   "s": 102.2,
+   "e": 102.474
+  },
+  {
+   "w": "en",
+   "s": 102.474,
+   "e": 102.638
+  },
+  {
+   "w": "la",
+   "s": 102.638,
+   "e": 102.802
+  },
+  {
+   "w": "batería.",
+   "s": 102.802,
+   "e": 103.36
+  },
+  {
+   "w": "¿Eso",
+   "s": 103.93,
+   "e": 104.175
+  },
+  {
+   "w": "quiere",
+   "s": 104.175,
+   "e": 104.616
+  },
+  {
+   "w": "decir",
+   "s": 104.616,
+   "e": 104.861
+  },
+  {
+   "w": "que",
+   "s": 104.861,
+   "e": 105.008
+  },
+  {
+   "w": "funciona?",
+   "s": 105.008,
+   "e": 105.41
+  },
+  {
+   "w": "Sí.",
+   "s": 106.03,
+   "e": 106.3
+  },
+  {
+   "w": "Funciona.",
+   "s": 106.65,
+   "e": 107.21
+  },
+  {
+   "w": "De",
+   "s": 107.64,
+   "e": 107.803
+  },
+  {
+   "w": "hecho,",
+   "s": 107.803,
+   "e": 108.14
+  },
+  {
+   "w": "Samsung,",
+   "s": 108.4,
+   "e": 108.806
+  },
+  {
+   "w": "en",
+   "s": 108.806,
+   "e": 109.003
+  },
+  {
+   "w": "su",
+   "s": 109.003,
+   "e": 109.2
+  },
+  {
+   "w": "propia",
+   "s": 109.2,
+   "e": 109.527
+  },
+  {
+   "w": "página",
+   "s": 109.527,
+   "e": 109.986
+  },
+  {
+   "w": "de",
+   "s": 109.986,
+   "e": 110.183
+  },
+  {
+   "w": "consejos,",
+   "s": 110.183,
+   "e": 110.72
+  },
+  {
+   "w": "recomienda",
+   "s": 111.03,
+   "e": 111.547
+  },
+  {
+   "w": "cargar",
+   "s": 111.547,
+   "e": 111.835
+  },
+  {
+   "w": "el",
+   "s": 111.835,
+   "e": 112.007
+  },
+  {
+   "w": "teléfono",
+   "s": 112.007,
+   "e": 112.524
+  },
+  {
+   "w": "en",
+   "s": 112.524,
+   "e": 112.697
+  },
+  {
+   "w": "modo",
+   "s": 112.697,
+   "e": 112.984
+  },
+  {
+   "w": "avión",
+   "s": 112.984,
+   "e": 113.272
+  },
+  {
+   "w": "para",
+   "s": 113.272,
+   "e": 113.559
+  },
+  {
+   "w": "aumentar",
+   "s": 113.559,
+   "e": 113.961
+  },
+  {
+   "w": "la",
+   "s": 113.961,
+   "e": 114.134
+  },
+  {
+   "w": "velocidad",
+   "s": 114.134,
+   "e": 114.651
+  },
+  {
+   "w": "de",
+   "s": 114.651,
+   "e": 114.824
+  },
+  {
+   "w": "carga.",
+   "s": 114.824,
+   "e": 115.18
+  },
+  {
+   "w": "Pero",
+   "s": 115.61,
+   "e": 115.877
+  },
+  {
+   "w": "aquí",
+   "s": 115.877,
+   "e": 116.25
+  },
+  {
+   "w": "viene",
+   "s": 116.25,
+   "e": 116.516
+  },
+  {
+   "w": "la",
+   "s": 116.516,
+   "e": 116.676
+  },
+  {
+   "w": "parte",
+   "s": 116.676,
+   "e": 116.943
+  },
+  {
+   "w": "que",
+   "s": 116.943,
+   "e": 117.103
+  },
+  {
+   "w": "nadie",
+   "s": 117.103,
+   "e": 117.369
+  },
+  {
+   "w": "te",
+   "s": 117.369,
+   "e": 117.529
+  },
+  {
+   "w": "dice.",
+   "s": 117.529,
+   "e": 117.86
+  },
+  {
+   "w": "¿Cuánto",
+   "s": 118.48,
+   "e": 118.835
+  },
+  {
+   "w": "más",
+   "s": 118.835,
+   "e": 119.048
+  },
+  {
+   "w": "rápido?",
+   "s": 119.048,
+   "e": 119.63
+  },
+  {
+   "w": "En",
+   "s": 120.26,
+   "e": 120.42
+  },
+  {
+   "w": "las",
+   "s": 120.42,
+   "e": 120.58
+  },
+  {
+   "w": "pruebas",
+   "s": 120.58,
+   "e": 120.847
+  },
+  {
+   "w": "que",
+   "s": 120.847,
+   "e": 121.007
+  },
+  {
+   "w": "han",
+   "s": 121.007,
+   "e": 121.168
+  },
+  {
+   "w": "hecho",
+   "s": 121.168,
+   "e": 121.435
+  },
+  {
+   "w": "varios",
+   "s": 121.435,
+   "e": 121.702
+  },
+  {
+   "w": "medios",
+   "s": 121.702,
+   "e": 121.968
+  },
+  {
+   "w": "de",
+   "s": 121.968,
+   "e": 122.129
+  },
+  {
+   "w": "tecnología,",
+   "s": 122.129,
+   "e": 122.78
+  },
+  {
+   "w": "la",
+   "s": 123.12,
+   "e": 123.314
+  },
+  {
+   "w": "diferencia",
+   "s": 123.314,
+   "e": 123.895
+  },
+  {
+   "w": "está",
+   "s": 123.895,
+   "e": 124.218
+  },
+  {
+   "w": "entre",
+   "s": 124.218,
+   "e": 124.541
+  },
+  {
+   "w": "cuatro",
+   "s": 124.541,
+   "e": 124.864
+  },
+  {
+   "w": "y",
+   "s": 124.864,
+   "e": 125.058
+  },
+  {
+   "w": "once",
+   "s": 125.058,
+   "e": 125.38
+  },
+  {
+   "w": "minutos.",
+   "s": 125.38,
+   "e": 125.91
+  },
+  {
+   "w": "Nada",
+   "s": 126.3,
+   "e": 126.697
+  },
+  {
+   "w": "más.",
+   "s": 126.697,
+   "e": 127.03
+  },
+  {
+   "w": "O",
+   "s": 127.44,
+   "e": 127.548
+  },
+  {
+   "w": "sea,",
+   "s": 127.548,
+   "e": 127.77
+  },
+  {
+   "w": "no",
+   "s": 128.13,
+   "e": 128.281
+  },
+  {
+   "w": "es",
+   "s": 128.281,
+   "e": 128.431
+  },
+  {
+   "w": "que",
+   "s": 128.431,
+   "e": 128.582
+  },
+  {
+   "w": "tu",
+   "s": 128.582,
+   "e": 128.732
+  },
+  {
+   "w": "celular",
+   "s": 128.732,
+   "e": 129.084
+  },
+  {
+   "w": "va",
+   "s": 129.084,
+   "e": 129.234
+  },
+  {
+   "w": "a",
+   "s": 129.234,
+   "e": 129.385
+  },
+  {
+   "w": "cargar",
+   "s": 129.385,
+   "e": 129.636
+  },
+  {
+   "w": "en",
+   "s": 129.636,
+   "e": 129.787
+  },
+  {
+   "w": "la",
+   "s": 129.787,
+   "e": 129.937
+  },
+  {
+   "w": "mitad",
+   "s": 129.937,
+   "e": 130.188
+  },
+  {
+   "w": "del",
+   "s": 130.188,
+   "e": 130.339
+  },
+  {
+   "w": "tiempo.",
+   "s": 130.339,
+   "e": 130.65
+  },
+  {
+   "w": "Es",
+   "s": 131.1,
+   "e": 131.265
+  },
+  {
+   "w": "un",
+   "s": 131.265,
+   "e": 131.43
+  },
+  {
+   "w": "empujoncito.",
+   "s": 131.43,
+   "e": 132.1
+  },
+  {
+   "w": "¿Y",
+   "s": 132.65,
+   "e": 132.813
+  },
+  {
+   "w": "por",
+   "s": 132.813,
+   "e": 132.977
+  },
+  {
+   "w": "qué",
+   "s": 132.977,
+   "e": 133.14
+  },
+  {
+   "w": "tan",
+   "s": 133.14,
+   "e": 133.303
+  },
+  {
+   "w": "poquito?",
+   "s": 133.303,
+   "e": 133.75
+  },
+  {
+   "w": "Porque",
+   "s": 134.3,
+   "e": 134.573
+  },
+  {
+   "w": "la",
+   "s": 134.573,
+   "e": 134.738
+  },
+  {
+   "w": "mayor",
+   "s": 134.738,
+   "e": 135.011
+  },
+  {
+   "w": "parte",
+   "s": 135.011,
+   "e": 135.284
+  },
+  {
+   "w": "de",
+   "s": 135.284,
+   "e": 135.448
+  },
+  {
+   "w": "la",
+   "s": 135.448,
+   "e": 135.613
+  },
+  {
+   "w": "energía",
+   "s": 135.613,
+   "e": 136.105
+  },
+  {
+   "w": "que",
+   "s": 136.105,
+   "e": 136.269
+  },
+  {
+   "w": "entra",
+   "s": 136.269,
+   "e": 136.542
+  },
+  {
+   "w": "por",
+   "s": 136.542,
+   "e": 136.706
+  },
+  {
+   "w": "el",
+   "s": 136.706,
+   "e": 136.87
+  },
+  {
+   "w": "cargador",
+   "s": 136.87,
+   "e": 137.253
+  },
+  {
+   "w": "ya",
+   "s": 137.253,
+   "e": 137.417
+  },
+  {
+   "w": "va",
+   "s": 137.417,
+   "e": 137.581
+  },
+  {
+   "w": "directo",
+   "s": 137.581,
+   "e": 137.964
+  },
+  {
+   "w": "a",
+   "s": 137.964,
+   "e": 138.128
+  },
+  {
+   "w": "la",
+   "s": 138.128,
+   "e": 138.292
+  },
+  {
+   "w": "batería.",
+   "s": 138.292,
+   "e": 138.85
+  },
+  {
+   "w": "Lo",
+   "s": 139.28,
+   "e": 139.463
+  },
+  {
+   "w": "que",
+   "s": 139.463,
+   "e": 139.646
+  },
+  {
+   "w": "gastan",
+   "s": 139.646,
+   "e": 139.95
+  },
+  {
+   "w": "las",
+   "s": 139.95,
+   "e": 140.133
+  },
+  {
+   "w": "antenas",
+   "s": 140.133,
+   "e": 140.56
+  },
+  {
+   "w": "y",
+   "s": 140.56,
+   "e": 140.743
+  },
+  {
+   "w": "el",
+   "s": 140.743,
+   "e": 140.926
+  },
+  {
+   "w": "wifi",
+   "s": 140.926,
+   "e": 141.23
+  },
+  {
+   "w": "es",
+   "s": 141.23,
+   "e": 141.413
+  },
+  {
+   "w": "pequeño",
+   "s": 141.413,
+   "e": 141.84
+  },
+  {
+   "w": "comparado",
+   "s": 141.84,
+   "e": 142.388
+  },
+  {
+   "w": "con",
+   "s": 142.388,
+   "e": 142.571
+  },
+  {
+   "w": "lo",
+   "s": 142.571,
+   "e": 142.754
+  },
+  {
+   "w": "que",
+   "s": 142.754,
+   "e": 142.937
+  },
+  {
+   "w": "entra",
+   "s": 142.937,
+   "e": 143.242
+  },
+  {
+   "w": "por",
+   "s": 143.242,
+   "e": 143.425
+  },
+  {
+   "w": "un",
+   "s": 143.425,
+   "e": 143.607
+  },
+  {
+   "w": "buen",
+   "s": 143.607,
+   "e": 143.79
+  },
+  {
+   "w": "cargador.",
+   "s": 143.79,
+   "e": 144.29
+  },
+  {
+   "w": "Y",
+   "s": 144.78,
+   "e": 144.931
+  },
+  {
+   "w": "ojo",
+   "s": 144.931,
+   "e": 145.184
+  },
+  {
+   "w": "con",
+   "s": 145.184,
+   "e": 145.335
+  },
+  {
+   "w": "una",
+   "s": 145.335,
+   "e": 145.587
+  },
+  {
+   "w": "cosa:",
+   "s": 145.587,
+   "e": 145.9
+  },
+  {
+   "w": "en",
+   "s": 146.33,
+   "e": 146.54
+  },
+  {
+   "w": "modo",
+   "s": 146.54,
+   "e": 146.891
+  },
+  {
+   "w": "avión",
+   "s": 146.891,
+   "e": 147.242
+  },
+  {
+   "w": "no",
+   "s": 147.242,
+   "e": 147.452
+  },
+  {
+   "w": "te",
+   "s": 147.452,
+   "e": 147.663
+  },
+  {
+   "w": "entran",
+   "s": 147.663,
+   "e": 148.013
+  },
+  {
+   "w": "llamadas",
+   "s": 148.013,
+   "e": 148.504
+  },
+  {
+   "w": "ni",
+   "s": 148.504,
+   "e": 148.715
+  },
+  {
+   "w": "mensajes.",
+   "s": 148.715,
+   "e": 149.29
+  },
+  {
+   "w": "Así",
+   "s": 149.66,
+   "e": 149.929
+  },
+  {
+   "w": "que",
+   "s": 149.929,
+   "e": 150.091
+  },
+  {
+   "w": "si",
+   "s": 150.091,
+   "e": 150.253
+  },
+  {
+   "w": "estás",
+   "s": 150.253,
+   "e": 150.522
+  },
+  {
+   "w": "esperando",
+   "s": 150.522,
+   "e": 151.007
+  },
+  {
+   "w": "una",
+   "s": 151.007,
+   "e": 151.277
+  },
+  {
+   "w": "llamada",
+   "s": 151.277,
+   "e": 151.654
+  },
+  {
+   "w": "importante,",
+   "s": 151.654,
+   "e": 152.204
+  },
+  {
+   "w": "del",
+   "s": 152.204,
+   "e": 152.366
+  },
+  {
+   "w": "trabajo",
+   "s": 152.366,
+   "e": 152.743
+  },
+  {
+   "w": "o",
+   "s": 152.743,
+   "e": 152.905
+  },
+  {
+   "w": "de",
+   "s": 152.905,
+   "e": 153.066
+  },
+  {
+   "w": "tu",
+   "s": 153.066,
+   "e": 153.228
+  },
+  {
+   "w": "familia,",
+   "s": 153.228,
+   "e": 153.67
+  },
+  {
+   "w": "mejor",
+   "s": 154.04,
+   "e": 154.406
+  },
+  {
+   "w": "no",
+   "s": 154.406,
+   "e": 154.626
+  },
+  {
+   "w": "lo",
+   "s": 154.626,
+   "e": 154.846
+  },
+  {
+   "w": "uses.",
+   "s": 154.846,
+   "e": 155.3
+  },
+  {
+   "w": "Ahora,",
+   "s": 155.6,
+   "e": 155.99
+  },
+  {
+   "w": "¿quieres",
+   "s": 156.38,
+   "e": 156.907
+  },
+  {
+   "w": "el",
+   "s": 156.907,
+   "e": 157.083
+  },
+  {
+   "w": "truco",
+   "s": 157.083,
+   "e": 157.376
+  },
+  {
+   "w": "que",
+   "s": 157.376,
+   "e": 157.552
+  },
+  {
+   "w": "de",
+   "s": 157.552,
+   "e": 157.728
+  },
+  {
+   "w": "verdad",
+   "s": 157.728,
+   "e": 158.021
+  },
+  {
+   "w": "carga",
+   "s": 158.021,
+   "e": 158.314
+  },
+  {
+   "w": "más",
+   "s": 158.314,
+   "e": 158.49
+  },
+  {
+   "w": "rápido?",
+   "s": 158.49,
+   "e": 158.97
+  },
+  {
+   "w": "Apágalo",
+   "s": 159.46,
+   "e": 160.198
+  },
+  {
+   "w": "completo.",
+   "s": 160.198,
+   "e": 160.87
+  },
+  {
+   "w": "Así",
+   "s": 161.35,
+   "e": 161.603
+  },
+  {
+   "w": "como",
+   "s": 161.603,
+   "e": 161.855
+  },
+  {
+   "w": "lo",
+   "s": 161.855,
+   "e": 162.007
+  },
+  {
+   "w": "oyes.",
+   "s": 162.007,
+   "e": 162.32
+  },
+  {
+   "w": "Cuando",
+   "s": 162.73,
+   "e": 163.061
+  },
+  {
+   "w": "el",
+   "s": 163.061,
+   "e": 163.26
+  },
+  {
+   "w": "celular",
+   "s": 163.26,
+   "e": 163.724
+  },
+  {
+   "w": "está",
+   "s": 163.724,
+   "e": 164.056
+  },
+  {
+   "w": "apagado,",
+   "s": 164.056,
+   "e": 164.732
+  },
+  {
+   "w": "no",
+   "s": 164.732,
+   "e": 164.931
+  },
+  {
+   "w": "hay",
+   "s": 164.931,
+   "e": 165.13
+  },
+  {
+   "w": "pantalla,",
+   "s": 165.13,
+   "e": 165.673
+  },
+  {
+   "w": "no",
+   "s": 165.673,
+   "e": 165.872
+  },
+  {
+   "w": "hay",
+   "s": 165.872,
+   "e": 166.071
+  },
+  {
+   "w": "aplicaciones,",
+   "s": 166.071,
+   "e": 166.88
+  },
+  {
+   "w": "no",
+   "s": 166.88,
+   "e": 167.079
+  },
+  {
+   "w": "hay",
+   "s": 167.079,
+   "e": 167.278
+  },
+  {
+   "w": "antenas,",
+   "s": 167.278,
+   "e": 167.821
+  },
+  {
+   "w": "no",
+   "s": 167.821,
+   "e": 168.02
+  },
+  {
+   "w": "hay",
+   "s": 168.02,
+   "e": 168.219
+  },
+  {
+   "w": "nada.",
+   "s": 168.219,
+   "e": 168.63
+  },
+  {
+   "w": "La",
+   "s": 169.04,
+   "e": 169.225
+  },
+  {
+   "w": "llave",
+   "s": 169.225,
+   "e": 169.535
+  },
+  {
+   "w": "de",
+   "s": 169.535,
+   "e": 169.72
+  },
+  {
+   "w": "abajo",
+   "s": 169.72,
+   "e": 170.153
+  },
+  {
+   "w": "se",
+   "s": 170.153,
+   "e": 170.338
+  },
+  {
+   "w": "cierra",
+   "s": 170.338,
+   "e": 170.648
+  },
+  {
+   "w": "por",
+   "s": 170.648,
+   "e": 170.833
+  },
+  {
+   "w": "completo,",
+   "s": 170.833,
+   "e": 171.34
+  },
+  {
+   "w": "y",
+   "s": 171.67,
+   "e": 171.826
+  },
+  {
+   "w": "toda",
+   "s": 171.826,
+   "e": 172.086
+  },
+  {
+   "w": "la",
+   "s": 172.086,
+   "e": 172.242
+  },
+  {
+   "w": "energía",
+   "s": 172.242,
+   "e": 172.711
+  },
+  {
+   "w": "del",
+   "s": 172.711,
+   "e": 172.867
+  },
+  {
+   "w": "cargador",
+   "s": 172.867,
+   "e": 173.231
+  },
+  {
+   "w": "va",
+   "s": 173.231,
+   "e": 173.387
+  },
+  {
+   "w": "a",
+   "s": 173.387,
+   "e": 173.543
+  },
+  {
+   "w": "la",
+   "s": 173.543,
+   "e": 173.699
+  },
+  {
+   "w": "batería.",
+   "s": 173.699,
+   "e": 174.23
+  },
+  {
+   "w": "Por",
+   "s": 174.65,
+   "e": 174.812
+  },
+  {
+   "w": "eso,",
+   "s": 174.812,
+   "e": 175.147
+  },
+  {
+   "w": "si",
+   "s": 175.147,
+   "e": 175.309
+  },
+  {
+   "w": "vas",
+   "s": 175.309,
+   "e": 175.471
+  },
+  {
+   "w": "a",
+   "s": 175.471,
+   "e": 175.633
+  },
+  {
+   "w": "salir",
+   "s": 175.633,
+   "e": 175.903
+  },
+  {
+   "w": "en",
+   "s": 175.903,
+   "e": 176.065
+  },
+  {
+   "w": "veinte",
+   "s": 176.065,
+   "e": 176.335
+  },
+  {
+   "w": "minutos",
+   "s": 176.335,
+   "e": 176.713
+  },
+  {
+   "w": "y",
+   "s": 176.713,
+   "e": 176.875
+  },
+  {
+   "w": "tienes",
+   "s": 176.875,
+   "e": 177.145
+  },
+  {
+   "w": "la",
+   "s": 177.145,
+   "e": 177.307
+  },
+  {
+   "w": "batería",
+   "s": 177.307,
+   "e": 177.793
+  },
+  {
+   "w": "en",
+   "s": 177.793,
+   "e": 177.955
+  },
+  {
+   "w": "rojo,",
+   "s": 177.955,
+   "e": 178.29
+  },
+  {
+   "w": "no",
+   "s": 178.61,
+   "e": 178.828
+  },
+  {
+   "w": "pierdas",
+   "s": 178.828,
+   "e": 179.19
+  },
+  {
+   "w": "tiempo:",
+   "s": 179.19,
+   "e": 179.64
+  },
+  {
+   "w": "apágalo",
+   "s": 180.03,
+   "e": 180.606
+  },
+  {
+   "w": "y",
+   "s": 180.606,
+   "e": 180.798
+  },
+  {
+   "w": "conéctalo.",
+   "s": 180.798,
+   "e": 181.45
+  },
+  {
+   "w": "Ese",
+   "s": 181.83,
+   "e": 182.129
+  },
+  {
+   "w": "es",
+   "s": 182.129,
+   "e": 182.308
+  },
+  {
+   "w": "el",
+   "s": 182.308,
+   "e": 182.487
+  },
+  {
+   "w": "truco",
+   "s": 182.487,
+   "e": 182.786
+  },
+  {
+   "w": "de",
+   "s": 182.786,
+   "e": 182.965
+  },
+  {
+   "w": "emergencia",
+   "s": 182.965,
+   "e": 183.502
+  },
+  {
+   "w": "que",
+   "s": 183.502,
+   "e": 183.681
+  },
+  {
+   "w": "sí",
+   "s": 183.681,
+   "e": 183.861
+  },
+  {
+   "w": "se",
+   "s": 183.861,
+   "e": 184.04
+  },
+  {
+   "w": "nota.",
+   "s": 184.04,
+   "e": 184.41
+  },
+  {
+   "w": "Si",
+   "s": 184.97,
+   "e": 185.151
+  },
+  {
+   "w": "hasta",
+   "s": 185.151,
+   "e": 185.452
+  },
+  {
+   "w": "aquí",
+   "s": 185.452,
+   "e": 185.874
+  },
+  {
+   "w": "ya",
+   "s": 185.874,
+   "e": 186.055
+  },
+  {
+   "w": "aprendiste",
+   "s": 186.055,
+   "e": 186.598
+  },
+  {
+   "w": "algo",
+   "s": 186.598,
+   "e": 186.899
+  },
+  {
+   "w": "nuevo,",
+   "s": 186.899,
+   "e": 187.273
+  },
+  {
+   "w": "suscríbete,",
+   "s": 187.273,
+   "e": 187.888
+  },
+  {
+   "w": "que",
+   "s": 187.888,
+   "e": 188.069
+  },
+  {
+   "w": "en",
+   "s": 188.069,
+   "e": 188.25
+  },
+  {
+   "w": "este",
+   "s": 188.25,
+   "e": 188.551
+  },
+  {
+   "w": "canal",
+   "s": 188.551,
+   "e": 188.853
+  },
+  {
+   "w": "te",
+   "s": 188.853,
+   "e": 189.034
+  },
+  {
+   "w": "explico",
+   "s": 189.034,
+   "e": 189.456
+  },
+  {
+   "w": "cómo",
+   "s": 189.456,
+   "e": 189.757
+  },
+  {
+   "w": "funcionan",
+   "s": 189.757,
+   "e": 190.179
+  },
+  {
+   "w": "las",
+   "s": 190.179,
+   "e": 190.36
+  },
+  {
+   "w": "cosas",
+   "s": 190.36,
+   "e": 190.662
+  },
+  {
+   "w": "que",
+   "s": 190.662,
+   "e": 190.842
+  },
+  {
+   "w": "usas",
+   "s": 190.842,
+   "e": 191.144
+  },
+  {
+   "w": "todos",
+   "s": 191.144,
+   "e": 191.445
+  },
+  {
+   "w": "los",
+   "s": 191.445,
+   "e": 191.626
+  },
+  {
+   "w": "días.",
+   "s": 191.626,
+   "e": 192.0
+  },
+  {
+   "w": "Y",
+   "s": 192.35,
+   "e": 192.526
+  },
+  {
+   "w": "quédate,",
+   "s": 192.526,
+   "e": 193.007
+  },
+  {
+   "w": "porque",
+   "s": 193.007,
+   "e": 193.3
+  },
+  {
+   "w": "ahora",
+   "s": 193.3,
+   "e": 193.71
+  },
+  {
+   "w": "viene",
+   "s": 193.71,
+   "e": 194.003
+  },
+  {
+   "w": "lo",
+   "s": 194.003,
+   "e": 194.179
+  },
+  {
+   "w": "más",
+   "s": 194.179,
+   "e": 194.355
+  },
+  {
+   "w": "interesante.",
+   "s": 194.355,
+   "e": 195.07
+  },
+  {
+   "w": "¿Te",
+   "s": 195.73,
+   "e": 195.926
+  },
+  {
+   "w": "has",
+   "s": 195.926,
+   "e": 196.122
+  },
+  {
+   "w": "fijado",
+   "s": 196.122,
+   "e": 196.579
+  },
+  {
+   "w": "que",
+   "s": 196.579,
+   "e": 196.775
+  },
+  {
+   "w": "tu",
+   "s": 196.775,
+   "e": 196.971
+  },
+  {
+   "w": "celular",
+   "s": 196.971,
+   "e": 197.428
+  },
+  {
+   "w": "carga",
+   "s": 197.428,
+   "e": 197.754
+  },
+  {
+   "w": "rapidísimo",
+   "s": 197.754,
+   "e": 198.473
+  },
+  {
+   "w": "al",
+   "s": 198.473,
+   "e": 198.669
+  },
+  {
+   "w": "principio,",
+   "s": 198.669,
+   "e": 199.204
+  },
+  {
+   "w": "y",
+   "s": 199.204,
+   "e": 199.4
+  },
+  {
+   "w": "después,",
+   "s": 199.4,
+   "e": 199.805
+  },
+  {
+   "w": "cuando",
+   "s": 199.805,
+   "e": 200.131
+  },
+  {
+   "w": "pasa",
+   "s": 200.131,
+   "e": 200.458
+  },
+  {
+   "w": "del",
+   "s": 200.458,
+   "e": 200.654
+  },
+  {
+   "w": "ochenta",
+   "s": 200.654,
+   "e": 201.111
+  },
+  {
+   "w": "por",
+   "s": 201.111,
+   "e": 201.307
+  },
+  {
+   "w": "ciento,",
+   "s": 201.307,
+   "e": 201.712
+  },
+  {
+   "w": "se",
+   "s": 201.712,
+   "e": 201.907
+  },
+  {
+   "w": "pone",
+   "s": 201.907,
+   "e": 202.234
+  },
+  {
+   "w": "lentísimo?",
+   "s": 202.234,
+   "e": 202.9
+  },
+  {
+   "w": "No",
+   "s": 203.36,
+   "e": 203.548
+  },
+  {
+   "w": "es",
+   "s": 203.548,
+   "e": 203.736
+  },
+  {
+   "w": "tu",
+   "s": 203.736,
+   "e": 203.925
+  },
+  {
+   "w": "imaginación.",
+   "s": 203.925,
+   "e": 204.69
+  },
+  {
+   "w": "Y",
+   "s": 205.0,
+   "e": 205.138
+  },
+  {
+   "w": "no,",
+   "s": 205.138,
+   "e": 205.33
+  },
+  {
+   "w": "tu",
+   "s": 205.61,
+   "e": 205.792
+  },
+  {
+   "w": "celular",
+   "s": 205.792,
+   "e": 206.217
+  },
+  {
+   "w": "no",
+   "s": 206.217,
+   "e": 206.399
+  },
+  {
+   "w": "está",
+   "s": 206.399,
+   "e": 206.702
+  },
+  {
+   "w": "dañado.",
+   "s": 206.702,
+   "e": 207.2
+  },
+  {
+   "w": "Apple",
+   "s": 207.66,
+   "e": 207.936
+  },
+  {
+   "w": "lo",
+   "s": 207.936,
+   "e": 208.102
+  },
+  {
+   "w": "explica",
+   "s": 208.102,
+   "e": 208.488
+  },
+  {
+   "w": "así:",
+   "s": 208.488,
+   "e": 208.83
+  },
+  {
+   "w": "su",
+   "s": 209.3,
+   "e": 209.47
+  },
+  {
+   "w": "batería",
+   "s": 209.47,
+   "e": 209.981
+  },
+  {
+   "w": "se",
+   "s": 209.981,
+   "e": 210.151
+  },
+  {
+   "w": "carga",
+   "s": 210.151,
+   "e": 210.435
+  },
+  {
+   "w": "rápido",
+   "s": 210.435,
+   "e": 210.833
+  },
+  {
+   "w": "hasta",
+   "s": 210.833,
+   "e": 211.116
+  },
+  {
+   "w": "llegar",
+   "s": 211.116,
+   "e": 211.4
+  },
+  {
+   "w": "al",
+   "s": 211.4,
+   "e": 211.57
+  },
+  {
+   "w": "ochenta",
+   "s": 211.57,
+   "e": 211.968
+  },
+  {
+   "w": "por",
+   "s": 211.968,
+   "e": 212.138
+  },
+  {
+   "w": "ciento,",
+   "s": 212.138,
+   "e": 212.49
+  },
+  {
+   "w": "y",
+   "s": 212.88,
+   "e": 213.091
+  },
+  {
+   "w": "después",
+   "s": 213.091,
+   "e": 213.441
+  },
+  {
+   "w": "cambia",
+   "s": 213.441,
+   "e": 213.792
+  },
+  {
+   "w": "a",
+   "s": 213.792,
+   "e": 214.003
+  },
+  {
+   "w": "una",
+   "s": 214.003,
+   "e": 214.354
+  },
+  {
+   "w": "carga",
+   "s": 214.354,
+   "e": 214.704
+  },
+  {
+   "w": "más",
+   "s": 214.704,
+   "e": 214.915
+  },
+  {
+   "w": "lenta.",
+   "s": 214.915,
+   "e": 215.35
+  },
+  {
+   "w": "Y",
+   "s": 215.73,
+   "e": 215.881
+  },
+  {
+   "w": "la",
+   "s": 215.881,
+   "e": 216.032
+  },
+  {
+   "w": "mayoría",
+   "s": 216.032,
+   "e": 216.486
+  },
+  {
+   "w": "de",
+   "s": 216.486,
+   "e": 216.637
+  },
+  {
+   "w": "los",
+   "s": 216.637,
+   "e": 216.788
+  },
+  {
+   "w": "celulares",
+   "s": 216.788,
+   "e": 217.242
+  },
+  {
+   "w": "hace",
+   "s": 217.242,
+   "e": 217.494
+  },
+  {
+   "w": "algo",
+   "s": 217.494,
+   "e": 217.746
+  },
+  {
+   "w": "parecido.",
+   "s": 217.746,
+   "e": 218.26
+  },
+  {
+   "w": "Piénsalo",
+   "s": 218.7,
+   "e": 219.07
+  },
+  {
+   "w": "como",
+   "s": 219.07,
+   "e": 219.334
+  },
+  {
+   "w": "cuando",
+   "s": 219.334,
+   "e": 219.598
+  },
+  {
+   "w": "llenas",
+   "s": 219.598,
+   "e": 219.862
+  },
+  {
+   "w": "un",
+   "s": 219.862,
+   "e": 220.02
+  },
+  {
+   "w": "vaso",
+   "s": 220.02,
+   "e": 220.284
+  },
+  {
+   "w": "de",
+   "s": 220.284,
+   "e": 220.443
+  },
+  {
+   "w": "agua.",
+   "s": 220.443,
+   "e": 220.77
+  },
+  {
+   "w": "Al",
+   "s": 221.18,
+   "e": 221.385
+  },
+  {
+   "w": "principio",
+   "s": 221.385,
+   "e": 221.862
+  },
+  {
+   "w": "echas",
+   "s": 221.862,
+   "e": 222.203
+  },
+  {
+   "w": "rápido,",
+   "s": 222.203,
+   "e": 222.762
+  },
+  {
+   "w": "sin",
+   "s": 222.762,
+   "e": 222.967
+  },
+  {
+   "w": "miedo.",
+   "s": 222.967,
+   "e": 223.39
+  },
+  {
+   "w": "Pero",
+   "s": 223.77,
+   "e": 224.063
+  },
+  {
+   "w": "cuando",
+   "s": 224.063,
+   "e": 224.355
+  },
+  {
+   "w": "el",
+   "s": 224.355,
+   "e": 224.531
+  },
+  {
+   "w": "vaso",
+   "s": 224.531,
+   "e": 224.823
+  },
+  {
+   "w": "está",
+   "s": 224.823,
+   "e": 225.116
+  },
+  {
+   "w": "casi",
+   "s": 225.116,
+   "e": 225.409
+  },
+  {
+   "w": "lleno,",
+   "s": 225.409,
+   "e": 225.771
+  },
+  {
+   "w": "echas",
+   "s": 225.771,
+   "e": 226.064
+  },
+  {
+   "w": "despacito",
+   "s": 226.064,
+   "e": 226.591
+  },
+  {
+   "w": "para",
+   "s": 226.591,
+   "e": 226.883
+  },
+  {
+   "w": "que",
+   "s": 226.883,
+   "e": 227.059
+  },
+  {
+   "w": "no",
+   "s": 227.059,
+   "e": 227.235
+  },
+  {
+   "w": "se",
+   "s": 227.235,
+   "e": 227.41
+  },
+  {
+   "w": "derrame.",
+   "s": 227.41,
+   "e": 227.89
+  },
+  {
+   "w": "Con",
+   "s": 228.38,
+   "e": 228.532
+  },
+  {
+   "w": "la",
+   "s": 228.532,
+   "e": 228.683
+  },
+  {
+   "w": "batería",
+   "s": 228.683,
+   "e": 229.139
+  },
+  {
+   "w": "pasa",
+   "s": 229.139,
+   "e": 229.391
+  },
+  {
+   "w": "algo",
+   "s": 229.391,
+   "e": 229.644
+  },
+  {
+   "w": "parecido.",
+   "s": 229.644,
+   "e": 230.16
+  },
+  {
+   "w": "Cuando",
+   "s": 230.58,
+   "e": 230.923
+  },
+  {
+   "w": "está",
+   "s": 230.923,
+   "e": 231.266
+  },
+  {
+   "w": "casi",
+   "s": 231.266,
+   "e": 231.608
+  },
+  {
+   "w": "llena,",
+   "s": 231.608,
+   "e": 232.034
+  },
+  {
+   "w": "forzarla",
+   "s": 232.034,
+   "e": 232.514
+  },
+  {
+   "w": "con",
+   "s": 232.514,
+   "e": 232.719
+  },
+  {
+   "w": "mucha",
+   "s": 232.719,
+   "e": 233.062
+  },
+  {
+   "w": "corriente",
+   "s": 233.062,
+   "e": 233.542
+  },
+  {
+   "w": "la",
+   "s": 233.542,
+   "e": 233.748
+  },
+  {
+   "w": "estresa.",
+   "s": 233.748,
+   "e": 234.31
+  },
+  {
+   "w": "Entonces",
+   "s": 234.66,
+   "e": 235.075
+  },
+  {
+   "w": "el",
+   "s": 235.075,
+   "e": 235.253
+  },
+  {
+   "w": "celular",
+   "s": 235.253,
+   "e": 235.668
+  },
+  {
+   "w": "baja",
+   "s": 235.668,
+   "e": 235.965
+  },
+  {
+   "w": "la",
+   "s": 235.965,
+   "e": 236.143
+  },
+  {
+   "w": "velocidad",
+   "s": 236.143,
+   "e": 236.677
+  },
+  {
+   "w": "a",
+   "s": 236.677,
+   "e": 236.855
+  },
+  {
+   "w": "propósito",
+   "s": 236.855,
+   "e": 237.388
+  },
+  {
+   "w": "para",
+   "s": 237.388,
+   "e": 237.685
+  },
+  {
+   "w": "protegerla.",
+   "s": 237.685,
+   "e": 238.29
+  },
+  {
+   "w": "Por",
+   "s": 238.75,
+   "e": 238.952
+  },
+  {
+   "w": "eso,",
+   "s": 238.952,
+   "e": 239.37
+  },
+  {
+   "w": "cuando",
+   "s": 239.37,
+   "e": 239.706
+  },
+  {
+   "w": "tengas",
+   "s": 239.706,
+   "e": 240.043
+  },
+  {
+   "w": "prisa,",
+   "s": 240.043,
+   "e": 240.461
+  },
+  {
+   "w": "recuerda",
+   "s": 240.461,
+   "e": 240.932
+  },
+  {
+   "w": "esto:",
+   "s": 240.932,
+   "e": 241.35
+  },
+  {
+   "w": "de",
+   "s": 241.82,
+   "e": 242.005
+  },
+  {
+   "w": "cero",
+   "s": 242.005,
+   "e": 242.312
+  },
+  {
+   "w": "a",
+   "s": 242.312,
+   "e": 242.497
+  },
+  {
+   "w": "ochenta",
+   "s": 242.497,
+   "e": 242.928
+  },
+  {
+   "w": "es",
+   "s": 242.928,
+   "e": 243.113
+  },
+  {
+   "w": "la",
+   "s": 243.113,
+   "e": 243.297
+  },
+  {
+   "w": "parte",
+   "s": 243.297,
+   "e": 243.605
+  },
+  {
+   "w": "rápida.",
+   "s": 243.605,
+   "e": 244.11
+  },
+  {
+   "w": "El",
+   "s": 244.51,
+   "e": 244.693
+  },
+  {
+   "w": "último",
+   "s": 244.693,
+   "e": 245.119
+  },
+  {
+   "w": "veinte",
+   "s": 245.119,
+   "e": 245.424
+  },
+  {
+   "w": "por",
+   "s": 245.424,
+   "e": 245.607
+  },
+  {
+   "w": "ciento",
+   "s": 245.607,
+   "e": 245.911
+  },
+  {
+   "w": "es",
+   "s": 245.911,
+   "e": 246.094
+  },
+  {
+   "w": "el",
+   "s": 246.094,
+   "e": 246.277
+  },
+  {
+   "w": "que",
+   "s": 246.277,
+   "e": 246.46
+  },
+  {
+   "w": "se",
+   "s": 246.46,
+   "e": 246.642
+  },
+  {
+   "w": "tarda.",
+   "s": 246.642,
+   "e": 247.02
+  },
+  {
+   "w": "Muchas",
+   "s": 247.46,
+   "e": 247.763
+  },
+  {
+   "w": "veces,",
+   "s": 247.763,
+   "e": 248.139
+  },
+  {
+   "w": "sacarlo",
+   "s": 248.139,
+   "e": 248.563
+  },
+  {
+   "w": "en",
+   "s": 248.563,
+   "e": 248.744
+  },
+  {
+   "w": "ochenta",
+   "s": 248.744,
+   "e": 249.169
+  },
+  {
+   "w": "es",
+   "s": 249.169,
+   "e": 249.35
+  },
+  {
+   "w": "suficiente",
+   "s": 249.35,
+   "e": 249.896
+  },
+  {
+   "w": "para",
+   "s": 249.896,
+   "e": 250.199
+  },
+  {
+   "w": "salir",
+   "s": 250.199,
+   "e": 250.501
+  },
+  {
+   "w": "del",
+   "s": 250.501,
+   "e": 250.683
+  },
+  {
+   "w": "apuro.",
+   "s": 250.683,
+   "e": 251.18
+  },
+  {
+   "w": "Y",
+   "s": 251.78,
+   "e": 251.934
+  },
+  {
+   "w": "aquí",
+   "s": 251.934,
+   "e": 252.292
+  },
+  {
+   "w": "llegamos",
+   "s": 252.292,
+   "e": 252.651
+  },
+  {
+   "w": "al",
+   "s": 252.651,
+   "e": 252.804
+  },
+  {
+   "w": "enemigo",
+   "s": 252.804,
+   "e": 253.265
+  },
+  {
+   "w": "número",
+   "s": 253.265,
+   "e": 253.624
+  },
+  {
+   "w": "uno",
+   "s": 253.624,
+   "e": 253.88
+  },
+  {
+   "w": "de",
+   "s": 253.88,
+   "e": 254.034
+  },
+  {
+   "w": "tu",
+   "s": 254.034,
+   "e": 254.188
+  },
+  {
+   "w": "batería:",
+   "s": 254.188,
+   "e": 254.71
+  },
+  {
+   "w": "el",
+   "s": 255.13,
+   "e": 255.358
+  },
+  {
+   "w": "calor.",
+   "s": 255.358,
+   "e": 255.83
+  },
+  {
+   "w": "Cuando",
+   "s": 256.34,
+   "e": 256.637
+  },
+  {
+   "w": "tu",
+   "s": 256.637,
+   "e": 256.815
+  },
+  {
+   "w": "celular",
+   "s": 256.815,
+   "e": 257.23
+  },
+  {
+   "w": "se",
+   "s": 257.23,
+   "e": 257.408
+  },
+  {
+   "w": "calienta,",
+   "s": 257.408,
+   "e": 257.895
+  },
+  {
+   "w": "se",
+   "s": 257.895,
+   "e": 258.073
+  },
+  {
+   "w": "defiende.",
+   "s": 258.073,
+   "e": 258.56
+  },
+  {
+   "w": "¿Cómo?",
+   "s": 259.07,
+   "e": 259.35
+  },
+  {
+   "w": "Bajando",
+   "s": 259.75,
+   "e": 260.172
+  },
+  {
+   "w": "la",
+   "s": 260.172,
+   "e": 260.353
+  },
+  {
+   "w": "velocidad",
+   "s": 260.353,
+   "e": 260.895
+  },
+  {
+   "w": "de",
+   "s": 260.895,
+   "e": 261.076
+  },
+  {
+   "w": "carga.",
+   "s": 261.076,
+   "e": 261.45
+  },
+  {
+   "w": "Apple",
+   "s": 261.91,
+   "e": 262.208
+  },
+  {
+   "w": "incluso",
+   "s": 262.208,
+   "e": 262.624
+  },
+  {
+   "w": "explica",
+   "s": 262.624,
+   "e": 263.041
+  },
+  {
+   "w": "que",
+   "s": 263.041,
+   "e": 263.22
+  },
+  {
+   "w": "su",
+   "s": 263.22,
+   "e": 263.398
+  },
+  {
+   "w": "software",
+   "s": 263.398,
+   "e": 263.815
+  },
+  {
+   "w": "puede",
+   "s": 263.815,
+   "e": 264.113
+  },
+  {
+   "w": "limitar",
+   "s": 264.113,
+   "e": 264.529
+  },
+  {
+   "w": "la",
+   "s": 264.529,
+   "e": 264.708
+  },
+  {
+   "w": "carga",
+   "s": 264.708,
+   "e": 265.005
+  },
+  {
+   "w": "por",
+   "s": 265.005,
+   "e": 265.184
+  },
+  {
+   "w": "encima",
+   "s": 265.184,
+   "e": 265.601
+  },
+  {
+   "w": "del",
+   "s": 265.601,
+   "e": 265.779
+  },
+  {
+   "w": "ochenta",
+   "s": 265.779,
+   "e": 266.196
+  },
+  {
+   "w": "por",
+   "s": 266.196,
+   "e": 266.375
+  },
+  {
+   "w": "ciento",
+   "s": 266.375,
+   "e": 266.672
+  },
+  {
+   "w": "cuando",
+   "s": 266.672,
+   "e": 266.97
+  },
+  {
+   "w": "la",
+   "s": 266.97,
+   "e": 267.148
+  },
+  {
+   "w": "batería",
+   "s": 267.148,
+   "e": 267.684
+  },
+  {
+   "w": "pasa",
+   "s": 267.684,
+   "e": 267.982
+  },
+  {
+   "w": "de",
+   "s": 267.982,
+   "e": 268.16
+  },
+  {
+   "w": "la",
+   "s": 268.16,
+   "e": 268.339
+  },
+  {
+   "w": "temperatura",
+   "s": 268.339,
+   "e": 268.994
+  },
+  {
+   "w": "recomendada.",
+   "s": 268.994,
+   "e": 269.72
+  },
+  {
+   "w": "Entonces,",
+   "s": 270.14,
+   "e": 270.721
+  },
+  {
+   "w": "mira",
+   "s": 270.721,
+   "e": 271.076
+  },
+  {
+   "w": "estos",
+   "s": 271.076,
+   "e": 271.43
+  },
+  {
+   "w": "errores",
+   "s": 271.43,
+   "e": 271.926
+  },
+  {
+   "w": "tan",
+   "s": 271.926,
+   "e": 272.139
+  },
+  {
+   "w": "comunes:",
+   "s": 272.139,
+   "e": 272.72
+  },
+  {
+   "w": "cargarlo",
+   "s": 273.15,
+   "e": 273.599
+  },
+  {
+   "w": "debajo",
+   "s": 273.599,
+   "e": 274.048
+  },
+  {
+   "w": "del",
+   "s": 274.048,
+   "e": 274.241
+  },
+  {
+   "w": "sol,",
+   "s": 274.241,
+   "e": 274.51
+  },
+  {
+   "w": "dentro",
+   "s": 274.9,
+   "e": 275.225
+  },
+  {
+   "w": "del",
+   "s": 275.225,
+   "e": 275.421
+  },
+  {
+   "w": "carro",
+   "s": 275.421,
+   "e": 275.746
+  },
+  {
+   "w": "caliente,",
+   "s": 275.746,
+   "e": 276.28
+  },
+  {
+   "w": "debajo",
+   "s": 276.7,
+   "e": 277.029
+  },
+  {
+   "w": "de",
+   "s": 277.029,
+   "e": 277.17
+  },
+  {
+   "w": "la",
+   "s": 277.17,
+   "e": 277.311
+  },
+  {
+   "w": "almohada,",
+   "s": 277.311,
+   "e": 277.79
+  },
+  {
+   "w": "o",
+   "s": 278.06,
+   "e": 278.241
+  },
+  {
+   "w": "jugando",
+   "s": 278.241,
+   "e": 278.665
+  },
+  {
+   "w": "y",
+   "s": 278.665,
+   "e": 278.846
+  },
+  {
+   "w": "viendo",
+   "s": 278.846,
+   "e": 279.149
+  },
+  {
+   "w": "videos",
+   "s": 279.149,
+   "e": 279.572
+  },
+  {
+   "w": "mientras",
+   "s": 279.572,
+   "e": 279.875
+  },
+  {
+   "w": "carga.",
+   "s": 279.875,
+   "e": 280.25
+  },
+  {
+   "w": "Todo",
+   "s": 280.72,
+   "e": 281.017
+  },
+  {
+   "w": "eso",
+   "s": 281.017,
+   "e": 281.314
+  },
+  {
+   "w": "lo",
+   "s": 281.314,
+   "e": 281.493
+  },
+  {
+   "w": "calienta.",
+   "s": 281.493,
+   "e": 281.98
+  },
+  {
+   "w": "Y",
+   "s": 282.37,
+   "e": 282.592
+  },
+  {
+   "w": "mientras",
+   "s": 282.592,
+   "e": 282.962
+  },
+  {
+   "w": "más",
+   "s": 282.962,
+   "e": 283.184
+  },
+  {
+   "w": "caliente",
+   "s": 283.184,
+   "e": 283.701
+  },
+  {
+   "w": "está,",
+   "s": 283.701,
+   "e": 284.16
+  },
+  {
+   "w": "más",
+   "s": 284.16,
+   "e": 284.382
+  },
+  {
+   "w": "lento",
+   "s": 284.382,
+   "e": 284.751
+  },
+  {
+   "w": "carga.",
+   "s": 284.751,
+   "e": 285.21
+  },
+  {
+   "w": "Pero",
+   "s": 285.68,
+   "e": 285.954
+  },
+  {
+   "w": "el",
+   "s": 285.954,
+   "e": 286.118
+  },
+  {
+   "w": "calor",
+   "s": 286.118,
+   "e": 286.391
+  },
+  {
+   "w": "no",
+   "s": 286.391,
+   "e": 286.556
+  },
+  {
+   "w": "solo",
+   "s": 286.556,
+   "e": 286.829
+  },
+  {
+   "w": "lo",
+   "s": 286.829,
+   "e": 286.993
+  },
+  {
+   "w": "hace",
+   "s": 286.993,
+   "e": 287.267
+  },
+  {
+   "w": "cargar",
+   "s": 287.267,
+   "e": 287.541
+  },
+  {
+   "w": "lento.",
+   "s": 287.541,
+   "e": 287.88
+  },
+  {
+   "w": "También",
+   "s": 288.35,
+   "e": 288.666
+  },
+  {
+   "w": "lo",
+   "s": 288.666,
+   "e": 288.855
+  },
+  {
+   "w": "envejece.",
+   "s": 288.855,
+   "e": 289.5
+  },
+  {
+   "w": "Los",
+   "s": 290.01,
+   "e": 290.21
+  },
+  {
+   "w": "expertos",
+   "s": 290.21,
+   "e": 290.677
+  },
+  {
+   "w": "explican",
+   "s": 290.677,
+   "e": 291.144
+  },
+  {
+   "w": "que",
+   "s": 291.144,
+   "e": 291.344
+  },
+  {
+   "w": "las",
+   "s": 291.344,
+   "e": 291.545
+  },
+  {
+   "w": "baterías",
+   "s": 291.545,
+   "e": 292.145
+  },
+  {
+   "w": "se",
+   "s": 292.145,
+   "e": 292.345
+  },
+  {
+   "w": "gastan",
+   "s": 292.345,
+   "e": 292.679
+  },
+  {
+   "w": "más",
+   "s": 292.679,
+   "e": 292.879
+  },
+  {
+   "w": "rápido",
+   "s": 292.879,
+   "e": 293.346
+  },
+  {
+   "w": "por",
+   "s": 293.346,
+   "e": 293.546
+  },
+  {
+   "w": "dos",
+   "s": 293.546,
+   "e": 293.746
+  },
+  {
+   "w": "cosas:",
+   "s": 293.746,
+   "e": 294.16
+  },
+  {
+   "w": "el",
+   "s": 294.54,
+   "e": 294.736
+  },
+  {
+   "w": "calor",
+   "s": 294.736,
+   "e": 295.064
+  },
+  {
+   "w": "y",
+   "s": 295.064,
+   "e": 295.26
+  },
+  {
+   "w": "el",
+   "s": 295.26,
+   "e": 295.456
+  },
+  {
+   "w": "voltaje",
+   "s": 295.456,
+   "e": 295.914
+  },
+  {
+   "w": "alto.",
+   "s": 295.914,
+   "e": 296.32
+  },
+  {
+   "w": "Por",
+   "s": 296.81,
+   "e": 296.989
+  },
+  {
+   "w": "eso,",
+   "s": 296.989,
+   "e": 297.359
+  },
+  {
+   "w": "una",
+   "s": 297.359,
+   "e": 297.657
+  },
+  {
+   "w": "batería",
+   "s": 297.657,
+   "e": 298.194
+  },
+  {
+   "w": "que",
+   "s": 298.194,
+   "e": 298.373
+  },
+  {
+   "w": "siempre",
+   "s": 298.373,
+   "e": 298.671
+  },
+  {
+   "w": "se",
+   "s": 298.671,
+   "e": 298.85
+  },
+  {
+   "w": "calienta,",
+   "s": 298.85,
+   "e": 299.339
+  },
+  {
+   "w": "a",
+   "s": 299.339,
+   "e": 299.518
+  },
+  {
+   "w": "los",
+   "s": 299.518,
+   "e": 299.697
+  },
+  {
+   "w": "meses",
+   "s": 299.697,
+   "e": 299.995
+  },
+  {
+   "w": "ya",
+   "s": 299.995,
+   "e": 300.174
+  },
+  {
+   "w": "no",
+   "s": 300.174,
+   "e": 300.353
+  },
+  {
+   "w": "te",
+   "s": 300.353,
+   "e": 300.532
+  },
+  {
+   "w": "dura",
+   "s": 300.532,
+   "e": 300.83
+  },
+  {
+   "w": "igual.",
+   "s": 300.83,
+   "e": 301.2
+  },
+  {
+   "w": "Y",
+   "s": 301.77,
+   "e": 301.919
+  },
+  {
+   "w": "fíjate",
+   "s": 301.919,
+   "e": 302.268
+  },
+  {
+   "w": "que",
+   "s": 302.268,
+   "e": 302.417
+  },
+  {
+   "w": "aquí",
+   "s": 302.417,
+   "e": 302.766
+  },
+  {
+   "w": "el",
+   "s": 302.766,
+   "e": 302.916
+  },
+  {
+   "w": "modo",
+   "s": 302.916,
+   "e": 303.165
+  },
+  {
+   "w": "avión",
+   "s": 303.165,
+   "e": 303.414
+  },
+  {
+   "w": "vuelve",
+   "s": 303.414,
+   "e": 303.663
+  },
+  {
+   "w": "a",
+   "s": 303.663,
+   "e": 303.812
+  },
+  {
+   "w": "ayudarte:",
+   "s": 303.812,
+   "e": 304.32
+  },
+  {
+   "w": "como",
+   "s": 304.79,
+   "e": 305.12
+  },
+  {
+   "w": "apaga",
+   "s": 305.12,
+   "e": 305.582
+  },
+  {
+   "w": "las",
+   "s": 305.582,
+   "e": 305.78
+  },
+  {
+   "w": "antenas,",
+   "s": 305.78,
+   "e": 306.322
+  },
+  {
+   "w": "el",
+   "s": 306.322,
+   "e": 306.52
+  },
+  {
+   "w": "celular",
+   "s": 306.52,
+   "e": 306.982
+  },
+  {
+   "w": "trabaja",
+   "s": 306.982,
+   "e": 307.444
+  },
+  {
+   "w": "menos,",
+   "s": 307.444,
+   "e": 307.853
+  },
+  {
+   "w": "y",
+   "s": 307.853,
+   "e": 308.051
+  },
+  {
+   "w": "se",
+   "s": 308.051,
+   "e": 308.249
+  },
+  {
+   "w": "calienta",
+   "s": 308.249,
+   "e": 308.711
+  },
+  {
+   "w": "menos.",
+   "s": 308.711,
+   "e": 309.121
+  },
+  {
+   "w": "Un",
+   "s": 309.121,
+   "e": 309.319
+  },
+  {
+   "w": "consejo",
+   "s": 309.319,
+   "e": 309.781
+  },
+  {
+   "w": "extra:",
+   "s": 309.781,
+   "e": 310.19
+  },
+  {
+   "w": "si",
+   "s": 310.68,
+   "e": 310.878
+  },
+  {
+   "w": "notas",
+   "s": 310.878,
+   "e": 311.207
+  },
+  {
+   "w": "que",
+   "s": 311.207,
+   "e": 311.405
+  },
+  {
+   "w": "se",
+   "s": 311.405,
+   "e": 311.603
+  },
+  {
+   "w": "pone",
+   "s": 311.603,
+   "e": 311.932
+  },
+  {
+   "w": "muy",
+   "s": 311.932,
+   "e": 312.13
+  },
+  {
+   "w": "caliente",
+   "s": 312.13,
+   "e": 312.592
+  },
+  {
+   "w": "mientras",
+   "s": 312.592,
+   "e": 312.921
+  },
+  {
+   "w": "carga,",
+   "s": 312.921,
+   "e": 313.33
+  },
+  {
+   "w": "quítale",
+   "s": 313.75,
+   "e": 314.266
+  },
+  {
+   "w": "el",
+   "s": 314.266,
+   "e": 314.438
+  },
+  {
+   "w": "forro",
+   "s": 314.438,
+   "e": 314.725
+  },
+  {
+   "w": "y",
+   "s": 314.725,
+   "e": 314.897
+  },
+  {
+   "w": "ponlo",
+   "s": 314.897,
+   "e": 315.184
+  },
+  {
+   "w": "en",
+   "s": 315.184,
+   "e": 315.356
+  },
+  {
+   "w": "un",
+   "s": 315.356,
+   "e": 315.528
+  },
+  {
+   "w": "lugar",
+   "s": 315.528,
+   "e": 315.814
+  },
+  {
+   "w": "fresco.",
+   "s": 315.814,
+   "e": 316.17
+  },
+  {
+   "w": "Ahora,",
+   "s": 316.97,
+   "e": 317.32
+  },
+  {
+   "w": "de",
+   "s": 317.63,
+   "e": 317.801
+  },
+  {
+   "w": "nada",
+   "s": 317.801,
+   "e": 318.086
+  },
+  {
+   "w": "sirve",
+   "s": 318.086,
+   "e": 318.372
+  },
+  {
+   "w": "el",
+   "s": 318.372,
+   "e": 318.543
+  },
+  {
+   "w": "modo",
+   "s": 318.543,
+   "e": 318.828
+  },
+  {
+   "w": "avión",
+   "s": 318.828,
+   "e": 319.113
+  },
+  {
+   "w": "si",
+   "s": 319.113,
+   "e": 319.285
+  },
+  {
+   "w": "el",
+   "s": 319.285,
+   "e": 319.456
+  },
+  {
+   "w": "cargador",
+   "s": 319.456,
+   "e": 319.855
+  },
+  {
+   "w": "es",
+   "s": 319.855,
+   "e": 320.026
+  },
+  {
+   "w": "malo.",
+   "s": 320.026,
+   "e": 320.38
+  },
+  {
+   "w": "Y",
+   "s": 321.01,
+   "e": 321.161
+  },
+  {
+   "w": "aquí",
+   "s": 321.161,
+   "e": 321.512
+  },
+  {
+   "w": "te",
+   "s": 321.512,
+   "e": 321.663
+  },
+  {
+   "w": "voy",
+   "s": 321.663,
+   "e": 321.813
+  },
+  {
+   "w": "a",
+   "s": 321.813,
+   "e": 321.964
+  },
+  {
+   "w": "contar",
+   "s": 321.964,
+   "e": 322.215
+  },
+  {
+   "w": "algo",
+   "s": 322.215,
+   "e": 322.466
+  },
+  {
+   "w": "que",
+   "s": 322.466,
+   "e": 322.616
+  },
+  {
+   "w": "te",
+   "s": 322.616,
+   "e": 322.767
+  },
+  {
+   "w": "va",
+   "s": 322.767,
+   "e": 322.918
+  },
+  {
+   "w": "a",
+   "s": 322.918,
+   "e": 323.068
+  },
+  {
+   "w": "dar",
+   "s": 323.068,
+   "e": 323.219
+  },
+  {
+   "w": "miedo.",
+   "s": 323.219,
+   "e": 323.53
+  },
+  {
+   "w": "En",
+   "s": 324.16,
+   "e": 324.342
+  },
+  {
+   "w": "Inglaterra",
+   "s": 324.342,
+   "e": 324.889
+  },
+  {
+   "w": "probaron",
+   "s": 324.889,
+   "e": 325.314
+  },
+  {
+   "w": "sesenta",
+   "s": 325.314,
+   "e": 325.739
+  },
+  {
+   "w": "y",
+   "s": 325.739,
+   "e": 325.921
+  },
+  {
+   "w": "cuatro",
+   "s": 325.921,
+   "e": 326.225
+  },
+  {
+   "w": "cargadores",
+   "s": 326.225,
+   "e": 326.772
+  },
+  {
+   "w": "genéricos",
+   "s": 326.772,
+   "e": 327.318
+  },
+  {
+   "w": "para",
+   "s": 327.318,
+   "e": 327.622
+  },
+  {
+   "w": "iPhone.",
+   "s": 327.622,
+   "e": 328.12
+  },
+  {
+   "w": "¿Sabes",
+   "s": 328.79,
+   "e": 329.085
+  },
+  {
+   "w": "cuántos",
+   "s": 329.085,
+   "e": 329.379
+  },
+  {
+   "w": "pasaron",
+   "s": 329.379,
+   "e": 329.791
+  },
+  {
+   "w": "las",
+   "s": 329.791,
+   "e": 329.968
+  },
+  {
+   "w": "pruebas",
+   "s": 329.968,
+   "e": 330.263
+  },
+  {
+   "w": "de",
+   "s": 330.263,
+   "e": 330.439
+  },
+  {
+   "w": "seguridad?",
+   "s": 330.439,
+   "e": 331.04
+  },
+  {
+   "w": "Uno.",
+   "s": 331.75,
+   "e": 332.08
+  },
+  {
+   "w": "Solo",
+   "s": 332.51,
+   "e": 332.921
+  },
+  {
+   "w": "uno.",
+   "s": 332.921,
+   "e": 333.43
+  },
+  {
+   "w": "Y",
+   "s": 334.14,
+   "e": 334.334
+  },
+  {
+   "w": "en",
+   "s": 334.334,
+   "e": 334.529
+  },
+  {
+   "w": "otra",
+   "s": 334.529,
+   "e": 334.853
+  },
+  {
+   "w": "prueba",
+   "s": 334.853,
+   "e": 335.177
+  },
+  {
+   "w": "con",
+   "s": 335.177,
+   "e": 335.371
+  },
+  {
+   "w": "cuatrocientos",
+   "s": 335.371,
+   "e": 335.954
+  },
+  {
+   "w": "cargadores",
+   "s": 335.954,
+   "e": 336.537
+  },
+  {
+   "w": "falsos",
+   "s": 336.537,
+   "e": 336.861
+  },
+  {
+   "w": "comprados",
+   "s": 336.861,
+   "e": 337.314
+  },
+  {
+   "w": "por",
+   "s": 337.314,
+   "e": 337.509
+  },
+  {
+   "w": "internet,",
+   "s": 337.509,
+   "e": 338.04
+  },
+  {
+   "w": "solo",
+   "s": 338.47,
+   "e": 338.759
+  },
+  {
+   "w": "tres",
+   "s": 338.759,
+   "e": 338.932
+  },
+  {
+   "w": "tenían",
+   "s": 338.932,
+   "e": 339.337
+  },
+  {
+   "w": "el",
+   "s": 339.337,
+   "e": 339.51
+  },
+  {
+   "w": "aislamiento",
+   "s": 339.51,
+   "e": 340.03
+  },
+  {
+   "w": "suficiente",
+   "s": 340.03,
+   "e": 340.55
+  },
+  {
+   "w": "para",
+   "s": 340.55,
+   "e": 340.839
+  },
+  {
+   "w": "proteger",
+   "s": 340.839,
+   "e": 341.244
+  },
+  {
+   "w": "a",
+   "s": 341.244,
+   "e": 341.417
+  },
+  {
+   "w": "la",
+   "s": 341.417,
+   "e": 341.59
+  },
+  {
+   "w": "persona",
+   "s": 341.59,
+   "e": 341.995
+  },
+  {
+   "w": "que",
+   "s": 341.995,
+   "e": 342.168
+  },
+  {
+   "w": "los",
+   "s": 342.168,
+   "e": 342.342
+  },
+  {
+   "w": "usa.",
+   "s": 342.342,
+   "e": 342.7
+  },
+  {
+   "w": "¿Qué",
+   "s": 343.37,
+   "e": 343.476
+  },
+  {
+   "w": "quiere",
+   "s": 343.476,
+   "e": 343.794
+  },
+  {
+   "w": "decir",
+   "s": 343.794,
+   "e": 343.971
+  },
+  {
+   "w": "eso?",
+   "s": 343.971,
+   "e": 344.19
+  },
+  {
+   "w": "Que",
+   "s": 344.81,
+   "e": 344.973
+  },
+  {
+   "w": "por",
+   "s": 344.973,
+   "e": 345.136
+  },
+  {
+   "w": "fuera",
+   "s": 345.136,
+   "e": 345.407
+  },
+  {
+   "w": "se",
+   "s": 345.407,
+   "e": 345.57
+  },
+  {
+   "w": "ven",
+   "s": 345.57,
+   "e": 345.733
+  },
+  {
+   "w": "iguales",
+   "s": 345.733,
+   "e": 346.113
+  },
+  {
+   "w": "al",
+   "s": 346.113,
+   "e": 346.276
+  },
+  {
+   "w": "original,",
+   "s": 346.276,
+   "e": 346.83
+  },
+  {
+   "w": "pero",
+   "s": 347.34,
+   "e": 347.733
+  },
+  {
+   "w": "por",
+   "s": 347.733,
+   "e": 347.969
+  },
+  {
+   "w": "dentro",
+   "s": 347.969,
+   "e": 348.363
+  },
+  {
+   "w": "les",
+   "s": 348.363,
+   "e": 348.599
+  },
+  {
+   "w": "faltan",
+   "s": 348.599,
+   "e": 348.992
+  },
+  {
+   "w": "piezas.",
+   "s": 348.992,
+   "e": 349.48
+  },
+  {
+   "w": "Y",
+   "s": 350.08,
+   "e": 350.256
+  },
+  {
+   "w": "un",
+   "s": 350.256,
+   "e": 350.432
+  },
+  {
+   "w": "cargador",
+   "s": 350.432,
+   "e": 350.842
+  },
+  {
+   "w": "así",
+   "s": 350.842,
+   "e": 351.135
+  },
+  {
+   "w": "no",
+   "s": 351.135,
+   "e": 351.311
+  },
+  {
+   "w": "solo",
+   "s": 351.311,
+   "e": 351.604
+  },
+  {
+   "w": "carga",
+   "s": 351.604,
+   "e": 351.897
+  },
+  {
+   "w": "lento.",
+   "s": 351.897,
+   "e": 352.26
+  },
+  {
+   "w": "Puede",
+   "s": 352.81,
+   "e": 353.11
+  },
+  {
+   "w": "calentarse",
+   "s": 353.11,
+   "e": 353.649
+  },
+  {
+   "w": "demasiado,",
+   "s": 353.649,
+   "e": 354.26
+  },
+  {
+   "w": "dañar",
+   "s": 354.6,
+   "e": 354.943
+  },
+  {
+   "w": "tu",
+   "s": 354.943,
+   "e": 355.148
+  },
+  {
+   "w": "celular,",
+   "s": 355.148,
+   "e": 355.71
+  },
+  {
+   "w": "darte",
+   "s": 356.02,
+   "e": 356.41
+  },
+  {
+   "w": "corriente,",
+   "s": 356.41,
+   "e": 357.05
+  },
+  {
+   "w": "o",
+   "s": 357.32,
+   "e": 357.495
+  },
+  {
+   "w": "hasta",
+   "s": 357.495,
+   "e": 357.787
+  },
+  {
+   "w": "provocar",
+   "s": 357.787,
+   "e": 358.196
+  },
+  {
+   "w": "un",
+   "s": 358.196,
+   "e": 358.371
+  },
+  {
+   "w": "incendio.",
+   "s": 358.371,
+   "e": 358.85
+  },
+  {
+   "w": "Y",
+   "s": 359.52,
+   "e": 359.723
+  },
+  {
+   "w": "el",
+   "s": 359.723,
+   "e": 359.927
+  },
+  {
+   "w": "cable",
+   "s": 359.927,
+   "e": 360.265
+  },
+  {
+   "w": "también",
+   "s": 360.265,
+   "e": 360.604
+  },
+  {
+   "w": "importa.",
+   "s": 360.604,
+   "e": 361.16
+  },
+  {
+   "w": "Los",
+   "s": 361.69,
+   "e": 361.903
+  },
+  {
+   "w": "cables",
+   "s": 361.903,
+   "e": 362.258
+  },
+  {
+   "w": "baratos,",
+   "s": 362.258,
+   "e": 362.84
+  },
+  {
+   "w": "sin",
+   "s": 362.84,
+   "e": 363.053
+  },
+  {
+   "w": "marca",
+   "s": 363.053,
+   "e": 363.408
+  },
+  {
+   "w": "y",
+   "s": 363.408,
+   "e": 363.621
+  },
+  {
+   "w": "sin",
+   "s": 363.621,
+   "e": 363.834
+  },
+  {
+   "w": "certificación,",
+   "s": 363.834,
+   "e": 364.7
+  },
+  {
+   "w": "pueden",
+   "s": 365.02,
+   "e": 365.316
+  },
+  {
+   "w": "calentarse",
+   "s": 365.316,
+   "e": 365.849
+  },
+  {
+   "w": "y",
+   "s": 365.849,
+   "e": 366.026
+  },
+  {
+   "w": "hasta",
+   "s": 366.026,
+   "e": 366.322
+  },
+  {
+   "w": "quemar",
+   "s": 366.322,
+   "e": 366.618
+  },
+  {
+   "w": "el",
+   "s": 366.618,
+   "e": 366.795
+  },
+  {
+   "w": "puerto",
+   "s": 366.795,
+   "e": 367.091
+  },
+  {
+   "w": "de",
+   "s": 367.091,
+   "e": 367.269
+  },
+  {
+   "w": "tu",
+   "s": 367.269,
+   "e": 367.446
+  },
+  {
+   "w": "teléfono.",
+   "s": 367.446,
+   "e": 368.05
+  },
+  {
+   "w": "No",
+   "s": 368.63,
+   "e": 368.771
+  },
+  {
+   "w": "tiene",
+   "s": 368.771,
+   "e": 369.006
+  },
+  {
+   "w": "que",
+   "s": 369.006,
+   "e": 369.146
+  },
+  {
+   "w": "ser",
+   "s": 369.146,
+   "e": 369.287
+  },
+  {
+   "w": "el",
+   "s": 369.287,
+   "e": 369.428
+  },
+  {
+   "w": "más",
+   "s": 369.428,
+   "e": 369.569
+  },
+  {
+   "w": "caro.",
+   "s": 369.569,
+   "e": 369.86
+  },
+  {
+   "w": "Pero",
+   "s": 370.32,
+   "e": 370.641
+  },
+  {
+   "w": "sí",
+   "s": 370.641,
+   "e": 370.834
+  },
+  {
+   "w": "original,",
+   "s": 370.834,
+   "e": 371.49
+  },
+  {
+   "w": "o",
+   "s": 371.84,
+   "e": 371.999
+  },
+  {
+   "w": "de",
+   "s": 371.999,
+   "e": 372.157
+  },
+  {
+   "w": "una",
+   "s": 372.157,
+   "e": 372.421
+  },
+  {
+   "w": "marca",
+   "s": 372.421,
+   "e": 372.685
+  },
+  {
+   "w": "certificada.",
+   "s": 372.685,
+   "e": 373.33
+  },
+  {
+   "w": "Y",
+   "s": 373.92,
+   "e": 374.066
+  },
+  {
+   "w": "conéctalo",
+   "s": 374.066,
+   "e": 374.505
+  },
+  {
+   "w": "directo",
+   "s": 374.505,
+   "e": 374.846
+  },
+  {
+   "w": "a",
+   "s": 374.846,
+   "e": 374.992
+  },
+  {
+   "w": "la",
+   "s": 374.992,
+   "e": 375.138
+  },
+  {
+   "w": "pared,",
+   "s": 375.138,
+   "e": 375.44
+  },
+  {
+   "w": "no",
+   "s": 375.86,
+   "e": 376.027
+  },
+  {
+   "w": "a",
+   "s": 376.027,
+   "e": 376.194
+  },
+  {
+   "w": "una",
+   "s": 376.194,
+   "e": 376.472
+  },
+  {
+   "w": "regleta",
+   "s": 376.472,
+   "e": 376.862
+  },
+  {
+   "w": "llena",
+   "s": 376.862,
+   "e": 377.14
+  },
+  {
+   "w": "de",
+   "s": 377.14,
+   "e": 377.307
+  },
+  {
+   "w": "cosas",
+   "s": 377.307,
+   "e": 377.585
+  },
+  {
+   "w": "ni",
+   "s": 377.585,
+   "e": 377.752
+  },
+  {
+   "w": "al",
+   "s": 377.752,
+   "e": 377.919
+  },
+  {
+   "w": "puerto",
+   "s": 377.919,
+   "e": 378.197
+  },
+  {
+   "w": "de",
+   "s": 378.197,
+   "e": 378.364
+  },
+  {
+   "w": "la",
+   "s": 378.364,
+   "e": 378.531
+  },
+  {
+   "w": "computadora,",
+   "s": 378.531,
+   "e": 379.21
+  },
+  {
+   "w": "que",
+   "s": 379.56,
+   "e": 379.763
+  },
+  {
+   "w": "normalmente",
+   "s": 379.763,
+   "e": 380.373
+  },
+  {
+   "w": "da",
+   "s": 380.373,
+   "e": 380.577
+  },
+  {
+   "w": "mucha",
+   "s": 380.577,
+   "e": 380.915
+  },
+  {
+   "w": "menos",
+   "s": 380.915,
+   "e": 381.254
+  },
+  {
+   "w": "potencia.",
+   "s": 381.254,
+   "e": 381.81
+  },
+  {
+   "w": "¿Te",
+   "s": 382.61,
+   "e": 382.761
+  },
+  {
+   "w": "acuerdas",
+   "s": 382.761,
+   "e": 383.115
+  },
+  {
+   "w": "del",
+   "s": 383.115,
+   "e": 383.266
+  },
+  {
+   "w": "error",
+   "s": 383.266,
+   "e": 383.519
+  },
+  {
+   "w": "que",
+   "s": 383.519,
+   "e": 383.67
+  },
+  {
+   "w": "te",
+   "s": 383.67,
+   "e": 383.822
+  },
+  {
+   "w": "dije",
+   "s": 383.822,
+   "e": 384.074
+  },
+  {
+   "w": "al",
+   "s": 384.074,
+   "e": 384.226
+  },
+  {
+   "w": "principio?",
+   "s": 384.226,
+   "e": 384.64
+  },
+  {
+   "w": "El",
+   "s": 385.03,
+   "e": 385.218
+  },
+  {
+   "w": "que",
+   "s": 385.218,
+   "e": 385.407
+  },
+  {
+   "w": "seguramente",
+   "s": 385.407,
+   "e": 386.098
+  },
+  {
+   "w": "cometes",
+   "s": 386.098,
+   "e": 386.538
+  },
+  {
+   "w": "todas",
+   "s": 386.538,
+   "e": 386.852
+  },
+  {
+   "w": "las",
+   "s": 386.852,
+   "e": 387.04
+  },
+  {
+   "w": "noches.",
+   "s": 387.04,
+   "e": 387.43
+  },
+  {
+   "w": "Es",
+   "s": 387.9,
+   "e": 388.057
+  },
+  {
+   "w": "este:",
+   "s": 388.057,
+   "e": 388.38
+  },
+  {
+   "w": "dejar",
+   "s": 388.9,
+   "e": 389.25
+  },
+  {
+   "w": "el",
+   "s": 389.25,
+   "e": 389.459
+  },
+  {
+   "w": "celular",
+   "s": 389.459,
+   "e": 389.949
+  },
+  {
+   "w": "cargando",
+   "s": 389.949,
+   "e": 390.438
+  },
+  {
+   "w": "toda",
+   "s": 390.438,
+   "e": 390.788
+  },
+  {
+   "w": "la",
+   "s": 390.788,
+   "e": 390.998
+  },
+  {
+   "w": "noche",
+   "s": 390.998,
+   "e": 391.347
+  },
+  {
+   "w": "al",
+   "s": 391.347,
+   "e": 391.557
+  },
+  {
+   "w": "cien",
+   "s": 391.557,
+   "e": 391.767
+  },
+  {
+   "w": "por",
+   "s": 391.767,
+   "e": 391.976
+  },
+  {
+   "w": "ciento.",
+   "s": 391.976,
+   "e": 392.41
+  },
+  {
+   "w": "Tranquilo,",
+   "s": 393.03,
+   "e": 393.55
+  },
+  {
+   "w": "tu",
+   "s": 393.55,
+   "e": 393.74
+  },
+  {
+   "w": "celular",
+   "s": 393.74,
+   "e": 394.183
+  },
+  {
+   "w": "no",
+   "s": 394.183,
+   "e": 394.373
+  },
+  {
+   "w": "va",
+   "s": 394.373,
+   "e": 394.563
+  },
+  {
+   "w": "a",
+   "s": 394.563,
+   "e": 394.754
+  },
+  {
+   "w": "explotar",
+   "s": 394.754,
+   "e": 395.197
+  },
+  {
+   "w": "por",
+   "s": 395.197,
+   "e": 395.387
+  },
+  {
+   "w": "eso.",
+   "s": 395.387,
+   "e": 395.78
+  },
+  {
+   "w": "Las",
+   "s": 396.32,
+   "e": 396.499
+  },
+  {
+   "w": "baterías",
+   "s": 396.499,
+   "e": 397.034
+  },
+  {
+   "w": "modernas",
+   "s": 397.034,
+   "e": 397.451
+  },
+  {
+   "w": "tienen",
+   "s": 397.451,
+   "e": 397.748
+  },
+  {
+   "w": "un",
+   "s": 397.748,
+   "e": 397.927
+  },
+  {
+   "w": "circuito",
+   "s": 397.927,
+   "e": 398.343
+  },
+  {
+   "w": "que",
+   "s": 398.343,
+   "e": 398.522
+  },
+  {
+   "w": "corta",
+   "s": 398.522,
+   "e": 398.819
+  },
+  {
+   "w": "la",
+   "s": 398.819,
+   "e": 398.998
+  },
+  {
+   "w": "carga",
+   "s": 398.998,
+   "e": 399.295
+  },
+  {
+   "w": "cuando",
+   "s": 399.295,
+   "e": 399.593
+  },
+  {
+   "w": "se",
+   "s": 399.593,
+   "e": 399.771
+  },
+  {
+   "w": "llena.",
+   "s": 399.771,
+   "e": 400.14
+  },
+  {
+   "w": "El",
+   "s": 400.72,
+   "e": 400.887
+  },
+  {
+   "w": "problema",
+   "s": 400.887,
+   "e": 401.277
+  },
+  {
+   "w": "es",
+   "s": 401.277,
+   "e": 401.444
+  },
+  {
+   "w": "otro.",
+   "s": 401.444,
+   "e": 401.79
+  },
+  {
+   "w": "Pasar",
+   "s": 402.32,
+   "e": 402.496
+  },
+  {
+   "w": "muchas",
+   "s": 402.496,
+   "e": 402.671
+  },
+  {
+   "w": "horas",
+   "s": 402.671,
+   "e": 402.847
+  },
+  {
+   "w": "pegado",
+   "s": 402.847,
+   "e": 403.093
+  },
+  {
+   "w": "entre",
+   "s": 403.093,
+   "e": 403.269
+  },
+  {
+   "w": "el",
+   "s": 403.269,
+   "e": 403.374
+  },
+  {
+   "w": "ochenta",
+   "s": 403.374,
+   "e": 403.62
+  },
+  {
+   "w": "y",
+   "s": 403.62,
+   "e": 403.726
+  },
+  {
+   "w": "el",
+   "s": 403.726,
+   "e": 403.831
+  },
+  {
+   "w": "cien",
+   "s": 403.831,
+   "e": 403.936
+  },
+  {
+   "w": "por",
+   "s": 403.936,
+   "e": 404.042
+  },
+  {
+   "w": "ciento",
+   "s": 404.042,
+   "e": 404.217
+  },
+  {
+   "w": "hace",
+   "s": 404.217,
+   "e": 404.393
+  },
+  {
+   "w": "que",
+   "s": 404.393,
+   "e": 404.499
+  },
+  {
+   "w": "la",
+   "s": 404.499,
+   "e": 404.604
+  },
+  {
+   "w": "batería",
+   "s": 404.604,
+   "e": 404.92
+  },
+  {
+   "w": "envejezca",
+   "s": 404.92,
+   "e": 405.236
+  },
+  {
+   "w": "más",
+   "s": 405.236,
+   "e": 405.342
+  },
+  {
+   "w": "rápido.",
+   "s": 405.342,
+   "e": 405.63
+  },
+  {
+   "w": "Por",
+   "s": 405.93,
+   "e": 406.027
+  },
+  {
+   "w": "eso",
+   "s": 406.027,
+   "e": 406.189
+  },
+  {
+   "w": "los",
+   "s": 406.189,
+   "e": 406.286
+  },
+  {
+   "w": "celulares",
+   "s": 406.286,
+   "e": 406.578
+  },
+  {
+   "w": "nuevos",
+   "s": 406.578,
+   "e": 406.74
+  },
+  {
+   "w": "traen",
+   "s": 406.74,
+   "e": 406.902
+  },
+  {
+   "w": "una",
+   "s": 406.902,
+   "e": 407.064
+  },
+  {
+   "w": "función",
+   "s": 407.064,
+   "e": 407.226
+  },
+  {
+   "w": "que",
+   "s": 407.226,
+   "e": 407.323
+  },
+  {
+   "w": "se",
+   "s": 407.323,
+   "e": 407.421
+  },
+  {
+   "w": "llama",
+   "s": 407.421,
+   "e": 407.583
+  },
+  {
+   "w": "carga",
+   "s": 407.583,
+   "e": 407.745
+  },
+  {
+   "w": "optimizada.",
+   "s": 407.745,
+   "e": 408.14
+  },
+  {
+   "w": "El",
+   "s": 408.75,
+   "e": 409.872
+  },
+  {
+   "w": "iPhone,",
+   "s": 409.872,
+   "e": 412.94
+  },
+  {
+   "w": "por",
+   "s": 413.51,
+   "e": 413.826
+  },
+  {
+   "w": "ejemplo,",
+   "s": 413.826,
+   "e": 414.69
+  },
+  {
+   "w": "aprende",
+   "s": 414.99,
+   "e": 415.39
+  },
+  {
+   "w": "tu",
+   "s": 415.39,
+   "e": 415.561
+  },
+  {
+   "w": "rutina,",
+   "s": 415.561,
+   "e": 416.03
+  },
+  {
+   "w": "se",
+   "s": 416.37,
+   "e": 416.528
+  },
+  {
+   "w": "queda",
+   "s": 416.528,
+   "e": 416.792
+  },
+  {
+   "w": "esperando",
+   "s": 416.792,
+   "e": 417.268
+  },
+  {
+   "w": "en",
+   "s": 417.268,
+   "e": 417.426
+  },
+  {
+   "w": "el",
+   "s": 417.426,
+   "e": 417.585
+  },
+  {
+   "w": "ochenta",
+   "s": 417.585,
+   "e": 417.954
+  },
+  {
+   "w": "por",
+   "s": 417.954,
+   "e": 418.113
+  },
+  {
+   "w": "ciento,",
+   "s": 418.113,
+   "e": 418.44
+  },
+  {
+   "w": "y",
+   "s": 418.78,
+   "e": 418.959
+  },
+  {
+   "w": "termina",
+   "s": 418.959,
+   "e": 419.377
+  },
+  {
+   "w": "de",
+   "s": 419.377,
+   "e": 419.557
+  },
+  {
+   "w": "cargar",
+   "s": 419.557,
+   "e": 419.855
+  },
+  {
+   "w": "justo",
+   "s": 419.855,
+   "e": 420.154
+  },
+  {
+   "w": "antes",
+   "s": 420.154,
+   "e": 420.453
+  },
+  {
+   "w": "de",
+   "s": 420.453,
+   "e": 420.632
+  },
+  {
+   "w": "que",
+   "s": 420.632,
+   "e": 420.811
+  },
+  {
+   "w": "te",
+   "s": 420.811,
+   "e": 420.99
+  },
+  {
+   "w": "levantes.",
+   "s": 420.99,
+   "e": 421.48
+  },
+  {
+   "w": "Muchos",
+   "s": 422.05,
+   "e": 422.344
+  },
+  {
+   "w": "Android",
+   "s": 422.344,
+   "e": 422.637
+  },
+  {
+   "w": "tienen",
+   "s": 422.637,
+   "e": 422.931
+  },
+  {
+   "w": "opciones",
+   "s": 422.931,
+   "e": 423.342
+  },
+  {
+   "w": "parecidas",
+   "s": 423.342,
+   "e": 423.87
+  },
+  {
+   "w": "para",
+   "s": 423.87,
+   "e": 424.164
+  },
+  {
+   "w": "proteger",
+   "s": 424.164,
+   "e": 424.575
+  },
+  {
+   "w": "la",
+   "s": 424.575,
+   "e": 424.751
+  },
+  {
+   "w": "batería.",
+   "s": 424.751,
+   "e": 425.35
+  },
+  {
+   "w": "Búscala",
+   "s": 425.89,
+   "e": 426.269
+  },
+  {
+   "w": "en",
+   "s": 426.269,
+   "e": 426.432
+  },
+  {
+   "w": "los",
+   "s": 426.432,
+   "e": 426.595
+  },
+  {
+   "w": "ajustes",
+   "s": 426.595,
+   "e": 426.974
+  },
+  {
+   "w": "de",
+   "s": 426.974,
+   "e": 427.137
+  },
+  {
+   "w": "batería",
+   "s": 427.137,
+   "e": 427.625
+  },
+  {
+   "w": "y",
+   "s": 427.625,
+   "e": 427.787
+  },
+  {
+   "w": "actívala.",
+   "s": 427.787,
+   "e": 428.34
+  },
+  {
+   "w": "Es",
+   "s": 428.83,
+   "e": 428.996
+  },
+  {
+   "w": "gratis,",
+   "s": 428.996,
+   "e": 429.34
+  },
+  {
+   "w": "y",
+   "s": 429.34,
+   "e": 429.506
+  },
+  {
+   "w": "tu",
+   "s": 429.506,
+   "e": 429.672
+  },
+  {
+   "w": "batería",
+   "s": 429.672,
+   "e": 430.17
+  },
+  {
+   "w": "te",
+   "s": 430.17,
+   "e": 430.337
+  },
+  {
+   "w": "lo",
+   "s": 430.337,
+   "e": 430.503
+  },
+  {
+   "w": "va",
+   "s": 430.503,
+   "e": 430.669
+  },
+  {
+   "w": "a",
+   "s": 430.669,
+   "e": 430.835
+  },
+  {
+   "w": "agradecer.",
+   "s": 430.835,
+   "e": 431.4
+  },
+  {
+   "w": "Y",
+   "s": 432.16,
+   "e": 432.332
+  },
+  {
+   "w": "ya",
+   "s": 432.332,
+   "e": 432.504
+  },
+  {
+   "w": "que",
+   "s": 432.504,
+   "e": 432.677
+  },
+  {
+   "w": "estamos,",
+   "s": 432.677,
+   "e": 433.147
+  },
+  {
+   "w": "otro",
+   "s": 433.147,
+   "e": 433.434
+  },
+  {
+   "w": "mito:",
+   "s": 433.434,
+   "e": 433.79
+  },
+  {
+   "w": "¿hay",
+   "s": 434.38,
+   "e": 434.55
+  },
+  {
+   "w": "que",
+   "s": 434.55,
+   "e": 434.72
+  },
+  {
+   "w": "dejar",
+   "s": 434.72,
+   "e": 435.002
+  },
+  {
+   "w": "que",
+   "s": 435.002,
+   "e": 435.172
+  },
+  {
+   "w": "la",
+   "s": 435.172,
+   "e": 435.342
+  },
+  {
+   "w": "batería",
+   "s": 435.342,
+   "e": 435.851
+  },
+  {
+   "w": "se",
+   "s": 435.851,
+   "e": 436.021
+  },
+  {
+   "w": "descargue",
+   "s": 436.021,
+   "e": 436.417
+  },
+  {
+   "w": "completa",
+   "s": 436.417,
+   "e": 436.813
+  },
+  {
+   "w": "antes",
+   "s": 436.813,
+   "e": 437.096
+  },
+  {
+   "w": "de",
+   "s": 437.096,
+   "e": 437.266
+  },
+  {
+   "w": "cargarla?",
+   "s": 437.266,
+   "e": 437.73
+  },
+  {
+   "w": "No.",
+   "s": 438.31,
+   "e": 438.59
+  },
+  {
+   "w": "Eso",
+   "s": 439.09,
+   "e": 439.377
+  },
+  {
+   "w": "era",
+   "s": 439.377,
+   "e": 439.664
+  },
+  {
+   "w": "con",
+   "s": 439.664,
+   "e": 439.836
+  },
+  {
+   "w": "las",
+   "s": 439.836,
+   "e": 440.008
+  },
+  {
+   "w": "baterías",
+   "s": 440.008,
+   "e": 440.524
+  },
+  {
+   "w": "viejas.",
+   "s": 440.524,
+   "e": 440.88
+  },
+  {
+   "w": "Con",
+   "s": 441.36,
+   "e": 441.48
+  },
+  {
+   "w": "las",
+   "s": 441.48,
+   "e": 441.601
+  },
+  {
+   "w": "de",
+   "s": 441.601,
+   "e": 441.721
+  },
+  {
+   "w": "ahora,",
+   "s": 441.721,
+   "e": 442.05
+  },
+  {
+   "w": "Apple",
+   "s": 442.35,
+   "e": 442.621
+  },
+  {
+   "w": "lo",
+   "s": 442.621,
+   "e": 442.783
+  },
+  {
+   "w": "dice",
+   "s": 442.783,
+   "e": 443.054
+  },
+  {
+   "w": "claro:",
+   "s": 443.054,
+   "e": 443.39
+  },
+  {
+   "w": "puedes",
+   "s": 443.91,
+   "e": 444.211
+  },
+  {
+   "w": "cargarla",
+   "s": 444.211,
+   "e": 444.631
+  },
+  {
+   "w": "cuando",
+   "s": 444.631,
+   "e": 444.932
+  },
+  {
+   "w": "quieras,",
+   "s": 444.932,
+   "e": 445.545
+  },
+  {
+   "w": "sin",
+   "s": 445.545,
+   "e": 445.725
+  },
+  {
+   "w": "esperar",
+   "s": 445.725,
+   "e": 446.146
+  },
+  {
+   "w": "a",
+   "s": 446.146,
+   "e": 446.326
+  },
+  {
+   "w": "que",
+   "s": 446.326,
+   "e": 446.507
+  },
+  {
+   "w": "se",
+   "s": 446.507,
+   "e": 446.687
+  },
+  {
+   "w": "descargue.",
+   "s": 446.687,
+   "e": 447.18
+  },
+  {
+   "w": "Entonces,",
+   "s": 447.9,
+   "e": 448.403
+  },
+  {
+   "w": "vamos",
+   "s": 448.403,
+   "e": 448.71
+  },
+  {
+   "w": "a",
+   "s": 448.71,
+   "e": 448.895
+  },
+  {
+   "w": "resumir",
+   "s": 448.895,
+   "e": 449.324
+  },
+  {
+   "w": "todo",
+   "s": 449.324,
+   "e": 449.631
+  },
+  {
+   "w": "en",
+   "s": 449.631,
+   "e": 449.815
+  },
+  {
+   "w": "cinco",
+   "s": 449.815,
+   "e": 450.122
+  },
+  {
+   "w": "pasos,",
+   "s": 450.122,
+   "e": 450.503
+  },
+  {
+   "w": "para",
+   "s": 450.503,
+   "e": 450.81
+  },
+  {
+   "w": "que",
+   "s": 450.81,
+   "e": 450.994
+  },
+  {
+   "w": "no",
+   "s": 450.994,
+   "e": 451.178
+  },
+  {
+   "w": "se",
+   "s": 451.178,
+   "e": 451.362
+  },
+  {
+   "w": "te",
+   "s": 451.362,
+   "e": 451.547
+  },
+  {
+   "w": "olvide.",
+   "s": 451.547,
+   "e": 452.05
+  },
+  {
+   "w": "Uno:",
+   "s": 452.72,
+   "e": 453.0
+  },
+  {
+   "w": "si",
+   "s": 453.45,
+   "e": 453.64
+  },
+  {
+   "w": "tienes",
+   "s": 453.64,
+   "e": 453.958
+  },
+  {
+   "w": "prisa,",
+   "s": 453.958,
+   "e": 454.351
+  },
+  {
+   "w": "ponlo",
+   "s": 454.351,
+   "e": 454.669
+  },
+  {
+   "w": "en",
+   "s": 454.669,
+   "e": 454.859
+  },
+  {
+   "w": "modo",
+   "s": 454.859,
+   "e": 455.176
+  },
+  {
+   "w": "avión.",
+   "s": 455.176,
+   "e": 455.57
+  },
+  {
+   "w": "Ganas",
+   "s": 456.04,
+   "e": 456.37
+  },
+  {
+   "w": "unos",
+   "s": 456.37,
+   "e": 456.699
+  },
+  {
+   "w": "minutos.",
+   "s": 456.699,
+   "e": 457.24
+  },
+  {
+   "w": "Dos:",
+   "s": 457.82,
+   "e": 458.23
+  },
+  {
+   "w": "si",
+   "s": 458.63,
+   "e": 458.842
+  },
+  {
+   "w": "tienes",
+   "s": 458.842,
+   "e": 459.196
+  },
+  {
+   "w": "muchísima",
+   "s": 459.196,
+   "e": 459.833
+  },
+  {
+   "w": "prisa,",
+   "s": 459.833,
+   "e": 460.272
+  },
+  {
+   "w": "apágalo",
+   "s": 460.272,
+   "e": 460.91
+  },
+  {
+   "w": "completo.",
+   "s": 460.91,
+   "e": 461.49
+  },
+  {
+   "w": "Ese",
+   "s": 461.98,
+   "e": 462.273
+  },
+  {
+   "w": "es",
+   "s": 462.273,
+   "e": 462.449
+  },
+  {
+   "w": "el",
+   "s": 462.449,
+   "e": 462.625
+  },
+  {
+   "w": "truco",
+   "s": 462.625,
+   "e": 462.918
+  },
+  {
+   "w": "que",
+   "s": 462.918,
+   "e": 463.094
+  },
+  {
+   "w": "más",
+   "s": 463.094,
+   "e": 463.27
+  },
+  {
+   "w": "se",
+   "s": 463.27,
+   "e": 463.446
+  },
+  {
+   "w": "nota.",
+   "s": 463.446,
+   "e": 463.81
+  },
+  {
+   "w": "Tres:",
+   "s": 464.41,
+   "e": 464.77
+  },
+  {
+   "w": "usa",
+   "s": 465.2,
+   "e": 465.483
+  },
+  {
+   "w": "el",
+   "s": 465.483,
+   "e": 465.652
+  },
+  {
+   "w": "cargador",
+   "s": 465.652,
+   "e": 466.048
+  },
+  {
+   "w": "original",
+   "s": 466.048,
+   "e": 466.557
+  },
+  {
+   "w": "o",
+   "s": 466.557,
+   "e": 466.727
+  },
+  {
+   "w": "uno",
+   "s": 466.727,
+   "e": 467.01
+  },
+  {
+   "w": "certificado,",
+   "s": 467.01,
+   "e": 467.7
+  },
+  {
+   "w": "y",
+   "s": 468.04,
+   "e": 468.188
+  },
+  {
+   "w": "conéctalo",
+   "s": 468.188,
+   "e": 468.632
+  },
+  {
+   "w": "directo",
+   "s": 468.632,
+   "e": 468.978
+  },
+  {
+   "w": "a",
+   "s": 468.978,
+   "e": 469.126
+  },
+  {
+   "w": "la",
+   "s": 469.126,
+   "e": 469.274
+  },
+  {
+   "w": "pared.",
+   "s": 469.274,
+   "e": 469.58
+  },
+  {
+   "w": "Cuatro:",
+   "s": 470.31,
+   "e": 470.66
+  },
+  {
+   "w": "aléjalo",
+   "s": 471.12,
+   "e": 471.649
+  },
+  {
+   "w": "del",
+   "s": 471.649,
+   "e": 471.825
+  },
+  {
+   "w": "calor.",
+   "s": 471.825,
+   "e": 472.19
+  },
+  {
+   "w": "Ni",
+   "s": 472.53,
+   "e": 472.727
+  },
+  {
+   "w": "al",
+   "s": 472.727,
+   "e": 472.924
+  },
+  {
+   "w": "sol,",
+   "s": 472.924,
+   "e": 473.199
+  },
+  {
+   "w": "ni",
+   "s": 473.199,
+   "e": 473.396
+  },
+  {
+   "w": "debajo",
+   "s": 473.396,
+   "e": 473.856
+  },
+  {
+   "w": "de",
+   "s": 473.856,
+   "e": 474.053
+  },
+  {
+   "w": "la",
+   "s": 474.053,
+   "e": 474.249
+  },
+  {
+   "w": "almohada,",
+   "s": 474.249,
+   "e": 474.919
+  },
+  {
+   "w": "ni",
+   "s": 474.919,
+   "e": 475.116
+  },
+  {
+   "w": "jugando",
+   "s": 475.116,
+   "e": 475.575
+  },
+  {
+   "w": "mientras",
+   "s": 475.575,
+   "e": 475.903
+  },
+  {
+   "w": "carga.",
+   "s": 475.903,
+   "e": 476.31
+  },
+  {
+   "w": "Cinco:",
+   "s": 476.91,
+   "e": 477.41
+  },
+  {
+   "w": "activa",
+   "s": 477.88,
+   "e": 478.305
+  },
+  {
+   "w": "la",
+   "s": 478.305,
+   "e": 478.487
+  },
+  {
+   "w": "carga",
+   "s": 478.487,
+   "e": 478.791
+  },
+  {
+   "w": "optimizada,",
+   "s": 478.791,
+   "e": 479.532
+  },
+  {
+   "w": "y",
+   "s": 479.532,
+   "e": 479.714
+  },
+  {
+   "w": "no",
+   "s": 479.714,
+   "e": 479.896
+  },
+  {
+   "w": "te",
+   "s": 479.896,
+   "e": 480.078
+  },
+  {
+   "w": "obsesiones",
+   "s": 480.078,
+   "e": 480.625
+  },
+  {
+   "w": "con",
+   "s": 480.625,
+   "e": 480.807
+  },
+  {
+   "w": "el",
+   "s": 480.807,
+   "e": 480.989
+  },
+  {
+   "w": "cien",
+   "s": 480.989,
+   "e": 481.171
+  },
+  {
+   "w": "por",
+   "s": 481.171,
+   "e": 481.354
+  },
+  {
+   "w": "ciento.",
+   "s": 481.354,
+   "e": 481.73
+  },
+  {
+   "w": "Y",
+   "s": 482.12,
+   "e": 482.283
+  },
+  {
+   "w": "recuerda:",
+   "s": 482.283,
+   "e": 482.73
+  },
+  {
+   "w": "de",
+   "s": 483.13,
+   "e": 483.317
+  },
+  {
+   "w": "cero",
+   "s": 483.317,
+   "e": 483.63
+  },
+  {
+   "w": "a",
+   "s": 483.63,
+   "e": 483.817
+  },
+  {
+   "w": "ochenta",
+   "s": 483.817,
+   "e": 484.255
+  },
+  {
+   "w": "carga",
+   "s": 484.255,
+   "e": 484.567
+  },
+  {
+   "w": "rápido,",
+   "s": 484.567,
+   "e": 485.08
+  },
+  {
+   "w": "y",
+   "s": 485.35,
+   "e": 485.524
+  },
+  {
+   "w": "el",
+   "s": 485.524,
+   "e": 485.698
+  },
+  {
+   "w": "resto",
+   "s": 485.698,
+   "e": 485.987
+  },
+  {
+   "w": "va",
+   "s": 485.987,
+   "e": 486.161
+  },
+  {
+   "w": "lento",
+   "s": 486.161,
+   "e": 486.451
+  },
+  {
+   "w": "a",
+   "s": 486.451,
+   "e": 486.625
+  },
+  {
+   "w": "propósito,",
+   "s": 486.625,
+   "e": 487.216
+  },
+  {
+   "w": "para",
+   "s": 487.216,
+   "e": 487.505
+  },
+  {
+   "w": "cuidar",
+   "s": 487.505,
+   "e": 487.795
+  },
+  {
+   "w": "tu",
+   "s": 487.795,
+   "e": 487.969
+  },
+  {
+   "w": "batería.",
+   "s": 487.969,
+   "e": 488.56
+  },
+  {
+   "w": "Así",
+   "s": 489.07,
+   "e": 489.352
+  },
+  {
+   "w": "que",
+   "s": 489.352,
+   "e": 489.521
+  },
+  {
+   "w": "el",
+   "s": 489.521,
+   "e": 489.69
+  },
+  {
+   "w": "modo",
+   "s": 489.69,
+   "e": 489.971
+  },
+  {
+   "w": "avión",
+   "s": 489.971,
+   "e": 490.253
+  },
+  {
+   "w": "no",
+   "s": 490.253,
+   "e": 490.422
+  },
+  {
+   "w": "es",
+   "s": 490.422,
+   "e": 490.591
+  },
+  {
+   "w": "magia…",
+   "s": 490.591,
+   "e": 490.94
+  },
+  {
+   "w": "pero",
+   "s": 491.33,
+   "e": 491.63
+  },
+  {
+   "w": "tampoco",
+   "s": 491.63,
+   "e": 492.049
+  },
+  {
+   "w": "es",
+   "s": 492.049,
+   "e": 492.229
+  },
+  {
+   "w": "mentira.",
+   "s": 492.229,
+   "e": 492.72
+  },
+  {
+   "w": "Cuando",
+   "s": 493.12,
+   "e": 493.459
+  },
+  {
+   "w": "estás",
+   "s": 493.459,
+   "e": 493.797
+  },
+  {
+   "w": "apurado,",
+   "s": 493.797,
+   "e": 494.488
+  },
+  {
+   "w": "esos",
+   "s": 494.488,
+   "e": 494.826
+  },
+  {
+   "w": "minutos",
+   "s": 494.826,
+   "e": 495.3
+  },
+  {
+   "w": "cuentan.",
+   "s": 495.3,
+   "e": 495.72
+  },
+  {
+   "w": "Y",
+   "s": 496.26,
+   "e": 496.436
+  },
+  {
+   "w": "ahora",
+   "s": 496.436,
+   "e": 496.845
+  },
+  {
+   "w": "ya",
+   "s": 496.845,
+   "e": 497.021
+  },
+  {
+   "w": "sabes",
+   "s": 497.021,
+   "e": 497.313
+  },
+  {
+   "w": "los",
+   "s": 497.313,
+   "e": 497.489
+  },
+  {
+   "w": "trucos",
+   "s": 497.489,
+   "e": 497.781
+  },
+  {
+   "w": "que",
+   "s": 497.781,
+   "e": 497.957
+  },
+  {
+   "w": "de",
+   "s": 497.957,
+   "e": 498.132
+  },
+  {
+   "w": "verdad",
+   "s": 498.132,
+   "e": 498.425
+  },
+  {
+   "w": "hacen",
+   "s": 498.425,
+   "e": 498.718
+  },
+  {
+   "w": "la",
+   "s": 498.718,
+   "e": 498.893
+  },
+  {
+   "w": "diferencia.",
+   "s": 498.893,
+   "e": 499.49
+  },
+  {
+   "w": "Dime",
+   "s": 499.94,
+   "e": 500.197
+  },
+  {
+   "w": "en",
+   "s": 500.197,
+   "e": 500.351
+  },
+  {
+   "w": "los",
+   "s": 500.351,
+   "e": 500.506
+  },
+  {
+   "w": "comentarios:",
+   "s": 500.506,
+   "e": 501.03
+  },
+  {
+   "w": "¿tú",
+   "s": 501.37,
+   "e": 501.523
+  },
+  {
+   "w": "cargas",
+   "s": 501.523,
+   "e": 501.777
+  },
+  {
+   "w": "el",
+   "s": 501.777,
+   "e": 501.93
+  },
+  {
+   "w": "celular",
+   "s": 501.93,
+   "e": 502.287
+  },
+  {
+   "w": "en",
+   "s": 502.287,
+   "e": 502.44
+  },
+  {
+   "w": "modo",
+   "s": 502.44,
+   "e": 502.694
+  },
+  {
+   "w": "avión?",
+   "s": 502.694,
+   "e": 503.01
+  },
+  {
+   "w": "Pon",
+   "s": 503.4,
+   "e": 503.67
+  },
+  {
+   "w": "\"sí\"",
+   "s": 503.67,
+   "e": 503.941
+  },
+  {
+   "w": "o",
+   "s": 503.941,
+   "e": 504.211
+  },
+  {
+   "w": "\"nunca\".",
+   "s": 504.211,
+   "e": 504.77
+  },
+  {
+   "w": "Y",
+   "s": 505.15,
+   "e": 505.32
+  },
+  {
+   "w": "cuéntame",
+   "s": 505.32,
+   "e": 505.718
+  },
+  {
+   "w": "también:",
+   "s": 505.718,
+   "e": 506.07
+  },
+  {
+   "w": "¿cuánto",
+   "s": 506.41,
+   "e": 506.662
+  },
+  {
+   "w": "te",
+   "s": 506.662,
+   "e": 506.813
+  },
+  {
+   "w": "dura",
+   "s": 506.813,
+   "e": 507.065
+  },
+  {
+   "w": "la",
+   "s": 507.065,
+   "e": 507.217
+  },
+  {
+   "w": "batería",
+   "s": 507.217,
+   "e": 507.67
+  },
+  {
+   "w": "a",
+   "s": 507.67,
+   "e": 507.822
+  },
+  {
+   "w": "ti",
+   "s": 507.822,
+   "e": 507.973
+  },
+  {
+   "w": "en",
+   "s": 507.973,
+   "e": 508.124
+  },
+  {
+   "w": "un",
+   "s": 508.124,
+   "e": 508.275
+  },
+  {
+   "w": "día",
+   "s": 508.275,
+   "e": 508.527
+  },
+  {
+   "w": "normal?",
+   "s": 508.527,
+   "e": 508.84
+  },
+  {
+   "w": "Te",
+   "s": 509.31,
+   "e": 509.447
+  },
+  {
+   "w": "leo.",
+   "s": 509.447,
+   "e": 509.73
+  },
+  {
+   "w": "Y",
+   "s": 510.09,
+   "e": 510.275
+  },
+  {
+   "w": "si",
+   "s": 510.275,
+   "e": 510.459
+  },
+  {
+   "w": "te",
+   "s": 510.459,
+   "e": 510.644
+  },
+  {
+   "w": "sirvió,",
+   "s": 510.644,
+   "e": 511.026
+  },
+  {
+   "w": "compártelo",
+   "s": 511.026,
+   "e": 511.58
+  },
+  {
+   "w": "con",
+   "s": 511.58,
+   "e": 511.765
+  },
+  {
+   "w": "esa",
+   "s": 511.765,
+   "e": 512.072
+  },
+  {
+   "w": "persona",
+   "s": 512.072,
+   "e": 512.503
+  },
+  {
+   "w": "que",
+   "s": 512.503,
+   "e": 512.688
+  },
+  {
+   "w": "siempre",
+   "s": 512.688,
+   "e": 512.996
+  },
+  {
+   "w": "anda",
+   "s": 512.996,
+   "e": 513.304
+  },
+  {
+   "w": "con",
+   "s": 513.304,
+   "e": 513.489
+  },
+  {
+   "w": "el",
+   "s": 513.489,
+   "e": 513.673
+  },
+  {
+   "w": "celular",
+   "s": 513.673,
+   "e": 514.104
+  },
+  {
+   "w": "en",
+   "s": 514.104,
+   "e": 514.289
+  },
+  {
+   "w": "dos",
+   "s": 514.289,
+   "e": 514.474
+  },
+  {
+   "w": "por",
+   "s": 514.474,
+   "e": 514.658
+  },
+  {
+   "w": "ciento.",
+   "s": 514.658,
+   "e": 515.04
+  }
+ ]
+}

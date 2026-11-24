@@ -1,0 +1,17 @@
+for i in [2,9,11,18,31,39,45,56,60,64,71,73,81,87,91,97,104,113,122,130,139,147,156,163,167,170,173,176,178,185]: add(whoosh(.45),PS(i)-.3,.3)
+add(pop_(700),T('avión'),.35); add(boom(),PS(1)+.4,.3)
+for k,w in enumerate(['antena','wifi','bluetooth','ubicación','aplicaciones','nube','mensajes','pantalla']): add(pop_(600+k*50),T(w)-.1,.3)
+add(clickb(),PS(33),.5); add(clickb(),PS(65),.5); add(chime(988),T('samsung'),.3); add(boom(),T('cuatro'),.3)
+add(buzz(.5,90),T('llamadas'),.3); add(clickb(),T('apágalo'),.5); add(chime(1175),T('emergencia'),.3)
+add(boom(),T('suscríbete'),.3); add(pop_(900),T('suscríbete')+.05,.4)
+add(rise(1.5,300,900),PS(73),.25); add(splash(.8),PS(82),.25); add(boom(),T('calor'),.35); add(hum(2.0,120),T('calor'),.2)
+for w in ['sol','carro','almohada','jugando']: add(pop_(650),T(w)-.3,.3)
+add(buzz(.5,80),T('envejece'),.3)
+for k in range(16): add(tick(),T('sesenta')+k*.18,.15)
+add(zap(.4),PS(118),.35); add(chime(1046),PS(118)+.2,.3); add(buzz(.6,90),T('tres'),.3)
+add(zap(.6),PS(126),.35); add(boom(),T('incendio'),.35); add(zap(.4),T('puerto'),.3); add(pop_(600),T('regleta'),.3); add(pop_(650),T('computadora'),.3)
+add(chime(880),T('optimizada'),.35); add(boom(),T('mito'),.35); add(buzz(.4,90),PS(158),.3)
+for w in ['uno','dos','tres','cuatro','cinco']:
+    pass
+for i in [164,167,170,173,176]: add(chime(1046),PS(i),.3)
+for k in range(4): add(pop_(600+k*70),T('comentarios')+.35+k*.22,.3)
