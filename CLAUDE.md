@@ -7,7 +7,10 @@
   y mejorarlo según lo que pida el usuario; no entregar animaciones 2D planas.
   Mismos personajes y estilo, pero escenarios y situaciones nuevos en cada video, hechos para su guion/voz.
 - Guiones: gancho fuerte en el segundo 0, lenguaje cotidiano, nada genérico. Formato actual: Estilo C (escalada: "Si… ya tienes…" → "Pero…" → "Así que…", final "Enhorabuena…" + pregunta).
-- Cuenta "Así funciona con Rai": formato actual (desde 2026-11-21) = **Estilo C "Escalada 3D"**,
+- Cuenta "Así funciona con Rai": formato actual (desde 2026-11-28) = **Estilo D "Paso a paso por dentro"**
+  (`.claude/skills/reel-3d-animado/estilo-paso-a-paso.md`, ref. `referencias/estilo-paso-a-paso-olla.mp4`):
+  guion que SIEMPRE empieza "Si pones…", explica paso a paso qué pasa por dentro, y dura SIEMPRE más de 1:10.
+- Formato anterior (desde 2026-11-21) = **Estilo C "Escalada 3D"**,
   ver `.claude/skills/reel-3d-animado/estilo-escalada.md` y `referencias/estilo-escalada-balcon.mp4`.
   Estilo B (construcción en corte, `plantilla-construccion/`) solo si el usuario lo pide.
   TODOS los videos llevan marca de agua "Así funciona con Rai" arriba a la derecha y cierre; entregar dos versiones:
